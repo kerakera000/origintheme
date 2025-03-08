@@ -1,0 +1,383 @@
+@use "../init/index" as *;
+
+// 投稿系
+.post-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    .inner{
+        width: 100%;
+        max-width: 1100px;
+        background-color: #FFF;
+        transform: translateY(-120px);
+        padding: 50px 50px 0;
+        border-radius: 20px 20px 0 0;
+        @media (max-width: 425px) {
+            padding: 50px 24px;
+        }
+    }
+    &__title {
+        @include fosanjp;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 140%;
+    }
+
+    &__date {
+        @include fogo;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: #999999;
+    }
+    p{
+        @include fosanjp;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 180%
+    }
+    h2{
+        @include fosanjp;
+        font-size: 26px;
+        font-weight: 700;
+        padding: 40px 0 31px;
+        border-top: 1px solid #666666;
+        border-bottom: 1px solid #666666;
+        margin-bottom: 26px;
+    }
+    h3 {
+        @include fosanjp;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 31px 0;
+    }
+    h4 {
+        @include fosanjp;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 31px 0;
+    }
+    h5 {
+        @include fosanjp;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 31px 0;
+    }
+    h6 {
+        @include fosanjp;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 31px 0;
+    }
+    ul{
+        width: 100%;
+        background-color: #ebfbff;
+        padding: 32px 50px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 17px;
+        margin: 20px 0;
+        border-radius: 6px;
+        li{
+            @include fosanjp;
+            font-size: 16px;
+            font-weight: 500;
+            color: #666666;
+        }
+    }
+    ol {
+        width: 100%;
+        background-color: #ebfbff;
+        padding: 32px 50px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 17px;
+        margin: 20px 0;
+        border-radius: 6px;
+        li {
+            @include fosanjp;
+            font-size: 16px;
+            font-weight: 500;
+            color: #666666;
+        }
+    }
+
+    .wp-block-image{
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 600px;
+            margin: 40px 0;
+        }
+    }
+
+    .wp-block-table{
+        margin-bottom: 30px;
+        .has-fixed-layout{
+            border-left: 3px solid #fff;
+            border-right: 3px solid #fff;
+            border-bottom: 2px solid #333333;
+            overflow-x: auto;
+            th {
+                border: 1px solid #CCCCCC;
+            }
+        }
+        thead{
+            background-color: #ebfbff;
+            border-top: 2px solid #333333;
+            border-bottom: 2px solid #333333;
+        }
+        td{
+            border: 1px solid #CCCCCC;
+        }
+        .wp-element-caption{
+            @include fosanjp;
+            font-size: 12px;
+            font-weight: 700;
+        }
+    }
+
+    .wp-block-quote{
+        p{
+            @include fosanjp;
+            font-size: 16px;
+            font-weight: 500;
+            color: #666666;
+            width: 100%;
+            background-color: #ebfbff;
+            padding: 32px 50px;
+            position: relative;
+            &::before{
+                content:'';
+                position: absolute;
+                top: 5px;
+                left:5px;
+                width:24px;
+                height:24px;
+                background-image: url(../../img/newsdetail/icon.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.post-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .inner{
+        width: 100%;
+        max-width: 1100px;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        @media (max-width: 425px) {
+            padding: 50px 24px;
+        }
+    }
+    .line{
+        border-top: 3px solid #333333;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .button{
+        width: 252px;
+        background-color: #333333;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: #FFF;
+        padding: 16px 10px 16px 0;
+        border-radius: 34px;
+        @include fosanjp;
+        font-size: 18px;
+        font-weight: 500;
+        img{
+            position: absolute;
+            top:50%;
+            right:20px;
+            transform: translate(-0%,-50%);
+        }
+    }
+}
+
+.policy-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    .inner{
+        width: 100%;
+        max-width: 1100px;
+        background-color: #FFF;
+        transform: translateY(-120px);
+        padding: 50px 50px 0;
+        border-radius: 20px 20px 0 0;
+        @media (max-width: 425px) {
+            padding: 50px 24px;
+        }
+    }
+
+    p {
+        @include fosanjp;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 180%
+    }
+    .day {
+        width: 100%;
+        text-align: right;
+    }
+    strong{
+        @include fosanjp;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 180%
+    }
+    &__title {
+        @include fosanjp;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 70px;
+    }
+    &__cont{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    h2{
+        @include fosanjp;
+        font-size: 23px;
+        font-weight: 700;
+        padding: 0px 0 21px;
+        border-bottom: 1px solid #707070;
+        margin-bottom: 16px;
+    }
+    h3 {
+        @include fosanjp;
+        font-size: 22px;
+        font-weight: 700;
+        padding: 31px 0;
+    }
+    h4 {
+        @include fosanjp;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 31px 0;
+    }
+    h5 {
+        @include fosanjp;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 31px 0;
+    }
+    h6 {
+        @include fosanjp;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 31px 0;
+    }
+    ul{
+        width: 100%;
+        padding: 32px 50px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 17px;
+        margin: 20px 0;
+        border-radius: 6px;
+        li{
+            @include fosanjp;
+            font-size: 16px;
+            font-weight: 500;
+            color: #000000;
+            list-style-type: disc;
+        }
+    }
+    ol {
+        width: 100%;
+        background-color: #ebfbff;
+        padding: 32px 50px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 17px;
+        margin: 20px 0;
+        border-radius: 6px;
+        li {
+            @include fosanjp;
+            font-size: 16px;
+            font-weight: 500;
+            color: #666666;
+        }
+    }
+
+    .wp-block-image{
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 600px;
+            margin: 40px 0;
+        }
+    }
+
+    .wp-block-table{
+        margin-bottom: 30px;
+        .has-fixed-layout{
+            border-left: 3px solid #fff;
+            border-right: 3px solid #fff;
+            border-bottom: 2px solid #333333;
+            overflow-x: auto;
+            th {
+                border: 1px solid #CCCCCC;
+            }
+        }
+        thead{
+            background-color: #ebfbff;
+            border-top: 2px solid #333333;
+            border-bottom: 2px solid #333333;
+        }
+        td{
+            border: 1px solid #CCCCCC;
+        }
+        .wp-element-caption{
+            @include fosanjp;
+            font-size: 12px;
+            font-weight: 700;
+        }
+    }
+
+    .wp-block-quote{
+        p{
+            @include fosanjp;
+            font-size: 16px;
+            font-weight: 500;
+            color: #666666;
+            width: 100%;
+            background-color: #ebfbff;
+            padding: 32px 50px;
+            position: relative;
+            &::before{
+                content:'';
+                position: absolute;
+                top: 5px;
+                left:5px;
+                width:24px;
+                height:24px;
+                background-image: url(../../img/newsdetail/icon.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
