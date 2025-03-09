@@ -107,9 +107,6 @@
     position: relative;
     transition: all 0.3s ease;
     background: var(--color-primary, #182346);
-    &.nobg{
-        background: var(--color-primary, #18234600);
-    }
     .text{
         @include poppins;
         overflow: hidden;
@@ -211,6 +208,24 @@
                     transform: translate(-50%, -50%);
                 }
             }
+        }
+    }
+    &.nobg{
+        background: var(--color-primary, #18234600);
+    }
+    &.header-button{
+        width: 140px;
+        .text{
+            @include poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 14px */
+            letter-spacing: 1.4px;
+        }
+        .arrow-right{
+            width: 8.75px;
+            height: 8px;
         }
     }
 }

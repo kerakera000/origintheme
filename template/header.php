@@ -4,38 +4,62 @@ global $site_url;
 ?>
 
 <header class="header">
-    <a href="/">
-        <img class="header--logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/sozai/logo.svg" alt="">
-    </a>
+    <div class="header--logo">
+        <a href="/">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.svg" alt="">
+        </a>
+        <a href="">
+            <span class="text">
+                COMPANY 事業部 採用サイト
+            </span>
+            <span class="hover">
+                COMPANY 事業部 採用サイト
+            </span>
+        </a>
+    </div>
     <div id="SPHEADER" class="header--linkbox">
         <a class="link" href="/#ABOUT">
             <span class="text">
-                お店について
+            About Us
+            </span>
+            <span class="hover">
+            About Us
             </span>
         </a>
         <a class="link" href="/#HOWTOUSE">
             <span class="text">
-                楽しみ方
+            Career Step
+            </span>
+            <span class="hover">
+            Career Step
             </span>
         </a>
         <a class="link" href="/#SHOPINFO">
             <span class="text">
-                お店の様子
+            Interview
+            </span>
+            <span class="hover">
+            Interview
             </span>
         </a>
         <a class="link" href="/#RESERVE">
             <span class="text">
-                来店予約
+            Company
+            </span>
+            <span class="hover">
+            Company
             </span>
         </a>
-        <a class="link" href="/#PRICE">
-            <span class="text">
-                ご利用料金
-            </span>
-        </a>
-        <a class="link" href="/#INFORMATION">
-            <span class="text">
-                お問い合わせ
+        <a href="/#INFORMATION" class="common-button header-button">
+            <div class="text">
+                <p class="normal">Entry</p>
+                <p class="hover">Entry</p>
+            </div>
+            <span class="arrow-right">
+                <div class="arrow-box">
+                    <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/header/headerico.svg" alt="">
+                    <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/header/headerico.svg" alt="">
+                </div>
             </span>
         </a>
     </div>

@@ -377,7 +377,7 @@ get_template_part('./template/head');
             </div>
         </div>
     </div>
-    
+
 </main>
 
 <?php
