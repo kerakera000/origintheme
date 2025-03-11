@@ -13,36 +13,44 @@ get_template_part('./template/head');
     <div class="videobg">
         <video src="<?php echo get_template_directory_uri(); ?>/assets/video/bg.mp4" autoplay muted loop></video>
     </div>
+
     <div class="hero">
-        <h2 class="hero-title">
-            <span>Beyond</span>
-            <span>Your</span>
-            <span>Imagination</span>
-        </h2>
-        <h3>
-            想像以上を、始めよう。
-        </h3>
+        <div class="bganim1"></div>
+        <div class="hero-textbox inner-content1400">
+            <h2 class="main-title">
+                <span class="title1">Beyond</span>
+                <span class="title2">Your</span>
+                <span class="title3">Imagination</span>
+            </h2>
+            <h3 class="sub-text">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/souzou.svg" alt="">
+            </h3>
+        </div>
+        <div class="bganim2"></div>
     </div>
+
     <div class="hero-text">
-        <p class="text">
-            次々と真新しいデジタル技術が登場し、<br>
-            すさまじい速度で変化するこの時代。<br>
-            私たちは「HRテック」というフィールドから、<br>
-            数多くの企業のDX化を推進しています。<br>
-            「人事」の悩みを抱えながら、<br>
-            前へと向かっていく企業のために。<br>
-            セラクCOMPANY事業部には、<br>
-            異なる業界、業種から果敢に挑み、<br>
-            人事支援のプロとなった仲間がたくさんいます。<br>
-            やったことがなくても、とにかくチャレンジしてみる。<br>
-            一人でできないことも、チームの力で乗り越えていく。<br>
-            想像以上のあなたを、ここから始めてみませんか。
-        </p>
+        <div class="textbox">
+            <p class="text">
+                次々と真新しいデジタル技術が登場し、<br>
+                すさまじい速度で変化するこの時代。<br>
+                私たちは「HRテック」というフィールドから、<br>
+                数多くの企業のDX化を推進しています。<br>
+                「人事」の悩みを抱えながら、<br>
+                前へと向かっていく企業のために。<br>
+                セラクCOMPANY事業部には、<br>
+                異なる業界、業種から果敢に挑み、<br>
+                人事支援のプロとなった仲間がたくさんいます。<br>
+                やったことがなくても、とにかくチャレンジしてみる。<br>
+                一人でできないことも、チームの力で乗り越えていく。<br>
+                想像以上のあなたを、ここから始めてみませんか。
+            </p>
+        </div>
     </div>
 
     <div class="news">
         <div class="max-content">
-            <span class="news--decoration-text">
+            <span id="NEWS-DECORATION-TEXT" class="news--decoration-text">
                 Beyond Your Imagination
             </span>
         </div>
@@ -71,7 +79,9 @@ get_template_part('./template/head');
 
                     <div class="news-itembox">
                         <div class="news-item">
-                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/item1.png" alt="">
+                            <div class="imgbox">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/item1.png" alt="">
+                            </div>
                             <div class="textbox">
                                 <div class="text">
                                     <span class="date">2025/03/08</span>
@@ -81,9 +91,17 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="button-box">
                                     <button class="more-button">
-                                        More
+                                        <p class="text">
+                                            <span class="normal">
+                                                More
+                                            </span>
+                                            <span class="hover">
+                                                More
+                                            </span>
+                                        </p>
                                         <span class="arrow-right">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
+                                            <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
+                                            <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
                                         </span>
                                     </button>
                                 </div>
@@ -91,7 +109,9 @@ get_template_part('./template/head');
                         </div>
 
                         <div class="news-item">
-                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/item1.png" alt="">
+                            <div class="imgbox">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/item1.png" alt="">
+                            </div>
                             <div class="textbox">
                                 <div class="text">
                                     <span class="date">2025/03/08</span>
@@ -101,9 +121,17 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="button-box">
                                     <button class="more-button">
-                                        More
+                                        <p class="text">
+                                            <span class="normal">
+                                                More
+                                            </span>
+                                            <span class="hover">
+                                                More
+                                            </span>
+                                        </p>
                                         <span class="arrow-right">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
+                                            <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
+                                            <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
                                         </span>
                                     </button>
                                 </div>
@@ -111,7 +139,9 @@ get_template_part('./template/head');
                         </div>
 
                         <div class="news-item">
-                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/item1.png" alt="">
+                            <div class="imgbox">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/item1.png" alt="">
+                            </div>
                             <div class="textbox">
                                 <div class="text">
                                     <span class="date">2025/03/08</span>
@@ -121,9 +151,17 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="button-box">
                                     <button class="more-button">
-                                        More
+                                        <p class="text">
+                                            <span class="normal">
+                                                More
+                                            </span>
+                                            <span class="hover">
+                                                More
+                                            </span>
+                                        </p>
                                         <span class="arrow-right">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
+                                            <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
+                                            <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
                                         </span>
                                     </button>
                                 </div>
@@ -216,7 +254,18 @@ get_template_part('./template/head');
             <div class="swiper InterviewSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="<?= $wp_path; ?>/assets/img/neko/1.jpg" alt="About">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
                         <div class="textcont">
                             <p class="name">
                                 Masanori.U
@@ -226,14 +275,33 @@ get_template_part('./template/head');
                             </p>
                         </div>
                         <button class="more-button">
-                            More
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
                             <span class="arrow-right">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
                             </span>
                         </button>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= $wp_path; ?>/assets/img/neko/1.jpg" alt="About">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
                         <div class="textcont">
                             <p class="name">
                                 Masanori.U
@@ -243,14 +311,33 @@ get_template_part('./template/head');
                             </p>
                         </div>
                         <button class="more-button">
-                            More
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
                             <span class="arrow-right">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
                             </span>
                         </button>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= $wp_path; ?>/assets/img/neko/1.jpg" alt="About">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
                         <div class="textcont">
                             <p class="name">
                                 Masanori.U
@@ -260,14 +347,33 @@ get_template_part('./template/head');
                             </p>
                         </div>
                         <button class="more-button">
-                            More
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
                             <span class="arrow-right">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
                             </span>
                         </button>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= $wp_path; ?>/assets/img/neko/1.jpg" alt="About">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
                         <div class="textcont">
                             <p class="name">
                                 Masanori.U
@@ -277,14 +383,33 @@ get_template_part('./template/head');
                             </p>
                         </div>
                         <button class="more-button">
-                            More
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
                             <span class="arrow-right">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
                             </span>
                         </button>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= $wp_path; ?>/assets/img/neko/1.jpg" alt="About">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
                         <div class="textcont">
                             <p class="name">
                                 Masanori.U
@@ -294,14 +419,33 @@ get_template_part('./template/head');
                             </p>
                         </div>
                         <button class="more-button">
-                            More
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
                             <span class="arrow-right">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
                             </span>
                         </button>
                     </div>
                     <div class="swiper-slide">
-                        <img src="<?= $wp_path; ?>/assets/img/neko/1.jpg" alt="About">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
                         <div class="textcont">
                             <p class="name">
                                 Masanori.U
@@ -311,9 +455,17 @@ get_template_part('./template/head');
                             </p>
                         </div>
                         <button class="more-button">
-                            More
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
                             <span class="arrow-right">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
                             </span>
                         </button>
                     </div>
@@ -335,6 +487,7 @@ get_template_part('./template/head');
         </button>
 
         <div class="Interview--overview">
+            <img class="bg" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/bg.png" alt="">
             <div class="common-titlebox white">
                 <h2 class="title">Overview</h2>
                 <span class="sub-title">会社概要</span>
@@ -364,14 +517,29 @@ get_template_part('./template/head');
 
             <p class="Entry--text">リンク先で募集職種を確認いただけます</p>
 
-            <div class="Entry--cardbox">
-                <button class="Entry-card">
+            <div class="Entry--cardbox inner-content">
+                <button class="Entry-card type1">
                     <div class="card-title">
-                        <h2>New Graduate</h2>
-                        <span>新卒採用</span>
+                        <h2 class="title">New Graduate</h2>
+                        <span class="sub-title">新卒採用</span>
                     </div>
-                    <div class="card-img">
-                        <img src="" alt="">
+                    <div class="card-imgbox">
+                        <div class="card-img">
+                            <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/Line 6.svg" alt="">
+                            <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/Line 6.svg" alt="">
+                        </div>
+                    </div>
+                </button>
+                <button class="Entry-card type2">
+                    <div class="card-title">
+                        <h2 class="title">New Graduate</h2>
+                        <span class="sub-title">新卒採用</span>
+                    </div>
+                    <div class="card-imgbox">
+                        <div class="card-img">
+                            <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/Line 6.svg" alt="">
+                            <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/Line 6.svg" alt="">
+                        </div>
                     </div>
                 </button>
             </div>

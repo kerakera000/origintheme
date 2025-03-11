@@ -1,5 +1,9 @@
 @use "../init/index" as *;
 
+.main-layout{
+    padding: 0px 0 0 0;
+}
+
 .common-titlebox{
     display: flex;
     align-items: flex-start;
@@ -62,20 +66,24 @@
 .inner-content{
 	max-width: 1000px;
 	margin: 0 auto;
-	padding: 0 34px;
     width: 100%;
+    @media (max-width: 1000px) {
+        padding: 0 34px;
+    }
     @media (max-width: 425px) {
-        padding: 0px 24px 0px;
+        padding: 0 24px;
     }
 }
 
 .inner-content1400{
 	max-width: 1400px;
 	margin: 0 auto;
-	padding: 0 34px;
     width: 100%;
+    @media (max-width: 1000px) {
+        padding: 0 34px;
+    }
     @media (max-width: 425px) {
-        padding: 0px 24px 0px;
+        padding: 0 24px;
     }
 }
 

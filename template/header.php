@@ -8,7 +8,7 @@ global $site_url;
         <a href="/">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.svg" alt="">
         </a>
-        <a href="">
+        <a href="" class="link">
             <span class="text">
                 COMPANY 事業部 採用サイト
             </span>
