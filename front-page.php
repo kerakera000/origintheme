@@ -23,7 +23,7 @@ get_template_part('./template/head');
                 <span class="title3">Imagination</span>
             </h2>
             <h3 class="sub-text">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/souzou.svg" alt="">
+                <img class="subimg" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/souzou.svg" alt="">
             </h3>
         </div>
         <div class="bganim2"></div>
@@ -171,7 +171,6 @@ get_template_part('./template/head');
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="about">
@@ -186,11 +185,13 @@ get_template_part('./template/head');
                         <span class="sub-title">COMPANY事業部について</span>
                     </div>
                     <p class="cont--textbox--text">
-                    COMPANY事業部は統合人事システム<br>
-                    「COMPANY(R)︎」の新規導入から運用まで、<br>
-                    幅広くサポート。お客さまの事業成長を後押<br>
-                    しすることで、社会の基盤をつくり、経済の<br>
-                    一端を支えています。
+                        <span class="text">
+                            COMPANY事業部は統合人事システム<br>
+                            「COMPANY(R)︎」の新規導入から運用まで、<br>
+                            幅広くサポート。お客さまの事業成長を後押<br>
+                            しすることで、社会の基盤をつくり、経済の<br>
+                            一端を支えています。
+                        </span>
                     </p>
                     <button class="common-button">
                         <div class="text">
@@ -215,10 +216,12 @@ get_template_part('./template/head');
                         <span class="sub-title">キャリア・研修について</span>
                     </div>
                     <p class="cont--textbox--text">
-                    社員がキャリアビジョンを達成できるよう、<br>
-                    実践的な研修プログラムを提供しています。<br>
-                    職種も多岐に渡り、一人ひとりの適性に合わ<br>
-                    せたキャリアを選択することが可能です。
+                        <span class="text">
+                            社員がキャリアビジョンを達成できるよう、<br>
+                            実践的な研修プログラムを提供しています。<br>
+                            職種も多岐に渡り、一人ひとりの適性に合わ<br>
+                            せたキャリアを選択することが可能です。
+                        </span>
                     </p>
                     <button class="common-button">
                         <div class="text">
@@ -293,7 +296,43 @@ get_template_part('./template/head');
                         <div class="imgbox">
                             <p class="number">(Interview 01)</p>
                             <div class="img">
-                                <img src="<?= $wp_path; ?>/assets/img/swiper/image.png" alt="About">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image2.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="textcont">
+                            <p class="name">
+                                Masanori.U
+                                <span class="job">
+                                    エンジニア/2018年入社
+                                </span>
+                            </p>
+                        </div>
+                        <button class="more-button">
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
+                            <span class="arrow-right">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                            </span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image3.png" alt="About">
                                 <h2 class="title">
                                     <span class="title-text">
                                         タイトルが入ります。タイトルが入ります。
@@ -365,7 +404,43 @@ get_template_part('./template/head');
                         <div class="imgbox">
                             <p class="number">(Interview 01)</p>
                             <div class="img">
-                                <img src="<?= $wp_path; ?>/assets/img/swiper/image.png" alt="About">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image2.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="textcont">
+                            <p class="name">
+                                Masanori.U
+                                <span class="job">
+                                    エンジニア/2018年入社
+                                </span>
+                            </p>
+                        </div>
+                        <button class="more-button">
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
+                            <span class="arrow-right">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                            </span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image3.png" alt="About">
                                 <h2 class="title">
                                     <span class="title-text">
                                         タイトルが入ります。タイトルが入ります。
@@ -437,7 +512,151 @@ get_template_part('./template/head');
                         <div class="imgbox">
                             <p class="number">(Interview 01)</p>
                             <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image2.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="textcont">
+                            <p class="name">
+                                Masanori.U
+                                <span class="job">
+                                    エンジニア/2018年入社
+                                </span>
+                            </p>
+                        </div>
+                        <button class="more-button">
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
+                            <span class="arrow-right">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                            </span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image3.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="textcont">
+                            <p class="name">
+                                Masanori.U
+                                <span class="job">
+                                    エンジニア/2018年入社
+                                </span>
+                            </p>
+                        </div>
+                        <button class="more-button">
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
+                            <span class="arrow-right">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                            </span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
                                 <img src="<?= $wp_path; ?>/assets/img/swiper/image.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="textcont">
+                            <p class="name">
+                                Masanori.U
+                                <span class="job">
+                                    エンジニア/2018年入社
+                                </span>
+                            </p>
+                        </div>
+                        <button class="more-button">
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
+                            <span class="arrow-right">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                            </span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image2.png" alt="About">
+                                <h2 class="title">
+                                    <span class="title-text">
+                                        タイトルが入ります。タイトルが入ります。
+                                        タイトルが入ります。タイトルが入ります。
+                                    </span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="textcont">
+                            <p class="name">
+                                Masanori.U
+                                <span class="job">
+                                    エンジニア/2018年入社
+                                </span>
+                            </p>
+                        </div>
+                        <button class="more-button">
+                            <p class="text">
+                                <span class="normal">
+                                    More
+                                </span>
+                                <span class="hover">
+                                    More
+                                </span>
+                            </p>
+                            <span class="arrow-right">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/arrow-right.svg" alt="">
+                            </span>
+                        </button>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="imgbox">
+                            <p class="number">(Interview 01)</p>
+                            <div class="img">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image3.png" alt="About">
                                 <h2 class="title">
                                     <span class="title-text">
                                         タイトルが入ります。タイトルが入ります。

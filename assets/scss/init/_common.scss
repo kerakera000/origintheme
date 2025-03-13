@@ -19,12 +19,19 @@
         margin-bottom: 40px;
         width: 100%;
         text-wrap: nowrap;
+        @media (max-width: 1000px) {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
     }
     .sub-title{
         font-size: 18px;
         color: var(--color-primary, #182346);
         font-weight: 700;
         letter-spacing: 0.9px;
+        @media (max-width: 1000px) {
+            font-size: 16px;
+        }
     }
     &.center{
         align-items: center;
