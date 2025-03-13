@@ -2,25 +2,37 @@
 
 
 .footer {
-    background-color: #ffe9ee;
+    background: var(--color-white, #FFF);
     width: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
-    padding: 42px 0 ;
+    flex-direction: column;
+    padding: 80px 0 44px;
+    border-top: 1px solid var(--color-gray, #E5E5E5);
     .container{
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
-        @media (max-width: 900px) {
-            flex-direction: column;
-            gap: 20px;
+        flex-direction: column;
+        gap: 120px;
+        width: 100%;
+        max-width: 1400px;
+        @media (max-width: 1400px) {
+            padding: 0 32px;
+        }
+        @media (max-width: 425px) {
+            padding: 0 32px;
         }
     }
     .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
         &--logo {
             width: 100%;
-            max-width: 250px;
+            max-width: 130px;
         }
         &--linkbox {
             display: flex;
@@ -40,6 +52,107 @@
                 }
             }
         }
-        
+        &--copyright {
+            color: var(--color-primary, #182346);
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .icon-logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            img{
+                width: 100%;
+                max-width: 133px;
+            }
+            .sub-text{
+                @include fosanjp;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 16px */
+                letter-spacing: 0.5px;
+            }
+        }
+    }
+
+    &--linkbox{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 3px 40px 3px 30px;
+        position: relative;
+        @media (max-width: 950px) {
+            flex-direction: column;
+            position: fixed;
+            z-index: 999;
+            right: -100%;
+            top: 0;
+            height: 100%;
+            width: 300px;
+            padding: 40px 40px 3px 30px;
+            transition: 0.3s;
+            background: #D9D9D9;
+        }
+        &.open{
+            @media (max-width: 950px) {
+                right: 0%;
+                transition: 0.3s;
+            }
+        }
+        .link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            height: 30px;
+            .text{
+                color: var(--color-primary, #182346);
+                @include poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%; /* 14px */
+                letter-spacing: 1.4px;
+                position: relative;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                text-wrap: nowrap;
+            }
+            .hover{
+                color: var(--color-primary, #182346);
+                @include poppins;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%; /* 14px */
+                letter-spacing: 1.4px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, 30px);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                text-wrap: nowrap;
+            }
+            &:hover{
+                .text{
+                    transition: 0.3s;
+                    transform: translate(-0%, -50px);
+                }
+                .hover{
+                    transition: 0.3s;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
     }
 }
