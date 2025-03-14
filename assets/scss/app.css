@@ -2593,12 +2593,6 @@ button {
     transform: translateX(-100%);
   }
 }
-.policy--content .text {
-  text-align: center;
-  font-size: 32px;
-  width: 100%;
-}
-
 /* Module Components */
 /* CSS Document */
 .fi,
