@@ -766,7 +766,13 @@ get_template_part('./template/head');
     </div>
 
     <div class="PBusiness">
-        test   
+        <div class=titlebox>
+            <h2 class=title>職種紹介</h2>
+        </div>
+        <div class=sub-titlebox>
+            <h2 class=title>エンジニア職</h2>
+        </div>
+        
     </div>
 
 </main>
