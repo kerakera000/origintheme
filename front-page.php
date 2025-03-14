@@ -766,13 +766,34 @@ get_template_part('./template/head');
     </div>
 
     <div class="PBusiness">
-        <div class=titlebox>
-            <h2 class=title>職種紹介</h2>
+        <div class=content>
+            <div class=titlebox>
+                <span class=sub-title>Job</span>
+                <h2 class=title>職種紹介</h2>
+            </div>
+            <div class=typebox>
+                <h2 class=title>エンジニア職</h2>
+                <div class="imgbox">
+                    <img class="img" src="" alt="">
+                </div>
+                <div class=introductionbox>
+                    <span class=job-title>COMPANYエンジニア</span>
+                    <span class="text"></span>
+                    <span class=job-title>IF / インターフェースエンジニア</span>
+                    <span class="text"></span>
+                    <span class=job-title>RP / ロボティックプロセスオートメーションエンジニア</span>
+                    <span class="text"></span>
+                </div>
+            </div>
+            <div class=sub-titlebox>
+                <h2 class=sub-title>ビジネス職</h2>
+            </div>
+                <div class=textbox>
+                    <p class="text">
+                    
+                    </p>
+                </div>
         </div>
-        <div class=sub-titlebox>
-            <h2 class=title>エンジニア職</h2>
-        </div>
-        
     </div>
 
 </main>
