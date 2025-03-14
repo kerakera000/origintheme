@@ -839,7 +839,7 @@ get_template_part('./template/head');
                         が求められます。 <br>
                     </p>
                 </div>
-            
+            </div>
         </div>
     </div>
 
