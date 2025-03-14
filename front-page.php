@@ -808,12 +808,38 @@ get_template_part('./template/head');
             </div>
             <div class="sub-titlebox">
                 <h2 class="sub-title">ビジネス職</h2>
-            </div>
-                <div class="textbox">
+                <div class="imgbox">
+                    <img class="img" src="" alt="">
+                </div>
+                <div class="introductionbox">
+                    <span class="job-num">(01)</span>
+                    <span class="job-title">管理</span>
                     <p class="text">
-                    
+                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                        が求められます。 <br>
+                    </p>
+                    <span class="line"></span>
+                    <span class="job-num">(02)</span>
+                    <span class="job-title">採用</span>
+                    <p class="text">
+                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                        が求められます。 <br>
+                    </p>
+                    <span class="line"></span>
+                    <span class="job-num">(03)</span>
+                    <span class="job-title">教育</span>
+                    <p class="text">
+                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                        が求められます。 <br>
                     </p>
                 </div>
+            
         </div>
     </div>
 
