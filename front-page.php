@@ -766,29 +766,50 @@ get_template_part('./template/head');
     </div>
 
     <div class="PBusiness">
-        <div class=content>
-            <div class=titlebox>
-                <span class=sub-title>Job</span>
-                <h2 class=title>職種紹介</h2>
+        <div class="content">
+            <div class="titlebox">
+                <span class="sub-title">Job</span>
+                <h2 class="title">職種紹介</h2>
             </div>
-            <div class=typebox>
-                <h2 class=title>エンジニア職</h2>
+            <div class="typebox">
+                <h2 class="title">エンジニア職</h2>
                 <div class="imgbox">
                     <img class="img" src="" alt="">
                 </div>
-                <div class=introductionbox>
-                    <span class=job-title>COMPANYエンジニア</span>
-                    <span class="text"></span>
-                    <span class=job-title>IF / インターフェースエンジニア</span>
-                    <span class="text"></span>
-                    <span class=job-title>RP / ロボティックプロセスオートメーションエンジニア</span>
-                    <span class="text"></span>
+                <div class="introductionbox">
+                    <span class="job-num">(01)</span>
+                    <span class="job-title">COMPANYエンジニア</span>
+                    <p class="text">
+                        お客様が抱えている課題や要望などを踏まえた要件定義に基づいて、COMPANY(R)のシステム<br>
+                        を構築します。担当する領域は人事・給与・勤怠に別れており、導入支援や機能追加などのプロジェ<br>
+                        クトに参画します。IT業界未経験からスタートしたエンジニアも多く、社員研修や日々の業務など<br>
+                        を通してスキルアップに努めています。<br>
+                    </p>
+                    <span class="line"></span>
+                    <span class="job-num">(02)</span>
+                    <span class="job-title">IF / インターフェースエンジニア</span>
+                    <p class="text">
+                        COMPANY(R)の新規導入・運用保守で必要な外部連携業務を担当しま<br>
+                        す。既存システムからCOMPANY(R)へのデータ投入や、他システムへの<br>
+                        データ連携など、要件定義んから実際の連携までを行います。また、お<br>
+                        客様と直接やり取りするポジションでもあるので、コミュニケーション<br>
+                        力や提案力などを生かす場面が多くあります。<br>
+                    </p>
+                    <span class="line"></span>
+                    <span class="job-num">(03)</span>
+                    <span class="job-title">RP / ロボティックプロセスオートメーションエンジニア</span>
+                    <p class="text">
+                        RPA(Robotc Process Automation)とは、パソコン上で行っているルーチンワークを自動化す<br>
+                        る技術です。瀬楽のRPAエンジニアは人事領域において,COMPANY(R)とRPAの技術を掛け合わ<br>
+                        せ、お客様の業務効率化をサポートします。プロジェクトによっては、業務コンサルティングや<br>
+                        手順書の作成や運用・保守などに携わります。 <br>
+                    </p>
                 </div>
             </div>
-            <div class=sub-titlebox>
-                <h2 class=sub-title>ビジネス職</h2>
+            <div class="sub-titlebox">
+                <h2 class="sub-title">ビジネス職</h2>
             </div>
-                <div class=textbox>
+                <div class="textbox">
                     <p class="text">
                     
                     </p>
