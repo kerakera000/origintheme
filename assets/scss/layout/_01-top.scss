@@ -612,11 +612,11 @@
         .swiper-wrapper{
             transition: 0.3s;
             transition-delay: 0.3s;
-            width: calc(100% + 1000px);
+            width:100%;
             .swiper-slide{
                 width: 100%;
                 height: 100%;
-                min-width: 468px;
+                transition: 1s;
                 .imgbox{
                     width: 100%;
                     height: 100%;
@@ -686,7 +686,7 @@
             }
 
             .swiper-slide-next{
-                // transform: translateX(0px);
+                // transform: translateX(0px)
             }
         }
     }
@@ -1359,3 +1359,14 @@
         transform: translateX(-100%);
     }
 }
+
+.policy {
+    &--content{
+        .text{
+            text-align: center;
+            font-size: 32px;
+            width: 100%;
+        }
+    }
+}
+

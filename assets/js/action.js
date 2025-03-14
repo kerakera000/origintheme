@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
             clickable: true,
         },
         loop: true,
-        // speed: 4000,
-        // autoplay: {
-        //     delay: 1000,
-        // },
+        speed: 4000,
+        autoplay: {
+            delay: 1000,
+        },
         breakpoints: {
             768: {
                 slidesPerView: 3,

@@ -765,6 +765,18 @@ get_template_part('./template/head');
         </div>
     </div>
 
+    <div class="policy">
+        <div class="policy--content">
+            <p class="text">
+                テスト
+            </p>
+        </div>
+    </div>
+
+    <div class="PBusiness">
+
+    </div>
+
 </main>
 
 <?php
