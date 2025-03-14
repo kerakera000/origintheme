@@ -800,7 +800,7 @@ get_template_part('./template/head');
                     <span class="job-title">RP / ロボティックプロセスオートメーションエンジニア</span>
                     <p class="text">
                         RPA(Robotc Process Automation)とは、パソコン上で行っているルーチンワークを自動化す<br>
-                        る技術です。瀬楽のRPAエンジニアは人事領域において,COMPANY(R)とRPAの技術を掛け合わ<br>
+                        る技術です。セラクのRPAエンジニアは人事領域において,COMPANY(R)とRPAの技術を掛け合わ<br>
                         せ、お客様の業務効率化をサポートします。プロジェクトによっては、業務コンサルティングや<br>
                         手順書の作成や運用・保守などに携わります。 <br>
                     </p>
