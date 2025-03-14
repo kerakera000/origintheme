@@ -773,10 +773,6 @@ get_template_part('./template/head');
         </div>
     </div>
 
-    <div class="PBusiness">
-
-    </div>
-
 </main>
 
 <?php
