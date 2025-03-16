@@ -2593,6 +2593,20 @@ button {
     transform: translateX(-100%);
   }
 }
+.introductionbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.introductionbox .job-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
 /* Module Components */
 /* CSS Document */
 .fi,
