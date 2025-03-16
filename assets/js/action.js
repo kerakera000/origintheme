@@ -1,23 +1,5 @@
 (function ($) {
-    // 4秒後に.hero-textへスクロール
-    setTimeout(function() {
-        // hero-text要素の取得
-        var target = $('.hero-text');
-        // 現在のスクロール位置を取得
-        var currentScroll = $(window).scrollTop();
-        // ページ上部からの距離を取得した値を変数（position）に代入する
-        var position = target.offset().top;
-        
-        // 現在のスクロール位置がhero-textより下の場合のみ実行
-        if (currentScroll < position) {
-            // 移動する時の速度（1秒 = 1000）
-            var speed = 2000;
-            // スムーススクロールの開始
-            $("html, body").animate({
-                scrollTop: position
-            }, speed, "swing");
-        }
-    }, 3500);
+    
 })(jQuery)
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -76,21 +58,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 2000);
 
     // 順番にactiveクラスを追加
-    setTimeout(() => {
-        if (title1) title1.classList.add('scroll-active');
-    }, 3200);
+    // setTimeout(() => {
+    //     if (title1) title1.classList.add('scroll-active');
+    // }, 3200);
 
-    setTimeout(() => {
-        if (title2) title2.classList.add('scroll-active');
-    }, 3200);
+    // setTimeout(() => {
+    //     if (title2) title2.classList.add('scroll-active');
+    // }, 3200);
 
-    setTimeout(() => {
-        if (title3) title3.classList.add('scroll-active');
-    }, 3200);
+    // setTimeout(() => {
+    //     if (title3) title3.classList.add('scroll-active');
+    // }, 3200);
 
-    setTimeout(() => {
-        if (subimg) subimg.classList.add('scroll-active');
-    }, 3200);
+    // setTimeout(() => {
+    //     if (subimg) subimg.classList.add('scroll-active');
+    // }, 3200);
 
     // アニメーション要素の取得
     const bganim1 = document.querySelector('.bganim1');
@@ -102,9 +84,28 @@ document.addEventListener('DOMContentLoaded', function() {
         if (bganim2) bganim2.classList.add('active');
     }, 500);
 
-    setTimeout(() => {
-        if (bganim1) bganim1.classList.add('scroll-active');
-        if (bganim2) bganim2.classList.add('scroll-active');
-    }, 3200);
+    // スクロールアニメーション用の関数
+    function handleScroll() {
+        const scrollPosition = window.scrollY;
+        
+        // スクロール位置に基づいてアニメーションを適用
+        if (scrollPosition > 40) { // この値は必要に応じて調整してください
+            bganim1.classList.add('scroll-active');
+            bganim2.classList.add('scroll-active');
+            title1.classList.add('scroll-active');
+            title2.classList.add('scroll-active');
+            title3.classList.add('scroll-active');
+            subimg.classList.add('scroll-active');
+        } else {
+            bganim1.classList.remove('scroll-active');
+            bganim2.classList.remove('scroll-active');
+            title1.classList.remove('scroll-active');
+            title2.classList.remove('scroll-active');
+            title3.classList.remove('scroll-active');
+            subimg.classList.remove('scroll-active');
+        }
+    }
 
+    // スクロールイベントリスナーを追加
+    window.addEventListener('scroll', handleScroll);
 });

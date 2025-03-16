@@ -1225,6 +1225,10 @@ button {
   left: 0;
   z-index: -1;
 }
+.videobg video {
+  -o-object-position: -350px 0px;
+     object-position: -350px 0px;
+}
 
 .hero {
   width: 100%;
@@ -1262,7 +1266,7 @@ button {
 .hero .bganim1.active {
   top: 8%;
   left: -8%;
-  transform: rotateZ(-10deg);
+  transform: rotateZ(-15deg);
   transition: 0.8s;
 }
 @media (max-width: 600px) {
@@ -1275,6 +1279,7 @@ button {
   top: 80%;
   left: -100%;
   transform: rotateZ(-95deg);
+  opacity: 0;
 }
 @media (max-width: 600px) {
   .hero .bganim1.scroll-active {
@@ -1307,7 +1312,7 @@ button {
   .hero .bganim2.active {
     bottom: -15%;
     left: -44%;
-    transform: rotateZ(10deg);
+    transform: rotateZ(11deg);
   }
 }
 .hero .bganim2.scroll-active {
@@ -1315,6 +1320,7 @@ button {
   bottom: -100%;
   left: -300%;
   transform: rotateZ(90deg);
+  opacity: 0;
 }
 .hero .hero-textbox {
   z-index: 3;
@@ -1322,6 +1328,16 @@ button {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+@media (max-width: 1400px) {
+  .hero .hero-textbox {
+    padding: 0 32px;
+  }
+}
+@media (max-width: 425px) {
+  .hero .hero-textbox {
+    padding: 0 20px;
+  }
 }
 .hero .hero-textbox .main-title {
   display: flex;
@@ -1340,9 +1356,14 @@ button {
   transform: translateY(10px);
   opacity: 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero .hero-textbox .main-title .title1 {
     font-size: 80px;
+  }
+}
+@media (max-width: 425px) {
+  .hero .hero-textbox .main-title .title1 {
+    font-size: 60px;
   }
 }
 .hero .hero-textbox .main-title .title1.active {
@@ -1365,9 +1386,14 @@ button {
   transform: translateY(10px);
   opacity: 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero .hero-textbox .main-title .title2 {
     font-size: 80px;
+  }
+}
+@media (max-width: 425px) {
+  .hero .hero-textbox .main-title .title2 {
+    font-size: 60px;
   }
 }
 .hero .hero-textbox .main-title .title2.active {
@@ -1390,9 +1416,14 @@ button {
   transform: translateY(10px);
   opacity: 0;
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .hero .hero-textbox .main-title .title3 {
     font-size: 80px;
+  }
+}
+@media (max-width: 425px) {
+  .hero .hero-textbox .main-title .title3 {
+    font-size: 60px;
   }
 }
 .hero .hero-textbox .main-title .title3.active {

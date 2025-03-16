@@ -6,8 +6,8 @@
 function create_custom_pages_with_optional_parents() {
   $pages = [
     [
-      'title' => 'ベビーシッター',
-      'slug' => 'sitter',
+      'title' => 'COMPANY事業部について',
+      'slug' => 'company',
       'parent_slug' => '',
     ],
     [

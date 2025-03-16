@@ -7,6 +7,9 @@
     top: 136px;
     left: 0;
     z-index: -1;
+    video{
+        object-position: -350px 0px;
+    }
 }
 
 .hero{
@@ -39,17 +42,19 @@
         &.active{
             top: 8%;
             left: -8%;
-            transform: rotateZ(-10deg);
+            transform: rotateZ(-15deg);
             transition: 0.8s;
             @media (max-width: 600px) {
                 left: -30%;
             }
         }
+        // 下矢印はスクロールに合わせて動くようにしたい
         &.scroll-active{
             transition: 1s;
             top: 80%;
             left: -100%;
             transform: rotateZ(-95deg);
+            opacity: 0;
             @media (max-width: 600px) {
                 top: 20%;
             }
@@ -76,14 +81,16 @@
             @media (max-width: 600px) {
                 bottom: -15%;
                 left: -44%;
-                transform: rotateZ(10deg);
+                transform: rotateZ(11deg);
             }
         }
+        // ↓はスクロールに合わせて動くようにしたい
         &.scroll-active{
             transition: 0.9s;
             bottom: -100%;
             left: -300%;
             transform: rotateZ(90deg);
+            opacity: 0;
         }
     }
     .hero-textbox{
@@ -92,6 +99,12 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
+        @media (max-width: 1400px) {
+            padding: 0 32px;
+        }
+        @media (max-width: 425px) {
+            padding: 0 20px;
+        }
         .main-title{
             display: flex;
             align-items: flex-start;
@@ -107,8 +120,11 @@
                 transition: 0.3s;
                 transform: translateY(10px);
                 opacity: 0;
-                @media (max-width: 600px) {
+                @media (max-width: 768px) {
                     font-size: 80px;
+                }
+                @media (max-width: 425px) {
+                    font-size: 60px;
                 }
                 &.active{
                     transition: 0.3s;
@@ -130,8 +146,11 @@
                 line-height: 110%; 
                 transform: translateY(10px);
                 opacity: 0;
-                @media (max-width: 600px) {
+                @media (max-width: 768px) {
                     font-size: 80px;
+                }
+                @media (max-width: 425px) {
+                    font-size: 60px;
                 }
                 &.active{
                     transition: 0.3s;
@@ -153,8 +172,11 @@
                 line-height: 110%; 
                 transform: translateY(10px);
                 opacity: 0;
-                @media (max-width: 600px) {
+                @media (max-width: 768px) {
                     font-size: 80px;
+                }
+                @media (max-width: 425px) {
+                    font-size: 60px;
                 }
                 &.active{
                     transition: 0.3s;
