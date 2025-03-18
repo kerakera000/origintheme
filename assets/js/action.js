@@ -17,11 +17,23 @@ document.addEventListener('DOMContentLoaded', function() {
             delay: 1000,
         },
         breakpoints: {
+            425: {
+                enabled:false,
+                slidesPerView: 1,
+                slideMinWidth: 468,
+            },
             768: {
+                enabled: true,
+                slidesPerView: 2,
+                slideMinWidth: 468,
+            },
+            1000: {
+                enabled: true,
                 slidesPerView: 3,
                 slideMinWidth: 468,
             }
-        }
+        },
+        enabled: false
     });
 
     // NEWS-DECORATION-TEXT要素の監視

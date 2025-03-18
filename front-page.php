@@ -41,9 +41,9 @@ get_template_part('./template/head');
                 セラクCOMPANY事業部には、<br>
                 異なる業界、業種から果敢に挑み、<br>
                 人事支援のプロとなった仲間がたくさんいます。<br>
-                やったことがなくても、とにかくチャレンジしてみる。<br>
-                一人でできないことも、チームの力で乗り越えていく。<br>
-                想像以上のあなたを、ここから始めてみませんか。
+                やったことがなくても、<br class="br-sp">とにかくチャレンジしてみる。<br>
+                一人でできないことも、チームの力で<br class="br-sp">乗り越えていく。<br>
+                想像以上のあなたを、<br class="br-sp">ここから始めてみませんか。
             </p>
         </div>
     </div>
@@ -187,9 +187,9 @@ get_template_part('./template/head');
                     <p class="cont--textbox--text">
                         <span class="text">
                             COMPANY事業部は統合人事システム<br>
-                            「COMPANY(R)︎」の新規導入から運用まで、<br>
-                            幅広くサポート。お客さまの事業成長を後押<br>
-                            しすることで、社会の基盤をつくり、経済の<br>
+                            「COMPANY(R)︎」の新規導入から運用まで、<br class="br-nosp">
+                            幅広くサポート。お客さまの事業成長を後押<br class="br-nosp">
+                            しすることで、社会の基盤をつくり、経済の<br class="br-nosp">
                             一端を支えています。
                         </span>
                     </p>
@@ -736,7 +736,7 @@ get_template_part('./template/head');
 
             <p class="Entry--text">リンク先で募集職種を確認いただけます</p>
 
-            <div class="Entry--cardbox inner-content">
+            <div class="Entry--cardbox">
                 <button class="Entry-card type1">
                     <div class="card-title">
                         <h2 class="title">New Graduate</h2>
@@ -751,8 +751,8 @@ get_template_part('./template/head');
                 </button>
                 <button class="Entry-card type2">
                     <div class="card-title">
-                        <h2 class="title">New Graduate</h2>
-                        <span class="sub-title">新卒採用</span>
+                        <h2 class="title">New Career</h2>
+                        <span class="sub-title">中途採用</span>
                     </div>
                     <div class="card-imgbox">
                         <div class="card-img">
