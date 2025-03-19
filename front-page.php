@@ -766,23 +766,23 @@ get_template_part('./template/head');
     </div>
 
     <div class="PBusiness">
-        <div class="PBusiness__content inner-content1400">
-            <div class="PBusiness__titlebox">
+        <div class="PBusiness--content inner-content1400">
+            <div class="PBusiness--title-box">
                 <span class="sub-title">Job</span>
                 <h2 class="title">職種紹介</h2>
             </div>
-            <div class="typebox">
-                <div class="imgbox">
-                    <h2 class="title">エンジニア職</h2>
-                    <img class="img" src="" alt="">
+    
+            <div class="PBusiness--type-box">
+                <div class="category-box">
+                    <h2 class="category-box--title">エンジニア職</h2>
+                    <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pbuisiness/仮 300-380.JPG" alt="">
                 </div>
 
-                <div class="introductionbox">
-
+                <div class="introduction-box">
                     <div class="job-box">
-                        <span class="job-num">(01)</span>
-                        <div class="job-content">
-                            <span class="job-title">COMPANYエンジニア</span>
+                        <span class="job-box--num">(01)</span>
+                        <div class="job-box--content">
+                            <span class="jobtitle">COMPANYエンジニア</span>
                             <p class="text">
                                 お客様が抱えている課題や要望などを踏まえた要件定義に基づいて、COMPANY(R)のシステム<br>
                                 を構築します。担当する領域は人事・給与・勤怠に別れており、導入支援や機能追加などのプロジェ<br>
@@ -791,70 +791,10 @@ get_template_part('./template/head');
                             </p>
                         </div>
                     </div>
-
-
-                    <div class="job-box">
-                        <span class="job-num">(01)</span>
-                        <div class="job-content">
-                            <span class="job-title">COMPANYエンジニア</span>
-                            <p class="text">
-                                お客様が抱えている課題や要望などを踏まえた要件定義に基づいて、COMPANY(R)のシステム<br>
-                                を構築します。担当する領域は人事・給与・勤怠に別れており、導入支援や機能追加などのプロジェ<br>
-                                クトに参画します。IT業界未経験からスタートしたエンジニアも多く、社員研修や日々の業務など<br>
-                                を通してスキルアップに努めています。<br>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="job-box">
-                        <span class="job-num">(01)</span>
-                        <div class="job-content">
-                            <span class="job-title">COMPANYエンジニア</span>
-                            <p class="text">
-                                お客様が抱えている課題や要望などを踏まえた要件定義に基づいて、COMPANY(R)のシステム<br>
-                                を構築します。担当する領域は人事・給与・勤怠に別れており、導入支援や機能追加などのプロジェ<br>
-                                クトに参画します。IT業界未経験からスタートしたエンジニアも多く、社員研修や日々の業務など<br>
-                                を通してスキルアップに努めています。<br>
-                            </p>
-                        </div>
-                    </div>
+                   <!-- あとでコピーする　-->
                 </div>
             </div>
-            <div class="typebox">
-                <div class="imgbox">
-                    <h2 class="sub-title">ビジネス職</h2>
-                    <img class="img" src="" alt="">
-                </div>
-
-                <div class="introductionbox">
-                    <span class="job-num">(01)</span>
-                    <span class="job-title">管理</span>
-                    <p class="text">
-                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
-                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
-                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
-                        が求められます。 <br>
-                    </p>
-                    <span class="line"></span>
-                    <span class="job-num">(02)</span>
-                    <span class="job-title">採用</span>
-                    <p class="text">
-                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
-                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
-                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
-                        が求められます。 <br>
-                    </p>
-                    <span class="line"></span>
-                    <span class="job-num">(03)</span>
-                    <span class="job-title">教育</span>
-                    <p class="text">
-                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
-                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
-                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
-                        が求められます。 test_2<br>
-                    </p>
-                </div>
-            </div>
+            <!-- あとでコピーする　-->
         </div>
     </div>
 
