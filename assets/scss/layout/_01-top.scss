@@ -1360,6 +1360,29 @@
     }
 }
 
+.PBusiness__titlebox {
+    .sub-title {
+        font-family: "Note Sans JP",serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 200%;
+        letter-spacing: 0.8px;
+        text-align: left;
+        color: #53aaf1;
+    }
+    .title {
+        font-family: "Note Sans JP",serif;
+        font-size: 40px;
+        font-style: bold;
+        font-weight: 400;
+        line-height: 200%;
+        letter-spacing: 0.9px;
+        text-align: left;
+        color: #182346;
+    }
+    
+  }
 
 .introductionbox{
     display: flex;

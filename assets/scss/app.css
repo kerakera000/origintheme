@@ -4042,14 +4042,3 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
   overflow: hidden;
 }/*# sourceMappingURL=app.css.map */
-
-.titlebox .title {
-  font-family: "Note Sans JP",serif;
-  font-size: 40px;
-  font-style: bold;
-  font-weight: 400;
-  line-height: 200%;
-  letter-spacing: 0.9px;
-  text-align: left;
-  color: #182346;
-}

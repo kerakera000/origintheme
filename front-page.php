@@ -767,7 +767,7 @@ get_template_part('./template/head');
 
     <div class="PBusiness">
         <div class="PBusiness__content inner-content1400">
-            <div class="titlebox">
+            <div class="PBusiness__titlebox">
                 <span class="sub-title">Job</span>
                 <h2 class="title">職種紹介</h2>
             </div>
