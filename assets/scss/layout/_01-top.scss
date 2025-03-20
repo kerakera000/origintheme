@@ -1368,10 +1368,17 @@
     flex-direction: column;
     padding: 364px 0 200px;
     background-color: #fff;
+
+    &--content {
+        max-width: 1400px; // コンテンツの最大幅を指定（inner-content1400に対応）
+        width: 100%;
+    }
+
     &--title-box {
+        margin-bottom: 40px;
         .sub-title {
-            font-family: "Note Sans JP",serif;
-            font-size: 12px;
+            font-family: "Noto Sans JP",serif; // Noteではなくnoto Sans JP
+            font-size: 16px;
             font-style: normal;
             font-weight: 300;
             line-height: 200%;
@@ -1380,10 +1387,10 @@
             color: #1b71b7;
         }
         .title {
-            font-family: "Note Sans JP",serif;
-            font-size: 27px;
-            font-style: bold;
-            font-weight: 400;
+            font-family: "Noto Sans JP",serif;
+            font-size: 32px; // フォントサイズを大きく（目標デザインに近づける）
+            font-style: normal; // boldではなくfont-weightで指定
+            font-weight: 700; // 太字にする
             line-height: 200%;
             letter-spacing: 0.9px;
             text-align: left;
@@ -1394,18 +1401,25 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 80px;
+        gap: 40px; // 80pxから40pxに変更
         .category-box{
+            flex: 0 0 300px; // 画像の幅を固定
             &--title {
                 white-space: nowrap;
-                font-family: "Note Sans JP",serif;
-                font-size: 20px;
-                font-style: bold;
-                font-weight: 400;
+                font-family: "Noto Sans JP",serif;
+                font-size: 24px; // フォントサイズを大きく
+                font-style: normal;
+                font-weight: 700; // 太字に
                 line-height: 200%;
                 letter-spacing: 0.9px;
                 text-align: left;
                 color: #182346;
+                margin-bottom: 20px; // タイトルと画像の間隔
+            }
+            &--img {
+                width: 300px; // 目標デザインのサイズに合わせる
+                height: 380px;
+                object-fit: cover; // 画像が枠に収まるように
             }
         }
         .introduction-box{
@@ -1416,32 +1430,41 @@
             gap: 30px;
             .job-box{
                 display: flex;
-                align-items: flex-start;
-                justify-content: flex-start;
-                gap: 30px;
+                flex-direction: column; // 各職種紹介を縦に並べる
+                gap: 20px; // 各職種紹介の間隔
+
+                // 各職種紹介（番号＋内容）を横に並べるため
+                > div {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 20px; // 番号と内容の間隔
+                }
                 &--num {
-                    font-family: "Note Sans JP",serif;
-                    font-size: 8px;
+                    font-family: "Noto Sans JP",serif;
+                    font-size: 18px;
                     font-style: normal;
-                    font-weight: 300;
+                    font-weight: 700;
                     line-height: 200%;
                     letter-spacing: 0.8px;
                     text-align: left;
                     color: #1b71b7;
                 }
                 &--content {
+                    flex: 1;
                     .jobtitle {
-                        font-family: "Note Sans JP",serif;
-                        font-size: 15px;
+                        font-family: "Noto Sans JP",serif;
+                        font-size: 20px;
                         font-style: normal;
-                        font-weight: 300;
+                        font-weight: 700;
                         line-height: 200%;
                         letter-spacing: 0.8px;
                         text-align: left;
                         color: #000000;
+                        display: block; // ブロック要素として改行
+                        margin-bottom: 10px; // タイトルと本文の間隔
                     }
                     .text {
-                        font-family: "Note Sans JP",serif;
+                        font-family: "Noto Sans JP",serif;
                         font-size: 10px;
                         font-style: normal;
                         font-weight: 300;
@@ -1454,4 +1477,11 @@
             }
         }    
     }
+}
+
+// <hr>要素のスタイル
+.hr1 {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0; // 上下の間隔
 }
