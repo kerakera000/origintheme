@@ -791,6 +791,7 @@ get_template_part('./template/head');
                             </p>
                             <hr class="hr1">
                         </div>
+                        
                         <span class="job-box--num">(02)</span>
                         <div class="job-box--content">
                             <span class="jobtitle">IF / インターフェースエンジニア</span>
@@ -802,6 +803,7 @@ get_template_part('./template/head');
                             </p>
                             <hr class="hr1">
                         </div>
+                        
                         <span class="job-box--num">(03)</span>
                         <div class="job-box--content">
                             <span class="jobtitle">RPA / ロボティックプロセスオートメーションエンジニア</span>
@@ -809,15 +811,60 @@ get_template_part('./template/head');
                                 RPA（Robotic Process Automation）とは、パソコン上で行っているルーチンワークを自動化す<br>
                                 る技術です。セラクのRPAエンジニアは人事領域において、COMPANY（R）とRPAの技術を掛け合わ<br>
                                 せ、お客さまの業務効率化をサポートします。プロジェクトによっては、業務コンサルティングや<br>
-                                手順書の作成や運用・保守などに携わります。 <br>
+                                手順書の作成や運用・保守などに携わります。 <br> <!--ルーチンワーク？-->    
+                            </p>
+                            <hr class="hr1">
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="PBusiness--type-box">
+                <div class="category-box">
+                    <h2 class="category-box--title">ビジネス職</h2>
+                    <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pbuisiness/仮 300-380.JPG" alt="">
+                </div>
+
+                <div class="introduction-box">
+                    <div class="job-box">
+                        <span class="job-box--num">(01)</span>
+                        <div class="job-box--content">
+                            <span class="jobtitle">管理</span>
+                            <p class="text">
+                                自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                                採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                                の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                                が求められます。<br>
+                            </p>
+                            <hr class="hr1">
+                        </div>
+                        <span class="job-box--num">(02)</span>
+                        <div class="job-box--content">
+                            <span class="jobtitle">採用</span>
+                            <p class="text">
+                                自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                                採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                                の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                                が求められます。<br>
+                            </p>
+                            <hr class="hr1">
+                        </div>
+                        <span class="job-box--num">(03)</span>
+                        <div class="job-box--content">
+                            <span class="jobtitle">教育</span>
+                            <p class="text">
+                                自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                                採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                                の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                                が求められます。<br>
                             </p>
                             <hr class="hr1">
                         </div>
                     </div>
-                   <!-- あとでコピーする　-->
                 </div>
             </div>
-            <!-- あとでコピーする　-->
+
         </div>
     </div>
 

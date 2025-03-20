@@ -1394,8 +1394,11 @@
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 80px;
+        flex-wrap: nowrap;
+        gap: 40px;
+        width: 100%;
         .category-box{
+            width: 20%;
             &--title {
                 white-space: nowrap;
                 font-family: "Noto Sans JP",serif;
@@ -1408,18 +1411,18 @@
                 color: #182346;
             }
         }
+
         .introduction-box{
-            display: flex;
+            width: 75%;
             align-items: flex-start;
             justify-content: flex-start;
             flex-direction: column;
             gap: 30px;
             .job-box{
-                display: flex;
                 align-items: flex-start;
                 justify-content: flex-start;
                 gap: 30px;
-                &--num {
+                .job-box--num {
                     font-family: "Noto Sans JP",serif;
                     font-size: 8px;
                     font-style: normal;
@@ -1427,8 +1430,9 @@
                     line-height: 200%;
                     letter-spacing: 0.8px;
                     text-align: left;
-                    color: #1b71b7;
-                }
+                    color: #1b71b7;                    
+                } 
+                
                 &--content {
                     .jobtitle {
                         font-family: "Noto Sans JP",serif;
@@ -1450,15 +1454,15 @@
                         text-align: left;
                         color: #000000;
                     }
+                    .hr1 {
+                        border: none;
+                        border-top: 1px dotted #ddd;
+                        margin: 20px 0; // 上下の間隔
+                    }
                 }
             }
-        }    
+        }
     }
 }
 
 // <hr>要素のスタイル
-.hr1 {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 20px 0; // 上下の間隔
-}
