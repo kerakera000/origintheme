@@ -2,7 +2,8 @@
     
 })(jQuery)
 
-document.addEventListener('DOMContentLoaded', function() {
+window.onload = function() {
+
     var swiper = new Swiper(".InterviewSwiper", {
         slidesPerView: 1,
         spaceBetween: 80,
@@ -69,23 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (subimg) subimg.classList.add('active');
     }, 2000);
 
-    // 順番にactiveクラスを追加
-    // setTimeout(() => {
-    //     if (title1) title1.classList.add('scroll-active');
-    // }, 3200);
-
-    // setTimeout(() => {
-    //     if (title2) title2.classList.add('scroll-active');
-    // }, 3200);
-
-    // setTimeout(() => {
-    //     if (title3) title3.classList.add('scroll-active');
-    // }, 3200);
-
-    // setTimeout(() => {
-    //     if (subimg) subimg.classList.add('scroll-active');
-    // }, 3200);
-
     // アニメーション要素の取得
     const bganim1 = document.querySelector('.bganim1');
     const bganim2 = document.querySelector('.bganim2');
@@ -94,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         if (bganim1) bganim1.classList.add('active');
         if (bganim2) bganim2.classList.add('active');
-    }, 500);
+    }, 800);
 
     // スクロールアニメーション用の関数
     function handleScroll() {
@@ -120,4 +104,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // スクロールイベントリスナーを追加
     window.addEventListener('scroll', handleScroll);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ... 既存のコード ...
+
+    // SPheaderButtonクリック時の処理
+    const spHeaderButton = document.getElementById('SPheaderButton');
+    const spHeader = document.getElementById('SPHEADER');
+
+    if (spHeaderButton && spHeader) {
+        spHeaderButton.addEventListener('click', function() {
+            spHeader.classList.toggle('open');
+            spHeaderButton.classList.toggle('open'); // SPheaderButtonにもopenクラスを追加
+        });
+    }
 });

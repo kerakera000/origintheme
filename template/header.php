@@ -10,10 +10,10 @@ global $site_url;
         </a>
         <a href="" class="link">
             <span class="text">
-                COMPANY 事業部 採用サイト
+                COMPANY事業部 採用サイト
             </span>
             <span class="hover">
-                COMPANY 事業部 採用サイト
+                COMPANY事業部 採用サイト
             </span>
         </a>
     </div>
@@ -50,7 +50,7 @@ global $site_url;
             Company
             </span>
         </a>
-        <a href="/#INFORMATION" class="common-button header-button">
+        <div class="common-button header-button">
             <div class="text">
                 <p class="normal">Entry</p>
                 <p class="hover">Entry</p>
@@ -61,12 +61,21 @@ global $site_url;
                     <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/header/headerico.svg" alt="">
                 </div>
             </span>
-        </a>
+            <div class="entry-linkbox">
+                <a href="/entry" class="entry-linkbox-link">
+                    <p class="normal">Entry</p>
+                    <p class="hover">Entry</p>
+                </a>
+                <a href="/entry" class="entry-linkbox-link">
+                    <p class="normal">Entry</p>
+                    <p class="hover">Entry</p>
+                </a>
+            </div>
+        </div>
     </div>
 </header>
 
 <header id="SPheaderButton" class="SP-header">
     <span class="line1"></span>
     <span class="line2"></span>
-    <span class="line3"></span>
 </header>
