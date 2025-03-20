@@ -766,7 +766,7 @@ get_template_part('./template/head');
     </div>
 
     <div class="PBusiness">
-        <div class="PBusiness--content inner-content1400">
+        <div class="PBusiness--content inner-content">
             <div class="PBusiness--title-box">
                 <span class="sub-title">Job</span>
                 <h2 class="title">職種紹介</h2>
@@ -780,42 +780,56 @@ get_template_part('./template/head');
 
                 <div class="introduction-box">
                     <div class="job-box">
-                        <span class="job-box--num">(01)</span>
                         <div class="job-box--content">
-                            <span class="jobtitle">COMPANYエンジニア</span>
-                            <p class="text">
-                                お客様が抱えている課題や要望などを踏まえた要件定義に基づいて、COMPANY(R)のシステム<br>
-                                を構築します。担当する領域は人事・給与・勤怠に別れており、導入支援や機能追加などのプロジェ<br>
-                                クトに参画します。IT業界未経験からスタートしたエンジニアも多く、社員研修や日々の業務など<br>
-                                を通してスキルアップに努めています。<br>
-                            </p>
+                            <div class="num-box">
+                                <span class="job-box-num">(01)</span>
+                                <div class="textbox">
+                                    <span class="textbox--jobtitle">管理</span>
+                                    <p class="textbox--text">
+                                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                                        が求められます。<br>
+                                    </p>
+                                </div>
+                            </div>
+
                             <hr class="hr1">
                         </div>
-                        
-                        <span class="job-box--num">(02)</span>
+
                         <div class="job-box--content">
-                            <span class="jobtitle">IF / インターフェースエンジニア</span>
-                            <p class="text">
-                                COMPANY（R）の新規導入・運用保守で必要な外部連携業務を担当します。既存システムから<br>
-                                COMPANY（R）へのデータ投入や、他システムへのデータ連携など、要件定義から実際の連携までを<br>
-                                行います。また、お客さまと直接やりとりするポジションでもあるので、コミュニケーション力や<br>
-                                提案力などを活かす場面が多くあります。<br>
-                            </p>
+                            <div class="num-box">
+                                <span class="job-box-num">(01)</span>
+                                <div class="textbox">
+                                    <span class="textbox--jobtitle">管理</span>
+                                    <p class="textbox--text">
+                                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                                        が求められます。<br>
+                                    </p>
+                                </div>
+                            </div>
+
                             <hr class="hr1">
                         </div>
-                        
-                        <span class="job-box--num">(03)</span>
+
                         <div class="job-box--content">
-                            <span class="jobtitle">RPA / ロボティックプロセスオートメーションエンジニア</span>
-                            <p class="text">
-                                RPA（Robotic Process Automation）とは、パソコン上で行っているルーチンワークを自動化す<br>
-                                る技術です。セラクのRPAエンジニアは人事領域において、COMPANY（R）とRPAの技術を掛け合わ<br>
-                                せ、お客さまの業務効率化をサポートします。プロジェクトによっては、業務コンサルティングや<br>
-                                手順書の作成や運用・保守などに携わります。 <br> <!--ルーチンワーク？-->    
-                            </p>
+                            <div class="num-box">
+                                <span class="job-box-num">(01)</span>
+                                <div class="textbox">
+                                    <span class="textbox--jobtitle">管理</span>
+                                    <p class="textbox--text">
+                                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                                        が求められます。<br>
+                                    </p>
+                                </div>
+                            </div>
+
                             <hr class="hr1">
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -828,37 +842,52 @@ get_template_part('./template/head');
 
                 <div class="introduction-box">
                     <div class="job-box">
-                        <span class="job-box--num">(01)</span>
                         <div class="job-box--content">
-                            <span class="jobtitle">管理</span>
-                            <p class="text">
-                                自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
-                                採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
-                                の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
-                                が求められます。<br>
-                            </p>
+                            <div class="num-box">
+                                <span class="job-box-num">(01)</span>
+                                <div class="textbox">
+                                    <span class="textbox--jobtitle">管理</span>
+                                    <p class="textbox--text">
+                                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                                        が求められます。<br>
+                                    </p>
+                                </div>
+                            </div>
+
                             <hr class="hr1">
                         </div>
-                        <span class="job-box--num">(02)</span>
                         <div class="job-box--content">
-                            <span class="jobtitle">採用</span>
-                            <p class="text">
-                                自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
-                                採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
-                                の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
-                                が求められます。<br>
-                            </p>
+                            <div class="num-box">
+                                <span class="job-box-num">(01)</span>
+                                <div class="textbox">
+                                    <span class="textbox--jobtitle">管理</span>
+                                    <p class="textbox--text">
+                                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                                        が求められます。<br>
+                                    </p>
+                                </div>
+                            </div>
+
                             <hr class="hr1">
                         </div>
-                        <span class="job-box--num">(03)</span>
                         <div class="job-box--content">
-                            <span class="jobtitle">教育</span>
-                            <p class="text">
-                                自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
-                                採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
-                                の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
-                                が求められます。<br>
-                            </p>
+                            <div class="num-box">
+                                <span class="job-box-num">(01)</span>
+                                <div class="textbox">
+                                    <span class="textbox--jobtitle">管理</span>
+                                    <p class="textbox--text">
+                                        自社の目標達成に向けた組織運営に携わります。管轄する領域は幅広く、一般課員の監督や人材の<br>
+                                        採用・評価、予算管理など、組織の中核をなす人材です。技術的なスキルはもちろんのこと、物ごと<br>
+                                        の本質を見抜くコンセプチュアルスキル、他者と良好な関係を築くためのヒューマンスキルなど<br>
+                                        が求められます。<br>
+                                    </p>
+                                </div>
+                            </div>
+
                             <hr class="hr1">
                         </div>
                     </div>
