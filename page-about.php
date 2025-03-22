@@ -110,7 +110,54 @@ get_template_part('./template/head');
     </div>
 
     <div class="PABusiness">
+        <div class="inner-content">
+            <div class="common-titlebox center">
+                <h2 class="title">Business</h2>
+                <span class="sub-title">事業内容</span>
+            </div>
 
+            <div class="PABusiness--explain">
+                <p class="explain--text">
+                    当事業部では、統合人事システム「COMPANY(R)」における、新規導入・運用/保守・スポット開発対応の支援をおこなっております。
+                </p>
+            </div>
+
+            <div class="PABusiness--cardbox">
+                <div class="PABusiness--cardbox--card">
+                    <h3 class="card--title">Business(01)</h3>
+                    <div class="card--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
+                    </div>
+                    <h4 class="card--subtitle">新規導入</h4>
+                    <p class="card--text">
+                        人事・給与・勤怠・WEB領域における<br>
+                        新規導入(一部・全て可能)<br>
+                    </p>
+                </div>
+                <div class="PABusiness--cardbox--card">
+                    <h3 class="card--title">Business(02)</h3>
+                    <div class="card--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
+                    </div>
+                    <h4 class="card--subtitle">運用/保守</h4>
+                    <p class="card--text">
+                        人事・給与・勤怠・WEB領域における<br>
+                        新規導入(一部・全て可能)<br>
+                    </p>
+                </div>
+                <div class="PABusiness--cardbox--card">
+                    <h3 class="card--title">Business(03)</h3>
+                    <div class="card--img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
+                    </div>
+                    <h4 class="card--subtitle">スポット開発</h4>
+                    <p class="card--text">
+                        人事・給与・勤怠・WEB領域における<br>
+                        新規導入(一部・全て可能)<br>
+                    </p>
+                </div>
+            </div>
+        </div>      
     </div>
 
     <div class="PAnumbers">
