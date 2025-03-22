@@ -123,7 +123,7 @@ get_template_part('./template/head');
             </div>
 
             <div class="PABusiness--cardbox">
-                <div class="PABusiness--cardbox--card">
+                <div class="card">
                     <span class="card--number">(Business 01)</span>
                     <div class="card--img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">

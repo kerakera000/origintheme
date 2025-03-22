@@ -1,2 +1,71 @@
 @use "../init/index" as *;
 
+.PABusiness {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 364px 0 200px;
+    background-color: #fff;
+    &--cardbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+    }
+    &--cardbox {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 280px;
+        text-align: center;
+    }
+}
+
+
+
+
+.card-number {
+    font-size: 14px;
+    color: #64748b;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card--img img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.card--subtitle {
+    font-size: 18px;
+    color: #1e293b;
+}
+
+.card--text {
+    font-size: 14px;
+    color: #475569;
+}
+
+.card--partition-line {
+    width: 1px;
+    height: 100px;
+    background-color: #d1d5db;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .PABusiness--cardbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card--partition-line {
+        width: 80%;
+        height: 1px;
+    }
+}
