@@ -125,7 +125,7 @@ get_template_part('./template/head');
             <div class="PABusiness--cardbox">
                 <div class="card">
                     <span class="card--number">(Business 01)</span>
-                    <div class="card--img">
+                    <div class="card--logo-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
                     </div>
                     <h4 class="card--subtitle">新規導入</h4>
@@ -139,7 +139,7 @@ get_template_part('./template/head');
                 
                 <div class="card">
                     <span class="card--number">(Business 02)</span>
-                    <div class="card--img">
+                    <div class="card--logo-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
                     </div>
                     <h4 class="card--subtitle">運用/保守</h4>
@@ -153,7 +153,7 @@ get_template_part('./template/head');
 
                 <div class="card">
                     <span class="card--number">(Business 03)</span>
-                    <div class="card--img">
+                    <div class="card--logo-img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
                     </div>
                     <h4 class="card--subtitle">スポット開発</h4>

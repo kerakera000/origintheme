@@ -2825,27 +2825,32 @@ button {
   border-radius: 8px;
 }
 .PABusiness--cardbox .card--number {
+  text-align: center;
   font-size: 14px;
-  color: #64748b;
+  color: #235aa8;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-.PABusiness--cardbox .card--img img {
-  width: 50px;
-  margin-bottom: 10px;
+.PABusiness--cardbox .card--logo-img {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 .PABusiness--cardbox .card--subtitle {
+  text-align: center;
   font-size: 18px;
   color: #1e293b;
 }
 .PABusiness--cardbox .card--text {
+  text-align: center;
   font-size: 14px;
   color: #475569;
 }
 .PABusiness--cardbox .partition-line {
   width: -moz-fit-content;
   width: fit-content;
-  border: 1px dotted black;
+  border: 0.5px dotted rgb(208, 206, 206);
 }
 
 @media (max-width: 768px) {
