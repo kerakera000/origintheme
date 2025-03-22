@@ -29,6 +29,7 @@
   }
 }
 .common-titlebox .sub-title {
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
   color: var(--color-primary, #182346);
   font-weight: 700;
@@ -53,7 +54,7 @@
 }
 
 .commontext {
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
 }
@@ -255,7 +256,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, 15%);
   width: 100%;
   display: flex;
   align-items: center;
@@ -273,7 +274,7 @@
   overflow: hidden;
 }
 .common-button.header-button .entry-linkbox .entry-linkbox-link .normal {
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -288,7 +289,7 @@
   transition: all 0.3s ease;
 }
 .common-button.header-button .entry-linkbox .entry-linkbox-link .hover {
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -321,6 +322,64 @@
   opacity: 1;
   transition: all 0.3s ease;
   pointer-events: fill;
+}
+.common-button.scroll-down {
+  width: 130px;
+  height: 40px;
+  position: relative;
+  margin: auto 80px 48px 0;
+  z-index: 10;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: translateY(10px);
+}
+@media screen and (max-width: 600px) {
+  .common-button.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .common-button.scroll-down {
+    bottom: 15px;
+  }
+}
+.common-button.scroll-down.active {
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: translateY(0px);
+}
+.common-button.scroll-down.scroll-active {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.common-button.scroll-down .text .normal {
+  color: var(--color-primary, #182346);
+}
+@media screen and (max-width: 600px) {
+  .common-button.scroll-down .text .normal {
+    font-size: 12px;
+  }
+}
+.common-button.scroll-down .text .hover {
+  color: var(--color-primary, #182346);
+}
+@media screen and (max-width: 600px) {
+  .common-button.scroll-down .text .hover {
+    font-size: 12px;
+  }
+}
+.common-button.scroll-down .arrow-right {
+  width: 10px;
+  height: 10px;
+  right: 10px;
+}
+@media screen and (max-width: 600px) {
+  .common-button.scroll-down .arrow-right {
+    right: 20px;
+  }
 }
 
 .max-layoutimg {
@@ -415,6 +474,7 @@ a {
 html {
   background: #fff;
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -795,7 +855,7 @@ button {
   max-width: 133px;
 }
 .footer .footer-content .icon-logo .sub-text {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -879,7 +939,7 @@ button {
 }
 @media (max-width: 1024px) {
   .header {
-    height: 100px;
+    height: 60px;
   }
 }
 .header--logo {
@@ -887,6 +947,14 @@ button {
   display: flex;
   align-items: center;
   gap: 6%;
+}
+@media (max-width: 425px) {
+  .header--logo {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    z-index: 1000;
+  }
 }
 .header--logo img {
   min-width: 130px;
@@ -955,15 +1023,21 @@ button {
 @media (max-width: 1024px) {
   .header--linkbox {
     flex-direction: column;
+    align-items: flex-start;
     position: fixed;
     z-index: 999;
     right: -100%;
     top: 0;
     height: 100%;
     width: 300px;
-    padding: 40px 40px 3px 30px;
+    padding: 100px 40px 3px 30px;
     transition: 0.3s;
-    background: #D9D9D9;
+    background: var(--color-background_1, #FFF);
+  }
+}
+@media (max-width: 425px) {
+  .header--linkbox {
+    width: 100%;
   }
 }
 @media (max-width: 1024px) {
@@ -1032,7 +1106,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    top: 45px;
+    top: 25px;
     right: 25px;
     z-index: 999;
   }
@@ -1048,7 +1122,7 @@ button {
     z-index: 1000;
   }
   .SP-header.open .line1 {
-    rotate: 48deg;
+    rotate: 45deg;
     transition: 0.3s;
     transform: translate(6px, 5px);
     background-color: #666666;
@@ -1059,9 +1133,9 @@ button {
     background-color: #666666;
   }
   .SP-header.open .line3 {
-    rotate: -48deg;
+    rotate: -45deg;
     transition: 0.3s;
-    transform: translate(5px, -4px);
+    transform: translate(0px, 1px);
     background-color: #666666;
   }
 }
@@ -1329,12 +1403,24 @@ button {
   opacity: 0;
 }
 .hero .hero-textbox .sub-text {
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   margin-top: 44px;
   transition: 0.3s;
+}
+@media screen and (max-width: 600px) {
+  .hero .hero-textbox .sub-text {
+    margin-top: 34px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero .hero-textbox .sub-text {
+    margin-top: 24px;
+    width: 200px;
+  }
 }
 .hero .hero-textbox .sub-text .subimg {
   transform: translateY(10px);
@@ -1373,7 +1459,7 @@ button {
   }
 }
 .hero-text .textbox .text {
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -1560,7 +1646,7 @@ button {
   }
 }
 .news--content--col2 .news-itembox .news-item .textbox .text .title {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1596,7 +1682,7 @@ button {
   gap: 10px;
 }
 .news--content--col2 .news-itembox .news-item .textbox .button-box .more-button .text {
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1801,7 +1887,7 @@ button {
   }
 }
 .about--content .cont--textbox--text .text {
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1838,7 +1924,7 @@ button {
   position: relative;
 }
 .Interview--text {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -1936,7 +2022,7 @@ button {
   position: absolute;
   bottom: 24px;
   left: 24px;
-  font-family: "Noto Sans", serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -1975,7 +2061,7 @@ button {
   gap: 10px;
 }
 .Interview .swiper .swiper-wrapper .swiper-slide .textcont .name .job {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -2292,7 +2378,7 @@ button {
   }
 }
 .Entry--text {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2361,7 +2447,7 @@ button {
   }
 }
 .Entry--cardbox .Entry-card .card-title .sub-title {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2438,7 +2524,7 @@ button {
   }
 }
 .post-content__title {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 140%;
@@ -2452,13 +2538,13 @@ button {
   color: #999999;
 }
 .post-content p {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 180%;
 }
 .post-content h2 {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 26px;
   font-weight: 700;
   padding: 40px 0 31px;
@@ -2467,25 +2553,25 @@ button {
   margin-bottom: 26px;
 }
 .post-content h3 {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 22px;
   font-weight: 700;
   padding: 31px 0;
 }
 .post-content h4 {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 20px;
   font-weight: 700;
   padding: 31px 0;
 }
 .post-content h5 {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding: 31px 0;
 }
 .post-content h6 {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 700;
   padding: 31px 0;
@@ -2502,7 +2588,7 @@ button {
   border-radius: 6px;
 }
 .post-content ul li {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #666666;
@@ -2519,7 +2605,7 @@ button {
   border-radius: 6px;
 }
 .post-content ol li {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #666666;
@@ -2553,12 +2639,12 @@ button {
   border: 1px solid #CCCCCC;
 }
 .post-content .wp-block-table .wp-element-caption {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 12px;
   font-weight: 700;
 }
 .post-content .wp-block-quote p {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #666666;
@@ -2613,7 +2699,7 @@ button {
   color: #FFF;
   padding: 16px 10px 16px 0;
   border-radius: 34px;
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
@@ -2645,7 +2731,7 @@ button {
   }
 }
 .policy-content p {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 180%;
@@ -2655,13 +2741,13 @@ button {
   text-align: right;
 }
 .policy-content strong {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 180%;
 }
 .policy-content__title {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
@@ -2672,7 +2758,7 @@ button {
   margin-bottom: 70px;
 }
 .policy-content h2 {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 23px;
   font-weight: 700;
   padding: 0px 0 21px;
@@ -2680,25 +2766,25 @@ button {
   margin-bottom: 16px;
 }
 .policy-content h3 {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 22px;
   font-weight: 700;
   padding: 31px 0;
 }
 .policy-content h4 {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 20px;
   font-weight: 700;
   padding: 31px 0;
 }
 .policy-content h5 {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding: 31px 0;
 }
 .policy-content h6 {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 700;
   padding: 31px 0;
@@ -2714,7 +2800,7 @@ button {
   border-radius: 6px;
 }
 .policy-content ul li {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000000;
@@ -2732,7 +2818,7 @@ button {
   border-radius: 6px;
 }
 .policy-content ol li {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #666666;
@@ -2766,12 +2852,12 @@ button {
   border: 1px solid #CCCCCC;
 }
 .policy-content .wp-block-table .wp-element-caption {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 12px;
   font-weight: 700;
 }
 .policy-content .wp-block-quote p {
-  font-family: "Noto Sans JP", serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #666666;

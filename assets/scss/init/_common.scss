@@ -25,6 +25,7 @@
         }
     }
     .sub-title{
+        @include fosanjp;
         font-size: 18px;
         color: var(--color-primary, #182346);
         font-weight: 700;
@@ -248,7 +249,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, 25%);
+            transform: translate(-50%, 15%);
             width: 100%;
             display: flex;
             align-items: center;
@@ -315,6 +316,56 @@
                 opacity: 1;
                 transition: all 0.3s ease;
                 pointer-events: fill;
+            }
+        }
+    }
+    &.scroll-down{
+        width: 130px;
+        height: 40px;
+        position: relative;
+        margin: auto 80px 48px 0;
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.3s ease;
+        transform: translateY(10px);
+        @media screen and (max-width:600px) {
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+            margin: 0;
+        }
+        @media screen and (max-width:375px) {
+            bottom: 15px;
+        }
+        &.active{
+            opacity: 1;
+            transition: all 0.3s ease;
+            transform: translateY(0px);
+        }
+        &.scroll-active{
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        .text{
+            .normal{
+                color: var(--color-primary, #182346);
+                @media screen and (max-width:600px) {
+                    font-size: 12px;
+                }
+            }
+            .hover{
+                color: var(--color-primary, #182346);
+                @media screen and (max-width:600px) {
+                    font-size: 12px;
+                }
+            }
+        }
+        .arrow-right{
+            width: 10px;
+            height: 10px;
+            right: 10px;
+            @media screen and (max-width:600px) {
+                right: 20px;
             }
         }
     }

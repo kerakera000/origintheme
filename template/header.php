@@ -26,7 +26,7 @@ global $site_url;
             About Us
             </span>
         </a>
-        <a class="link" href="/#HOWTOUSE">
+        <a class="link" href="/#CAREER">
             <span class="text">
             Career Step
             </span>
@@ -34,7 +34,7 @@ global $site_url;
             Career Step
             </span>
         </a>
-        <a class="link" href="/#SHOPINFO">
+        <a class="link" href="/#INTERVIEW">
             <span class="text">
             Interview
             </span>
@@ -42,7 +42,7 @@ global $site_url;
             Interview
             </span>
         </a>
-        <a class="link" href="/#RESERVE">
+        <a class="link" href="/company">
             <span class="text">
             Company
             </span>
@@ -63,12 +63,16 @@ global $site_url;
             </span>
             <div class="entry-linkbox">
                 <a href="/entry" class="entry-linkbox-link">
-                    <p class="normal">Entry</p>
-                    <p class="hover">Entry</p>
+                    <p class="normal">新卒採用</p>
+                    <p class="hover">新卒採用</p>
                 </a>
                 <a href="/entry" class="entry-linkbox-link">
-                    <p class="normal">Entry</p>
-                    <p class="hover">Entry</p>
+                    <p class="normal">中途採用</p>
+                    <p class="hover">中途採用</p>
+                </a>
+                <a href="/entry" class="entry-linkbox-link">
+                    <p class="normal">カジュアル面談</p>
+                    <p class="hover">カジュアル面談</p>
                 </a>
             </div>
         </div>
@@ -77,5 +81,5 @@ global $site_url;
 
 <header id="SPheaderButton" class="SP-header">
     <span class="line1"></span>
-    <span class="line2"></span>
+    <span class="line3"></span>
 </header>

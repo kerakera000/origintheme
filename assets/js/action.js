@@ -52,6 +52,7 @@ window.onload = function() {
     const title2 = document.querySelector('.title2');
     const title3 = document.querySelector('.title3');
     const subimg = document.querySelector('.subimg');
+    const scrollDown = document.getElementById('ScrollDown');
 
     // 順番にactiveクラスを追加
     setTimeout(() => {
@@ -69,6 +70,10 @@ window.onload = function() {
     setTimeout(() => {
         if (subimg) subimg.classList.add('active');
     }, 2000);
+
+    setTimeout(() => {
+        if (scrollDown) scrollDown.classList.add('active');
+    }, 2200);
 
     // アニメーション要素の取得
     const bganim1 = document.querySelector('.bganim1');
@@ -92,6 +97,7 @@ window.onload = function() {
             title2.classList.add('scroll-active');
             title3.classList.add('scroll-active');
             subimg.classList.add('scroll-active');
+            scrollDown.classList.add('scroll-active');
         } else {
             bganim1.classList.remove('scroll-active');
             bganim2.classList.remove('scroll-active');
@@ -99,6 +105,7 @@ window.onload = function() {
             title2.classList.remove('scroll-active');
             title3.classList.remove('scroll-active');
             subimg.classList.remove('scroll-active');
+            scrollDown.classList.remove('scroll-active');
         }
     }
 

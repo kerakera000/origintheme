@@ -27,9 +27,21 @@ get_template_part('./template/head');
             </h3>
         </div>
         <div class="bganim2"></div>
+        <a href="#HEROTEXT" id="ScrollDown" class="common-button scroll-down nobg">
+            <div class="text">
+                <p class="normal">Scroll</p>
+                <p class="hover">Scroll</p>
+            </div>
+            <span class="arrow-right">
+                <div class="arrow-box">
+                    <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/scroll/scroll.svg" alt="">
+                    <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/scroll/scroll.svg" alt="">
+                </div>
+            </span>
+        </a>
     </div>
 
-    <div class="hero-text">
+    <div id="HEROTEXT" class="hero-text">
         <div class="textbox">
             <p class="text">
                 次々と真新しいデジタル技術が登場し、<br>
@@ -176,7 +188,7 @@ get_template_part('./template/head');
     <div class="about">
         <div class="skeltonbg"></div>
         <div class="whitebg"></div>
-        <div class="inner-content about--content">
+        <div id="ABOUT" class="inner-content about--content">
             <div class="cont">
                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/aboutimg.png" alt="">
                 <div class="cont--textbox">
@@ -208,7 +220,7 @@ get_template_part('./template/head');
                 </div>
             </div>
 
-            <div class="cont">
+            <div id="CAREER" class="cont">
                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/careerimg.png" alt="">
                 <div class="cont--textbox">
                     <div class="common-titlebox">
@@ -240,7 +252,7 @@ get_template_part('./template/head');
         </div>
     </div>
 
-    <div class="Interview">
+    <div id="INTERVIEW" class="Interview">
         <div class="common-titlebox center">
             <h2 class="title">Interview</h2>
             <span class="sub-title">社員インタビュー</span>

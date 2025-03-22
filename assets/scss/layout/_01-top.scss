@@ -225,6 +225,14 @@
             font-weight: 500;
             margin-top: 44px;
             transition: 0.3s;
+            @media screen and (max-width:600px) {
+                margin-top: 34px;
+                width: 300px;
+            }
+            @media screen and (max-width:375px) {
+                margin-top: 24px;
+                width: 200px;
+            }
             .subimg{
                 transform: translateY(10px);
                 opacity: 0;
