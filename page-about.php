@@ -124,7 +124,7 @@ get_template_part('./template/head');
 
             <div class="PABusiness--cardbox">
                 <div class="PABusiness--cardbox--card">
-                    <h3 class="card--title">Business(01)</h3>
+                    <span class="card--number">(Business 01)</span>
                     <div class="card--img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
                     </div>
@@ -134,26 +134,32 @@ get_template_part('./template/head');
                         新規導入(一部・全て可能)<br>
                     </p>
                 </div>
+
+                <hr class="card--partition-line">
+                
                 <div class="PABusiness--cardbox--card">
-                    <h3 class="card--title">Business(02)</h3>
+                    <span class="card--number">(Business 02)</span>
                     <div class="card--img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
                     </div>
                     <h4 class="card--subtitle">運用/保守</h4>
                     <p class="card--text">
-                        人事・給与・勤怠・WEB領域における<br>
-                        新規導入(一部・全て可能)<br>
+                        COMPANY(R)導入済みのお客さまの<br>
+                        保守対応・人事業務の一部巻き取り<br>
                     </p>
                 </div>
+
+                <hr class="card--partition-line">
+
                 <div class="PABusiness--cardbox--card">
-                    <h3 class="card--title">Business(03)</h3>
+                    <span class="card--number">(Business 03)</span>
                     <div class="card--img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
                     </div>
                     <h4 class="card--subtitle">スポット開発</h4>
                     <p class="card--text">
-                        人事・給与・勤怠・WEB領域における<br>
-                        新規導入(一部・全て可能)<br>
+                        COMPANY(R)導入済みのお客さまの<br>
+                        ご要望に合わせた追加開発<br>
                     </p>
                 </div>
             </div>
