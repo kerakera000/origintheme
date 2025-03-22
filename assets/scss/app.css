@@ -2843,9 +2843,9 @@ button {
   color: #475569;
 }
 .PABusiness--cardbox .partition-line {
-  width: -moz-fit-content height 200px;
-  width: fit-content height 200px;
-  border: 3px dotted black;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px dotted black;
 }
 
 @media (max-width: 768px) {
