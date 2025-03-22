@@ -135,7 +135,7 @@ get_template_part('./template/head');
                     </p>
                 </div>
 
-                <hr class="partition-line">
+                <span class="partition-line"></span>
                 
                 <div class="card">
                     <span class="card--number">(Business 02)</span>
@@ -149,7 +149,7 @@ get_template_part('./template/head');
                     </p>
                 </div>
 
-                <hr class="partition-line">
+                <span class="partition-line"></span>
 
                 <div class="card">
                     <span class="card--number">(Business 03)</span>

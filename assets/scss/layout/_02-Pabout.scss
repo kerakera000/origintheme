@@ -38,17 +38,18 @@
             &--subtitle {
                 text-align: center;
                 font-size: 18px;
-                color: #1e293b;
+                color: #000000;
+                margin-bottom: 15px;
             }
             &--text {
                 text-align: center;
                 font-size: 14px;
-                color: #475569;
+                color: #000000;
             }
         }   
         .partition-line {
             width: fit-content;
-            border: 0.5px dotted rgb(208, 206, 206);
+            border-left: 1px dashed #bcbcbc;
         }
     }
 }
