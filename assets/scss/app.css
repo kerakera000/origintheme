@@ -2800,6 +2800,68 @@ button {
     transform: translateX(-100%);
   }
 }
+.PABusiness {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 364px 0 200px;
+  background-color: #fff;
+}
+.PABusiness--cardbox {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  flex-wrap: nowrap;
+  padding: 40px 20px;
+}
+.PABusiness--cardbox .card {
+  flex: 1 1 33.3333%;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 8px;
+}
+.PABusiness--cardbox .card--number {
+  font-size: 14px;
+  color: #64748b;
+  display: block;
+  margin-bottom: 10px;
+}
+.PABusiness--cardbox .card--img img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.PABusiness--cardbox .card--subtitle {
+  font-size: 18px;
+  color: #1e293b;
+}
+.PABusiness--cardbox .card--text {
+  font-size: 14px;
+  color: #475569;
+}
+.PABusiness--cardbox .partition-line {
+  width: -moz-fit-content height 200px;
+  width: fit-content height 200px;
+  border: 3px dotted black;
+}
+
+@media (max-width: 768px) {
+  .PABusiness--cardbox {
+    flex-direction: column;
+  }
+  .PABusiness--cardbox .partition-line {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    align-self: auto;
+  }
+  .PABusiness--cardbox .card {
+    width: 100%;
+  }
+}
 /* Module Components */
 /* CSS Document */
 .fi,

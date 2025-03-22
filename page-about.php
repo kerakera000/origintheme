@@ -135,9 +135,9 @@ get_template_part('./template/head');
                     </p>
                 </div>
 
-                <hr class="card--partition-line">
+                <hr class="partition-line">
                 
-                <div class="PABusiness--cardbox--card">
+                <div class="card">
                     <span class="card--number">(Business 02)</span>
                     <div class="card--img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
@@ -149,9 +149,9 @@ get_template_part('./template/head');
                     </p>
                 </div>
 
-                <hr class="card--partition-line">
+                <hr class="partition-line">
 
-                <div class="PABusiness--cardbox--card">
+                <div class="card">
                     <span class="card--number">(Business 03)</span>
                     <div class="card--img">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/square-logo/150x150px-仮.png" alt="150x150px-仮.png">
