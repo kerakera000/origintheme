@@ -40,6 +40,33 @@
             text-align: center;
         }
     }
+    &.left{
+        align-items: flex-start;
+        .title{
+            @include fosanjp;
+            text-align: left;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%; /* 120px */
+            letter-spacing: 4px;
+        }
+        .sub-title{
+            @include poppins;
+            color: var(--color-secondary, #0050B5);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%; /* 16px */
+            letter-spacing: 0.8px;
+            margin-bottom: 28px;
+        }
+    }
+    &.flex{
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
     &.white{
         .title{
             color: $white;

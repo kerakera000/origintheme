@@ -36,6 +36,27 @@ window.onload = function() {
         },
         enabled: false
     });
+    const missionSwiper = new Swiper('.PAmissionSwiper', {
+        slidesPerView: 2,
+        centeredSlides: false,
+        initialSlide: 2,  // 3枚目をアクティブにする
+        spaceBetween: 80,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        breakpoints: {
+            425: {
+                slidesPerView: 2,
+                slideMinWidth: 468,
+            },
+            768: {
+                slidesPerView: 3.4,
+                slideMinWidth: 468,
+            },
+        },
+    });
 
     // NEWS-DECORATION-TEXT要素の監視
     const newsDecorationText = document.getElementById('NEWS-DECORATION-TEXT');
@@ -126,4 +147,24 @@ document.addEventListener('DOMContentLoaded', function() {
             spHeaderButton.classList.toggle('open'); // SPheaderButtonにもopenクラスを追加
         });
     }
+
+    // テーブルセルのサイズ調整関数
+    function adjustTableCells() {
+        const table = document.getElementById('PATable');
+        if (!table) return;
+
+        const tableWidth = table.offsetWidth;
+        const cells = table.getElementsByClassName('table-cell');
+        const cellWidth = Math.floor(tableWidth / 3); // 3等分
+
+        Array.from(cells).forEach(cell => {
+            cell.style.width = `${cellWidth}px`;
+            cell.style.height = `${cellWidth}px`;
+        });
+    }
+
+    // 初期化時とリサイズ時に実行
+    adjustTableCells();
+    window.addEventListener('resize', adjustTableCells);
+
 });
