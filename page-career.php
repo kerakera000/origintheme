@@ -72,13 +72,13 @@ get_template_part('./template/head');
         </p>
     </div>
 
-    <div class="PBusiness">
-        <div class="PBusiness--content inner-content">
+    <div class="PCbusiness">
+        <div class="PCbusiness--content inner-content">
             <div class="common-titlebox left">
                 <span class="sub-title">Job</span>
                 <h2 class="title">職種紹介</h2>
             </div>
-            <div class="PBusiness--type-box">
+            <div class="PCbusiness--type-box">
                 <div class="category-box">
                     <h2 class="category-box--title">エンジニア職</h2>
                     <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pbusiness/仮 300-380.JPG" alt="">
@@ -133,7 +133,7 @@ get_template_part('./template/head');
                     </div>
                 </div>
             </div>
-            <div class="PBusiness--type-box">
+            <div class="PCbusiness--type-box">
                 <div class="category-box">
                     <h2 class="category-box--title">ビジネス職</h2>
                     <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pbusiness/仮 300-380.JPG" alt="">

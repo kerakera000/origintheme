@@ -3510,7 +3510,7 @@ button {
   transform: translate(-50%, -50%);
 }
 
-.PBusiness {
+.PCbusiness {
   width: 100%;
   display: flex;
   align-items: center;
@@ -3519,7 +3519,7 @@ button {
   padding: 364px 0 200px;
   background-color: #fff;
 }
-.PBusiness--title-box .sub-title {
+.PCbusiness--title-box .sub-title {
   font-family: "Noto Sans JP", serif;
   font-size: 12px;
   font-style: normal;
@@ -3529,7 +3529,7 @@ button {
   text-align: left;
   color: #1B71B7;
 }
-.PBusiness--title-box .title {
+.PCbusiness--title-box .title {
   font-family: "Noto Sans JP", serif;
   font-size: 27px;
   font-style: bold;
@@ -3539,7 +3539,7 @@ button {
   text-align: left;
   color: #182346;
 }
-.PBusiness--type-box {
+.PCbusiness--type-box {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -3547,10 +3547,10 @@ button {
   gap: 40px;
   width: 100%;
 }
-.PBusiness--type-box .category-box {
+.PCbusiness--type-box .category-box {
   width: 20%;
 }
-.PBusiness--type-box .category-box--title {
+.PCbusiness--type-box .category-box--title {
   white-space: nowrap;
   font-family: "Noto Sans JP", serif;
   font-size: 20px;
@@ -3561,25 +3561,25 @@ button {
   text-align: left;
   color: #182346;
 }
-.PBusiness--type-box .introduction-box {
+.PCbusiness--type-box .introduction-box {
   width: 75%;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   gap: 30px;
 }
-.PBusiness--type-box .introduction-box .job-box {
+.PCbusiness--type-box .introduction-box .job-box {
   align-items: flex-start;
   justify-content: flex-start;
   gap: 30px;
 }
-.PBusiness--type-box .introduction-box .job-box--content .num-box {
+.PCbusiness--type-box .introduction-box .job-box--content .num-box {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 10px;
 }
-.PBusiness--type-box .introduction-box .job-box--content .num-box .job-box-num {
+.PCbusiness--type-box .introduction-box .job-box--content .num-box .job-box-num {
   font-family: "Noto Sans JP", serif;
   font-size: 8px;
   font-style: normal;
@@ -3590,14 +3590,14 @@ button {
   color: #1B71B7;
   padding: 5px 0 0;
 }
-.PBusiness--type-box .introduction-box .job-box--content .num-box .textbox {
+.PCbusiness--type-box .introduction-box .job-box--content .num-box .textbox {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   gap: 10px;
 }
-.PBusiness--type-box .introduction-box .job-box--content .num-box .textbox--jobtitle {
+.PCbusiness--type-box .introduction-box .job-box--content .num-box .textbox--jobtitle {
   font-family: "Noto Sans JP", serif;
   font-size: 15px;
   font-style: normal;
@@ -3607,7 +3607,7 @@ button {
   text-align: left;
   color: #000000;
 }
-.PBusiness--type-box .introduction-box .job-box--content .num-box .textbox--text {
+.PCbusiness--type-box .introduction-box .job-box--content .num-box .textbox--text {
   font-family: "Noto Sans JP", serif;
   font-size: 10px;
   font-style: normal;
@@ -3617,7 +3617,7 @@ button {
   text-align: left;
   color: #000000;
 }
-.PBusiness--type-box .introduction-box .job-box--content .hr1 {
+.PCbusiness--type-box .introduction-box .job-box--content .hr1 {
   border: none;
   border-top: 1px dotted #ddd;
   margin: 20px 0;
