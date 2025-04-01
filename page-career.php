@@ -191,11 +191,20 @@ get_template_part('./template/head');
         </div>
     </div>
 
-    <div class="Pcareers">
-        <div class="Pcareers--cont inner-content1400">
+    <div class=PCskillup>
+        <div class="PCskillup--content inner-content">
+            <div class="common-titlebox left">
+                <span class="sub-title">Skill Up</span>
+                <h2 class="title">スキルアップ支援</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="Pinterview">
+        <div class="Pinterview--cont inner-content1400">
             <div class="common-titlebox flex">
-                <h2 class="title">Career</h2>
-                <span class="sub-title">キャリア・研修について</span>
+                <h2 class="title">Interview</h2>
+                <span class="sub-title">社員インタビュー</span>
             </div>
 
             <button class="more-button">
