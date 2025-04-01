@@ -3519,26 +3519,6 @@ button {
   padding: 364px 0 200px;
   background-color: #fff;
 }
-.PCbusiness--title-box .sub-title {
-  font-family: "Noto Sans JP", serif;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 200%;
-  letter-spacing: 0.8px;
-  text-align: left;
-  color: #1B71B7;
-}
-.PCbusiness--title-box .title {
-  font-family: "Noto Sans JP", serif;
-  font-size: 27px;
-  font-style: bold;
-  font-weight: 400;
-  line-height: 200%;
-  letter-spacing: 0.9px;
-  text-align: left;
-  color: #182346;
-}
 .PCbusiness--type-box {
   display: flex;
   align-items: flex-start;
@@ -3621,6 +3601,187 @@ button {
   border: none;
   border-top: 1px dotted #ddd;
   margin: 20px 0;
+}
+
+.PCskillup {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 200px 0 200px;
+  background-color: #ecf3f5;
+}
+.PCskillup--explain {
+  width: 100%;
+  margin-top: 80px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: 0.8px;
+}
+.PCskillup--cardbox {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  padding: 80px 0px 0;
+}
+@media (max-width: 768px) {
+  .PCskillup--cardbox {
+    flex-direction: column;
+  }
+}
+.PCskillup--cardbox .card {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .PCskillup--cardbox .card {
+    width: 100%;
+  }
+}
+.PCskillup--cardbox .card--title {
+  text-align: left;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #182346;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: 5%;
+  padding: 15px 73px 20px;
+}
+.PCskillup--cardbox .card--text {
+  margin: 0 auto;
+  text-align: left;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #182346;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: 5%;
+  margin-bottom: 20px;
+}
+.PCskillup--cardbox .partition-line {
+  width: -moz-fit-content;
+  width: fit-content;
+  border-left: 1px dashed #c2c9d2;
+}
+@media (max-width: 768px) {
+  .PCskillup--cardbox .partition-line {
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+    align-self: auto;
+  }
+}
+
+.Pinterview {
+  width: 100%;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Pinterview--cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10%;
+}
+.Pinterview--cont .common-titlebox {
+  gap: 40px;
+}
+.Pinterview--cont .common-titlebox .title {
+  width: auto;
+  margin-bottom: 0;
+}
+.Pinterview--cont .more-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 200px;
+}
+.Pinterview--cont .more-button .text {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.8px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .Pinterview--cont .more-button .text {
+    font-size: 12px;
+  }
+}
+.Pinterview--cont .more-button .text .normal {
+  position: relative;
+  transition: 0.3s;
+  display: block;
+}
+.Pinterview--cont .more-button .text .hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50px);
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.Pinterview--cont .more-button .arrow-right {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.Pinterview--cont .more-button .arrow-right .normal-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.3s;
+}
+.Pinterview--cont .more-button .arrow-right .hover-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50%);
+  transition: 0.3s;
+}
+.Pinterview--cont:hover {
+  cursor: pointer;
+}
+.Pinterview--cont:hover .more-button .text .normal {
+  transition: 0.3s;
+  transform: translate(0%, -50px);
+}
+.Pinterview--cont:hover .more-button .text .hover {
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+.Pinterview--cont:hover .more-button .arrow-right .normal-img {
+  transition: 0.3s;
+  transform: translate(50px, -50%);
+}
+.Pinterview--cont:hover .more-button .arrow-right .hover-img {
+  transition: 0.3s;
+  transform: translate(-50%, -50%);
 }
 
 /* Module Components */

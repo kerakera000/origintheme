@@ -73,7 +73,7 @@ get_template_part('./template/head');
     </div>
 
     <div class="PCbusiness">
-        <div class="PCbusiness--content inner-content">
+        <div class="PCbusiness--content inner-content1400">
             <div class="common-titlebox left">
                 <span class="sub-title">Job</span>
                 <h2 class="title">職種紹介</h2>
@@ -192,10 +192,33 @@ get_template_part('./template/head');
     </div>
 
     <div class=PCskillup>
-        <div class="PCskillup--content inner-content">
+        <div class="PCskillup--content inner-content1400">
             <div class="common-titlebox left">
                 <span class="sub-title">Skill Up</span>
                 <h2 class="title">スキルアップ支援</h2>
+            </div>
+            <div class="PCskillup--explain">
+                <p class="explain--text">
+                セラクでは、研修修了後もスキルアップを継続できるように当社独自の制度も用意しています。
+                </p>
+            </div>
+            <div class="PCskillup--cardbox">
+                <div class="card">
+                    <h4 class="card--title">セラク情報大学</h4>
+                    <p class="card--text">
+                    セラクで働く社員が講師となり、現場で培った技術や専門知識につ<br>
+                    いて講義し、社員同士でナレッジを深め合う取り組みです。<br>
+                    </p>
+                </div>
+                <span class="partition-line"></span>
+                <div class="card">
+                    <h4 class="card--title">資格取得推奨制度</h4>
+                    <p class="card--text">
+                    セラクが推奨している資格を取得した場合、最大で80万円の報奨金<br>
+                    が支給される制度です。現在、約300種の資格が推奨資格となってい<br>
+                    ます。<br>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
