@@ -75,7 +75,6 @@ get_template_part('./template/head');
             </span>
         </p>
     </div>
-
     <div class="PCbusiness">
         <div class="PCbusiness--content inner-content1400">
             <div class="common-titlebox left">
@@ -194,7 +193,22 @@ get_template_part('./template/head');
             </div>
         </div>
     </div>
-
+    <div class="PCcareerpath">
+        <div class="PCcareerpath--content inner-content1400">
+            <div class="common-titlebox left">
+                <span class="sub-title">Career Path</span>
+                <h2 class="title">キャリアパス</h2>
+            </div>
+        </div>
+    </div>
+    <div class="PCtrainong">
+        <div class="PCtrainong--content inner-content1400">
+            <div class="common-titlebox left">
+                <span class="sub-title">Training Program</span>
+                <h2 class="title">研修プログラム</h2>
+            </div>
+        </div>
+    </div>
     <div class=PCskillup>
         <div class="PCskillup--content inner-content1400">
             <div class="common-titlebox left">
@@ -226,7 +240,6 @@ get_template_part('./template/head');
             </div>
         </div>
     </div>
-
     <div class="Pinterview">
         <div class="Pinterview--cont inner-content1400">
             <div class="common-titlebox flex">
@@ -251,7 +264,6 @@ get_template_part('./template/head');
             </button>
         </div>
     </div>
-
     <div class="Entry">
         <div class="inner-content">
             <div class="common-titlebox center">

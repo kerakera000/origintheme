@@ -3603,6 +3603,26 @@ button {
   margin: 20px 0;
 }
 
+.PCcareerpath {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 200px 0 200px;
+  background-color: #a1c1cd;
+}
+
+.PCtrainong {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 200px 0 200px;
+  background-color: #ffffff;
+}
+
 .PCskillup {
   width: 100%;
   display: flex;
