@@ -3700,6 +3700,14 @@ button {
 .Pinterview--cont .common-titlebox {
   gap: 40px;
 }
+.Pinterview--cont .common-titlebox .next {
+  color: #182346;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: 5%;
+  margin-right: 40px;
+}
 .Pinterview--cont .common-titlebox .title {
   width: auto;
   margin-bottom: 0;

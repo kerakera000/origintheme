@@ -226,6 +226,7 @@ get_template_part('./template/head');
     <div class="Pinterview">
         <div class="Pinterview--cont inner-content1400">
             <div class="common-titlebox flex">
+                <span class=next>(Next)</span>
                 <h2 class="title">Interview</h2>
                 <span class="sub-title">社員インタビュー</span>
             </div>
