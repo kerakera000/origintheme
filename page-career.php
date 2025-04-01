@@ -17,8 +17,8 @@ get_template_part('./template/head');
         <div class="Phero--cont inner-content1400">
             <div class="Phero--textbox">
                 <h2 class="common-titlebox">
-                    <span class="title">About Us</span>
-                    <span class="sub-title">COMPANY事業部について</span>
+                    <span class="title">Career</span>
+                    <span class="sub-title">キャリア・研修について</span>
                 </h2>
                 <div class="Phero--textbox--list">
                     <p class="index">Index</p>
@@ -67,7 +67,7 @@ get_template_part('./template/head');
     <div class="PheroText">
         <p class="text inner-content1400">
             <span class="text--content">
-                セラクのCOMPANY事業部では、総合人事システムCOMPANY(R)の新規導入から運用に至るまで、幅広いサポートを提供しています。属人化の撤廃や工数削減、業務効率化など、お客さまが抱える人事業務の課題を解決し、事業成長を力強く後押しします。私たちは数々の大手企業から信頼をいただき、社会の基盤を支えるパートナーとしての役割を果たしています。
+            お客さまの課題を解消し、事業成長に貢献するために、COMPANY事業部は職種の垣根を超えて連携しています。職種はエンジニア職とビジネス職に大別され、キャリア形成も多種多様です。その人材の厚みが事業部の推進力につながっています。それぞれの社員はさまざまなバックグラウンドをもっており、業務一つひとつに真摯に向き合っています。
             </span>
         </p>
     </div>
