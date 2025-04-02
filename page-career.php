@@ -245,7 +245,7 @@ get_template_part('./template/head');
                 </div>
             </div>
             <span class="partition-line">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg/" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
             </span>
         </div>
     </div>
