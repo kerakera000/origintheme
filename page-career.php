@@ -101,8 +101,10 @@ get_template_part('./template/head');
                                     </p>
                                 </div>
                             </div>
-                            <hr class="hr1">
                         </div>
+                        <span class="partition-line">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
+                        </span>
                         <div class="job-box--content">
                             <div class="num-box">
                                 <span class="job-box-num">(01)</span>
@@ -116,8 +118,10 @@ get_template_part('./template/head');
                                     </p>
                                 </div>
                             </div>
-                            <hr class="hr1">
                         </div>
+                        <span class="partition-line">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
+                        </span>
                         <div class="job-box--content">
                             <div class="num-box">
                                 <span class="job-box-num">(01)</span>
@@ -131,14 +135,16 @@ get_template_part('./template/head');
                                     </p>
                                 </div>
                             </div>
-                            <hr class="hr1">
                         </div>
+                        <span class="partition-line">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
+                        </span>
                     </div>
                 </div>
             </div>
             <div class="PCbusiness--type-box">
                 <div class="category-box">
-                    <h2 class="category-box--title">ビジネス職</h2>
+                    <h2 class="category-box--title">エンジニア職</h2>
                     <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pbusiness/仮 300-380.JPG" alt="">
                 </div>
                 <div class="introduction-box">
@@ -156,8 +162,10 @@ get_template_part('./template/head');
                                     </p>
                                 </div>
                             </div>
-                            <hr class="hr1">
                         </div>
+                        <span class="partition-line">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
+                        </span>
                         <div class="job-box--content">
                             <div class="num-box">
                                 <span class="job-box-num">(01)</span>
@@ -171,8 +179,10 @@ get_template_part('./template/head');
                                     </p>
                                 </div>
                             </div>
-                            <hr class="hr1">
                         </div>
+                        <span class="partition-line">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
+                        </span>
                         <div class="job-box--content">
                             <div class="num-box">
                                 <span class="job-box-num">(01)</span>
@@ -186,11 +196,14 @@ get_template_part('./template/head');
                                     </p>
                                 </div>
                             </div>
-                            <hr class="hr1">
                         </div>
+                        <span class="partition-line">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
+                        </span>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
     <div class="PCcareerpath">
@@ -201,15 +214,42 @@ get_template_part('./template/head');
             </div>
         </div>
     </div>
-    <div class="PCtrainong">
-        <div class="PCtrainong--content inner-content1400">
+    <div class="PCtraining">
+        <div class="PCtraining--content inner-content1400">
             <div class="common-titlebox left">
                 <span class="sub-title">Training Program</span>
                 <h2 class="title">研修プログラム</h2>
             </div>
+            <div class="PCtraining--explain">
+                <p class="explain-text">
+                COMPANY事業部の新入社員は、新卒採用の場合<br>
+                は約3ヶ月、中途採用の場合は約2ヶ月に渡り研修<br>
+                に参加します。<br>
+                ビジネス研修や技術研修などのさまざまなカリ<br>
+                キュラムを経て、最終的にCOMPANY(R)︎の基礎習<br>
+                得を目指します。<br>
+                </p>
+                <div class="explain-flow">
+                    <div class="flow-col">
+                        <!-- 新卒採用 -->
+                        <div class="flow-col--stepimg">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/ビジネス研修.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="flow-col">
+                        <!-- 中途採用 -->
+                        <div class="flow-col--stepimg">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/ビジネス研修.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="partition-line">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg/" alt="">
+            </span>
         </div>
     </div>
-    <div class=PCskillup>
+    <div class="PCskillup">
         <div class="PCskillup--content inner-content1400">
             <div class="common-titlebox left">
                 <span class="sub-title">Skill Up</span>
