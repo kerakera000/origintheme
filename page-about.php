@@ -16,10 +16,14 @@ get_template_part('./template/head');
     <div class="Phero">
         <div class="Phero--cont inner-content1400">
             <div class="Phero--textbox">
-                <h2 class="common-titlebox">
-                    <span class="title">About Us</span>
-                    <span class="sub-title">COMPANY事業部について</span>
-                </h2>
+                <div class="common-titlebox">
+                    <p id="Ctitle" class="title">
+                        <span id="Ctitle-text" class="text">About Us</span>
+                    </p>
+                    <p id="Csubtitle" class="sub-title">
+                        <span id="Csubtitle-text" class="text">COMPANY事業部について</span>
+                    </p>
+                </div>
                 <div class="Phero--textbox--list">
                     <p class="index">Index</p>
                     <ul class="list">
@@ -60,7 +64,7 @@ get_template_part('./template/head');
             </div>
             <div class="Phero--imgbox">
                 <p class="breadcrumbs">Top - About Us</p>
-                <img class="hero-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/aboutimg.png" alt="">
+                <img id="HeroImg" class="hero-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/aboutimg.png" alt="">
             </div>
         </div>
     </div>

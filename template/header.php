@@ -3,7 +3,7 @@ global $wp_path;
 global $site_url;
 ?>
 
-<header class="header">
+<header id="HEADER" class="header">
     <div class="header--logo">
         <a href="/">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.svg" alt="">

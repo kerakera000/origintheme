@@ -116,6 +116,12 @@
   }
 }
 
+.inner-content1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .inner-content1400 {
   max-width: 1400px;
   margin: 0 auto;
@@ -354,13 +360,13 @@
   width: 130px;
   height: 40px;
   position: relative;
-  margin: auto 80px 48px 0;
+  margin: auto 0px 48px 0;
   z-index: 10;
   opacity: 0;
   transition: all 0.3s ease;
   transform: translateY(10px);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   .common-button.scroll-down {
     position: absolute;
     bottom: 20px;
@@ -417,6 +423,36 @@
 }
 .max-layoutimg.m50 {
   margin: 50px 0;
+}
+
+.rightanim {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.6s ease;
+}
+.rightanim.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.leftanim {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.6s ease;
+}
+.leftanim.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.topanim {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.6s ease;
+}
+.topanim.active {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* CSS Document */
@@ -787,7 +823,7 @@ button {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 80px 0 44px;
+  padding: 80px 32px 44px;
   border-top: 1px solid var(--color-gray, #E5E5E5);
 }
 .footer .container {
@@ -963,11 +999,17 @@ button {
   background: rgba(255, 255, 255, 0);
   padding: 0px 2%;
   height: 136px;
+  transition: 0.3s;
 }
 @media (max-width: 1024px) {
   .header {
     height: 60px;
   }
+}
+.header.active {
+  background: #ffffff;
+  transition: 0.3s;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .header--logo {
   padding-left: 20px;
@@ -1195,6 +1237,12 @@ button {
   justify-content: center;
   overflow: hidden;
   position: relative;
+  padding: 0 50px;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 0px;
+  }
 }
 @media (max-width: 600px) {
   .hero {
@@ -1316,32 +1364,19 @@ button {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-}
-@media (max-width: 1500px) {
-  .hero .hero-textbox {
-    padding: 0 64px;
-  }
-}
-@media (max-width: 768px) {
-  .hero .hero-textbox {
-    padding: 0 32px;
-  }
-}
-@media (max-width: 425px) {
-  .hero .hero-textbox {
-    padding: 0 20px;
-  }
+  width: 100%;
 }
 .hero .hero-textbox .main-title {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
+  width: 100%;
 }
 .hero .hero-textbox .main-title .title1 {
   color: var(--color-primary, #182346);
   font-family: "Marcellus", sans-serif;
-  font-size: 120px;
+  font-size: 10vw;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
@@ -1349,12 +1384,17 @@ button {
   transform: translateY(10px);
   opacity: 0;
 }
+@media (min-width: 1400px) {
+  .hero .hero-textbox .main-title .title1 {
+    font-size: 120px;
+  }
+}
 @media (max-width: 768px) {
   .hero .hero-textbox .main-title .title1 {
     font-size: 80px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 525px) {
   .hero .hero-textbox .main-title .title1 {
     font-size: 60px;
   }
@@ -1372,19 +1412,24 @@ button {
 .hero .hero-textbox .main-title .title2 {
   color: var(--color-primary, #182346);
   font-family: "Marcellus", sans-serif;
-  font-size: 120px;
+  font-size: 10vw;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
   transform: translateY(10px);
   opacity: 0;
 }
+@media (min-width: 1400px) {
+  .hero .hero-textbox .main-title .title2 {
+    font-size: 120px;
+  }
+}
 @media (max-width: 768px) {
   .hero .hero-textbox .main-title .title2 {
     font-size: 80px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 525px) {
   .hero .hero-textbox .main-title .title2 {
     font-size: 60px;
   }
@@ -1402,19 +1447,24 @@ button {
 .hero .hero-textbox .main-title .title3 {
   color: var(--color-primary, #182346);
   font-family: "Marcellus", sans-serif;
-  font-size: 120px;
+  font-size: 10vw;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
   transform: translateY(10px);
   opacity: 0;
 }
+@media (min-width: 1400px) {
+  .hero .hero-textbox .main-title .title3 {
+    font-size: 120px;
+  }
+}
 @media (max-width: 768px) {
   .hero .hero-textbox .main-title .title3 {
     font-size: 80px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 525px) {
   .hero .hero-textbox .main-title .title3 {
     font-size: 60px;
   }
@@ -1517,7 +1567,12 @@ button {
   flex-direction: column;
   width: 100%;
   background-color: #fff;
-  padding: 0 0 200px;
+  padding: 0 32px 200px;
+}
+@media (max-width: 1000px) {
+  .news {
+    padding: 0 0px 200px;
+  }
 }
 .news--decoration-text {
   font-family: "Poppins", sans-serif;
@@ -1844,12 +1899,18 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 0 32px;
 }
 @media (max-width: 1000px) {
   .about--content {
     top: 0;
     transform: translate(-50%, 0);
     gap: 160px;
+  }
+}
+@media (max-width: 425px) {
+  .about--content {
+    padding: 0 24px;
   }
 }
 .about--content .cont {
@@ -1880,6 +1941,11 @@ button {
     -o-object-fit: cover;
        object-fit: cover;
     margin-top: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .about--content .cont .normal-img {
+    min-width: 100%;
   }
 }
 .about--content .cont--textbox {
@@ -2934,6 +3000,23 @@ button {
   flex-direction: column;
   padding-bottom: 30px;
 }
+.Phero--textbox .common-titlebox #Ctitle, .Phero--textbox .common-titlebox #Csubtitle {
+  overflow: hidden;
+  transform: translate(0, -100%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.Phero--textbox .common-titlebox #Ctitle .text, .Phero--textbox .common-titlebox #Csubtitle .text {
+  width: 100%;
+  display: block;
+  transform: translate(0%, 100%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+}
+.Phero--textbox .common-titlebox #Ctitle.visible, .Phero--textbox .common-titlebox #Csubtitle.visible {
+  transform: translate(0, 0);
+}
+.Phero--textbox .common-titlebox #Ctitle.visible .text, .Phero--textbox .common-titlebox #Csubtitle.visible .text {
+  transform: translate(0, 0);
+}
 .Phero--textbox--title {
   font-size: 80px;
   font-weight: 400;
@@ -3011,9 +3094,13 @@ button {
   line-height: 100%; /* 12px */
   letter-spacing: 0.6px;
 }
-.Phero--imgbox img {
-  -o-object-fit: contain;
-     object-fit: contain;
+.Phero--imgbox .hero-img {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.Phero--imgbox .hero-img.active {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
 }
 
 .PheroText {
@@ -3621,6 +3708,68 @@ button {
   border: none;
   border-top: 1px dotted #ddd;
   margin: 20px 0;
+}
+
+.p-interview-archive {
+  width: 100%;
+  background-color: #fff;
+}
+.p-interview-archive__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 32px;
+}
+.p-interview-archive__list .item {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+}
+.p-interview-archive__list .item__thumbnail {
+  width: 30%;
+}
+.p-interview-archive__list .item__thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-interview-archive__list .item__content {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.p-interview-archive__list .item__content .item__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+.p-interview-archive__list .item__content .join {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+.p-interview-archive__list .item__content .explanation {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+.p-interview-archive__list .item__thumbnail {
+  width: 70%;
+  max-height: 368px;
+}
+.p-interview-archive__list .item__thumbnail img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 10%;
+     object-position: 10%;
 }
 
 /* Module Components */

@@ -19,6 +19,25 @@
         justify-content: space-between;
         flex-direction: column;
         padding-bottom: 30px;
+        .common-titlebox{
+            #Ctitle, #Csubtitle {
+                overflow: hidden;
+                transform: translate(0, -100%);
+                transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                .text{
+                    width: 100%;
+                    display: block;
+                    transform: translate(0%, 100%);
+                    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+                }
+                &.visible{
+                    transform: translate(0, 0);
+                    .text{
+                        transform: translate(0, 0);
+                    }
+                }
+            }
+        }
         &--title{
             font-size: 80px;
             font-weight: 400;
@@ -97,8 +116,13 @@
             line-height: 100%; /* 12px */
             letter-spacing: 0.6px;
         }
-        img{
-            object-fit: contain;
+        .hero-img{
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            &.active{
+                transition: opacity 0.5s ease-in-out;
+                opacity: 1;
+            }
         }
     }
 

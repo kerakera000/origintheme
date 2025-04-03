@@ -43,7 +43,7 @@ get_template_part('./template/head');
 
     <div id="HEROTEXT" class="hero-text">
         <div class="textbox">
-            <p class="text">
+            <p class="text rightanim">
                 次々と真新しいデジタル技術が登場し、<br>
                 すさまじい速度で変化するこの時代。<br>
                 私たちは「HRテック」というフィールドから、<br>
@@ -61,13 +61,13 @@ get_template_part('./template/head');
     </div>
 
     <div class="news">
-        <div class="max-content">
+        <!-- <div class="max-content">
             <span id="NEWS-DECORATION-TEXT" class="news--decoration-text">
                 Beyond Your Imagination
             </span>
-        </div>
+        </div> -->
 
-        <div class="inner-content1400">
+        <div class="inner-content1400 rightanim">
             <div class="news--content">
                 <div class="news--content--col1">
                     <div class="common-titlebox">
@@ -190,8 +190,8 @@ get_template_part('./template/head');
         <div class="whitebg"></div>
         <div id="ABOUT" class="inner-content about--content">
             <div class="cont">
-                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/aboutimg.png" alt="">
-                <div class="cont--textbox">
+                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/aboutimg.png" alt="">
+                <div class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">About Us</h2>
                         <span class="sub-title">COMPANY事業部について</span>
@@ -221,8 +221,8 @@ get_template_part('./template/head');
             </div>
 
             <div id="CAREER" class="cont">
-                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/careerimg.png" alt="">
-                <div class="cont--textbox">
+                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/careerimg.png" alt="">
+                <div class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">Career</h2>
                         <span class="sub-title">キャリア・研修について</span>
@@ -253,19 +253,19 @@ get_template_part('./template/head');
     </div>
 
     <div id="INTERVIEW" class="Interview">
-        <div class="common-titlebox center">
+        <div class="common-titlebox center topanim">
             <h2 class="title">Interview</h2>
             <span class="sub-title">社員インタビュー</span>
         </div>
 
-        <div class="inner-content">
+        <div class="inner-content topanim">
             <p class="Interview--text">
             さまざまなバックグラウンドを持つ、COMPANY事業部の社員たち。どんな仕事や働き方があるのか。<br>
             未来の自分の姿を姿を見つけてください。
             </p>
         </div>
 
-        <div class="max-content">
+        <div class="max-content rightanim">
             <div class="swiper InterviewSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -584,7 +584,7 @@ get_template_part('./template/head');
             </div>
         </div>
 
-        <button class="common-button">
+        <button class="common-button topanim">
             <div class="text">
                 <p class="normal">View All</p>
                 <p class="hover">View All</p>
@@ -621,14 +621,14 @@ get_template_part('./template/head');
 
     <div class="Entry">
         <div class="inner-content">
-            <div class="common-titlebox center">
+            <div class="common-titlebox center topanim">
                 <h2 class="title">Entry</h2>
                 <span class="sub-title">採用エントリー</span>
             </div>
 
             <p class="Entry--text">リンク先で募集職種を確認いただけます</p>
 
-            <div class="Entry--cardbox">
+            <div class="Entry--cardbox topanim">
                 <button class="Entry-card type1">
                     <div class="card-title">
                         <h2 class="title">New Graduate</h2>

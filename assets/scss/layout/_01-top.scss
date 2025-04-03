@@ -26,6 +26,10 @@
     justify-content: center;
     overflow: hidden;
     position: relative;
+    padding: 0 50px;
+    @media (max-width: 768px) {
+        padding: 0px;
+    }
     @media (max-width: 600px) {
         align-items: flex-end;
         padding-bottom: 30px;
@@ -124,34 +128,39 @@
         align-items: flex-start;
         justify-content: center;
         flex-direction: column;
-        @media (max-width: 1500px) {
-            padding: 0 64px;
-        }
-        @media (max-width: 768px) {
-            padding: 0 32px;
-        }
-        @media (max-width: 425px) {
-            padding: 0 20px;
-        }
+        width: 100%;
+        // @media (max-width: 1500px) {
+        //     padding: 0 64px;
+        // }
+        // @media (max-width: 768px) {
+        //     padding: 0 32px;
+        // }
+        // @media (max-width: 425px) {
+        //     padding: 0 20px;
+        // }
         .main-title{
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
             flex-direction: column;
+            width: 100%;
             .title1{
                 color: var(--color-primary, #182346);
                 @include marcellus;
-                font-size: 120px;
+                font-size: 10vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 110%; 
                 transition: 0.3s;
                 transform: translateY(10px);
                 opacity: 0;
+                @media (min-width: 1400px) {
+                    font-size: 120px;
+                }
                 @media (max-width: 768px) {
                     font-size: 80px;
                 }
-                @media (max-width: 425px) {
+                @media (max-width: 525px) {
                     font-size: 60px;
                 }
                 &.active{
@@ -168,16 +177,19 @@
             .title2{
                 color: var(--color-primary, #182346);
                 @include marcellus;
-                font-size: 120px;
+                font-size: 10vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 110%; 
                 transform: translateY(10px);
                 opacity: 0;
+                @media (min-width: 1400px) {
+                    font-size: 120px;
+                }
                 @media (max-width: 768px) {
                     font-size: 80px;
                 }
-                @media (max-width: 425px) {
+                @media (max-width: 525px) {
                     font-size: 60px;
                 }
                 &.active{
@@ -194,16 +206,19 @@
             .title3{
                 color: var(--color-primary, #182346);
                 @include marcellus;
-                font-size: 120px;
+                font-size: 10vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 110%; 
                 transform: translateY(10px);
                 opacity: 0;
+                @media (min-width: 1400px) {
+                    font-size: 120px;
+                }
                 @media (max-width: 768px) {
                     font-size: 80px;
                 }
-                @media (max-width: 425px) {
+                @media (max-width: 525px) {
                     font-size: 60px;
                 }
                 &.active{
@@ -298,7 +313,10 @@
     flex-direction: column;
     width: 100%;
     background-color: #fff;
-    padding: 0 0 200px;
+    padding: 0 32px 200px;
+    @media (max-width: 1000px) {
+        padding: 0 0px 200px;
+    }
     &--decoration-text{
         @include poppins;
         font-size: 160px;
@@ -597,10 +615,14 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        padding: 0 32px;
         @media (max-width: 1000px) {
             top: 0;
             transform: translate(-50%, 0);
             gap: 160px;
+        }
+        @media (max-width: 425px) {
+            padding: 0 24px;
         }
         .cont{
             display: flex;
@@ -623,6 +645,9 @@
                     max-height: 200px;
                     object-fit: cover;
                     margin-top: 40px;
+                }
+                @media (max-width: 425px) {
+                    min-width: 100%;
                 }
             }
             &--textbox{

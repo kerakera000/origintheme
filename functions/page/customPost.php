@@ -7,9 +7,9 @@ function create_post_type() {
   // Post
   /*---------------------------------------------*/
   register_post_type(
-    'temppage',
+    'interviewpage',
     array(
-      'label' => 'テンプレート投稿',
+      'label' => 'インタビュー投稿',
       'public' => true,
       'has_archive' => true,
       'menu_position' => 4,
