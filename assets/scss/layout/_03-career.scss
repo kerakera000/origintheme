@@ -114,17 +114,17 @@
         display: flex;
         flex-direction: row;
         width: 100%;
-        margin-top: 80px;
-        margin-bottom: 80px;
+        margin-top: 120px;
+        margin-bottom: 120px;
         .explain-text{
-        width: max-content;
-        white-space: nowrap;
-        @include fosanjp;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 200%;
-        letter-spacing: 5%;
-        color: #182346;
+            width: max-content;
+            white-space: nowrap;
+            font-family:  "Noto Sans JP", serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 200%;
+            letter-spacing: 5%;
+            color: #182346;
         }
         .explain-flow {
             width: 100%;
@@ -136,20 +136,86 @@
                 display: flex;
                 flex-direction: column;
                 align-content: flex-start;
-                margin-left: 80px;
+                margin-left: 20px;
             }
         }
     }
-    .partition-line {
-        max-width: 100%;
-        img{
+    &--detail {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .detailbox {
             width: 100%;
-            object-fit: contain;
+            &--cont {
+                display: flex;
+                flex-direction: column;
+                .Tcontent {
+                    display: flex;
+                    width: 100%;
+                    padding: 54px 0px 54px 0px;
+                    &--step {
+                        display: flex;
+                        flex-direction: column;
+                        width: max-content;
+                        white-space: nowrap;
+                        font-family:  "Noto Sans JP", serif;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 100%;
+                        letter-spacing: 5%;
+                        color: #182346;
+                        padding-top: 5px;
+                    }
+                    &--box {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        padding-left: 44px;
+                    }
+                    .box1 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        &--title {
+                            font-family:  "Noto Sans JP", serif;
+                            font-size: 24px;
+                            font-weight: 500;
+                            line-height: 100%;
+                            letter-spacing: 5%;
+                            color: #182346;
+                        }
+                        &--icon {
+                            padding-right: 24px;
+                        }
+                    }
+                    .box2 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding-top: 64px;
+                        &--text {
+                            font-family:  "Noto Sans JP", serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 200%;
+                            letter-spacing: 5%;
+                            color: #182346;
+                        }
+                    }
+                }
+            }
         }
+    } 
+    .partition-line {
+        width: 100%;
+        img{
+            width: 100%;   
+            display: block;
+            margin: 0;  
+        }
+    }  
+}     
 
-    }
-
-}
 
 .PCskillup {
     width: 100%;
@@ -161,8 +227,8 @@
     background-color: #ecf3f5;
     &--explain{
         width: 100%;
-        margin-top: 80px;
-        @include fosanjp;
+        padding-top: 120px;
+        font-family:  "Noto Sans JP", serif;
         font-size: 16px;
         font-weight: 500;
         line-height: 200%;
@@ -180,49 +246,50 @@
         .card {
             display: flex;
             width: 100%;
-            background-color: #fff;
-            display: flex;
-            padding: 20px;
-            align-items: flex-start;
-            justify-content: flex-start;
+            background-color: #fff;    
+            align-items: center;
+            justify-content: center;
             flex-direction: column;
-            @media (max-width: 768px) {
-                width: 100%;
-            }
-            &--title {
-                text-align: left;
-                @include fosanjp;
-                color: #182346;
-                font-size: 24px;
-                font-weight: 500;
-                line-height: 200%;
-                letter-spacing: 5%;
-                padding: 15px 73px 20px;
-            }
-            &--text {
-                margin: 0 auto;
-                text-align: left;
-                @include fosanjp;
-                color: #182346;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 200%;
-                letter-spacing: 5%;
-                margin-bottom: 20px;
+            .column {
+                display: flex;
+                width: max-content;  
+                flex-direction: column;      
+                padding: 48px 48px 48px 48px;
+                &--title {
+                    text-align: left;
+                    font-family:  "Noto Sans JP", serif;
+                    color: #182346;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 200%;
+                    letter-spacing: 5%;
+                    padding-bottom: 40px;
+                }
+                &--text {
+                    text-align: left;
+                    font-family:  "Noto Sans JP", serif;
+                    color: #182346;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 200%;
+                    letter-spacing: 5%;
+                }
             }
         }
-        .partition-line {
-            width: fit-content;
-            border-left: 1px dashed #c2c9d2;
-            @media (max-width: 768px) {
-                width: 100%;
-                height: 1px;
-                margin: 20px 0;
-                align-self: auto;
-            }
-        }   
+        
+    }
+    .partition-line {
+        width: fit-content;
+        border-left: 1px dashed #c2c9d2;
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 1px;
+            margin: 20px 0;
+            align-self: auto;
+        }
     }   
 }
+
 
 .Pinterview {
     width: 100%;
@@ -239,6 +306,7 @@
         .common-titlebox{
             gap: 40px;
             .next{
+                justify-content: flex-start;
                 color: #182346;
                 font-size: 16px;
                 font-weight: 500;
@@ -258,7 +326,7 @@
             gap: 10px;
             width: 200px;
             .text{
-                @include fosan;
+                font-family:  "Noto Sans JP", serif;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 500;

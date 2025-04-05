@@ -168,3 +168,41 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', adjustTableCells);
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const detailboxes = document.querySelectorAll('.detailbox');
+
+    detailboxes.forEach(box => {
+        const closeBox = box.querySelector('.detailbox--cont.close');
+        const openBox = box.querySelector('.detailbox--cont.open');
+
+        if (openBox) openBox.style.display = 'none';
+
+        const closeIcon = closeBox?.querySelector('.box1--icon');
+        if (closeIcon) {
+            closeIcon.addEventListener('click', function () {
+                closeBox.style.display = 'none';
+                openBox.style.display = 'block';
+            });
+        }
+
+        const openIcon = openBox?.querySelector('.box1--icon');
+        if (openIcon) {
+            openIcon.addEventListener('click', function () {
+                openBox.style.display = 'none';
+                closeBox.style.display = 'block';
+            });
+        }
+    });
+});

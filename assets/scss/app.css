@@ -3623,14 +3623,14 @@ button {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .PCtraining--explain .explain-text {
   width: -moz-max-content;
   width: max-content;
   white-space: nowrap;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 200%;
@@ -3648,15 +3648,82 @@ button {
   display: flex;
   flex-direction: column;
   align-content: flex-start;
-  margin-left: 80px;
+  margin-left: 20px;
+}
+.PCtraining--detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.PCtraining--detail .detailbox {
+  width: 100%;
+}
+.PCtraining--detail .detailbox--cont {
+  display: flex;
+  flex-direction: column;
+}
+.PCtraining--detail .detailbox--cont .Tcontent {
+  display: flex;
+  width: 100%;
+  padding: 54px 0px 54px 0px;
+}
+.PCtraining--detail .detailbox--cont .Tcontent--step {
+  display: flex;
+  flex-direction: column;
+  width: -moz-max-content;
+  width: max-content;
+  white-space: nowrap;
+  font-family: "Noto Sans JP", serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 5%;
+  color: #182346;
+  padding-top: 5px;
+}
+.PCtraining--detail .detailbox--cont .Tcontent--box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 44px;
+}
+.PCtraining--detail .detailbox--cont .Tcontent .box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.PCtraining--detail .detailbox--cont .Tcontent .box1--title {
+  font-family: "Noto Sans JP", serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 5%;
+  color: #182346;
+}
+.PCtraining--detail .detailbox--cont .Tcontent .box1--icon {
+  padding-right: 24px;
+}
+.PCtraining--detail .detailbox--cont .Tcontent .box2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 64px;
+}
+.PCtraining--detail .detailbox--cont .Tcontent .box2--text {
+  font-family: "Noto Sans JP", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: 5%;
+  color: #182346;
 }
 .PCtraining .partition-line {
-  max-width: 100%;
+  width: 100%;
 }
 .PCtraining .partition-line img {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  display: block;
+  margin: 0;
 }
 
 .PCskillup {
@@ -3670,8 +3737,8 @@ button {
 }
 .PCskillup--explain {
   width: 100%;
-  margin-top: 80px;
-  font-family: "Noto Sans JP", sans-serif;
+  padding-top: 120px;
+  font-family: "Noto Sans JP", serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 200%;
@@ -3693,45 +3760,43 @@ button {
   display: flex;
   width: 100%;
   background-color: #fff;
-  display: flex;
-  padding: 20px;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
-@media (max-width: 768px) {
-  .PCskillup--cardbox .card {
-    width: 100%;
-  }
+.PCskillup--cardbox .card .column {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  flex-direction: column;
+  padding: 48px 48px 48px 48px;
 }
-.PCskillup--cardbox .card--title {
+.PCskillup--cardbox .card .column--title {
   text-align: left;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", serif;
   color: #182346;
   font-size: 24px;
   font-weight: 500;
   line-height: 200%;
   letter-spacing: 5%;
-  padding: 15px 73px 20px;
+  padding-bottom: 40px;
 }
-.PCskillup--cardbox .card--text {
-  margin: 0 auto;
+.PCskillup--cardbox .card .column--text {
   text-align: left;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP", serif;
   color: #182346;
   font-size: 16px;
   font-weight: 500;
   line-height: 200%;
   letter-spacing: 5%;
-  margin-bottom: 20px;
 }
-.PCskillup--cardbox .partition-line {
+.PCskillup .partition-line {
   width: -moz-fit-content;
   width: fit-content;
   border-left: 1px dashed #c2c9d2;
 }
 @media (max-width: 768px) {
-  .PCskillup--cardbox .partition-line {
+  .PCskillup .partition-line {
     width: 100%;
     height: 1px;
     margin: 20px 0;
@@ -3757,6 +3822,7 @@ button {
   gap: 40px;
 }
 .Pinterview--cont .common-titlebox .next {
+  justify-content: flex-start;
   color: #182346;
   font-size: 16px;
   font-weight: 500;
@@ -3776,7 +3842,7 @@ button {
   width: 200px;
 }
 .Pinterview--cont .more-button .text {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans JP", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
