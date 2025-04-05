@@ -70,6 +70,10 @@
 
         // タイトルアニメーション
         setTimeout(() => {
+            $('.hero-textbox').addClass('active');
+        }, 1400);
+
+        setTimeout(() => {
             $('.title1').addClass('active');
         }, 1400);
 
@@ -99,11 +103,16 @@
             const scrollPosition = $(window).scrollTop();
             
             if (scrollPosition > 40) {
-                $('.bganim1, .bganim2, .title1, .title2, .title3, .subimg, #ScrollDown')
-                    .addClass('scroll-active');
+                $('.bganim1, .bganim2, #ScrollDown').addClass('scroll-active');
             } else {
-                $('.bganim1, .bganim2, .title1, .title2, .title3, .subimg, #ScrollDown')
-                    .removeClass('scroll-active');
+                $('.bganim1, .bganim2, #ScrollDown').removeClass('scroll-active');
+            }
+
+            // タイトルとサブ画像のスクロールアニメーション
+            if (scrollPosition > 900) {
+                $('.title1, .title2, .title3, .subimg').addClass('scroll-active');
+            } else {
+                $('.title1, .title2, .title3, .subimg').removeClass('scroll-active');
             }
 
             // ヘッダーのスクロールアニメーション

@@ -127,16 +127,6 @@
   margin: 0 auto;
   width: 100%;
 }
-@media (max-width: 1000px) {
-  .inner-content1400 {
-    padding: 0 34px;
-  }
-}
-@media (max-width: 425px) {
-  .inner-content1400 {
-    padding: 0 24px;
-  }
-}
 
 .inner800 {
   max-width: 800px;
@@ -365,6 +355,7 @@
   opacity: 0;
   transition: all 0.3s ease;
   transform: translateY(10px);
+  margin-left: auto;
 }
 @media screen and (max-width: 660px) {
   .common-button.scroll-down {
@@ -1241,7 +1232,7 @@ button {
 }
 @media (max-width: 768px) {
   .hero {
-    padding: 0px;
+    padding: 0px 24px;
   }
 }
 @media (max-width: 600px) {
@@ -1366,6 +1357,15 @@ button {
   flex-direction: column;
   width: 100%;
 }
+@media (min-width: 1300px) {
+  .hero .hero-textbox.active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+  }
+}
 .hero .hero-textbox .main-title {
   display: flex;
   align-items: flex-start;
@@ -1376,7 +1376,7 @@ button {
 .hero .hero-textbox .main-title .title1 {
   color: var(--color-primary, #182346);
   font-family: "Marcellus", sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
@@ -1412,7 +1412,7 @@ button {
 .hero .hero-textbox .main-title .title2 {
   color: var(--color-primary, #182346);
   font-family: "Marcellus", sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
@@ -1447,7 +1447,7 @@ button {
 .hero .hero-textbox .main-title .title3 {
   color: var(--color-primary, #182346);
   font-family: "Marcellus", sans-serif;
-  font-size: 10vw;
+  font-size: 8vw;
   font-style: normal;
   font-weight: 400;
   line-height: 110%;
@@ -2470,6 +2470,9 @@ button {
     padding: 300px 0 200px;
   }
 }
+.Entry.entry-interview {
+  padding: 0 0 200px;
+}
 .Entry--text {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
@@ -2982,6 +2985,7 @@ button {
 .Phero {
   width: 100%;
   height: 100vh;
+  padding: 0 50px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFF 100%);
 }
 .Phero--cont {
@@ -3710,30 +3714,73 @@ button {
   margin: 20px 0;
 }
 
+@media (max-width: 900px) {
+  .archive-interview-Phero {
+    height: 74vh;
+    padding: 0 24px;
+  }
+}
+@media (max-width: 768px) {
+  .archive-interview-Phero .Phero--cont {
+    flex-direction: column;
+    padding-top: 131px;
+  }
+}
+@media (max-width: 768px) {
+  .archive-interview-Phero .Phero--cont .Phero--textbox {
+    order: 2;
+  }
+}
+@media (max-width: 768px) {
+  .archive-interview-Phero .Phero--cont .Phero--imgbox {
+    order: 1;
+    align-items: flex-start;
+    margin-bottom: 28px;
+  }
+}
+
 .p-interview-archive {
   width: 100%;
   background-color: #fff;
+}
+.p-interview-archive .content {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  transform: translateY(-300px);
 }
 .p-interview-archive__list {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 100px;
   padding: 0 32px;
+}
+@media (max-width: 900px) {
+  .p-interview-archive__list {
+    padding: 0 40px;
+  }
 }
 .p-interview-archive__list .item {
   width: 100%;
   display: flex;
   gap: 24px;
+  border-top: 1px dotted #000;
 }
-.p-interview-archive__list .item__thumbnail {
-  width: 30%;
+@media (max-width: 900px) {
+  .p-interview-archive__list .item {
+    flex-direction: column;
+    position: relative;
+    border-top: 1px dotted rgba(0, 0, 0, 0);
+  }
 }
-.p-interview-archive__list .item__thumbnail img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+@media (max-width: 600px) {
+  .p-interview-archive__list .item {
+    gap: 0px;
+  }
 }
 .p-interview-archive__list .item__content {
   width: 30%;
@@ -3741,35 +3788,860 @@ button {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
+  z-index: 1;
 }
-.p-interview-archive__list .item__content .item__title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
+@media (max-width: 900px) {
+  .p-interview-archive__list .item__content {
+    display: contents;
+  }
+}
+.p-interview-archive__list .item__content .number {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+  letter-spacing: 0.6px;
+  margin-bottom: 64px;
+  margin-top: 40px;
+}
+@media (max-width: 900px) {
+  .p-interview-archive__list .item__content .number {
+    display: none;
+  }
+}
+.p-interview-archive__list .item__content .item-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .p-interview-archive__list .item__content .item-title {
+    order: 2;
+  }
+}
+@media (max-width: 600px) {
+  .p-interview-archive__list .item__content .item-title {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
 }
 .p-interview-archive__list .item__content .join {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-bottom: 74px;
+}
+@media (max-width: 900px) {
+  .p-interview-archive__list .item__content .join {
+    order: 3;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .p-interview-archive__list .item__content .join {
+    font-size: 12px;
+  }
 }
 .p-interview-archive__list .item__content .explanation {
+  margin-bottom: 40px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 900px) {
+  .p-interview-archive__list .item__content .explanation {
+    display: none;
+  }
+}
+.p-interview-archive__list .item__content .explanation .text {
+  background: var(--color-primary, #182346);
+  color: #fff;
+  padding: 4px 11px 4px;
+  text-wrap: nowrap;
+}
+.p-interview-archive__list .item__content .more-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  position: relative;
+  z-index: 0;
+}
+@media (max-width: 900px) {
+  .p-interview-archive__list .item__content .more-button {
+    order: 5;
+    transform: translateY(-18px);
+  }
+}
+.p-interview-archive__list .item__content .more-button .text {
+  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.8px;
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .p-interview-archive__list .item__content .more-button .text {
+    font-size: 12px;
+  }
+}
+.p-interview-archive__list .item__content .more-button .text .normal {
+  position: relative;
+  transition: 0.3s;
+}
+.p-interview-archive__list .item__content .more-button .text .hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50px);
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.p-interview-archive__list .item__content .more-button .arrow-right {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.p-interview-archive__list .item__content .more-button .arrow-right .normal-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 0.3s;
+}
+.p-interview-archive__list .item__content .more-button .arrow-right .hover-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50%);
+  transition: 0.3s;
 }
 .p-interview-archive__list .item__thumbnail {
   width: 70%;
-  max-height: 368px;
+  height: 420px;
+}
+@media (max-width: 900px) {
+  .p-interview-archive__list .item__thumbnail {
+    order: 1;
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 18/9;
+  }
+}
+.p-interview-archive__list .item__thumbnail .number {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 100%; /* 12px */
+  letter-spacing: 0.6px;
+  display: none;
+}
+@media (max-width: 900px) {
+  .p-interview-archive__list .item__thumbnail .number {
+    display: block;
+    position: absolute;
+    left: -8%;
+    top: 9%;
+    transform: rotate(90deg) translate(45px, 65px);
+  }
 }
 .p-interview-archive__list .item__thumbnail img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 10%;
      object-position: 10%;
+}
+.p-interview-archive__list .item__thumbnail .explanation {
+  margin-bottom: 40px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  display: none;
+}
+@media (max-width: 900px) {
+  .p-interview-archive__list .item__thumbnail .explanation {
+    display: flex;
+    position: absolute;
+    bottom: 18px;
+    left: 16px;
+    margin-bottom: 0%;
+  }
+}
+@media (max-width: 600px) {
+  .p-interview-archive__list .item__thumbnail .explanation {
+    font-size: 14px;
+  }
+}
+.p-interview-archive__list .item__thumbnail .explanation .text {
+  background: var(--color-primary, #182346);
+  color: #fff;
+  padding: 4px 11px 4px;
+  text-wrap: nowrap;
+}
+
+.single-interview {
+  height: 95vh;
+}
+@media (max-width: 1000px) {
+  .single-interview {
+    height: auto;
+  }
+}
+@media (max-width: 425px) {
+  .single-interview {
+    padding: 0;
+  }
+}
+.single-interview .content {
+  gap: 48px;
+  padding: 231px 0px 64px;
+}
+@media (max-width: 1000px) {
+  .single-interview .content {
+    flex-direction: column;
+    padding: 131px 0px 64px;
+    gap: 0;
+  }
+}
+.single-interview .content .single-interview-textbox {
+  justify-content: flex-start;
+  position: relative;
+  z-index: 2;
+  width: 30%;
+  padding-bottom: 0px;
+}
+@media (max-width: 1000px) {
+  .single-interview .content .single-interview-textbox {
+    display: contents;
+  }
+}
+.single-interview .content .single-interview-textbox .explanation {
+  margin-bottom: 40px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 1000px) {
+  .single-interview .content .single-interview-textbox .explanation {
+    order: 2;
+    margin-top: 28px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 625px) {
+  .single-interview .content .single-interview-textbox .explanation {
+    font-size: 22px;
+  }
+}
+@media (max-width: 425px) {
+  .single-interview .content .single-interview-textbox .explanation {
+    padding: 0 24px;
+    font-size: 18px;
+  }
+}
+.single-interview .content .single-interview-textbox .explanation .text {
+  background: var(--color-primary, #182346);
+  color: #fff;
+  padding: 4px 11px 4px;
+  text-wrap: nowrap;
+}
+.single-interview .content .single-interview-textbox .title {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 40px */
+  letter-spacing: 2px;
+}
+@media (max-width: 1000px) {
+  .single-interview .content .single-interview-textbox .title {
+    order: 3;
+    font-size: 24px;
+  }
+}
+@media (max-width: 425px) {
+  .single-interview .content .single-interview-textbox .title {
+    padding: 0 24px;
+  }
+}
+.single-interview .content .single-interview-textbox .interview-date {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 300%; /* 48px */
+  letter-spacing: 0.8px;
+}
+@media (max-width: 1000px) {
+  .single-interview .content .single-interview-textbox .interview-date {
+    order: 4;
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .single-interview .content .single-interview-textbox .interview-date {
+    padding: 0 24px;
+  }
+}
+.single-interview .content .single-interview-textbox .interview-text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%;
+  letter-spacing: 0.7px;
+  margin-top: auto;
+}
+@media (max-width: 1000px) {
+  .single-interview .content .single-interview-textbox .interview-text {
+    order: 6;
+    margin-top: 48px;
+  }
+}
+@media (max-width: 425px) {
+  .single-interview .content .single-interview-textbox .interview-text {
+    padding: 0 24px;
+  }
+}
+.single-interview .content .single-interview-imgbox {
+  position: relative;
+  z-index: 1;
+  width: 70%;
+  gap: 32px;
+  height: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 1000px) {
+  .single-interview .content .single-interview-imgbox {
+    display: contents;
+  }
+}
+@media (max-width: 1000px) {
+  .single-interview .content .single-interview-imgbox .breadcrumbs {
+    order: 1;
+  }
+}
+@media (max-width: 425px) {
+  .single-interview .content .single-interview-imgbox .breadcrumbs {
+    padding: 0 24px;
+  }
+}
+.single-interview .content .single-interview-imgbox img {
+  width: 100%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1000px) {
+  .single-interview .content .single-interview-imgbox img {
+    order: 5;
+    margin-top: 20px;
+  }
+}
+
+.single-about {
+  position: relative;
+  width: 100%;
+  min-height: 3440px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+@media (max-width: 1000px) {
+  .single-about {
+    min-height: 4800px;
+  }
+}
+@media (max-width: 425px) {
+  .single-about {
+    min-height: 1560px;
+  }
+}
+.single-about .skeltonbg {
+  width: 22%;
+  height: 100%;
+  min-height: 3440px;
+  background-color: rgba(255, 255, 255, 0);
+}
+@media (max-width: 1000px) {
+  .single-about .skeltonbg {
+    min-height: 4800px;
+  }
+}
+@media (max-width: 600px) {
+  .single-about .skeltonbg {
+    width: 0%;
+  }
+}
+@media (max-width: 425px) {
+  .single-about .skeltonbg {
+    min-height: 1560px;
+  }
+}
+.single-about .whitebg {
+  width: 78%;
+  height: 100%;
+  min-height: 3440px;
+  background-color: #fff;
+}
+@media (min-width: 1450px) {
+  .single-about .whitebg {
+    width: 70%;
+  }
+}
+@media (max-width: 1000px) {
+  .single-about .whitebg {
+    min-height: 4800px;
+  }
+}
+@media (max-width: 600px) {
+  .single-about .whitebg {
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .single-about .whitebg {
+    min-height: 1560px;
+  }
+}
+.single-about--content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+@media (max-width: 1000px) {
+  .single-about--content {
+    top: 0;
+    transform: translate(-50%, 0);
+    gap: 120px;
+  }
+}
+@media (max-width: 425px) {
+  .single-about--content {
+    padding: 0 24px;
+  }
+}
+.single-about--content .cont {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10%;
+  width: 100%;
+}
+@media (max-width: 1300px) {
+  .single-about--content .cont {
+    padding: 0 32px;
+  }
+}
+@media (max-width: 1000px) {
+  .single-about--content .cont {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.single-about--content .cont .normal-img {
+  width: calc(100% / 2 - 10% * (2 - 1) / 2);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1000px) {
+  .single-about--content .cont .normal-img {
+    order: 1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+@media (max-width: 425px) {
+  .single-about--content .cont .normal-img {
+    min-width: 100%;
+  }
+}
+.single-about--content .cont--textbox {
+  margin: 8% 0 0;
+  width: calc(100% / 2 - 10% * (2 - 1) / 2);
+}
+@media (max-width: 1100px) {
+  .single-about--content .cont--textbox {
+    margin: 0;
+    order: 2;
+  }
+}
+@media (max-width: 1000px) {
+  .single-about--content .cont--textbox {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+@media (max-width: 1000px) {
+  .single-about--content .cont--textbox .common-titlebox {
+    align-items: center;
+    margin: 5% 0 0;
+  }
+}
+.single-about--content .cont--textbox .common-titlebox .title {
+  text-align: center;
+  margin-bottom: 0px;
+  width: auto;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%; /* 64px */
+  letter-spacing: 1.6px;
+  text-align: left;
+}
+@media (max-width: 1100px) {
+  .single-about--content .cont--textbox .common-titlebox .title {
+    text-wrap: wrap;
+  }
+}
+@media (max-width: 1000px) {
+  .single-about--content .cont--textbox .common-titlebox .title {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+.single-about--content .cont--textbox--text {
+  margin: 8% 0 6% 0;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  .single-about--content .cont--textbox--text {
+    order: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.single-about--content .cont--textbox--text .text {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 200%; /* 32px */
+  letter-spacing: 0.8px;
+  text-align: left;
+}
+@media (max-width: 425px) {
+  .single-about--content .cont--textbox--text .text {
+    font-size: 16px;
+  }
+}
+.single-about--content .cont--textbox--text .text .br-nosp {
+  display: block;
+}
+@media (max-width: 425px) {
+  .single-about--content .cont--textbox--text .text .br-nosp {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .single-about--content .cont .common-button {
+    order: 4;
+  }
+}
+
+.single-interview-post {
+  padding: 200px 32px 200px;
+}
+.single-interview-post .wrapper {
+  transition: 0.3s;
+  transition-delay: 0.3s;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 121px;
+  margin-top: 120px;
+}
+@media (max-width: 1100px) {
+  .single-interview-post .wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 425px) {
+  .single-interview-post .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    max-height: 1070px;
+  }
+}
+.single-interview-post .wrapper .slide {
+  width: calc(100% / 2 - 121px * (2 - 1) / 2);
+  height: 100%;
+  transition: 1s;
+}
+@media (max-width: 1100px) {
+  .single-interview-post .wrapper .slide {
+    width: 90%;
+  }
+}
+@media (max-width: 425px) {
+  .single-interview-post .wrapper .slide {
+    margin-right: 0 !important;
+  }
+}
+.single-interview-post .wrapper .slide .imgbox {
+  width: 100%;
+  height: 100%;
+  max-height: 368px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+@media (max-width: 425px) {
+  .single-interview-post .wrapper .slide .imgbox {
+    max-height: 250px;
+  }
+}
+.single-interview-post .wrapper .slide .imgbox .number {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.8px;
+  display: inline;
+  position: absolute;
+  writing-mode: vertical-rl;
+  transform: translateX(-25px);
+}
+.single-interview-post .wrapper .slide .imgbox .img {
+  width: 100%;
+  height: 100%;
+  max-height: 368px;
+  position: relative;
+  overflow: hidden;
+}
+.single-interview-post .wrapper .slide .imgbox .img img {
+  width: 100%;
+  height: 100%;
+  max-height: 368px;
+  min-height: 368px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s;
+}
+@media (max-width: 425px) {
+  .single-interview-post .wrapper .slide .imgbox .img img {
+    max-height: 250px;
+    min-height: 250px;
+  }
+}
+.single-interview-post .wrapper .slide .imgbox .img .title {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 180%; /* 36px */
+  letter-spacing: 0.9px;
+  max-width: 300px;
+  color: #FFF;
+}
+@media (max-width: 425px) {
+  .single-interview-post .wrapper .slide .imgbox .img .title {
+    bottom: 10px;
+    left: 10px;
+  }
+}
+.single-interview-post .wrapper .slide .imgbox .img .title .title-text {
+  background: var(--color-primary, #182346);
+}
+.single-interview-post .wrapper .slide .textcont {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.single-interview-post .wrapper .slide .textcont .name {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 32px */
+  letter-spacing: 1.6px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #182346;
+  gap: 10px;
+}
+.single-interview-post .wrapper .slide .textcont .name .job {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+.single-interview-post .wrapper .slide .textcont .more-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100px;
+  height: auto;
+  position: relative;
+  transition: all 0.3s ease;
+  background: var(--color-primary, #182346);
+}
+.single-interview-post .wrapper .slide .textcont .more-button .text {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+.single-interview-post .wrapper .slide .textcont .more-button .text .normal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-white, #182346);
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.8px;
+  font-feature-settings: "halt" on;
+  transition: all 0.3s ease;
+}
+.single-interview-post .wrapper .slide .textcont .more-button .text .hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 40px);
+  color: var(--color-white, #182346);
+  width: 100%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
+  letter-spacing: 0.8px;
+  font-feature-settings: "halt" on;
+  transition: all 0.3s ease;
+}
+.single-interview-post .wrapper .slide .textcont .more-button .arrow-right {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+.single-interview-post .wrapper .slide .textcont .more-button .arrow-right .arrow-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.single-interview-post .wrapper .slide .textcont .more-button .arrow-right .arrow-box .normal-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.single-interview-post .wrapper .slide .textcont .more-button .arrow-right .arrow-box .hover-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50%);
+}
+.single-interview-post .wrapper .slide .textcont .more-button.nobg {
+  background: var(--color-primary, rgba(24, 35, 70, 0));
+}
+.single-interview-post .wrapper .slide:hover .imgbox .img img {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.single-interview-post .wrapper .slide:hover .more-button .text .normal {
+  transition: all 0.3s ease;
+  transform: translate(-50%, -40px);
+}
+.single-interview-post .wrapper .slide:hover .more-button .text .hover {
+  transition: all 0.3s ease;
+  transform: translate(-50%, -50%);
+}
+.single-interview-post .wrapper .slide:hover .more-button .arrow-right .arrow-box .normal-img {
+  transform: translate(50px, -50%);
+}
+.single-interview-post .wrapper .slide:hover .more-button .arrow-right .arrow-box .hover-img {
+  transform: translate(-50%, -50%);
+}
+
+.single-interview-entry {
+  padding: 200px 0px 200px;
 }
 
 /* Module Components */

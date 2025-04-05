@@ -28,7 +28,7 @@
     position: relative;
     padding: 0 50px;
     @media (max-width: 768px) {
-        padding: 0px;
+        padding: 0px 24px;
     }
     @media (max-width: 600px) {
         align-items: flex-end;
@@ -129,15 +129,15 @@
         justify-content: center;
         flex-direction: column;
         width: 100%;
-        // @media (max-width: 1500px) {
-        //     padding: 0 64px;
-        // }
-        // @media (max-width: 768px) {
-        //     padding: 0 32px;
-        // }
-        // @media (max-width: 425px) {
-        //     padding: 0 20px;
-        // }
+        &.active{
+            @media (min-width: 1300px) {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 94%;
+            }
+        }
         .main-title{
             display: flex;
             align-items: flex-start;
@@ -147,7 +147,7 @@
             .title1{
                 color: var(--color-primary, #182346);
                 @include marcellus;
-                font-size: 10vw;
+                font-size: 8vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 110%; 
@@ -177,7 +177,7 @@
             .title2{
                 color: var(--color-primary, #182346);
                 @include marcellus;
-                font-size: 10vw;
+                font-size: 8vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 110%; 
@@ -206,7 +206,7 @@
             .title3{
                 color: var(--color-primary, #182346);
                 @include marcellus;
-                font-size: 10vw;
+                font-size: 8vw;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 110%; 
@@ -1168,6 +1168,9 @@
     background-color: #fff;
     @media (max-width: 425px) {
         padding: 300px 0 200px;
+    }
+    &.entry-interview{
+        padding: 0 0 200px;
     }
     &--text{
         @include fosanjp;
