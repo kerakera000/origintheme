@@ -82,8 +82,9 @@ get_template_part('./template/head');
                 <div class="category-box">
                     <h2 class="category-box--title">
                         カスタマーサクセス/<br>
-                        エンジニア職</h2>
-                    <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Rectangle72.png" alt="">
+                        エンジニア職
+                    </h2>
+                    <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pbusiness/Rectangle72.png" alt="">
                 </div>
                 <div class="introduction-box">
                     <div class="job-box">
@@ -123,7 +124,7 @@ get_template_part('./template/head');
             <div class="PCbusiness--type-box">
                 <div class="category-box">
                     <h2 class="category-box--title">ビジネス職</h2>
-                    <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Rectangle73.png" alt="">
+                    <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pbusiness/Rectangle73.png" alt="">
                 </div>
                 <div class="introduction-box">
                     <div class="job-box">
@@ -186,13 +187,12 @@ get_template_part('./template/head');
             <p class="PCcareer-path--text">COMPANY事業部のキャリアパスは大きく分けて3つあります。マネジメント・スペシャリスト・組織運営<br>
                 と、社員一人ひとりがそれぞれの特性を活かし、能力を発揮できるキャリアを進んでいくことができます。
             </p>
-        </div>
-            
-        <div class="PCcareer-path--imgbox">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Group152.svg" alt="">
-        </div>
-        <div class="PCcareer-path--cardbox">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Group155.svg" alt="">
+            <div class="PCcareer-path--imgbox">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Group152.svg" alt="">
+            </div>
+            <div class="PCcareer-path--cardbox">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Group155.svg" alt="">
+            </div>
         </div>
     </div>
 

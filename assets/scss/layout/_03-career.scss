@@ -20,17 +20,23 @@
             &--title {
                 white-space: nowrap;
                 font-family: "Noto Sans JP",serif;
-                font-size: 20px;
+                font-size: 28px;
                 font-style: bold;
                 font-weight: 400;
-                line-height: 200%;
-                letter-spacing: 0.9px;
+                line-height: 160%;
+                letter-spacing: 5%;
                 text-align: left;
                 color: #182346;
+                
+            }
+            &--img {
+                width: 100%;
+                height: auto;
             }
         }
         .introduction-box{
-            width: 75%;
+            width: max-content;
+            display: flex; justify-content: space-between;
             align-items: flex-start;
             justify-content: flex-start;
             flex-direction: column;
@@ -40,21 +46,24 @@
                 justify-content: flex-start;
                 gap: 30px;
                 &--content {
+                    padding-bottom: 20px;
                     .num-box{
                         display: flex;
                         align-items: flex-start;
                         justify-content: flex-start;
+                        padding-bottom: 20px;
                         gap: 10px;
                         .job-box-num {
-                            font-family: "Noto Sans JP",serif;
-                            font-size: 8px;
-                            font-style: normal;
-                            font-weight: 300;
-                            line-height: 200%;
-                            letter-spacing: 0.8px;
+                            font-family: "Poppins",serif;
+                            font-size: 12px;
+                            font-weight: 600;
+                            line-height: 100%;
+                            width: max-content;
+                            white-space: nowrap;
+                            letter-spacing: 5%; 
                             text-align: left;
-                            color: #1B71B7;
-                            padding: 5px 0 0;
+                            color: #0050B5;
+                            padding: 4px 0 0;
                         }
                         .textbox{
                             display: flex;
@@ -63,24 +72,31 @@
                             flex-direction: column;
                             gap: 10px;
                             &--jobtitle {
+                                display: flex;
+                                align-items: flex-start; justify-content: flex-start;
                                 font-family: "Noto Sans JP",serif;
-                                font-size: 15px;
-                                font-style: normal;
-                                font-weight: 300;
-                                line-height: 200%;
-                                letter-spacing: 0.8px;
+                                font-size: 20px;
+                                font-style: Medium;
+                                font-weight: 500;
+                                line-height: 100%;
+                                letter-spacing: 0%;
                                 text-align: left;
-                                color: #000000;
+                                color: #182346;
+                                
+                                
                             }
                             &--text {
                                 font-family: "Noto Sans JP",serif;
-                                font-size: 10px;
-                                font-style: normal;
-                                font-weight: 300;
+                                font-size: 16px;
+                                font-style: Medium;
+                                font-weight: 500;
                                 line-height: 200%;
-                                letter-spacing: 0.8px;
+                                letter-spacing: 5%;
                                 text-align: left;
-                                color: #000000;
+                                white-space: nowrap;
+                                color: #182346;
+                                padding-top: 20px;
+                                
                             }
                         }
                     }
@@ -103,7 +119,6 @@
     flex-direction: column;
     padding: 0 0 200px;
     background-color: #A1C1CD;
-    
     .PCcareer-path--content inner-content{
         width: 100%;
         display: flex;
@@ -121,11 +136,23 @@
             text-align: left;
             color: #182346;
         }
-        .career-path-img{
+        .career-path-text{
+            font-family: "Noto Sans JP",serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 200%;
+            letter-spacing: 5%;
+            text-align: left;
+            color: #182346;
+        }
+        &--imgbox{
             width: 100%;
             height: auto;
         }
+        
     }
+    
 }
 
 .PCskillup {
