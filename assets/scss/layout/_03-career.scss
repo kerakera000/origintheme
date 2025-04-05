@@ -95,6 +95,39 @@
     }
 }
 
+.PCcareer-path {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 200px;
+    background-color: #A1C1CD;
+    
+    .PCcareer-path--content inner-content{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        .career-path-title{
+            font-family: "Noto Sans JP",serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200%;
+            letter-spacing: 0.9px;
+            text-align: left;
+            color: #182346;
+        }
+        .career-path-img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
 .PCskillup {
 
 }

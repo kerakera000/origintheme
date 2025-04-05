@@ -177,12 +177,33 @@ get_template_part('./template/head');
         </div>
     </div>
 
-    <div class=PCskillup>
+    <div class="PCcareer-path">
+        <div class="PCcareer-path--content inner-content">
+            <div class="common-titlebox left">
+                <span class="sub-title">Career Path</span>
+                <h2 class="title">キャリアパス</h2>
+            </div>
+            <p class="PCcareer-path--text">COMPANY事業部のキャリアパスは大きく分けて3つあります。マネジメント・スペシャリスト・組織運営<br>
+                と、社員一人ひとりがそれぞれの特性を活かし、能力を発揮できるキャリアを進んでいくことができます。
+            </p>
+        </div>
+            
+        <div class="PCcareer-path--imgbox">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Group152.svg" alt="">
+        </div>
+        <div class="PCcareer-path--cardbox">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Group155.svg" alt="">
+        </div>
+    </div>
+
+
+    <div class="PCskillup">
         <div class="PCskillup--content inner-content">
             <div class="common-titlebox left">
                 <span class="sub-title">Skill Up</span>
                 <h2 class="title">スキルアップ支援</h2>
             </div>
+
         </div>
     </div>
 
