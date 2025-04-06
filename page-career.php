@@ -73,7 +73,7 @@ get_template_part('./template/head');
     </div>
 
     <div class="PCbusiness">
-        <div class="PCbusiness--content inner-content">
+        <div class="PCbusiness--content inner-content1400">
             <div class="common-titlebox left">
                 <span class="sub-title">Job</span>
                 <h2 class="title">職種紹介</h2>

@@ -8,6 +8,7 @@
     flex-direction: column;
     padding: 364px 0 200px;
     background-color: #fff;
+
     &--type-box {
         display: flex;
         align-items: flex-start;
@@ -45,6 +46,7 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 gap: 30px;
+
                 &--content {
                     padding-bottom: 20px;
                     .num-box{
