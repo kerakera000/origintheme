@@ -3522,13 +3522,18 @@ button {
 .PCbusiness--type-box {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: nowrap;
   gap: 40px;
   width: 100%;
 }
 .PCbusiness--type-box .category-box {
   width: 20%;
+  min-height: 308px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .PCbusiness--type-box .category-box--title {
   white-space: nowrap;
@@ -3544,6 +3549,7 @@ button {
 .PCbusiness--type-box .category-box--img {
   width: 100%;
   height: auto;
+  margin-top: auto;
 }
 .PCbusiness--type-box .introduction-box {
   width: -moz-max-content;

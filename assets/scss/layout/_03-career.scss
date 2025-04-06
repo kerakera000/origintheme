@@ -12,12 +12,18 @@
     &--type-box {
         display: flex;
         align-items: flex-start;
-        justify-content: flex-start;
+        justify-content: space-between;
         flex-wrap: nowrap;
         gap: 40px;
         width: 100%;
         .category-box{
             width: 20%;
+            min-height: 308px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            
             &--title {
                 white-space: nowrap;
                 font-family: "Noto Sans JP",serif;
@@ -33,6 +39,8 @@
             &--img {
                 width: 100%;
                 height: auto;
+                margin-top: auto;
+
             }
         }
         .introduction-box{

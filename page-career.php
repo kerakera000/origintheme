@@ -86,7 +86,7 @@ get_template_part('./template/head');
                     </h2>
                     <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pbusiness/Rectangle72.png" alt="">
                 </div>
-                <div class="introduction-box">
+                <div class="introduction-box padding-class">
                     <div class="job-box">
                         <div class="job-box--content">
                             <div class="num-box">
