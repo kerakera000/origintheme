@@ -3533,16 +3533,23 @@ button {
 .PCbusiness--type-box .category-box--title {
   white-space: nowrap;
   font-family: "Noto Sans JP", serif;
-  font-size: 20px;
+  font-size: 28px;
   font-style: bold;
   font-weight: 400;
-  line-height: 200%;
-  letter-spacing: 0.9px;
+  line-height: 160%;
+  letter-spacing: 5%;
   text-align: left;
   color: #182346;
 }
+.PCbusiness--type-box .category-box--img {
+  width: 100%;
+  height: auto;
+}
 .PCbusiness--type-box .introduction-box {
-  width: 75%;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  justify-content: space-between;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
@@ -3553,22 +3560,28 @@ button {
   justify-content: flex-start;
   gap: 30px;
 }
+.PCbusiness--type-box .introduction-box .job-box--content {
+  padding-bottom: 20px;
+}
 .PCbusiness--type-box .introduction-box .job-box--content .num-box {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-bottom: 20px;
   gap: 10px;
 }
 .PCbusiness--type-box .introduction-box .job-box--content .num-box .job-box-num {
-  font-family: "Noto Sans JP", serif;
-  font-size: 8px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 200%;
-  letter-spacing: 0.8px;
+  font-family: "Poppins", serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 100%;
+  width: -moz-max-content;
+  width: max-content;
+  white-space: nowrap;
+  letter-spacing: 5%;
   text-align: left;
-  color: #1B71B7;
-  padding: 5px 0 0;
+  color: #0050B5;
+  padding: 4px 0 0;
 }
 .PCbusiness--type-box .introduction-box .job-box--content .num-box .textbox {
   display: flex;
@@ -3578,24 +3591,29 @@ button {
   gap: 10px;
 }
 .PCbusiness--type-box .introduction-box .job-box--content .num-box .textbox--jobtitle {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   font-family: "Noto Sans JP", serif;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 200%;
-  letter-spacing: 0.8px;
+  font-size: 20px;
+  font-style: Medium;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
   text-align: left;
-  color: #000000;
+  color: #182346;
 }
 .PCbusiness--type-box .introduction-box .job-box--content .num-box .textbox--text {
   font-family: "Noto Sans JP", serif;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 300;
+  font-size: 16px;
+  font-style: Medium;
+  font-weight: 500;
   line-height: 200%;
-  letter-spacing: 0.8px;
+  letter-spacing: 5%;
   text-align: left;
-  color: #000000;
+  white-space: nowrap;
+  color: #182346;
+  padding-top: 20px;
 }
 .PCbusiness--type-box .introduction-box .job-box--content .hr1 {
   border: none;
@@ -3604,49 +3622,49 @@ button {
 }
 
 .PCcareer-path {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 200px 32px;
-  background-color: #A1C1CD;
-}
-.PCcareer-path--content {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 115px;
+  flex-direction: column;
+  padding: 0 0 200px;
+  background-color: #A1C1CD;
 }
-.PCcareer-path--content .common-titlebox {
-  width: calc(100% / 2 - 0px * (2 - 1) / 2);
+.PCcareer-path .PCcareer-path--content inner-content1400 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
 }
-.PCcareer-path--content .text {
-  padding-top: 100px;
-  width: 100px;
-  font-family: "Noto Sans JP";
-  width: calc(100% / 2 - 0px * (2 - 1) / 2);
+.PCcareer-path .PCcareer-path--content inner-content1400 .career-path-title {
+  font-family: "Noto Sans JP", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #182346;
+}
+.PCcareer-path .PCcareer-path--content inner-content1400 .career-path-text {
+  font-family: "Noto Sans JP", serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 200%;
   letter-spacing: 5%;
+  text-align: left;
   color: #182346;
 }
-.PCcareer-path--imgbox {
-  max-width: 100%;
-  padding-bottom: 80px;
+.PCcareer-path .PCcareer-path--content inner-content1400--imgbox {
+  width: 100%;
+  height: auto;
 }
-.PCcareer-path--imgbox img {
-  display: block;
-  width: 100vw;
-}
-.PCcareer-path--cardbox {
-  max-width: 100%;
-}
-.PCcareer-path--cardbox img {
-  display: block;
-  width: 100vw;
+.PCcareer-path .PCcareer-path--content inner-content1400 .PCcareer-path--cardbox {
+  padding-top: 80px;
+  width: 100%;
 }
 
 .PCtraining {
