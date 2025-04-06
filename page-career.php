@@ -235,12 +235,12 @@ get_template_part('./template/head');
             </div>
             <div class="PCtraining--explain">
                 <p class="explain-text">
-                COMPANY事業部の新入社員は、新卒採用の場合<br>
-                は約3ヶ月、中途採用の場合は約2ヶ月に渡り研修<br>
-                に参加します。<br>
-                ビジネス研修や技術研修などのさまざまなカリ<br>
-                キュラムを経て、最終的にCOMPANY(R)︎の基礎習<br>
-                得を目指します。<br>
+                COMPANY事業部の新入社員は、新卒採用の場合
+                は約3ヶ月、中途採用の場合は約2ヶ月に渡り研修
+                に参加します。
+                ビジネス研修や技術研修などのさまざまなカリ
+                キュラムを経て、最終的にCOMPANY(R)︎の基礎習
+                得を目指します。
                 </p>
                 <div class="explain-flow">
                     <div class="flow-col">
@@ -292,11 +292,11 @@ get_template_part('./template/head');
                                 </div>
                                 <div class=box2>
                                     <p class="box2--text">
-                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ<br>
-                                    ティマネジメントシステム）など、このステップでは業務を進め<br>
-                                    るうえで必要とされるビジネススキルを学びます。ある程度の<br>
-                                    基礎を習得している中途採用者の方も研修に参加してもらい、<br>
-                                    セラクが重視している理念や価値観を理解していただきます。<br>
+                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ
+                                    ティマネジメントシステム）など、このステップでは業務を進め
+                                    るうえで必要とされるビジネススキルを学びます。ある程度の
+                                    基礎を習得している中途採用者の方も研修に参加してもらい、
+                                    セラクが重視している理念や価値観を理解していただきます。
                                     </p>
                                     <span class="box2--img">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/curriculum.svg" alt="">
@@ -350,11 +350,11 @@ get_template_part('./template/head');
                                 </div>
                                 <div class=box2>
                                     <p class="box2--text">
-                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ<br>
-                                    ティマネジメントシステム）など、このステップでは業務を進め<br>
-                                    るうえで必要とされるビジネススキルを学びます。ある程度の<br>
-                                    基礎を習得している中途採用者の方も研修に参加してもらい、<br>
-                                    セラクが重視している理念や価値観を理解していただきます。<br>
+                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ
+                                    ティマネジメントシステム）など、このステップでは業務を進め
+                                    るうえで必要とされるビジネススキルを学びます。ある程度の
+                                    基礎を習得している中途採用者の方も研修に参加してもらい、
+                                    セラクが重視している理念や価値観を理解していただきます。
                                     </p>
                                     <span class="box2--img">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/curriculum.svg" alt="">
@@ -408,11 +408,11 @@ get_template_part('./template/head');
                                 </div>
                                 <div class=box2>
                                     <p class="box2--text">
-                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ<br>
-                                    ティマネジメントシステム）など、このステップでは業務を進め<br>
-                                    るうえで必要とされるビジネススキルを学びます。ある程度の<br>
-                                    基礎を習得している中途採用者の方も研修に参加してもらい、<br>
-                                    セラクが重視している理念や価値観を理解していただきます。<br>
+                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ
+                                    ティマネジメントシステム）など、このステップでは業務を進め
+                                    るうえで必要とされるビジネススキルを学びます。ある程度の
+                                    基礎を習得している中途採用者の方も研修に参加してもらい、
+                                    セラクが重視している理念や価値観を理解していただきます。
                                     </p>
                                     <span class="box2--img">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/curriculum.svg" alt="">
@@ -466,11 +466,11 @@ get_template_part('./template/head');
                                 </div>
                                 <div class=box2>
                                     <p class="box2--text">
-                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ<br>
-                                    ティマネジメントシステム）など、このステップでは業務を進め<br>
-                                    るうえで必要とされるビジネススキルを学びます。ある程度の<br>
-                                    基礎を習得している中途採用者の方も研修に参加してもらい、<br>
-                                    セラクが重視している理念や価値観を理解していただきます。<br>
+                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ
+                                    ティマネジメントシステム）など、このステップでは業務を進め
+                                    るうえで必要とされるビジネススキルを学びます。ある程度の
+                                    基礎を習得している中途採用者の方も研修に参加してもらい、
+                                    セラクが重視している理念や価値観を理解していただきます。
                                     </p>
                                     <span class="box2--img">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/curriculum.svg" alt="">

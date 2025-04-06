@@ -3663,9 +3663,7 @@ button {
   margin-bottom: 120px;
 }
 .PCtraining--explain .explain-text {
-  width: -moz-max-content;
-  width: max-content;
-  white-space: nowrap;
+  width: 50%;
   font-family: "Noto Sans JP", serif;
   font-size: 16px;
   font-weight: 500;
@@ -3746,12 +3744,19 @@ button {
   padding-top: 64px;
 }
 .PCtraining--detail .detailbox--cont .Tcontent .box2--text {
+  width: 50%;
+  padding-right: 48px;
   font-family: "Noto Sans JP", serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 200%;
   letter-spacing: 5%;
   color: #182346;
+}
+.PCtraining--detail .detailbox--cont .Tcontent .box2--img {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
 }
 .PCtraining .partition-line {
   width: 100%;
