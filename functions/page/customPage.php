@@ -15,6 +15,31 @@ function create_custom_pages_with_optional_parents() {
       'slug' => 'career',
       'parent_slug' => '',
     ],
+    [
+      'title' => '会社情報',
+      'slug' => 'company',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => 'インタビュー',
+      'slug' => 'interview',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => 'Masanori.U',
+      'slug' => 'masanori-u',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => 'Yuki.S',
+      'slug' => 'yuki-s',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => 'Risa.T',
+      'slug' => 'risa-t',
+      'parent_slug' => '',
+    ],
   ];
 
   // foreach ($pages as $page) {

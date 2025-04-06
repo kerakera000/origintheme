@@ -1,183 +1,218 @@
 (function ($) {
-    
-})(jQuery)
+    // HeroImgのアニメーション
+    setTimeout(() => {
+        $('#HeroImg').addClass('active');
+    }, 1000);
 
-window.onload = function() {
+    $(window).on('load', function() {
+        // Swiperの初期化
+        var swiper = new Swiper(".InterviewSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 80,
+            slideMinWidth: 468,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            speed: 4000,
+            autoplay: {
+                delay: 1000,
+            },
+            breakpoints: {
+                425: {
+                    enabled:false,
+                    slidesPerView: 1,
+                    slideMinWidth: 468,
+                },
+                768: {
+                    enabled: true,
+                    slidesPerView: 2,
+                    slideMinWidth: 468,
+                },
+                1000: {
+                    enabled: true,
+                    slidesPerView: 3,
+                    slideMinWidth: 468,
+                }
+            },
+            enabled: false
+        });
 
-    var swiper = new Swiper(".InterviewSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 80,
-        slideMinWidth: 468,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        loop: true,
-        speed: 4000,
-        autoplay: {
-            delay: 1000,
-        },
-        breakpoints: {
-            425: {
-                enabled:false,
-                slidesPerView: 1,
-                slideMinWidth: 468,
+        const missionSwiper = new Swiper('.PAmissionSwiper', {
+            slidesPerView: 2,
+            centeredSlides: false,
+            initialSlide: 1,
+            spaceBetween: 24,
+            autoplay: {
+                delay: 3000,
             },
-            768: {
-                enabled: true,
-                slidesPerView: 2,
-                slideMinWidth: 468,
+            loop: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3.4,
+                    slideMinWidth: 468,
+                    spaceBetween: 80,
+                    initialSlide: 2,
+                },
             },
-            1000: {
-                enabled: true,
-                slidesPerView: 3,
-                slideMinWidth: 468,
+        });
+
+        // NEWS-DECORATION-TEXT要素の処理
+        const $newsDecorationText = $('#NEWS-DECORATION-TEXT');
+        const originalText = $newsDecorationText.text();
+        const repeatedText = Array(10).fill(`<span>${originalText}</span>`).join('');
+        const $newsDecorationTextInner = $('<div>').addClass('news-decoration-text-inner').html(repeatedText);
+        $newsDecorationText.empty().append($newsDecorationTextInner);
+
+        // タイトルアニメーション
+        setTimeout(() => {
+            $('.hero-textbox').addClass('active');
+        }, 1400);
+
+        setTimeout(() => {
+            $('.title1').addClass('active');
+        }, 1400);
+
+        setTimeout(() => {
+            $('.title2').addClass('active');
+        }, 1600);
+
+        setTimeout(() => {
+            $('.title3').addClass('active');
+        }, 1800);
+
+        setTimeout(() => {
+            $('.subimg').addClass('active');
+        }, 2000);
+
+        setTimeout(() => {
+            $('#ScrollDown').addClass('active');
+        }, 2200);
+
+        // 背景アニメーション
+        setTimeout(() => {
+            $('.bganim1, .bganim2').addClass('active');
+        }, 800);
+
+        // スクロールアニメーション
+        $(window).on('scroll', function() {
+            const scrollPosition = $(window).scrollTop();
+            
+            if (scrollPosition > 40) {
+                $('.bganim1, .bganim2, #ScrollDown').addClass('scroll-active');
+            } else {
+                $('.bganim1, .bganim2, #ScrollDown').removeClass('scroll-active');
             }
-        },
-        enabled: false
-    });
-    const missionSwiper = new Swiper('.PAmissionSwiper', {
-        slidesPerView: 2,
-        centeredSlides: false,
-        initialSlide: 2,  // 3枚目をアクティブにする
-        spaceBetween: 80,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        loop: true,
-        breakpoints: {
-            425: {
-                slidesPerView: 2,
-                slideMinWidth: 468,
-            },
-            768: {
-                slidesPerView: 3.4,
-                slideMinWidth: 468,
-            },
-        },
+
+            // タイトルとサブ画像のスクロールアニメーション
+            if (scrollPosition > 890) {
+                $('.title1, .title2, .title3, .subimg, .hero-textbox').addClass('scroll-active');
+            } else {
+                $('.title1, .title2, .title3, .subimg, .hero-textbox').removeClass('scroll-active');
+            }
+
+            // ヘッダーのスクロールアニメーション
+            if (scrollPosition > 50) {
+                $('#HEADER').addClass('active');
+            } else {
+                $('#HEADER').removeClass('active');
+            }
+        });
     });
 
-    // NEWS-DECORATION-TEXT要素の監視
-    const newsDecorationText = document.getElementById('NEWS-DECORATION-TEXT');
-    const newsDecorationTextInner = document.createElement('div');
-    newsDecorationTextInner.className = 'news-decoration-text-inner';
-    // オリジナルのテキストを2回複製して配置
-    const originalText = newsDecorationText.textContent;
-    newsDecorationTextInner.innerHTML = `<span>${originalText}</span><span>${originalText}</span><span>${originalText}</span><span>${originalText}</span><span>${originalText}</span><span>${originalText}</span><span>${originalText}</span><span>${originalText}</span><span>${originalText}</span><span>${originalText}</span>`;
-    newsDecorationText.textContent = '';
-    newsDecorationText.appendChild(newsDecorationTextInner);
+    $(document).ready(function() {
+        // SPheaderButtonクリック処理
+        $('#SPheaderButton').on('click', function() {
+            $('#SPHEADER, #SPheaderButton').toggleClass('open');
+        });
 
-    // タイトルアニメーション要素の取得
-    const title1 = document.querySelector('.title1');
-    const title2 = document.querySelector('.title2');
-    const title3 = document.querySelector('.title3');
-    const subimg = document.querySelector('.subimg');
-    const scrollDown = document.getElementById('ScrollDown');
+        // アコーディオンのクリック処理
+        $('.question').on('click', function() {
+            const $toggle = $(this).prev('.toggle');
+            $toggle.prop('checked', !$toggle.prop('checked'));
+        });
 
-    // 順番にactiveクラスを追加
-    setTimeout(() => {
-        if (title1) title1.classList.add('active');
-    }, 1400);
+        // テーブルセルのサイズ調整
+        function adjustTableCells() {
+            const $table = $('#PATable');
+            if (!$table.length) return;
 
-    setTimeout(() => {
-        if (title2) title2.classList.add('active');
-    }, 1600);
-
-    setTimeout(() => {
-        if (title3) title3.classList.add('active');
-    }, 1800);
-
-    setTimeout(() => {
-        if (subimg) subimg.classList.add('active');
-    }, 2000);
-
-    setTimeout(() => {
-        if (scrollDown) scrollDown.classList.add('active');
-    }, 2200);
-
-    // アニメーション要素の取得
-    const bganim1 = document.querySelector('.bganim1');
-    const bganim2 = document.querySelector('.bganim2');
-
-    // 1秒後にactiveクラスを追加
-    setTimeout(() => {
-        if (bganim1) bganim1.classList.add('active');
-        if (bganim2) bganim2.classList.add('active');
-    }, 800);
-
-    // スクロールアニメーション用の関数
-    function handleScroll() {
-        const scrollPosition = window.scrollY;
-        
-        // スクロール位置に基づいてアニメーションを適用
-        if (scrollPosition > 40) { // この値は必要に応じて調整してください
-            bganim1.classList.add('scroll-active');
-            bganim2.classList.add('scroll-active');
-            title1.classList.add('scroll-active');
-            title2.classList.add('scroll-active');
-            title3.classList.add('scroll-active');
-            subimg.classList.add('scroll-active');
-            scrollDown.classList.add('scroll-active');
-        } else {
-            bganim1.classList.remove('scroll-active');
-            bganim2.classList.remove('scroll-active');
-            title1.classList.remove('scroll-active');
-            title2.classList.remove('scroll-active');
-            title3.classList.remove('scroll-active');
-            subimg.classList.remove('scroll-active');
-            scrollDown.classList.remove('scroll-active');
+            const tableWidth = $table.width();
+            const cellWidth = Math.floor(tableWidth / 3);
+            
+            $('.table-cell').css({
+                width: cellWidth,
+                height: cellWidth
+            });
         }
-    }
 
-    // スクロールイベントリスナーを追加
-    window.addEventListener('scroll', handleScroll);
-}
+        // 初期化時とリサイズ時に実行
+        adjustTableCells();
+        $(window).on('resize', adjustTableCells);
 
-document.addEventListener('DOMContentLoaded', function() {
-    // ... 既存のコード ...
+        // タイトルのアニメーション
+        const CLASSNAME = "visible";
+        const TIMEOUT = 500;
+        setInterval(() => {
+            $('#Ctitle, #Csubtitle').addClass(CLASSNAME);
+        }, TIMEOUT * 2);
+    });
 
-    // SPheaderButtonクリック時の処理
-    const spHeaderButton = document.getElementById('SPheaderButton');
-    const spHeader = document.getElementById('SPHEADER');
+    $(window).on('scroll', function() {
+        $('.rightanim').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
 
-    if (spHeaderButton && spHeader) {
-        spHeaderButton.addEventListener('click', function() {
-            spHeader.classList.toggle('open');
-            spHeaderButton.classList.toggle('open'); // SPheaderButtonにもopenクラスを追加
+            // 要素が画面内に入ってきた時
+            if (scroll > position - windowHeight + 100 && scroll < position + elementHeight) {
+                $(this).addClass('active');
+            }
+            // 要素が画面上部に隠れた時
+            else {
+                $(this).removeClass('active');
+            }
         });
-    }
+    });
 
-    // テーブルセルのサイズ調整関数
-    function adjustTableCells() {
-        const table = document.getElementById('PATable');
-        if (!table) return;
+    $(window).on('scroll', function() {
+        $('.leftanim').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
 
-        const tableWidth = table.offsetWidth;
-        const cells = table.getElementsByClassName('table-cell');
-        const cellWidth = Math.floor(tableWidth / 3); // 3等分
-
-        Array.from(cells).forEach(cell => {
-            cell.style.width = `${cellWidth}px`;
-            cell.style.height = `${cellWidth}px`;
+            // 要素が画面内に入ってきた時
+            if (scroll > position - windowHeight + 100 && scroll < position + elementHeight) {
+                $(this).addClass('active');
+            }
+            // 要素が画面上部に隠れた時
+            else {
+                $(this).removeClass('active');
+            }
         });
-    }
+    });
 
-    // 初期化時とリサイズ時に実行
-    adjustTableCells();
-    window.addEventListener('resize', adjustTableCells);
+    $(window).on('scroll', function() {
+        $('.topanim').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
 
-});
-
-
-
-
-
-
-
-
-
-
+            // 要素が画面内に入ってきた時
+            if (scroll > position - windowHeight + 100 && scroll < position + elementHeight) {
+                $(this).addClass('active');
+            }
+            // 要素が画面上部に隠れた時
+            else {
+                $(this).removeClass('active');
+            }
+        });
+    });
+})(jQuery);
 
 
 document.addEventListener('DOMContentLoaded', function () {

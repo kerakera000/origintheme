@@ -4,11 +4,12 @@
  */
 
 register_taxonomy(
-  'new-temppage',
-  array('temppage'),
+  'interview-category',
+  array('interviewpage'),
   array(
-    'label' => 'カテゴリ',
-    'public' => true,'show_ui' => true,
+    'label' => 'インタビューカテゴリー',
+    'public' => true,
+    'show_ui' => true,
     'hierarchical' => true,
     'query_var' => true,
     'show_in_rest' => true,
