@@ -8,28 +8,7 @@
     flex-direction: column;
     padding: 364px 0 200px;
     background-color: #fff;
-    &--title-box {
-        .sub-title {
-            font-family: "Noto Sans JP",serif;
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 200%;
-            letter-spacing: 0.8px;
-            text-align: left;
-            color: #1B71B7;
-        }
-        .title {
-            font-family: "Noto Sans JP",serif;
-            font-size: 27px;
-            font-style: bold;
-            font-weight: 400;
-            line-height: 200%;
-            letter-spacing: 0.9px;
-            text-align: left;
-            color: #182346;
-        }
-    }
+
     &--type-box {
         display: flex;
         align-items: flex-start;
@@ -42,17 +21,23 @@
             &--title {
                 white-space: nowrap;
                 font-family: "Noto Sans JP",serif;
-                font-size: 20px;
+                font-size: 28px;
                 font-style: bold;
                 font-weight: 400;
-                line-height: 200%;
-                letter-spacing: 0.9px;
+                line-height: 160%;
+                letter-spacing: 5%;
                 text-align: left;
                 color: #182346;
+                
+            }
+            &--img {
+                width: 100%;
+                height: auto;
             }
         }
         .introduction-box{
-            width: 75%;
+            width: max-content;
+            display: flex; justify-content: space-between;
             align-items: flex-start;
             justify-content: flex-start;
             flex-direction: column;
@@ -61,22 +46,26 @@
                 align-items: flex-start;
                 justify-content: flex-start;
                 gap: 30px;
+
                 &--content {
+                    padding-bottom: 20px;
                     .num-box{
                         display: flex;
                         align-items: flex-start;
                         justify-content: flex-start;
+                        padding-bottom: 20px;
                         gap: 10px;
                         .job-box-num {
-                            font-family: "Noto Sans JP",serif;
-                            font-size: 8px;
-                            font-style: normal;
-                            font-weight: 300;
-                            line-height: 200%;
-                            letter-spacing: 0.8px;
+                            font-family: "Poppins",serif;
+                            font-size: 12px;
+                            font-weight: 600;
+                            line-height: 100%;
+                            width: max-content;
+                            white-space: nowrap;
+                            letter-spacing: 5%; 
                             text-align: left;
-                            color: #1B71B7;
-                            padding: 5px 0 0;
+                            color: #0050B5;
+                            padding: 4px 0 0;
                         }
                         .textbox{
                             display: flex;
@@ -85,24 +74,31 @@
                             flex-direction: column;
                             gap: 10px;
                             &--jobtitle {
+                                display: flex;
+                                align-items: flex-start; justify-content: flex-start;
                                 font-family: "Noto Sans JP",serif;
-                                font-size: 15px;
-                                font-style: normal;
-                                font-weight: 300;
-                                line-height: 200%;
-                                letter-spacing: 0.8px;
+                                font-size: 20px;
+                                font-style: Medium;
+                                font-weight: 500;
+                                line-height: 100%;
+                                letter-spacing: 0%;
                                 text-align: left;
-                                color: #000000;
+                                color: #182346;
+                                
+                                
                             }
                             &--text {
                                 font-family: "Noto Sans JP",serif;
-                                font-size: 10px;
-                                font-style: normal;
-                                font-weight: 300;
+                                font-size: 16px;
+                                font-style: Medium;
+                                font-weight: 500;
                                 line-height: 200%;
-                                letter-spacing: 0.8px;
+                                letter-spacing: 5%;
                                 text-align: left;
-                                color: #000000;
+                                white-space: nowrap;
+                                color: #182346;
+                                padding-top: 20px;
+                                
                             }
                         }
                     }
@@ -115,4 +111,384 @@
             }
         }
     }
+}
+
+.PCcareer-path {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 200px;
+    background-color: #A1C1CD;
+    .PCcareer-path--content inner-content1400{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        .career-path-title{
+            font-family: "Noto Sans JP",serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200%;
+            letter-spacing: 0.9px;
+            text-align: left;
+            color: #182346;
+        }
+        .career-path-text{
+            font-family: "Noto Sans JP",serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 200%;
+            letter-spacing: 5%;
+            text-align: left;
+            color: #182346;
+        }
+        &--imgbox{
+            width: 100%;
+            height: auto;
+        }
+
+        .PCcareer-path--cardbox{
+            padding-top: 80px;
+            width: 100%;
+        }
+        
+    }
+    
+}
+
+
+.PCtraining{
+    width: 100%;
+    display: flex;
+    padding: 200px 0 200px;
+    background-color: #fff;
+    &--explain {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 120px;
+        margin-bottom: 120px;
+        .explain-text{
+            width: 50%;
+            font-family:  "Noto Sans JP", serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 200%;
+            letter-spacing: 5%;
+            color: #182346;
+        }
+        .explain-flow {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-left: 80px;
+            .flow-col {
+                display: flex;
+                flex-direction: column;
+                align-content: flex-start;
+                margin-left: 20px;
+            }
+        }
+    }
+    &--detail {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .detailbox {
+            width: 100%;
+            &--cont {
+                display: flex;
+                flex-direction: column;
+                .Tcontent {
+                    display: flex;
+                    width: 100%;
+                    padding: 54px 0px 54px 0px;
+                    &--step {
+                        display: flex;
+                        flex-direction: column;
+                        width: max-content;
+                        white-space: nowrap;
+                        font-family:  "Noto Sans JP", serif;
+                        font-size: 12px;
+                        font-weight: 600;
+                        line-height: 100%;
+                        letter-spacing: 5%;
+                        color: #182346;
+                        padding-top: 5px;
+                    }
+                    &--box {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        padding-left: 44px;
+                    }
+                    .box1 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        &--title {
+                            font-family:  "Noto Sans JP", serif;
+                            font-size: 24px;
+                            font-weight: 500;
+                            line-height: 100%;
+                            letter-spacing: 5%;
+                            color: #182346;
+                        }
+                        &--icon {
+                            padding-right: 24px;
+                            .Cicon, .Oicon {
+                                opacity: 1;
+                                transition: opacity 0.3s ease;
+                              }
+                              
+                            .Cicon.hidden, .Oicon.hidden {
+                                opacity: 0;
+                                pointer-events: none;
+                            }
+                        }
+                    }
+                    .box2 {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding-top: 64px;
+                        transition: max-height 0.5s ease, padding 0.5s ease;
+                        padding-top: 64px;
+                        &.collapsed {
+                            padding-top: 0;
+                        }
+                        &--text {
+                            width: 50%;
+                            padding-right: 48px;
+                            font-family:  "Noto Sans JP", serif;
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: 200%;
+                            letter-spacing: 5%;
+                            color: #182346;
+                        }
+                        &--img {
+                            display: flex;
+                            justify-content: flex-end;
+                            width: 50%;
+                            object-fit: contain;
+                            transition: none;
+                            min-width: 576px;
+                            min-height: 202px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    .partition-line {
+        width: 100%;
+        img{
+            width: 100%;   
+            display: block;
+            margin: 0;  
+        }
+    }  
+}     
+
+
+.PCskillup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 200px 0 200px;
+    background-color: #ecf3f5;
+    &--explain{
+        width: 100%;
+        padding-top: 120px;
+        font-family:  "Noto Sans JP", serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 200%;
+        letter-spacing: 5%;
+        color: #182346;
+    }
+    &--cardbox {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        padding: 80px 0px 0;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+        .card {
+            display: flex;
+            width: 100%;
+            background-color: #fff;    
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .column {
+                display: flex;
+                width: max-content;  
+                flex-direction: column;      
+                padding: 48px 48px 48px 48px;
+                &--title {
+                    text-align: left;
+                    font-family:  "Noto Sans JP", serif;
+                    color: #182346;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 200%;
+                    letter-spacing: 5%;
+                    padding-bottom: 40px;
+                }
+                &--text {
+                    text-align: left;
+                    font-family:  "Noto Sans JP", serif;
+                    color: #182346;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 200%;
+                    letter-spacing: 5%;
+                }
+            }
+        }
+        
+    }
+    .partition-line {
+        width: fit-content;
+        border-left: 1px dashed #c2c9d2;
+        @media (max-width: 768px) {
+            width: 100%;
+            height: 1px;
+            margin: 20px 0;
+            align-self: auto;
+        }
+    }   
+}
+
+
+.Pinterview {
+    width: 100%;
+    height: 480px;
+    display: flex   ;
+    align-items: center;
+    justify-content: space-between;
+    &--cont{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 10%;
+        .common-titlebox{
+            gap: 40px;
+            .next{
+                justify-content: flex-start;
+                color: #182346;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 200%;
+                letter-spacing: 5%;
+                margin-right: 40px;
+            }
+            .title{
+                width: auto;
+                margin-bottom: 0;
+            }
+        }
+        .more-button{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            width: 200px;
+            .text{
+                font-family:  "Noto Sans JP", serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%; /* 16px */
+                letter-spacing: 0.8px;
+                position: relative;
+                overflow: hidden;
+                @media (max-width: 600px) {
+                    font-size: 12px;
+                }
+                .normal{
+                    position: relative;
+                    transition: 0.3s;
+                    display: block;
+                }
+                .hover{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, 50px);
+                    width: 100%;
+                    height: 100%;
+                    transition: 0.3s;
+                }
+            }
+            .arrow-right{
+                width: 16px;
+                height: 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                position: relative;
+                .normal-img{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    transition: 0.3s;
+                }
+                .hover-img{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50px, -50%);
+                    transition: 0.3s;
+                }
+            }
+        }
+        &:hover{
+            cursor: pointer;
+            .more-button{
+                .text{
+                    .normal{
+                        transition: 0.3s;
+                        transform: translate(-0%, -50px);
+                    }
+                    .hover{
+                        transform: translate(-50%, -50%);
+                        transition: 0.3s;
+                    }
+                }
+                .arrow-right{
+                    .normal-img{
+                        transition: 0.3s;
+                        transform: translate(50px, -50%);
+                    }
+                    .hover-img{
+                        transition: 0.3s;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.detailbox--cont.open {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
 }

@@ -213,3 +213,46 @@
         });
     });
 })(jQuery);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const allSteps = document.querySelectorAll('.PCtraining--detail .detailbox');
+
+    allSteps.forEach(step => {
+        const box1 = step.querySelector('.box1');
+        const box2 = step.querySelector('.box2');
+        const cicon = step.querySelector('.Cicon');
+        const oicon = step.querySelector('.Oicon');
+
+        if (!box1 || !box2 || !cicon || !oicon) return;
+
+        // 初期化
+        box2.style.maxHeight = '0';
+        box2.style.overflow = 'hidden';
+        box2.style.transition = 'max-height 0.5s ease-out';
+        box2.style.display = 'none';
+        oicon.style.display = 'none';
+
+        box1.addEventListener('click', function () {
+            const isOpen = box2.style.display === 'flex';
+
+            if (isOpen) {
+                // 閉じる処理
+                box2.style.maxHeight = '0';
+                setTimeout(() => {
+                    box2.style.display = 'none';
+                    cicon.style.display = 'inline';
+                    oicon.style.display = 'none';
+                }, 500);
+            } else {
+                // 開く処理
+                box2.style.display = 'flex';
+                requestAnimationFrame(() => {
+                    box2.style.maxHeight = box2.scrollHeight + 'px';
+                });
+                cicon.style.display = 'none';
+                oicon.style.display = 'inline';
+            }
+        });
+    });
+});
