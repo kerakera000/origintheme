@@ -42,21 +42,18 @@
         const missionSwiper = new Swiper('.PAmissionSwiper', {
             slidesPerView: 2,
             centeredSlides: false,
-            initialSlide: 2,  // 3枚目をアクティブにする
-            spaceBetween: 80,
+            initialSlide: 1,
+            spaceBetween: 24,
             autoplay: {
                 delay: 3000,
-                disableOnInteraction: false,
             },
             loop: true,
             breakpoints: {
-                425: {
-                    slidesPerView: 2,
-                    slideMinWidth: 468,
-                },
                 768: {
                     slidesPerView: 3.4,
                     slideMinWidth: 468,
+                    spaceBetween: 80,
+                    initialSlide: 2,
                 },
             },
         });
@@ -109,14 +106,14 @@
             }
 
             // タイトルとサブ画像のスクロールアニメーション
-            if (scrollPosition > 900) {
-                $('.title1, .title2, .title3, .subimg').addClass('scroll-active');
+            if (scrollPosition > 890) {
+                $('.title1, .title2, .title3, .subimg, .hero-textbox').addClass('scroll-active');
             } else {
-                $('.title1, .title2, .title3, .subimg').removeClass('scroll-active');
+                $('.title1, .title2, .title3, .subimg, .hero-textbox').removeClass('scroll-active');
             }
 
             // ヘッダーのスクロールアニメーション
-            if (scrollPosition > 1000) {
+            if (scrollPosition > 50) {
                 $('#HEADER').addClass('active');
             } else {
                 $('#HEADER').removeClass('active');
@@ -128,6 +125,12 @@
         // SPheaderButtonクリック処理
         $('#SPheaderButton').on('click', function() {
             $('#SPHEADER, #SPheaderButton').toggleClass('open');
+        });
+
+        // アコーディオンのクリック処理
+        $('.question').on('click', function() {
+            const $toggle = $(this).prev('.toggle');
+            $toggle.prop('checked', !$toggle.prop('checked'));
         });
 
         // テーブルセルのサイズ調整

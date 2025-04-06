@@ -11,7 +11,7 @@ get_template_part('./template/head');
 
 <main class="main-layout">
     <div class="videobg">
-        <video src="<?php echo get_template_directory_uri(); ?>/assets/video/bg.mp4" autoplay muted loop></video>
+        <video src="<?php echo get_template_directory_uri(); ?>/assets/video/bg.mp4" autoplay muted loop playsinline></video>
     </div>
     <div class="Phero">
         <div class="Phero--cont inner-content1400">
@@ -227,7 +227,7 @@ get_template_part('./template/head');
             <div class="Entry--cardbox">
                 <button class="Entry-card type1">
                     <div class="card-title">
-                        <h2 class="title">New Graduate</h2>
+                        <h2 class="title">Mid Career</h2>
                         <span class="sub-title">新卒採用</span>
                     </div>
                     <div class="card-imgbox">

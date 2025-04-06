@@ -5,7 +5,12 @@
         height: 74vh;
         padding: 0 24px;
     }
+    @media (max-width: 425px) {
+        height: 40vh;
+        padding: 0 24px;
+    }
     .Phero--cont{
+        justify-content: flex-start;
         @media (max-width: 768px) {
             flex-direction: column;
             padding-top: 131px;
@@ -14,8 +19,22 @@
             @media (max-width: 768px) {
                 order: 2;
             }
+            .common-titlebox{
+                .title{
+                    @media (max-width: 768px) {
+                        font-size: 40px;
+                    }
+                }
+                .sub-title{
+                    @media (max-width: 768px) {
+                        font-size: 14px;
+                        margin-top: 24px;
+                    }
+                }
+            }
         }
         .Phero--imgbox{
+            justify-content: flex-start;
             @media (max-width: 768px) {
                 order: 1;
                 align-items: flex-start;
@@ -28,6 +47,9 @@
 .p-interview-archive{
     width: 100%;
     background-color: #fff;
+    @media (max-width: 425px) {
+        padding-bottom: 120px;
+    }
     .content{
         width: 100%;
         display: flex;
@@ -36,6 +58,9 @@
         flex-direction: column;
         position: relative;
         transform: translateY(-300px);
+        @media (max-width: 425px) {
+            transform: translateY(0px);
+        }
     }
     &__list{
         width: 100%;
@@ -92,10 +117,10 @@
                     @media (max-width: 900px) {
                         order: 2;
                     }
-                    @media (max-width: 600px) {
+                    @media (max-width: 768px) {
                         font-size: 24px;
-                        margin-top: 24px;
-                        margin-bottom: 16px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
                     }
                 }
                 .join{
@@ -144,7 +169,9 @@
                     z-index: 0;
                     @media (max-width: 900px) {
                         order: 5;
-                        transform: translateY(-18px);
+                        position: absolute;
+                        bottom: 4px;
+                        right: 16px;
                     }
                     .text{
                         @include fosan;
@@ -218,8 +245,8 @@
                     @media (max-width: 900px) {
                         display: block;
                         position: absolute;
-                        left: -8%;
-                        top: 9%;
+                        left: 0%;
+                        top: 0%;
                         transform: rotate(90deg) translate(45px, 65px);
                     }
                 }
@@ -406,10 +433,10 @@
     align-items: flex-start;
     justify-content: flex-end;
     @media (max-width: 1000px) {
-        min-height: 4800px;
+        min-height: 5000px;
     }
     @media (max-width: 425px) {
-        min-height: 1560px;
+        min-height: 4000px;
     }
     .skeltonbg{
         width: 22%;
@@ -417,13 +444,13 @@
         min-height: 3440px;
         background-color: #ffffff00;
         @media (max-width: 1000px) {
-            min-height: 4800px;
+            min-height: 5000px;
         }
         @media (max-width: 600px) {
             width: 0%;
         }
         @media (max-width: 425px) {
-            min-height: 1560px;
+            min-height: 4000px;
         }
     }
     .whitebg{
@@ -435,13 +462,13 @@
             width: 70%;
         }
         @media (max-width: 1000px) {
-            min-height: 4800px;
+            min-height: 5000px;
         }
         @media (max-width: 600px) {
             width: 100%;
         }
         @media (max-width: 425px) {
-            min-height: 1560px;
+            min-height: 4000px;
         }
     }
     &--content{
@@ -454,13 +481,16 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 0;
+        padding: 0 32px;
+        max-width: 1232px;
+        width: 100%;
         @media (max-width: 1000px) {
-            top: 0;
+            top: 3%;
             transform: translate(-50%, 0);
             gap: 120px;
         }
         @media (max-width: 425px) {
+            top: 1%;
             padding: 0 24px;
         }
         .cont{
@@ -469,9 +499,6 @@
             justify-content: space-between;
             gap: 10%;
             width: 100%;
-            @media (max-width: 1300px) {
-                padding: 0 32px;
-            }
             @media (max-width: 1000px) {
                 flex-direction: column;
                 align-items: center;
@@ -523,6 +550,9 @@
                             width: 100%;
                             max-width: 500px;
                         }
+                        @media (max-width: 425px) {
+                            font-size: 20px;
+                        }
                     }
                 }
                 &--text{
@@ -543,7 +573,7 @@
                         letter-spacing: 0.8px;
                         text-align: left;
                         @media (max-width: 425px) {
-                            font-size: 16px;
+                            font-size: 14px;
                         }
                         .br-nosp{
                             display: block;
@@ -565,6 +595,20 @@
 
 .single-interview-post{
     padding: 200px 32px 200px;
+    @media (max-width: 425px) {
+        padding: 120px 24px 120px;
+    }
+    .common-titlebox{
+        .title{
+            @include poppins;
+            font-size: 40px !important;
+            margin-bottom: 24px !important;
+        }
+        .sub-title{
+            @include fosanjp;
+            font-size: 16px;
+        }
+    }
     .wrapper{
         transition: 0.3s;
         transition-delay: 0.3s;
@@ -581,7 +625,6 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            overflow: hidden;
             max-height: 1070px;
         }
         .slide{
@@ -814,4 +857,15 @@
 
 .single-interview-entry{
     padding: 200px 0px 200px;
+    @media (max-width: 425px) {
+        padding: 120px 24px 120px;
+    }
 }
+
+.entry-interview{
+    padding: 0px 32px 200px;
+    @media (max-width: 425px) {
+        padding: 0px 24px 120px;
+    }
+}
+
