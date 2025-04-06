@@ -243,6 +243,15 @@
                         }
                         &--icon {
                             padding-right: 24px;
+                            .Cicon, .Oicon {
+                                opacity: 1;
+                                transition: opacity 0.3s ease;
+                              }
+                              
+                            .Cicon.hidden, .Oicon.hidden {
+                                opacity: 0;
+                                pointer-events: none;
+                            }
                         }
                     }
                     .box2 {
@@ -250,6 +259,11 @@
                         flex-direction: row;
                         justify-content: space-between;
                         padding-top: 64px;
+                        transition: max-height 0.5s ease, padding 0.5s ease;
+                        padding-top: 64px;
+                        &.collapsed {
+                            padding-top: 0;
+                        }
                         &--text {
                             width: 50%;
                             padding-right: 48px;
@@ -264,6 +278,10 @@
                             display: flex;
                             justify-content: flex-end;
                             width: 50%;
+                            object-fit: contain;
+                            transition: none;
+                            min-width: 576px;
+                            min-height: 202px;
                         }
                     }
                 }
@@ -467,4 +485,10 @@
             }
         }
     }
+}
+
+.detailbox--cont.open {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
 }

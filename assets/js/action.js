@@ -180,29 +180,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const detailboxes = document.querySelectorAll('.detailbox');
+document.addEventListener('DOMContentLoaded', function () {
+    const allSteps = document.querySelectorAll('.PCtraining--detail .detailbox');
 
-    detailboxes.forEach(box => {
-        const closeBox = box.querySelector('.detailbox--cont.close');
-        const openBox = box.querySelector('.detailbox--cont.open');
+    allSteps.forEach(step => {
+        const box1 = step.querySelector('.box1');
+        const box2 = step.querySelector('.box2');
+        const cicon = step.querySelector('.Cicon');
+        const oicon = step.querySelector('.Oicon');
 
-        if (openBox) openBox.style.display = 'none';
+        if (!box1 || !box2 || !cicon || !oicon) return;
 
-        const closeIcon = closeBox?.querySelector('.box1--icon');
-        if (closeIcon) {
-            closeIcon.addEventListener('click', function () {
-                closeBox.style.display = 'none';
-                openBox.style.display = 'block';
-            });
-        }
+        // 初期化
+        box2.style.maxHeight = '0';
+        box2.style.overflow = 'hidden';
+        box2.style.transition = 'max-height 0.5s ease-out';
+        box2.style.display = 'none';
+        oicon.style.display = 'none';
 
-        const openIcon = openBox?.querySelector('.box1--icon');
-        if (openIcon) {
-            openIcon.addEventListener('click', function () {
-                openBox.style.display = 'none';
-                closeBox.style.display = 'block';
-            });
-        }
+        box1.addEventListener('click', function () {
+            const isOpen = box2.style.display === 'flex';
+
+            if (isOpen) {
+                // 閉じる処理
+                box2.style.maxHeight = '0';
+                setTimeout(() => {
+                    box2.style.display = 'none';
+                    cicon.style.display = 'inline';
+                    oicon.style.display = 'none';
+                }, 500);
+            } else {
+                // 開く処理
+                box2.style.display = 'flex';
+                requestAnimationFrame(() => {
+                    box2.style.maxHeight = box2.scrollHeight + 'px';
+                });
+                cicon.style.display = 'none';
+                oicon.style.display = 'inline';
+            }
+        });
     });
 });

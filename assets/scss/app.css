@@ -3755,11 +3755,24 @@ button {
 .PCtraining--detail .detailbox--cont .Tcontent .box1--icon {
   padding-right: 24px;
 }
+.PCtraining--detail .detailbox--cont .Tcontent .box1--icon .Cicon, .PCtraining--detail .detailbox--cont .Tcontent .box1--icon .Oicon {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.PCtraining--detail .detailbox--cont .Tcontent .box1--icon .Cicon.hidden, .PCtraining--detail .detailbox--cont .Tcontent .box1--icon .Oicon.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 .PCtraining--detail .detailbox--cont .Tcontent .box2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-top: 64px;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding-top: 64px;
+}
+.PCtraining--detail .detailbox--cont .Tcontent .box2.collapsed {
+  padding-top: 0;
 }
 .PCtraining--detail .detailbox--cont .Tcontent .box2--text {
   width: 50%;
@@ -3775,6 +3788,11 @@ button {
   display: flex;
   justify-content: flex-end;
   width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: none;
+  min-width: 576px;
+  min-height: 202px;
 }
 .PCtraining .partition-line {
   width: 100%;
@@ -3971,6 +3989,12 @@ button {
 .Pinterview--cont:hover .more-button .arrow-right .hover-img {
   transition: 0.3s;
   transform: translate(-50%, -50%);
+}
+
+.detailbox--cont.open {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
 }
 
 /* Module Components */

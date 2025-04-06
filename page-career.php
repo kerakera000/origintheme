@@ -182,20 +182,24 @@ get_template_part('./template/head');
     </div>
 
     <div class="PCcareer-path">
-        <div class="PCcareer-path--content inner-content">
+        <div class="PCcareer-path--content inner-content1400">
             <div class="common-titlebox left">
                 <span class="sub-title">Career Path</span>
                 <h2 class="title">キャリアパス</h2>
             </div>
-            <p class="PCcareer-path--text">COMPANY事業部のキャリアパスは大きく分けて3つあります。マネジメント・スペシャリスト・組織運営<br>
-                と、社員一人ひとりがそれぞれの特性を活かし、能力を発揮できるキャリアを進んでいくことができます。
-            </p>
-            <div class="PCcareer-path--imgbox">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Group152.svg" alt="">
+            <div class="text">
+                <p>
+                    COMPANY事業部のキャリアパスは大きく分けて3つあります。マネジメント・スペシャリスト・組織運営
+                    と、社員一人ひとりがそれぞれの特性を活かし、能力を発揮できるキャリアを進んでいくことができます。
+                </p>
             </div>
-            <div class="PCcareer-path--cardbox">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Group155.svg" alt="">
-            </div>
+        </div>
+            
+        <div class="PCcareer-path--imgbox">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/CP chart.svg" alt="">
+        </div>
+        <div class="PCcareer-path--cardbox">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/CP Card.svg" alt="">
         </div>
     </div>
 
@@ -227,8 +231,6 @@ get_template_part('./template/head');
             </span>
             <div class="PCtraining--detail">
                 <div class="detailbox">
-
-                    <!-- 閉じた状態のコンテンツ -->
                     <div class="detailbox--cont close">
                         <div class="Tcontent">
                             <div class="Tcontent--step">
@@ -239,28 +241,14 @@ get_template_part('./template/head');
                                     <div class="box1--title">
                                         ビジネス基礎研修
                                     </div>
-                                    <span class="box1--icon">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 開いた状態の詳細コンテンツ -->
-                    <div class="detailbox--cont open">
-                        <div class="Tcontent">
-                            <div class="Tcontent--step">
-                                (STEP 01)
-                            </div>
-                            <div class="Tcontent--box">
-                                <div class="box1">
-                                    <div class="box1--title">
-                                        ビジネス基礎研修
+                                    <div Class="box1--icon">
+                                        <span class="Cicon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
+                                        </span>
+                                        <span class="Oicon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
+                                        </span>
                                     </div>
-                                    <span class="box1--icon">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
-                                    </span>
                                 </div>
                                 <div class=box2>
                                     <p class="box2--text">
@@ -277,7 +265,6 @@ get_template_part('./template/head');
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <span class="partition-line">
@@ -285,8 +272,6 @@ get_template_part('./template/head');
             </span>
             <div class="PCtraining--detail">
                 <div class="detailbox">
-
-                    <!-- 閉じた状態のコンテンツ -->
                     <div class="detailbox--cont close">
                         <div class="Tcontent">
                             <div class="Tcontent--step">
@@ -297,28 +282,14 @@ get_template_part('./template/head');
                                     <div class="box1--title">
                                         労働知識基礎研修
                                     </div>
-                                    <span class="box1--icon">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 開いた状態の詳細コンテンツ -->
-                    <div class="detailbox--cont open">
-                        <div class="Tcontent">
-                            <div class="Tcontent--step">
-                                (STEP 02)
-                            </div>
-                            <div class="Tcontent--box">
-                                <div class="box1">
-                                    <div class="box1--title">
-                                        労働知識基礎研修
+                                    <div Class="box1--icon">
+                                        <span class="Cicon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
+                                        </span>
+                                        <span class="Oicon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
+                                        </span>
                                     </div>
-                                    <span class="box1--icon">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
-                                    </span>
                                 </div>
                                 <div class=box2>
                                     <p class="box2--text">
@@ -335,7 +306,6 @@ get_template_part('./template/head');
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <span class="partition-line">
@@ -343,8 +313,6 @@ get_template_part('./template/head');
             </span>
             <div class="PCtraining--detail">
                 <div class="detailbox">
-
-                    <!-- 閉じた状態のコンテンツ -->
                     <div class="detailbox--cont close">
                         <div class="Tcontent">
                             <div class="Tcontent--step">
@@ -355,28 +323,14 @@ get_template_part('./template/head');
                                     <div class="box1--title">
                                         SQL研修
                                     </div>
-                                    <span class="box1--icon">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 開いた状態の詳細コンテンツ -->
-                    <div class="detailbox--cont open">
-                        <div class="Tcontent">
-                            <div class="Tcontent--step">
-                                (STEP 03)
-                            </div>
-                            <div class="Tcontent--box">
-                                <div class="box1">
-                                    <div class="box1--title">
-                                        SQL研修
+                                    <div Class="box1--icon">
+                                        <span class="Cicon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
+                                        </span>
+                                        <span class="Oicon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
+                                        </span>
                                     </div>
-                                    <span class="box1--icon">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
-                                    </span>
                                 </div>
                                 <div class=box2>
                                     <p class="box2--text">
@@ -393,7 +347,6 @@ get_template_part('./template/head');
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <span class="partition-line">
@@ -401,8 +354,6 @@ get_template_part('./template/head');
             </span>
             <div class="PCtraining--detail">
                 <div class="detailbox">
-
-                    <!-- 閉じた状態のコンテンツ -->
                     <div class="detailbox--cont close">
                         <div class="Tcontent">
                             <div class="Tcontent--step">
@@ -413,28 +364,14 @@ get_template_part('./template/head');
                                     <div class="box1--title">
                                         COMPANY(R)研修
                                     </div>
-                                    <span class="box1--icon">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 開いた状態の詳細コンテンツ -->
-                    <div class="detailbox--cont open">
-                        <div class="Tcontent">
-                            <div class="Tcontent--step">
-                                (STEP 04)
-                            </div>
-                            <div class="Tcontent--box">
-                                <div class="box1">
-                                    <div class="box1--title">
-                                        COMPANY(R)研修
+                                    <div Class="box1--icon">
+                                        <span class="Cicon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
+                                        </span>
+                                        <span class="Oicon">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
+                                        </span>
                                     </div>
-                                    <span class="box1--icon">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
-                                    </span>
                                 </div>
                                 <div class=box2>
                                     <p class="box2--text">
@@ -451,7 +388,6 @@ get_template_part('./template/head');
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
             <span class="partition-line">
