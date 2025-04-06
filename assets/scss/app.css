@@ -3630,7 +3630,7 @@ button {
   padding: 0 0 200px;
   background-color: #A1C1CD;
 }
-.PCcareer-path .PCcareer-path--content inner-content {
+.PCcareer-path .PCcareer-path--content inner-content1400 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -3638,7 +3638,7 @@ button {
   flex-direction: column;
   gap: 40px;
 }
-.PCcareer-path .PCcareer-path--content inner-content .career-path-title {
+.PCcareer-path .PCcareer-path--content inner-content1400 .career-path-title {
   font-family: "Noto Sans JP", serif;
   font-size: 20px;
   font-style: normal;
@@ -3648,7 +3648,7 @@ button {
   text-align: left;
   color: #182346;
 }
-.PCcareer-path .PCcareer-path--content inner-content .career-path-text {
+.PCcareer-path .PCcareer-path--content inner-content1400 .career-path-text {
   font-family: "Noto Sans JP", serif;
   font-size: 16px;
   font-style: normal;
@@ -3658,9 +3658,13 @@ button {
   text-align: left;
   color: #182346;
 }
-.PCcareer-path .PCcareer-path--content inner-content--imgbox {
+.PCcareer-path .PCcareer-path--content inner-content1400--imgbox {
   width: 100%;
   height: auto;
+}
+.PCcareer-path .PCcareer-path--content inner-content1400 .PCcareer-path--cardbox {
+  padding-top: 80px;
+  width: 100%;
 }
 
 .Pinterview {
