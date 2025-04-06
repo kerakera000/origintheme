@@ -28,7 +28,7 @@ get_template_part('./template/head');
                                 <span class="link--number">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pabout/Polygon.svg" alt="">
                                 </span>
-                                <span class="link--text">ミッション</span>
+                                <span class="link--text">職種紹介</span>
                             </a>
                         </li>
                         <li class="list--item">
@@ -36,7 +36,7 @@ get_template_part('./template/head');
                                 <span class="link--number">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pabout/Polygon.svg" alt="">
                                 </span>
-                                <span class="link--text">ミッション</span>
+                                <span class="link--text">キャリアパス</span>
                             </a>
                         </li>
                         <li class="list--item">
@@ -44,7 +44,7 @@ get_template_part('./template/head');
                                 <span class="link--number">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pabout/Polygon.svg" alt="">
                                 </span>
-                                <span class="link--text">ミッション</span>
+                                <span class="link--text">研修プログラム</span>
                             </a>
                         </li>
                         <li class="list--item">
@@ -52,15 +52,15 @@ get_template_part('./template/head');
                                 <span class="link--number">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pabout/Polygon.svg" alt="">
                                 </span>
-                                <span class="link--text">ミッション</span>
+                                <span class="link--text">スキルアップ支援</span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="Phero--imgbox">
-                <p class="breadcrumbs">Top - About Us</p>
-                <img class="hero-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/aboutimg.png" alt="">
+                <p class="breadcrumbs">Top - Career</p>
+                <img class="hero-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/careerimg2.png" alt="">
             </div>
         </div>
     </div>
@@ -71,7 +71,6 @@ get_template_part('./template/head');
             </span>
         </p>
     </div>
-
     <div class="PCbusiness">
         <div class="PCbusiness--content inner-content1400">
             <div class="common-titlebox left">
@@ -203,13 +202,39 @@ get_template_part('./template/head');
                 <span class="sub-title">Skill Up</span>
                 <h2 class="title">スキルアップ支援</h2>
             </div>
-
+            <div class="PCskillup--explain">
+                <p class="explain--text">
+                セラクでは、研修修了後もスキルアップを継続できるように当社独自の制度も用意しています。
+                </p>
+            </div>
+            <div class="PCskillup--cardbox">
+                <div class="card">
+                    <div class=column>
+                        <h4 class="column--title">セラク情報大学</h4>
+                        <p class="column--text">
+                        セラクで働く社員が講師となり、現場で培った技術や専門知識につ<br>
+                        いて講義し、社員同士でナレッジを深め合う取り組みです。<br>
+                        </p>
+                    </div>
+                </div>
+                <span class="partition-line"></span>
+                <div class="card">
+                    <div class=column>
+                        <h4 class="column--title">資格取得推奨制度</h4>
+                        <p class="column--text">
+                        セラクが推奨している資格を取得した場合、最大で80万円の報奨金<br>
+                        が支給される制度です。現在、約300種の資格が推奨資格となってい<br>
+                        ます。<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
     <div class="Pinterview">
         <div class="Pinterview--cont inner-content1400">
             <div class="common-titlebox flex">
+                <span class=next>(Next)</span>
                 <h2 class="title">Interview</h2>
                 <span class="sub-title">社員インタビュー</span>
             </div>
@@ -230,7 +255,6 @@ get_template_part('./template/head');
             </button>
         </div>
     </div>
-
     <div class="Entry">
         <div class="inner-content">
             <div class="common-titlebox center">
