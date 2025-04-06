@@ -311,7 +311,7 @@ get_template_part('./template/head');
         <div class="PAnumbers-back"></div>
         <div class="inner-content1200">
             <div class="common-titlebox left">
-                <span class="sub-title">numbers</span>
+                <span class="sub-title">Numbers</span>
                 <h2 class="title">数字で見るCOMPANY事業部</h2>
             </div>
             
@@ -437,7 +437,7 @@ get_template_part('./template/head');
         </div>
     </div>
 
-    <div class="Entry">
+    <div class="Entry top">
         <div class="inner-content">
             <div class="common-titlebox center">
                 <h2 class="title">Entry</h2>
@@ -454,8 +454,8 @@ get_template_part('./template/head');
                     </div>
                     <div class="card-imgbox">
                         <div class="card-img">
-                            <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/Line 6.svg" alt="">
-                            <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/Line 6.svg" alt="">
+                        <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/entry.svg" alt="">
+                        <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/entry.svg" alt="">
                         </div>
                     </div>
                 </button>
@@ -466,8 +466,8 @@ get_template_part('./template/head');
                     </div>
                     <div class="card-imgbox">
                         <div class="card-img">
-                            <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/Line 6.svg" alt="">
-                            <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/Line 6.svg" alt="">
+                        <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/entry.svg" alt="">
+                        <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/entry/entry.svg" alt="">
                         </div>
                     </div>
                 </button>

@@ -2721,7 +2721,7 @@ button {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  padding: 364px 32px 200px;
+  padding: 200px 32px 200px;
   background-color: #fff;
 }
 @media (max-width: 768px) {
@@ -2735,7 +2735,7 @@ button {
   }
 }
 .Entry.top {
-  padding: 250px 32px 200px;
+  padding: 364px 32px 200px;
 }
 @media (max-width: 768px) {
   .Entry .common-titlebox .title {
@@ -3272,7 +3272,7 @@ button {
 }
 @media (max-width: 768px) {
   .Phero {
-    height: 135vh;
+    height: auto;
   }
 }
 @media (max-width: 425px) {
@@ -3636,7 +3636,7 @@ button {
 .PAstrength--titlebox {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin-bottom: 115px;
 }
@@ -3662,11 +3662,13 @@ button {
   font-weight: 500;
   line-height: 200%;
   letter-spacing: 0.8px;
+  padding-top: 40px;
 }
 @media (max-width: 768px) {
   .PAstrength--titlebox .textbox {
     width: 100%;
     margin-top: 64px;
+    padding-top: 0;
   }
 }
 .PAstrength--cont {
@@ -3675,7 +3677,7 @@ button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 260px;
+  gap: 240px;
   background: var(--color-white, #FFF);
   position: relative;
   padding: 64px;
@@ -4003,6 +4005,12 @@ button {
 }
 .PAnumbers--cont {
   width: 100%;
+  margin-top: 80px;
+}
+@media (max-width: 425px) {
+  .PAnumbers--cont {
+    margin-top: 24px;
+  }
 }
 .PAnumbers--cont .table {
   width: 100%;

@@ -1221,7 +1221,7 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    padding: 364px 32px 200px;
+    padding: 200px 32px 200px;
     background-color: #fff;
     @media (max-width: 768px) {
         padding: 125px 32px 200px;
@@ -1230,7 +1230,7 @@
         padding: 125px 24px 200px;
     }
     &.top{
-        padding: 250px 32px 200px;
+        padding: 364px 32px 200px;
     }
     .common-titlebox{
         .title{
