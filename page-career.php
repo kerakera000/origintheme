@@ -67,11 +67,7 @@ get_template_part('./template/head');
     <div class="PheroText">
         <p class="text inner-content1400">
             <span class="text--content">
-            お客さまの課題を解消し、事業成長に貢献するために、COMPANY事業部は職<br>
-            種の垣根を超えて連携しています。職種はエンジニア職とビジネス職に大別<br>
-            され、キャリア形成も多種多様です。その人材の厚みが事業部の推進力につな<br>
-            がっています。それぞれの社員はさまざまなバックグラウンドをもっており、<br>
-            業務一つひとつに真摯に向き合っています。<br>
+            お客さまの課題を解消し、事業成長に貢献するために、COMPANY事業部は職種の垣根を超えて連携しています。職種はエンジニア職とビジネス職に大別され、キャリア形成も多種多様です。その人材の厚みが事業部の推進力につながっています。それぞれの社員はさまざまなバックグラウンドをもっており、業務一つひとつに真摯に向き合っています。
             </span>
         </p>
     </div>
@@ -89,7 +85,7 @@ get_template_part('./template/head');
                     </h2>
                     <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pbusiness/Rectangle72.png" alt="">
                 </div>
-                <div class="introduction-box">
+                <div class="introduction-box padding-class">
                     <div class="job-box">
                         <div class="job-box--content">
                             <div class="num-box">
@@ -182,221 +178,26 @@ get_template_part('./template/head');
     </div>
 
     <div class="PCcareer-path">
-        <div class="PCcareer-path--content inner-content1400">
+        <div class="PCcareer-path--content inner-content">
             <div class="common-titlebox left">
                 <span class="sub-title">Career Path</span>
                 <h2 class="title">キャリアパス</h2>
             </div>
-            <div class="text">
-                <p>
-                    COMPANY事業部のキャリアパスは大きく分けて3つあります。マネジメント・スペシャリスト・組織運営
-                    と、社員一人ひとりがそれぞれの特性を活かし、能力を発揮できるキャリアを進んでいくことができます。
-                </p>
+            <p class="PCcareer-path--text">COMPANY事業部のキャリアパスは大きく分けて3つあります。マネジメント・スペシャリスト・組織運営<br>
+                と、社員一人ひとりがそれぞれの特性を活かし、能力を発揮できるキャリアを進んでいくことができます。
+            </p>
+            <div class="PCcareer-path--imgbox">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Group152.svg" alt="">
             </div>
-        </div>
-            
-        <div class="PCcareer-path--imgbox">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/CP chart.svg" alt="">
-        </div>
-        <div class="PCcareer-path--cardbox">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/CP Card.svg" alt="">
+            <div class="PCcareer-path--cardbox">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/Group155.svg" alt="">
+            </div>
         </div>
     </div>
 
-    <div class="PCtraining">
-        <div class="PCtraining--content inner-content1400">
-            <div class="common-titlebox left">
-                <span class="sub-title">Training Program</span>
-                <h2 class="title">研修プログラム</h2>
-            </div>
-            <div class="PCtraining--explain">
-                <p class="explain-text">
-                COMPANY事業部の新入社員は、新卒採用の場合
-                は約3ヶ月、中途採用の場合は約2ヶ月に渡り研修
-                に参加します。
-                ビジネス研修や技術研修などのさまざまなカリ
-                キュラムを経て、最終的にCOMPANY(R)︎の基礎習
-                得を目指します。
-                </p>
-                <div class="explain-flow">
-                    <div class="flow-col">
-                        <div class="flow-col--stepimg">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/PCflow.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <span class="partition-line">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
-            </span>
-            <div class="PCtraining--detail">
-                <div class="detailbox">
-                    <div class="detailbox--cont close">
-                        <div class="Tcontent">
-                            <div class="Tcontent--step">
-                                (STEP 01)
-                            </div>
-                            <div class="Tcontent--box">
-                                <div class="box1">
-                                    <div class="box1--title">
-                                        ビジネス基礎研修
-                                    </div>
-                                    <div Class="box1--icon">
-                                        <span class="Cicon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
-                                        </span>
-                                        <span class="Oicon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=box2>
-                                    <p class="box2--text">
-                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ
-                                    ティマネジメントシステム）など、このステップでは業務を進め
-                                    るうえで必要とされるビジネススキルを学びます。ある程度の
-                                    基礎を習得している中途採用者の方も研修に参加してもらい、
-                                    セラクが重視している理念や価値観を理解していただきます。
-                                    </p>
-                                    <span class="box2--img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/curriculum.svg" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <span class="partition-line">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
-            </span>
-            <div class="PCtraining--detail">
-                <div class="detailbox">
-                    <div class="detailbox--cont close">
-                        <div class="Tcontent">
-                            <div class="Tcontent--step">
-                                (STEP 02)
-                            </div>
-                            <div class="Tcontent--box">
-                                <div class="box1">
-                                    <div class="box1--title">
-                                        労働知識基礎研修
-                                    </div>
-                                    <div Class="box1--icon">
-                                        <span class="Cicon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
-                                        </span>
-                                        <span class="Oicon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=box2>
-                                    <p class="box2--text">
-                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ
-                                    ティマネジメントシステム）など、このステップでは業務を進め
-                                    るうえで必要とされるビジネススキルを学びます。ある程度の
-                                    基礎を習得している中途採用者の方も研修に参加してもらい、
-                                    セラクが重視している理念や価値観を理解していただきます。
-                                    </p>
-                                    <span class="box2--img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/curriculum.svg" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <span class="partition-line">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
-            </span>
-            <div class="PCtraining--detail">
-                <div class="detailbox">
-                    <div class="detailbox--cont close">
-                        <div class="Tcontent">
-                            <div class="Tcontent--step">
-                                (STEP 03)
-                            </div>
-                            <div class="Tcontent--box">
-                                <div class="box1">
-                                    <div class="box1--title">
-                                        SQL研修
-                                    </div>
-                                    <div Class="box1--icon">
-                                        <span class="Cicon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
-                                        </span>
-                                        <span class="Oicon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=box2>
-                                    <p class="box2--text">
-                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ
-                                    ティマネジメントシステム）など、このステップでは業務を進め
-                                    るうえで必要とされるビジネススキルを学びます。ある程度の
-                                    基礎を習得している中途採用者の方も研修に参加してもらい、
-                                    セラクが重視している理念や価値観を理解していただきます。
-                                    </p>
-                                    <span class="box2--img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/curriculum.svg" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <span class="partition-line">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
-            </span>
-            <div class="PCtraining--detail">
-                <div class="detailbox">
-                    <div class="detailbox--cont close">
-                        <div class="Tcontent">
-                            <div class="Tcontent--step">
-                                (STEP 04)
-                            </div>
-                            <div class="Tcontent--box">
-                                <div class="box1">
-                                    <div class="box1--title">
-                                        COMPANY(R)研修
-                                    </div>
-                                    <div Class="box1--icon">
-                                        <span class="Cicon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button1.svg" alt="">
-                                        </span>
-                                        <span class="Oicon">
-                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/button2.svg" alt="">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class=box2>
-                                    <p class="box2--text">
-                                    ビジネスライティングやビジネスマナー、ISMS（情報セキュリ
-                                    ティマネジメントシステム）など、このステップでは業務を進め
-                                    るうえで必要とされるビジネススキルを学びます。ある程度の
-                                    基礎を習得している中途採用者の方も研修に参加してもらい、
-                                    セラクが重視している理念や価値観を理解していただきます。
-                                    </p>
-                                    <span class="box2--img">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/curriculum.svg" alt="">
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <span class="partition-line">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/line1.svg" alt="">
-            </span>
-        </div>
-    </div>
+
     <div class="PCskillup">
-        <div class="PCskillup--content inner-content1400">
+        <div class="PCskillup--content inner-content">
             <div class="common-titlebox left">
                 <span class="sub-title">Skill Up</span>
                 <h2 class="title">スキルアップ支援</h2>
