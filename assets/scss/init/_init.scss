@@ -18,11 +18,11 @@ $dir-common: $dir + "init";
 *{
 	box-sizing: border-box;
 	word-break: break-word;
-
 }
 html {
 	background: $white;
 	font-size: 10px;
+	scroll-behavior: smooth;
 }
 
 body {

@@ -53,7 +53,7 @@ wp_reset_postdata();
                 </a>
             </div>
         </div>
-        <div class="footer-content">
+        <div class="footer-content type2">
             <div class="icon-logo">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/footer_img 2.svg" alt="">
                 <p class="sub-text">
