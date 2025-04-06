@@ -18,6 +18,7 @@
 @use "layout/03-career" as career;
 @use "layout/04-interview" as interview;
 @use "layout/05-company" as company;
+@use "layout/06-404" as error;
 
 /* Module Components */
 @use "module/action" as action;

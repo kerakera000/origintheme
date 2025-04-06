@@ -27,6 +27,9 @@
             font-size: 24px;
             margin-bottom: 0px;
         }
+        &.page-title{
+            line-height: 100%;
+        }
     }
     .sub-title{
         @include fosanjp;

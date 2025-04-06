@@ -17,7 +17,7 @@ get_template_part('./template/head');
         <div class="Phero--cont inner-content1200">
             <div class="Phero--textbox">
                 <div class="common-titlebox">
-                    <p id="Ctitle" class="title">
+                    <p id="Ctitle" class="title page-title">
                         <span id="Ctitle-text" class="text">Company</span>
                     </p>
                     <p id="Csubtitle" class="sub-title">
