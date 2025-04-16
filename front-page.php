@@ -206,10 +206,10 @@ get_template_part('./template/head');
                         </span>
                     </p>
                     <button class="common-button">
-                        <div class="text">
+                        <a href="/about" class="text">
                             <p class="normal">View All</p>
                             <p class="hover">View All</p>
-                        </div>
+                        </a>
                         <span class="arrow-right">
                             <div class="arrow-box">
                                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
@@ -236,10 +236,10 @@ get_template_part('./template/head');
                         </span>
                     </p>
                     <button class="common-button">
-                        <div class="text">
+                        <a href="/career" class="text">
                             <p class="normal">View All</p>
                             <p class="hover">View All</p>
-                        </div>
+                        </a>
                         <span class="arrow-right">
                             <div class="arrow-box">
                                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
@@ -261,14 +261,14 @@ get_template_part('./template/head');
         <div class="inner-content topanim">
             <p class="Interview--text">
             さまざまなバックグラウンドを持つ、<br class="sp">COMPANY事業部の社員たち。<br class="sp">どんな仕事や働き方があるのか。<br>
-            未来の自分の姿を姿を見つけてください。
+            未来の自分の姿を見つけてください。
             </p>
         </div>
 
         <div class="max-content rightanim">
             <div class="swiper InterviewSwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <a href="/masanori-u" class="swiper-slide">
                         <div class="imgbox">
                             <p class="number">(Interview 01)</p>
                             <div class="img">
@@ -306,8 +306,8 @@ get_template_part('./template/head');
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
+                    </a>
+                    <a href="/yuki-s" class="swiper-slide">
                         <div class="imgbox">
                             <p class="number">(Interview 02)</p>
                             <div class="img">
@@ -345,8 +345,8 @@ get_template_part('./template/head');
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
+                    </a>
+                    <a href="/risa-t" class="swiper-slide">
                         <div class="imgbox">
                             <p class="number">(Interview 03)</p>
                             <div class="img">
@@ -384,8 +384,8 @@ get_template_part('./template/head');
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
+                    </a>
+                    <a href="/masanori-u" class="swiper-slide sp">
                         <div class="imgbox">
                             <p class="number">(Interview 01)</p>
                             <div class="img">
@@ -423,8 +423,8 @@ get_template_part('./template/head');
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
+                    </a>
+                    <a href="/yuki-s" class="swiper-slide sp">
                         <div class="imgbox">
                             <p class="number">(Interview 02)</p>
                             <div class="img">
@@ -462,8 +462,8 @@ get_template_part('./template/head');
                                 </span>
                             </button>
                         </div>
-                    </div>
-                    <div class="swiper-slide">
+                    </a>
+                    <a href="/risa-t" class="swiper-slide sp">
                         <div class="imgbox">
                             <p class="number">(Interview 03)</p>
                             <div class="img">
@@ -501,12 +501,12 @@ get_template_part('./template/head');
                                 </span>
                             </button>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <button class="common-button topanim">
+        <a href="/interview" class="common-button topanim">
             <div class="text">
                 <p class="normal">View All</p>
                 <p class="hover">View All</p>
@@ -517,16 +517,16 @@ get_template_part('./template/head');
                     <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
                 </div>
             </span>
-        </button>
+        </a>
 
         <div class="Interview--overview">
             <img class="bg" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/bg.png" alt="">
             <div class="common-titlebox white">
-                <h2 class="title">Company</h2>
-                <span class="sub-title">会社概要</span>
+                <h2 class="title">Profile</h2>
+                <span class="sub-title">会社情報</span>
             </div>
 
-            <button class="common-button nobg">
+            <a href="/profile" class="common-button nobg">
                 <div class="text">
                     <p class="normal">View More</p>
                     <p class="hover">View More</p>
@@ -537,7 +537,7 @@ get_template_part('./template/head');
                         <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
                     </div>
                 </span>
-            </button>
+            </a>
         </div>
     </div>
 

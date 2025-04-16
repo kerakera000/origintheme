@@ -15,39 +15,56 @@ get_template_part('./template/head');
     </div>
 
     <div class="Phero single-interview">
-        <div class="Phero--cont inner-content1200 content">
+        <div id="InterviewDetail" class="Phero--cont inner-content1200 content">
             <div class="Phero--textbox single-interview-textbox">
                 <p class="explanation">
                     <span class="text">
-                    「課題解決」という、
+                        <span class="back"></span>
+                        <span class="cont">「課題解決」という、</span>
                     </span>
                     <span class="text">
-                    真っ直ぐな思いに突き動かされて
+                        <span class="back"></span>
+                        <span class="cont">真っ直ぐな思いに突き動かされて</span>
                     </span>
                 </p>
 
-                <h2 class="title">Masanori.U</h2>
+                <h2 class="title">
+                    <span class="text">
+                        Masanori.U
+                    </span>
+                </h2>
 
-                <p class="interview-date">エンジニア / 2018年入社（中途）</p>
+                <p class="interview-date">
+                    <span class="text">
+                        エンジニア / 2018年入社（中途）
+                    </span>
+                </p>
 
                 <p class="interview-text">
-                    前職はスポーツトレーナー。「異業種に挑戦したい」という理由から、縁もゆかりもないIT業界へ。研修制度が手厚いセラクに入社する。現在はチームリーダーとして業務にかかわるほか、事業部内のエンジニアサポートも担当。
+                    <span class="text">
+                        前職はスポーツトレーナー。「異業種に挑戦したい」という理由から、縁もゆかりもないIT業界へ。研修制度が手厚いセラクに入社する。現在はチームリーダーとして業務にかかわるほか、事業部内のエンジニアサポートも担当。
+                    </span>
                 </p>
             </div>
             <div class="Phero--imgbox single-interview-imgbox">
-                <p class="breadcrumbs">Top - Interview - Masanori.U</p>
+                <p class="breadcrumbs">Top - Interview - <span class="text">Masanori.U</span></p>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewpage1.png" alt="">
             </div>
         </div>
     </div>
 
     <div class="single-about">
-        <div class="skeltonbg"></div>
-        <div class="whitebg"></div>
-        <div id="ABOUT" class="single-about--content">
+        <div id="ClosePCMAINOUtimg"></div>
+        <div id="ABOUT" class="single-about--content inner-content1200">
             <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page1.png" alt="">
-                <div class="cont--textbox rightanim">
+                <div id="PCMAINimg" class="pcbox MASANORI-detail">
+                    <div id="IMG1" class="IMG"></div>
+                    <div id="IMG2" class="IMG"></div>
+                    <div id="IMG3" class="IMG"></div>
+                    <div id="IMG4" class="IMG"></div>
+                </div>
+                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page1.png" alt="">
+                <div id="detailCont1" class="cont--textbox">
                     <div class="common-titlebox">
                         <h2 class="title">
                             チームリーダーとして<br>
@@ -63,8 +80,14 @@ get_template_part('./template/head');
             </div>
 
             <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page2.png" alt="">
-                <div class="cont--textbox rightanim">
+                <div id="PCMAINimg" class="pcbox MASANORI-detail">
+                    <div id="IMG1" class="IMG"></div>
+                    <div id="IMG2" class="IMG"></div>
+                    <div id="IMG3" class="IMG"></div>
+                    <div id="IMG4" class="IMG"></div>
+                </div>
+                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page2.png" alt="">
+                <div id="detailCont2" class="cont--textbox">
                     <div class="common-titlebox">
                         <h2 class="title">
                             研修を受けていたからこそ、<br>
@@ -80,8 +103,8 @@ get_template_part('./template/head');
             </div>
 
             <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page3.png" alt="">
-                <div class="cont--textbox rightanim">
+                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page3.png" alt="">
+                <div id="detailCont3" class="cont--textbox">
                     <div class="common-titlebox">
                         <h2 class="title">
                             事業部内で受け継がれる、<br>
@@ -97,8 +120,8 @@ get_template_part('./template/head');
             </div>
 
             <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page4.png" alt="">
-                <div class="cont--textbox rightanim">
+                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page4.png" alt="">
+                <div id="detailCont4" class="cont--textbox">
                     <div class="common-titlebox">
                         <h2 class="title">
                             お客さまの困りごとを<br>
@@ -113,6 +136,7 @@ get_template_part('./template/head');
                 </div>
             </div>
         </div>
+        <div id="ClosePCMAINimg"></div>
     </div>
 
     <div class="single-interview-post">
@@ -125,13 +149,13 @@ get_template_part('./template/head');
             <div class="wrapper">
                 <a href="/yuki-s" class="slide">
                     <div class="imgbox">
-                        <p class="number">Interview 02</p>
+                        <p class="number">(Interview 02)</p>
                         <div class="img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewpage2.png" alt="">
                             <h2 class="title">
                                 <span class="title-text">
                                 事業部のために、自身が
-                                </span>
+                                </span><br>
                                 <span class="title-text">
                                 「為すべきこと」を突き詰める
                                 </span>
@@ -163,7 +187,7 @@ get_template_part('./template/head');
 
                 <a href="/risa-t" class="slide">
                     <div class="imgbox">
-                        <p class="number">Interview 03</p>
+                        <p class="number">(Interview 03)</p>
                         <div class="img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewpage3.png" alt="">
                             <h2 class="title">

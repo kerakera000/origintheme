@@ -28,13 +28,13 @@ get_template_part('./template/head');
                     <p class="text">
                         お探しのページを見つけることができませんでした。<br>
                         ご覧になっていたページからのリンクが無効になっているか、<br>
-                        お探しのページが削除されている可能性がございます。
+                        お探しのページが削除されている可能性がございます<span class="yakuhanjp">。</span>
                     </p>
 
                     <a href="/" class="common-button">
                         <div class="text">
-                            <p class="normal">View All</p>
-                            <p class="hover">View All</p>
+                            <p class="normal">TOPにもどる</p>
+                            <p class="hover">TOPにもどる</p>
                         </div>
                         <span class="arrow-right">
                             <div class="arrow-box">
@@ -46,7 +46,7 @@ get_template_part('./template/head');
                 </div>
             </div>
             <div class="Phero--imgbox start-img">
-                <p class="breadcrumbs">Top - About Us</p>
+                <p class="breadcrumbs">Top - <span class="text">404</span></p>
             </div>
         </div>
     </div>

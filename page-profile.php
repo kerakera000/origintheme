@@ -18,7 +18,7 @@ get_template_part('./template/head');
             <div class="Phero--textbox">
                 <div class="common-titlebox">
                     <p id="Ctitle" class="title page-title">
-                        <span id="Ctitle-text" class="text">Company</span>
+                        <span id="Ctitle-text" class="text">Profile</span>
                     </p>
                     <p id="Csubtitle" class="sub-title">
                         <span id="Csubtitle-text" class="text">会社情報</span>
@@ -28,7 +28,7 @@ get_template_part('./template/head');
                     <p class="index">Index</p>
                     <ul class="list">
                         <li class="list--item">
-                            <a class="link" href="#">
+                            <a class="link" href="#OVERVIEW">
                                 <span class="link--number">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pabout/Polygon.svg" alt="">
                                 </span>
@@ -36,7 +36,7 @@ get_template_part('./template/head');
                             </a>
                         </li>
                         <li class="list--item">
-                            <a class="link" href="#">
+                            <a class="link" href="#APPROVAL">
                                 <span class="link--number">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pabout/Polygon.svg" alt="">
                                 </span>
@@ -47,13 +47,13 @@ get_template_part('./template/head');
                 </div>
             </div>
             <div class="Phero--imgbox">
-                <p class="breadcrumbs">Top - About Us</p>
+                <p class="breadcrumbs">Top - <span class="text">Profile</span></p>
                 <img id="HeroImg" class="hero-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/company/company.png" alt="">
             </div>
         </div>
     </div>
 
-    <div class="company-overview">
+    <div id="OVERVIEW" class="company-overview">
         <div class="cont inner-content1200">
             <div class="company-overview--cont">
                 <div class="common-titlebox left">
@@ -112,7 +112,7 @@ get_template_part('./template/head');
         </div>
     </div>
 
-    <div class="company-Approval">
+    <div id="APPROVAL" class="company-Approval">
         <div class="inner-content1200">
             <div class="common-titlebox left">
                 <p id="Csubtitle" class="sub-title">

@@ -13,6 +13,7 @@ global $site_url;
   <meta name="apple-mobile-web-app-status-bar-style" content="default ">
   <!-- favicon -->
   <link rel="shortcut icon" href="<?= $wp_path?>/assets/img/favicon/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanjp.css">
 
   <?php
   get_template_part ('./include/seo');

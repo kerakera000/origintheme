@@ -44,10 +44,12 @@
             centeredSlides: false,
             initialSlide: 1,
             spaceBetween: 24,
+            allowTouchMove: false,
             autoplay: {
-                delay: 3000,
+                delay: 0,
             },
             loop: true,
+            speed: 6000,
             breakpoints: {
                 768: {
                     slidesPerView: 3.4,
@@ -95,6 +97,14 @@
             $('.bganim1, .bganim2').addClass('active');
         }, 800);
 
+        // インタビュー詳細タイトル
+        setTimeout(() => {
+            $('#InterviewDetail').addClass('active');
+            setTimeout(() => {
+                $('.explanation').addClass('active');
+            }, 350);
+        }, 300);
+
         // スクロールアニメーション
         $(window).on('scroll', function() {
             const scrollPosition = $(window).scrollTop();
@@ -106,7 +116,7 @@
             }
 
             // タイトルとサブ画像のスクロールアニメーション
-            if (scrollPosition > 890) {
+            if (scrollPosition > 1050) {
                 $('.title1, .title2, .title3, .subimg, .hero-textbox').addClass('scroll-active');
             } else {
                 $('.title1, .title2, .title3, .subimg, .hero-textbox').removeClass('scroll-active');
@@ -153,7 +163,7 @@
 
         // タイトルのアニメーション
         const CLASSNAME = "visible";
-        const TIMEOUT = 500;
+        const TIMEOUT = 300;
         setInterval(() => {
             $('#Ctitle, #Csubtitle').addClass(CLASSNAME);
         }, TIMEOUT * 2);
@@ -212,6 +222,156 @@
             }
         });
     });
+
+    $(window).on('scroll', function() {
+        $('.interviewanim').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面の真ん中に来た時を判定
+            if (scroll + (windowHeight / 2) > position && 
+                scroll + (windowHeight / 2) < position + elementHeight) {
+                $(this).addClass('active');
+                setTimeout(() => {
+                    $('.explanation').addClass('active');
+                }, 300);
+            } else {
+                // $(this).removeClass('active');
+            }
+        });
+    });
+
+    $(window).on('scroll', function() {
+        $('#PCMAINimg').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面の真ん中から100px下に来た時を判定
+            if (scroll + (windowHeight / 2 - 200) > position && 
+                scroll + (windowHeight / 2 - 200) < position + elementHeight) {
+                $(this).addClass('active');
+            } else {
+            }
+        });
+    });
+
+    $(window).on('scroll', function() {
+        $('#detailCont1').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面の真ん中に来た時を判定
+            if (scroll + (windowHeight / 2 - 100) > position && 
+                scroll + (windowHeight / 2 - 100) < position + elementHeight) {
+                $(this).addClass('active');
+                $('#PCMAINimg').addClass('activeimg1');
+                $('#PCMAINimg').removeClass('activeimg2');
+            }
+        });
+
+        $('#detailCont2').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面の真ん中に来た時を判定
+            if (scroll + (windowHeight / 2 - 100) > position && 
+                scroll + (windowHeight / 2 - 100) < position + elementHeight) {
+                $(this).addClass('active');
+                $('#PCMAINimg').addClass('activeimg2');
+                $('#PCMAINimg').removeClass('activeimg1');
+                $('#PCMAINimg').removeClass('activeimg3');
+            }
+        });
+        $('#detailCont3').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面の真ん中に来た時を判定
+            if (scroll + (windowHeight / 2 - 100) > position && 
+                scroll + (windowHeight / 2 - 100) < position + elementHeight) {
+                $('#PCMAINimg').addClass('activeimg3');
+                $('#PCMAINimg').removeClass('activeimg2');
+                $('#PCMAINimg').removeClass('activeimg4');
+            }
+        });
+        $('#detailCont4').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面の真ん中に来た時を判定
+            if (scroll + (windowHeight / 2 - 100) > position && 
+                scroll + (windowHeight / 2 - 100) < position + elementHeight) {
+                $('#PCMAINimg').addClass('activeimg4');
+                $('#PCMAINimg').removeClass('activeimg3');
+            }
+        });
+
+        $('#ClosePCMAINimg').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面の真ん中に来た時を判定
+            if (scroll + (windowHeight / 2) > position && 
+                scroll + (windowHeight / 2) < position + elementHeight) {
+                $('#PCMAINimg').removeClass('activeimg1');
+                $('#PCMAINimg').removeClass('activeimg2');
+                $('#PCMAINimg').removeClass('activeimg3');
+                $('#PCMAINimg').removeClass('activeimg4');
+            }
+        });
+
+        $('#ClosePCMAINOUtimg').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面の真ん中に来た時を判定
+            if (scroll + (windowHeight / 2) > position && 
+                scroll + (windowHeight / 2) < position + elementHeight) {
+                $('#PCMAINimg').removeClass('activeimg1');
+                $('#PCMAINimg').removeClass('activeimg2');
+                $('#PCMAINimg').removeClass('activeimg3');
+                $('#PCMAINimg').removeClass('activeimg4');
+            }
+        });
+
+    });
+
+    // PCbusiness--type-boxの高さ調整関数
+    function adjustCategoryBoxHeight() {
+        $('.PCbusiness--type-box').each(function() {
+            const $typeBox = $(this);
+            const $categoryBox = $typeBox.find('.category-box');
+            if ($categoryBox.length) {
+                // PCbusiness--type-boxの現在の高さを取得
+                const typeBoxHeight = $typeBox.outerHeight();
+                // category-boxの高さを設定
+                $categoryBox.height(typeBoxHeight);
+            }
+        });
+    }
+
+    // DOM読み込み完了時とリサイズ時に高さ調整を実行
+    $(window).on('load', function() {
+        adjustCategoryBoxHeight();
+        $(window).on('resize', adjustCategoryBoxHeight);
+    });
+    
 })(jQuery);
 
 
@@ -256,3 +416,24 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     // 日本語の約物を含む正規表現パターンを更新
+//     const punctuationRegex = /[、。！？〈〉《》「」『』【】〔〕（）：；［］｛｝]/g;
+//     const bodyTextNodes = document.querySelectorAll('body *:not(script):not(style):not(noscript)');
+
+//     bodyTextNodes.forEach(node => {
+//         node.childNodes.forEach(child => {
+//             if (child.nodeType === Node.TEXT_NODE) {
+//                 const newHTML = child.textContent.replace(punctuationRegex, match => {
+//                     return `<span style="font-family: YakuHanJP, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;">${match}</span>`;
+//                 });
+//                 if (newHTML !== child.textContent) {
+//                     node.innerHTML = newHTML;
+//                 }
+//             }
+//         });
+//     });
+// });
+
+

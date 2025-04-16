@@ -15,48 +15,63 @@ get_template_part('./template/head');
     </div>
 
     <div class="Phero single-interview">
-        <div class="Phero--cont inner-content1200 content">
+        <div id="InterviewDetail" class="Phero--cont inner-content1200 content">
             <div class="Phero--textbox single-interview-textbox">
                 <p class="explanation">
                     <span class="text">
-                    事業部ならではの「人のよさ」が
+                        <span class="back"></span>
+                        <span class="cont">事業部ならではの「人のよさ」が</span>
                     </span>
                     <span class="text">
-                    個人の成長を促す
+                        <span class="back"></span>
+                        <span class="cont">個人の成長を促す</span>
                     </span>
                 </p>
 
-                <h2 class="title">Risa.T</h2>
+                <h2 class="title">
+                    <span class="text">Risa.T</span>
+                </h2>
 
-                <p class="interview-date">エンジニア / 2022年入社（中途）</p>
+                <p class="interview-date">
+                    <span class="text">
+                    エンジニア / 2022年入社（中途）
+                    </span>
+                </p>
 
                 <p class="interview-text">
-                前職の経験から、システムによる業務改善に興味を抱き、セラクに入社。COMPANY事業部の所属が決まってからは、2か月間に渡り研修を受け、技術的なスキルを磨く。現在は、社内に導入されているCOMPANY(R)の保守業務に従事。ほか、教育課のサポート役や採用面接の面接官なども兼任する。
+                    <span class="text">
+                        前職の経験から、システムによる業務改善に興味を抱き、セラクに入社。COMPANY事業部の所属が決まってからは、2か月間に渡り研修を受け、技術的なスキルを磨く。現在は、社内に導入されているCOMPANY(R)の保守業務に従事。ほか、教育課のサポート役や採用面接の面接官なども兼任する。
+                    </span>
                 </p>
             </div>
             <div class="Phero--imgbox single-interview-imgbox">
-                <p class="breadcrumbs">Top - Interview - Masanori.U</p>
+                <p class="breadcrumbs">Top - Interview - <span class="text">Risa.T</span></p>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewpage3.png" alt="">
             </div>
         </div>
     </div>
 
     <div class="single-about">
-        <div class="skeltonbg"></div>
-        <div class="whitebg"></div>
-        <div id="ABOUT" class="single-about--content">
+        <div id="ClosePCMAINOUtimg"></div>
+        <div id="ABOUT" class="single-about--content inner-content1200">
             <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page9.png" alt="">
-                <div class="cont--textbox rightanim">
+                <div id="PCMAINimg" class="pcbox RISA-detail">
+                    <div id="IMG1" class="IMG"></div>
+                    <div id="IMG2" class="IMG"></div>
+                    <div id="IMG3" class="IMG"></div>
+                    <div id="IMG4" class="IMG"></div>
+                </div>
+                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page9.png" alt="">
+                <div id="detailCont1" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
-                        前職のときに抱いた、<br>
-                        業務改善システムへの憧れ
+                            前職のときに抱いた、<br>
+                            業務改善システムへの憧れ
                         </h2>
                     </div>
                     <p class="cont--textbox--text">
                         <span class="text">
-                        以前は、ビルメンテナンス会社の管理部門に在籍していました。そこは社内のデジタル化が進んでおらず、勤怠管理表から会議の資料に至るまで、あらゆる書類が紙でした。当然のことながら業務は煩雑化しており、DXとは無縁で紙の資料に囲まれる日々…。CMで目にする業務改善システムがちょっとした憧れになっていました。転職先にセラクを選んだのも、システムを駆使した業務改善に取り組んでいたからです。とくにCOMPANY事業部は、私にうってつけの環境。COMPANY(R)の存在を知ったときは「前職のときにこれが欲しかった！」と感銘を受けたほどです
+                            以前は、ビルメンテナンス会社の管理部門に在籍していました。そこは社内のデジタル化が進んでおらず、勤怠管理表から会議の資料に至るまで、あらゆる書類が紙でした。当然のことながら業務は煩雑化しており、DXとは無縁で紙の資料に囲まれる日々…。CMで目にする業務改善システムがちょっとした憧れになっていました。転職先にセラクを選んだのも、システムを駆使した業務改善に取り組んでいたからです。とくにCOMPANY事業部は、私にうってつけの環境。COMPANY(R)の存在を知ったときは「前職のときにこれが欲しかった！」と感銘を受けたほどです
                         </span>
                     </p>
                 </div>
@@ -64,7 +79,7 @@ get_template_part('./template/head');
 
             <div class="cont">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page10.png" alt="">
-                <div class="cont--textbox rightanim">
+                <div id="detailCont2" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                         IT未経験者の不安を解消する、<br>
@@ -80,7 +95,7 @@ get_template_part('./template/head');
 
             <div class="cont">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page11.png" alt="">
-                <div class="cont--textbox rightanim">
+                <div id="detailCont3" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                         保守業務を通じて、<br>
@@ -97,7 +112,7 @@ get_template_part('./template/head');
 
             <div class="cont">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page12.png" alt="">
-                <div class="cont--textbox rightanim">
+                <div id="detailCont4" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                         社員の「人のよさ」が<br>
@@ -112,6 +127,7 @@ get_template_part('./template/head');
                 </div>
             </div>
         </div>
+        <div id="ClosePCMAINimg"></div>
     </div>
 
     <div class="single-interview-post">
@@ -124,13 +140,13 @@ get_template_part('./template/head');
             <div class="wrapper">
                 <a href="/masanori-u" class="slide">
                     <div class="imgbox">
-                        <p class="number">Interview 01</p>
+                        <p class="number">(Interview 01)</p>
                         <div class="img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewpage1.png" alt="">
                             <h2 class="title">
                                 <span class="title-text">
                                 「課題解決」という、
-                                </span>
+                                </span><br>
                                 <span class="title-text">
                                 真っ直ぐな思いに突き動かされて
                                 </span>
@@ -162,13 +178,13 @@ get_template_part('./template/head');
 
                 <a href="/yuki-s" class="slide">
                     <div class="imgbox">
-                        <p class="number">Interview 02</p>
+                        <p class="number">(Interview 02)</p>
                         <div class="img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewpage2.png" alt="">
                             <h2 class="title">
                                 <span class="title-text">
                                 事業部のために、自身が
-                                </span>
+                                </span><br>
                                 <span class="title-text">
                                 「為すべきこと」を突き詰める
                                 </span>

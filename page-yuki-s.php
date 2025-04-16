@@ -15,39 +15,56 @@ get_template_part('./template/head');
     </div>
 
     <div class="Phero single-interview">
-        <div class="Phero--cont inner-content1200 content">
+        <div id="InterviewDetail" class="Phero--cont inner-content1200 content">
             <div class="Phero--textbox single-interview-textbox">
                 <p class="explanation">
                     <span class="text">
-                    事業部のために、自身が
+                        <span class="back"></span>
+                        <span class="cont">事業部のために、自身が</span>
                     </span>
                     <span class="text">
-                    「為すべきこと」を突き詰める
+                        <span class="back"></span>
+                        <span class="cont">「為すべきこと」を突き詰める</span>
                     </span>
                 </p>
 
-                <h2 class="title">Yuki.S</h2>
+                <h2 class="title">
+                    <span class="text">
+                        Yuki.S
+                    </span>
+                </h2>
 
-                <p class="interview-date">課長代理 / 2017年入社（中途）</p>
+                <p class="interview-date">
+                    <span class="text">
+                        課長代理 / 2017年入社（中途）
+                    </span>
+                </p>
 
                 <p class="interview-text">
-                    生命保険会社、個別指導塾を経て、セラクに入社。最初の案件でCOMPANY(R)を担当し、エンジニアとしてのキャリアをスタートさせる。以降、現場での活躍が認められ、現場リーダーなどの経験を経てプロジェクトマネージャーを任される。また、社内でもチームリーダーから、主任、主査とキャリアを重ねて現在に至る。好きな言葉は「置かれた場所で花を咲かせる」「足るを知る」など。
+                    <span class="text">
+                        生命保険会社、個別指導塾を経て、セラクに入社。最初の案件でCOMPANY(R)を担当し、エンジニアとしてのキャリアをスタートさせる。以降、現場での活躍が認められ、現場リーダーなどの経験を経てプロジェクトマネージャーを任される。また、社内でもチームリーダーから、主任、主査とキャリアを重ねて現在に至る。好きな言葉は「置かれた場所で花を咲かせる」「足るを知る」など。
+                    </span>
                 </p>
             </div>
             <div class="Phero--imgbox single-interview-imgbox">
-                <p class="breadcrumbs">Top - Interview - Masanori.U</p>
+                <p class="breadcrumbs">Top - Interview - <span class="text">Yuki.S</span></p>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewpage2.png" alt="">
             </div>
         </div>
     </div>
 
     <div class="single-about">
-        <div class="skeltonbg"></div>
-        <div class="whitebg"></div>
-        <div id="ABOUT" class="single-about--content">
+        <div id="ClosePCMAINOUtimg"></div>
+        <div id="ABOUT" class="single-about--content inner-content1200">
             <div class="cont">
+                <div id="PCMAINimg" class="pcbox YUKI-detail">
+                    <div id="IMG1" class="IMG"></div>
+                    <div id="IMG2" class="IMG"></div>
+                    <div id="IMG3" class="IMG"></div>
+                    <div id="IMG4" class="IMG"></div>
+                </div>
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page5.png" alt="">
-                <div class="cont--textbox rightanim">
+                <div id="detailCont1" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                         マネージャーと<br>
@@ -64,7 +81,7 @@ get_template_part('./template/head');
 
             <div class="cont">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page6.png" alt="">
-                <div class="cont--textbox rightanim">
+                <div id="detailCont2" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                         経歴を問わず、だれにでも<br>
@@ -81,7 +98,7 @@ get_template_part('./template/head');
 
             <div class="cont">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page7.png" alt="">
-                <div class="cont--textbox rightanim">
+                <div id="detailCont3" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                         「やりたいこと」より<br>
@@ -98,7 +115,7 @@ get_template_part('./template/head');
 
             <div class="cont">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page8.png" alt="">
-                <div class="cont--textbox rightanim">
+                <div id="detailCont4" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                             事業部のさらなる成長を<br>
@@ -113,6 +130,7 @@ get_template_part('./template/head');
                 </div>
             </div>
         </div>
+        <div id="ClosePCMAINimg"></div>
     </div>
 
     <div class="single-interview-post">
@@ -125,13 +143,13 @@ get_template_part('./template/head');
             <div class="wrapper">
                 <a href="/masanori-u" class="slide">
                     <div class="imgbox">
-                        <p class="number">Interview 01</p>
+                        <p class="number">(Interview 01)</p>
                         <div class="img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewpage1.png" alt="">
                             <h2 class="title">
                                 <span class="title-text">
                                 「課題解決」という、
-                                </span>
+                                </span><br>
                                 <span class="title-text">
                                 真っ直ぐな思いに突き動かされて
                                 </span>
@@ -163,7 +181,7 @@ get_template_part('./template/head');
 
                 <a href="/risa-t" class="slide">
                     <div class="imgbox">
-                        <p class="number">Interview 03</p>
+                        <p class="number">(Interview 03)</p>
                         <div class="img">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewpage3.png" alt="">
                             <h2 class="title">

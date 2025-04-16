@@ -109,6 +109,13 @@ $font-dir : "../fonts";
   font-family:"Zen Kaku Gothic New", 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 
 }
+@mixin yakuhanjp {
+  font-family: "YakuHanJP", sans-serif;
+}
+.yakuhanjp {
+  font-family: "YakuHanJP", sans-serif;
+}
+
 @mixin foopensa {
   font-family: "Open Sans", serif;
 }
@@ -126,6 +133,8 @@ $font-dir : "../fonts";
 @mixin web-font03 {
   //font-family: 'futura-condensed-bold', sans-serif;
 }
+
+
 
 //  ------------------------------------
 //   FORM設定

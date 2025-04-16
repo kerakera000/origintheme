@@ -17,7 +17,7 @@ function create_custom_pages_with_optional_parents() {
     ],
     [
       'title' => '会社情報',
-      'slug' => 'company',
+      'slug' => 'profile',
       'parent_slug' => '',
     ],
     [

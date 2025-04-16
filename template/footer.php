@@ -21,10 +21,10 @@ wp_reset_postdata();
                 </a>
                 <a class="link" href="/#HOWTOUSE">
                     <span class="text">
-                    Career Step
+                    Career
                     </span>
                     <span class="hover">
-                    Career Step
+                    Career
                     </span>
                 </a>
                 <a class="link" href="/#SHOPINFO">
@@ -37,10 +37,10 @@ wp_reset_postdata();
                 </a>
                 <a class="link" href="/#RESERVE">
                     <span class="text">
-                    Company
+                    Profile
                     </span>
                     <span class="hover">
-                    Company
+                    Profile
                     </span>
                 </a>
                 <a class="link" href="/#RESERVE">
