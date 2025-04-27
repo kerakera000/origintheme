@@ -36,7 +36,7 @@ get_template_part('./template/head');
         <div class="content">
             <div class="p-interview-archive__list">
                 <div class="content-back"></div>
-                <a class="item inner-content1200 interviewanim" href="/masanori-u">
+                <a class="item inner-content1200 item1" href="/masanori-u">
                     <div class="item__content">
                         <p class="number">
                             <span class="number-text">

@@ -67,11 +67,6 @@
         const $newsDecorationTextInner = $('<div>').addClass('news-decoration-text-inner').html(repeatedText);
         $newsDecorationText.empty().append($newsDecorationTextInner);
 
-        // タイトルアニメーション
-        setTimeout(() => {
-            $('.hero-textbox').addClass('active');
-        }, 1400);
-
         setTimeout(() => {
             $('.title1').addClass('active');
         }, 1400);
@@ -105,22 +100,33 @@
             }, 350);
         }, 300);
 
+        setTimeout(() => {
+            $('.item1').addClass('active');
+        }, 800);
+
         // スクロールアニメーション
         $(window).on('scroll', function() {
             const scrollPosition = $(window).scrollTop();
             
             if (scrollPosition > 40) {
-                $('.bganim1, .bganim2, #ScrollDown').addClass('scroll-active');
+                $('.bganim1, .bganim2, #ScrollDown, #SPherotextbox').addClass('scroll-active');
             } else {
-                $('.bganim1, .bganim2, #ScrollDown').removeClass('scroll-active');
+                $('.bganim1, .bganim2, #ScrollDown, #SPherotextbox').removeClass('scroll-active');
             }
 
             // タイトルとサブ画像のスクロールアニメーション
             if (scrollPosition > 1050) {
-                $('.title1, .title2, .title3, .subimg, .hero-textbox').addClass('scroll-active');
+                $('.title1, .title2, .title3, .subimg, #HEROTEXT').addClass('scroll-active');
             } else {
-                $('.title1, .title2, .title3, .subimg, .hero-textbox').removeClass('scroll-active');
+                $('.title1, .title2, .title3, .subimg, #HEROTEXT').removeClass('scroll-active');
             }
+
+            // // タイトルとサブ画像のスクロールアニメーション
+            // if (scrollPosition > 1100) {
+            //     $('.hero-textbox').addClass('scroll-active');
+            // } else {
+            //     $('.hero-textbox').removeClass('scroll-active');
+            // }
 
             // ヘッダーのスクロールアニメーション
             if (scrollPosition > 50) {
@@ -167,6 +173,19 @@
         setInterval(() => {
             $('#Ctitle, #Csubtitle').addClass(CLASSNAME);
         }, TIMEOUT * 2);
+
+        if (window.location.pathname === '/') {
+            window.scrollTo(0, 0);
+            setTimeout(() => {
+                $('#pageTop').css('overflow', 'hidden');
+                $('html').css('scroll-behavior', 'auto'); // スムーススクロールを無効化
+            }, 500);
+            setTimeout(() => {
+                $('#pageTop').css('overflow', '');  // 3秒後にoverflow hiddenを解除
+            }, 2500);
+        } else {
+            $('html').css('scroll-behavior', 'smooth'); // ルートパス以外ではスムーススクロールを有効化
+        }
     });
 
     $(window).on('scroll', function() {
@@ -222,6 +241,53 @@
             }
         });
     });
+    $(window).on('scroll', function() {
+        $('.bottomanim-type1').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 画面幅によって判定位置を変更
+            var triggerPosition;
+            if (window.innerWidth <= 500) {
+                // 500px以下なら「画面中央より下200px」
+                triggerPosition = scroll + (windowHeight / 2) + 200;
+            } else {
+                // それ以外は従来通り「画面下から500px上」
+                triggerPosition = scroll + windowHeight - 500;
+            }
+
+            // 要素が画面内に入ってきた時
+            if (triggerPosition > position && triggerPosition < position + elementHeight) {
+                $(this).addClass('active');
+            }
+            // 要素が画面上部に隠れた時
+            else {
+                $(this).removeClass('active');
+            }
+        });
+    });
+
+    $(window).on('scroll', function() {
+        $('.bottomanim-type2').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面内に入ってきた時
+            if (scroll > position - windowHeight + 500 && scroll < position + elementHeight) {
+                setTimeout(() => {
+                    $(this).addClass('active');
+                }, 200);
+            }
+            // 要素が画面上部に隠れた時
+            else {
+                $(this).removeClass('active');
+            }
+        });
+    });
 
     $(window).on('scroll', function() {
         $('.interviewanim').each(function() {
@@ -254,7 +320,6 @@
             if (scroll + (windowHeight / 2 - 200) > position && 
                 scroll + (windowHeight / 2 - 200) < position + elementHeight) {
                 $(this).addClass('active');
-            } else {
             }
         });
     });
@@ -272,9 +337,9 @@
                 $(this).addClass('active');
                 $('#PCMAINimg').addClass('activeimg1');
                 $('#PCMAINimg').removeClass('activeimg2');
+                $('#PCMAINimg').removeClass('stickeyTOP');
             }
         });
-
         $('#detailCont2').each(function() {
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
@@ -282,8 +347,8 @@
             var elementHeight = $(this).height();
 
             // 要素が画面の真ん中に来た時を判定
-            if (scroll + (windowHeight / 2 - 100) > position && 
-                scroll + (windowHeight / 2 - 100) < position + elementHeight) {
+            if (scroll + (windowHeight / 2) > position && 
+                scroll + (windowHeight / 2) < position + elementHeight) {
                 $(this).addClass('active');
                 $('#PCMAINimg').addClass('activeimg2');
                 $('#PCMAINimg').removeClass('activeimg1');
@@ -297,11 +362,18 @@
             var elementHeight = $(this).height();
 
             // 要素が画面の真ん中に来た時を判定
-            if (scroll + (windowHeight / 2 - 100) > position && 
-                scroll + (windowHeight / 2 - 100) < position + elementHeight) {
-                $('#PCMAINimg').addClass('activeimg3');
-                $('#PCMAINimg').removeClass('activeimg2');
-                $('#PCMAINimg').removeClass('activeimg4');
+            if (scroll + (windowHeight / 2) > position && 
+                scroll + (windowHeight / 2) < position + elementHeight) {
+                if (!$('#PCMAINimg').hasClass('activeimg3')) {
+                    $('#PCMAINimg').addClass('activeimg3');
+                }
+                if ($('#PCMAINimg').hasClass('activeimg2')) {
+                    $('#PCMAINimg').removeClass('activeimg2');
+                }
+                if ($('#PCMAINimg').hasClass('activeimg4')) {
+                    $('#PCMAINimg').removeClass('activeimg4');
+                }
+                $('#PCMAINimg').removeClass('stickeyBOTTOM');
             }
         });
         $('#detailCont4').each(function() {
@@ -311,14 +383,16 @@
             var elementHeight = $(this).height();
 
             // 要素が画面の真ん中に来た時を判定
-            if (scroll + (windowHeight / 2 - 100) > position && 
-                scroll + (windowHeight / 2 - 100) < position + elementHeight) {
-                $('#PCMAINimg').addClass('activeimg4');
-                $('#PCMAINimg').removeClass('activeimg3');
+            if (scroll + (windowHeight / 2 ) > position && 
+                scroll + (windowHeight / 2 ) < position + elementHeight) {
+                // activeimg4クラスがない場合のみ追加
+                if (!$('#PCMAINimg').hasClass('activeimg4')) {
+                    $('#PCMAINimg').addClass('activeimg4');
+                }
             }
         });
 
-        $('#ClosePCMAINimg').each(function() {
+        $('#PDH').each(function() {
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
@@ -327,26 +401,52 @@
             // 要素が画面の真ん中に来た時を判定
             if (scroll + (windowHeight / 2) > position && 
                 scroll + (windowHeight / 2) < position + elementHeight) {
-                $('#PCMAINimg').removeClass('activeimg1');
                 $('#PCMAINimg').removeClass('activeimg2');
                 $('#PCMAINimg').removeClass('activeimg3');
                 $('#PCMAINimg').removeClass('activeimg4');
+                $('#PCMAINimg').addClass('stickeyTOP');
             }
         });
-
         $('#ClosePCMAINOUtimg').each(function() {
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
             var elementHeight = $(this).height();
 
-            // 要素が画面の真ん中に来た時を判定
-            if (scroll + (windowHeight / 2) > position && 
-                scroll + (windowHeight / 2) < position + elementHeight) {
-                $('#PCMAINimg').removeClass('activeimg1');
+            // 要素が画面の真ん中から上200pxの位置に来た時を判定
+            if (scroll + (windowHeight / 2 - 200) > position && 
+                scroll + (windowHeight / 2 - 200) < position + elementHeight) {
                 $('#PCMAINimg').removeClass('activeimg2');
                 $('#PCMAINimg').removeClass('activeimg3');
                 $('#PCMAINimg').removeClass('activeimg4');
+                $('#PCMAINimg').addClass('stickeyTOP');
+            }
+        });
+        $('#ClosePCMAINimg').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面の下部に来た時を判定
+            if (scroll + windowHeight > position && 
+                scroll + windowHeight < position + elementHeight) {
+                if ($('#PCMAINimg').hasClass('activeimg3')) {
+                    $('#PCMAINimg').removeClass('activeimg3');
+                }
+                $('#PCMAINimg').addClass('stickeyBOTTOM');
+            }
+        });
+        $('#PDF').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面の下部に来た時を判定
+            if (scroll + windowHeight > position && 
+                scroll + windowHeight < position + elementHeight) {
+                $('#PCMAINimg').addClass('stickeyBOTTOM');
             }
         });
 
@@ -417,23 +517,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     // 日本語の約物を含む正規表現パターンを更新
-//     const punctuationRegex = /[、。！？〈〉《》「」『』【】〔〕（）：；［］｛｝]/g;
-//     const bodyTextNodes = document.querySelectorAll('body *:not(script):not(style):not(noscript)');
+$(window).on('scroll', function() {
+    $('.hero-text').each(function() {
+        var position = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var elementHeight = $(this).height();
 
-//     bodyTextNodes.forEach(node => {
-//         node.childNodes.forEach(child => {
-//             if (child.nodeType === Node.TEXT_NODE) {
-//                 const newHTML = child.textContent.replace(punctuationRegex, match => {
-//                     return `<span style="font-family: YakuHanJP, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', Meiryo, sans-serif;">${match}</span>`;
-//                 });
-//                 if (newHTML !== child.textContent) {
-//                     node.innerHTML = newHTML;
-//                 }
-//             }
-//         });
-//     });
-// });
+        // 要素の下部が画面中央より100px下に来た時を判定
+        if (scroll + (windowHeight / 2 + 200) > position + elementHeight) {
+            $('.hero-textbox').addClass('scroll-active');
+        } else {
+            $('.hero-textbox').removeClass('scroll-active');
+        }
+    });
+});
 
 

@@ -17,7 +17,7 @@
   width: 100%;
 }
 .common-titlebox .title {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-weight: 400;
   font-size: 80px;
   color: var(--color-primary, #182346);
@@ -42,7 +42,7 @@
   line-height: 100%;
 }
 .common-titlebox .sub-title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 18px;
   color: var(--color-primary, #182346);
   font-weight: 700;
@@ -69,7 +69,7 @@
   align-items: flex-start;
 }
 .common-titlebox.left .title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   text-align: left;
   font-size: 40px;
   font-style: normal;
@@ -84,7 +84,7 @@
   }
 }
 .common-titlebox.left .sub-title {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   color: var(--color-secondary, #0050B5);
   font-size: 16px;
   font-style: normal;
@@ -110,7 +110,7 @@
   }
 }
 .common-titlebox.flex .next {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -158,7 +158,7 @@
   width: 100%;
 }
 .common-titlebox-normal .title {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-weight: 400;
   font-size: 80px;
   color: var(--color-primary, #182346);
@@ -181,7 +181,7 @@
   }
 }
 .common-titlebox-normal .sub-title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 18px;
   color: var(--color-primary, #182346);
   font-weight: 700;
@@ -208,7 +208,7 @@
 }
 
 .commontext {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-weight: 500;
   font-size: 14px;
 }
@@ -274,7 +274,7 @@
   background: var(--color-primary, #182346);
 }
 .common-button .text {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   overflow: hidden;
   cursor: pointer;
   position: relative;
@@ -289,7 +289,7 @@
   color: var(--color-white, #FFF);
   width: 100%;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -306,7 +306,7 @@
   color: var(--color-white, #FFF);
   width: 100%;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -381,7 +381,7 @@
   position: relative;
 }
 .common-button.header-button .text {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -414,7 +414,7 @@
   overflow: hidden;
 }
 .common-button.header-button .entry-linkbox .entry-linkbox-link .normal {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -429,7 +429,7 @@
   transition: all 0.3s ease;
 }
 .common-button.header-button .entry-linkbox .entry-linkbox-link .hover {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -466,32 +466,30 @@
 .common-button.scroll-down {
   width: 130px;
   height: 40px;
-  position: relative;
-  margin: auto 0px 48px 0;
   z-index: 10;
   opacity: 0;
   transition: all 0.3s ease;
   transform: translateY(10px);
   margin-left: auto;
+  position: absolute;
+  bottom: 30px;
+  margin: 0;
+  right: 20px;
 }
 @media screen and (max-width: 660px) {
   .common-button.scroll-down {
-    width: 80px;
-    position: absolute;
-    bottom: 115px;
-    right: 0;
-    margin: 0;
+    width: 100px;
+    right: 0px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   .common-button.scroll-down {
-    bottom: 15px;
+    bottom: 25px;
   }
 }
 .common-button.scroll-down.active {
   opacity: 1;
   transition: all 0.3s ease;
-  transform: translateY(0px);
 }
 .common-button.scroll-down.scroll-active {
   opacity: 0;
@@ -561,7 +559,27 @@
 }
 .topanim.active {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
+}
+
+.bottomanim-type1 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+.bottomanim-type1.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bottomanim-type2 {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+.bottomanim-type2.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* CSS Document */
@@ -641,6 +659,7 @@ a {
 * {
   box-sizing: border-box;
   word-break: break-word;
+  font-family: "YakuHanJP", sans-serif;
 }
 
 html {
@@ -1022,7 +1041,7 @@ button {
   max-width: 133px;
 }
 .footer .footer-content .icon-logo .sub-text {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -1060,7 +1079,7 @@ button {
 }
 .footer--linkbox .link .text {
   color: var(--color-primary, #182346);
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1074,7 +1093,7 @@ button {
 }
 .footer--linkbox .link .hover {
   color: var(--color-primary, #182346);
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1154,7 +1173,7 @@ button {
 }
 .header--logo .link .text {
   color: var(--color-primary, #182346);
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1220,7 +1239,7 @@ button {
 }
 .header--linkbox .link .text {
   color: var(--color-primary, #182346);
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1240,7 +1259,7 @@ button {
 }
 .header--linkbox .link .hover {
   color: var(--color-primary, #182346);
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -1276,6 +1295,7 @@ button {
 @media (max-width: 1024px) {
   .header--linkbox .link .sp {
     display: block;
+    color: var(--color-primary, #182346);
   }
 }
 .header--linkbox .header-button {
@@ -1386,11 +1406,216 @@ button {
      object-fit: cover;
 }
 
+.hero-textbox-wrapper {
+  width: 100%;
+  position: relative;
+}
+.hero-textbox-wrapper .hero-textbox {
+  z-index: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 1101px) {
+  .hero-textbox-wrapper .hero-textbox {
+    width: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-textbox-wrapper .hero-textbox {
+    width: 94%;
+  }
+}
+@media (max-width: 1100px) {
+  .hero-textbox-wrapper .hero-textbox {
+    width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-textbox-wrapper .hero-textbox {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .hero-textbox-wrapper .hero-textbox {
+    transform: translate(-45%, -37vh);
+  }
+}
+@media (min-width: 768px) {
+  .hero-textbox-wrapper .hero-textbox.scroll-active {
+    opacity: 1;
+    position: sticky;
+    bottom: 0%;
+    left: 0%;
+    height: 0;
+    transform: translate(0%, 0%);
+    padding-bottom: 20px;
+  }
+}
+.hero-textbox-wrapper .hero-textbox .main-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.hero-textbox-wrapper .hero-textbox .main-title .title1 {
+  color: var(--color-primary, #182346);
+  font-family: "YakuHanJP", "Marcellus", sans-serif;
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  transition: 0.3s;
+  transform: translateY(10px);
+  opacity: 0;
+}
+@media (min-width: 769px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title1 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title1 {
+    font-size: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 525px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title1 {
+    font-size: 60px;
+  }
+}
+.hero-textbox-wrapper .hero-textbox .main-title .title1.active {
+  transition: 0.3s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.hero-textbox-wrapper .hero-textbox .main-title .title2 {
+  color: var(--color-primary, #182346);
+  font-family: "YakuHanJP", "Marcellus", sans-serif;
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  transform: translateY(10px);
+  opacity: 0;
+}
+@media (min-width: 769px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title2 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title2 {
+    font-size: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title2 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 525px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title2 {
+    font-size: 60px;
+  }
+}
+.hero-textbox-wrapper .hero-textbox .main-title .title2.active {
+  transition: 0.3s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.hero-textbox-wrapper .hero-textbox .main-title .title3 {
+  color: var(--color-primary, #182346);
+  font-family: "YakuHanJP", "Marcellus", sans-serif;
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  transform: translateY(10px);
+  opacity: 0;
+}
+@media (min-width: 769px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title3 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title3 {
+    font-size: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title3 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 525px) {
+  .hero-textbox-wrapper .hero-textbox .main-title .title3 {
+    font-size: 60px;
+  }
+}
+.hero-textbox-wrapper .hero-textbox .main-title .title3.active {
+  transition: 0.3s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.hero-textbox-wrapper .hero-textbox .sub-text {
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 44px;
+  transition: 0.3s;
+}
+@media screen and (min-width: 600px) {
+  .hero-textbox-wrapper .hero-textbox .sub-text {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero-textbox-wrapper .hero-textbox .sub-text {
+    width: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-textbox-wrapper .hero-textbox .sub-text {
+    margin-top: 34px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-textbox-wrapper .hero-textbox .sub-text {
+    margin-top: 24px;
+    width: 200px;
+  }
+}
+.hero-textbox-wrapper .hero-textbox .sub-text .subimg {
+  transform: translateY(10px);
+  opacity: 0;
+}
+.hero-textbox-wrapper .hero-textbox .sub-text .subimg.active {
+  transition: 0.3s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
 .hero {
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   overflow: hidden;
   position: relative;
@@ -1398,13 +1623,7 @@ button {
 }
 @media (max-width: 768px) {
   .hero {
-    padding: 0px 24px;
-  }
-}
-@media (max-width: 600px) {
-  .hero {
-    align-items: flex-end;
-    padding-bottom: 130px;
+    padding: 0px 20px 30px;
   }
 }
 .hero .bganim1 {
@@ -1525,38 +1744,33 @@ button {
   transform: rotateZ(90deg);
   opacity: 0;
 }
-.hero .hero-textbox {
+.hero--hero-textbox {
   z-index: 3;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  z-index: 9;
 }
-@media (min-width: 1300px) {
-  .hero .hero-textbox.active {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 94%;
+@media (min-width: 769px) {
+  .hero--hero-textbox {
+    display: none;
   }
 }
-.hero .hero-textbox.scroll-active {
-  transition: 0.4s;
-  opacity: 0;
-  z-index: -10;
+.hero--hero-textbox.scroll-active {
+  display: none;
 }
-.hero .hero-textbox .main-title {
+.hero--hero-textbox .main-title {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   width: 100%;
 }
-.hero .hero-textbox .main-title .title1 {
+.hero--hero-textbox .main-title .title1 {
   color: var(--color-primary, #182346);
-  font-family: "Marcellus", sans-serif;
+  font-family: "YakuHanJP", "Marcellus", sans-serif;
   font-size: 8vw;
   font-style: normal;
   font-weight: 400;
@@ -1565,34 +1779,34 @@ button {
   transform: translateY(10px);
   opacity: 0;
 }
+@media (min-width: 769px) {
+  .hero--hero-textbox .main-title .title1 {
+    font-size: 6vw;
+  }
+}
 @media (min-width: 1400px) {
-  .hero .hero-textbox .main-title .title1 {
+  .hero--hero-textbox .main-title .title1 {
     font-size: 120px;
   }
 }
 @media (max-width: 768px) {
-  .hero .hero-textbox .main-title .title1 {
+  .hero--hero-textbox .main-title .title1 {
     font-size: 80px;
   }
 }
 @media (max-width: 525px) {
-  .hero .hero-textbox .main-title .title1 {
+  .hero--hero-textbox .main-title .title1 {
     font-size: 60px;
   }
 }
-.hero .hero-textbox .main-title .title1.active {
+.hero--hero-textbox .main-title .title1.active {
   transition: 0.3s;
   transform: translateY(0px);
   opacity: 1;
 }
-.hero .hero-textbox .main-title .title1.scroll-active {
-  transition: 0.3s;
-  transform: translateY(-10px);
-  opacity: 0;
-}
-.hero .hero-textbox .main-title .title2 {
+.hero--hero-textbox .main-title .title2 {
   color: var(--color-primary, #182346);
-  font-family: "Marcellus", sans-serif;
+  font-family: "YakuHanJP", "Marcellus", sans-serif;
   font-size: 8vw;
   font-style: normal;
   font-weight: 400;
@@ -1600,34 +1814,34 @@ button {
   transform: translateY(10px);
   opacity: 0;
 }
+@media (min-width: 769px) {
+  .hero--hero-textbox .main-title .title2 {
+    font-size: 6vw;
+  }
+}
 @media (min-width: 1400px) {
-  .hero .hero-textbox .main-title .title2 {
+  .hero--hero-textbox .main-title .title2 {
     font-size: 120px;
   }
 }
 @media (max-width: 768px) {
-  .hero .hero-textbox .main-title .title2 {
+  .hero--hero-textbox .main-title .title2 {
     font-size: 80px;
   }
 }
 @media (max-width: 525px) {
-  .hero .hero-textbox .main-title .title2 {
+  .hero--hero-textbox .main-title .title2 {
     font-size: 60px;
   }
 }
-.hero .hero-textbox .main-title .title2.active {
+.hero--hero-textbox .main-title .title2.active {
   transition: 0.3s;
   transform: translateY(0px);
   opacity: 1;
 }
-.hero .hero-textbox .main-title .title2.scroll-active {
-  transition: 0.3s;
-  transform: translateY(-10px);
-  opacity: 0;
-}
-.hero .hero-textbox .main-title .title3 {
+.hero--hero-textbox .main-title .title3 {
   color: var(--color-primary, #182346);
-  font-family: "Marcellus", sans-serif;
+  font-family: "YakuHanJP", "Marcellus", sans-serif;
   font-size: 8vw;
   font-style: normal;
   font-weight: 400;
@@ -1635,64 +1849,69 @@ button {
   transform: translateY(10px);
   opacity: 0;
 }
+@media (min-width: 769px) {
+  .hero--hero-textbox .main-title .title3 {
+    font-size: 6vw;
+  }
+}
 @media (min-width: 1400px) {
-  .hero .hero-textbox .main-title .title3 {
+  .hero--hero-textbox .main-title .title3 {
     font-size: 120px;
   }
 }
 @media (max-width: 768px) {
-  .hero .hero-textbox .main-title .title3 {
+  .hero--hero-textbox .main-title .title3 {
     font-size: 80px;
   }
 }
 @media (max-width: 525px) {
-  .hero .hero-textbox .main-title .title3 {
+  .hero--hero-textbox .main-title .title3 {
     font-size: 60px;
   }
 }
-.hero .hero-textbox .main-title .title3.active {
+.hero--hero-textbox .main-title .title3.active {
   transition: 0.3s;
   transform: translateY(0px);
   opacity: 1;
 }
-.hero .hero-textbox .main-title .title3.scroll-active {
-  transition: 0.3s;
-  transform: translateY(-10px);
-  opacity: 0;
-}
-.hero .hero-textbox .sub-text {
-  font-family: "Noto Sans", sans-serif;
+.hero--hero-textbox .sub-text {
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   margin-top: 44px;
   transition: 0.3s;
 }
+@media screen and (min-width: 600px) {
+  .hero--hero-textbox .sub-text {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero--hero-textbox .sub-text {
+    width: auto;
+  }
+}
 @media screen and (max-width: 600px) {
-  .hero .hero-textbox .sub-text {
+  .hero--hero-textbox .sub-text {
     margin-top: 34px;
     width: 300px;
   }
 }
 @media screen and (max-width: 375px) {
-  .hero .hero-textbox .sub-text {
+  .hero--hero-textbox .sub-text {
     margin-top: 24px;
     width: 200px;
   }
 }
-.hero .hero-textbox .sub-text .subimg {
+.hero--hero-textbox .sub-text .subimg {
   transform: translateY(10px);
   opacity: 0;
 }
-.hero .hero-textbox .sub-text .subimg.active {
+.hero--hero-textbox .sub-text .subimg.active {
   transition: 0.3s;
   transform: translateY(0px);
   opacity: 1;
-}
-.hero .hero-textbox .sub-text .subimg.scroll-active {
-  transition: 0.3s;
-  transform: translateY(-10px);
-  opacity: 0;
 }
 
 .hero-text {
@@ -1710,11 +1929,11 @@ button {
 }
 .hero-text .textbox {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
   width: calc(100% + 1000px);
-  max-width: 1000px;
-  margin: 250px 0px 200px;
+  max-width: 1200px;
+  margin: 250px 0px 0px;
 }
 @media (max-width: 768px) {
   .hero-text .textbox {
@@ -1726,8 +1945,183 @@ button {
     margin: 0px 0px 40px;
   }
 }
+@media (max-width: 425px) {
+  .hero-text .textbox {
+    margin: 0px;
+  }
+}
+.hero-text .textbox--hero-textbox {
+  z-index: 3;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.4s;
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .hero-text .textbox--hero-textbox {
+    display: none;
+  }
+}
+.hero-text .textbox--hero-textbox .main-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+.hero-text .textbox--hero-textbox .main-title .title1 {
+  color: var(--color-primary, #182346);
+  font-family: "YakuHanJP", "Marcellus", sans-serif;
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  transition: 0.3s;
+  transform: translateY(10px);
+  opacity: 0;
+}
+@media (min-width: 769px) {
+  .hero-text .textbox--hero-textbox .main-title .title1 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-text .textbox--hero-textbox .main-title .title1 {
+    font-size: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text .textbox--hero-textbox .main-title .title1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 525px) {
+  .hero-text .textbox--hero-textbox .main-title .title1 {
+    font-size: 60px;
+  }
+}
+.hero-text .textbox--hero-textbox .main-title .title1.active {
+  transition: 0.3s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.hero-text .textbox--hero-textbox .main-title .title2 {
+  color: var(--color-primary, #182346);
+  font-family: "YakuHanJP", "Marcellus", sans-serif;
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  transform: translateY(10px);
+  opacity: 0;
+}
+@media (min-width: 769px) {
+  .hero-text .textbox--hero-textbox .main-title .title2 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-text .textbox--hero-textbox .main-title .title2 {
+    font-size: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text .textbox--hero-textbox .main-title .title2 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 525px) {
+  .hero-text .textbox--hero-textbox .main-title .title2 {
+    font-size: 60px;
+  }
+}
+.hero-text .textbox--hero-textbox .main-title .title2.active {
+  transition: 0.3s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.hero-text .textbox--hero-textbox .main-title .title3 {
+  color: var(--color-primary, #182346);
+  font-family: "YakuHanJP", "Marcellus", sans-serif;
+  font-size: 8vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  transform: translateY(10px);
+  opacity: 0;
+}
+@media (min-width: 769px) {
+  .hero-text .textbox--hero-textbox .main-title .title3 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-text .textbox--hero-textbox .main-title .title3 {
+    font-size: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text .textbox--hero-textbox .main-title .title3 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 525px) {
+  .hero-text .textbox--hero-textbox .main-title .title3 {
+    font-size: 60px;
+  }
+}
+.hero-text .textbox--hero-textbox .main-title .title3.active {
+  transition: 0.3s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.hero-text .textbox--hero-textbox .sub-text {
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 44px;
+  transition: 0.3s;
+}
+@media screen and (min-width: 600px) {
+  .hero-text .textbox--hero-textbox .sub-text {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hero-text .textbox--hero-textbox .sub-text {
+    width: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-text .textbox--hero-textbox .sub-text {
+    margin-top: 34px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-text .textbox--hero-textbox .sub-text {
+    margin-top: 24px;
+    width: 200px;
+  }
+}
+.hero-text .textbox--hero-textbox .sub-text .subimg {
+  transform: translateY(10px);
+  opacity: 0;
+}
+.hero-text .textbox--hero-textbox .sub-text .subimg.active {
+  transition: 0.3s;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.hero-text .textbox--hero-textbox.scroll-active {
+  transition: 0.4s;
+  opacity: 1;
+}
 .hero-text .textbox .text {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -1735,7 +2129,12 @@ button {
   letter-spacing: 0.9px;
   color: var(--color-primary, #182346);
 }
-@media (max-width: 425px) {
+@media (max-width: 800px) {
+  .hero-text .textbox .text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
   .hero-text .textbox .text {
     font-size: 16px;
   }
@@ -1764,20 +2163,20 @@ button {
   flex-direction: column;
   width: 100%;
   background-color: #fff;
-  padding: 0 32px 200px;
+  padding: 200px 32px 200px;
 }
 @media (max-width: 1000px) {
   .news {
-    padding: 0 32px 200px;
+    padding: 200px 32px 200px;
   }
 }
 @media (max-width: 425px) {
   .news {
-    padding: 0 24px 120px;
+    padding: 120px 24px 120px;
   }
 }
 .news--decoration-text {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 160px;
   font-style: normal;
   font-weight: 500;
@@ -1806,11 +2205,6 @@ button {
   margin-top: 0px;
   width: 100%;
   gap: 10px;
-}
-@media (max-width: 768px) {
-  .news--content {
-    margin-top: 80px;
-  }
 }
 .news--content--col1 {
   display: flex;
@@ -1907,7 +2301,7 @@ button {
   gap: 10px;
 }
 .news--content--col2 .news-itembox .news-item .textbox .text .date {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1921,7 +2315,7 @@ button {
   }
 }
 .news--content--col2 .news-itembox .news-item .textbox .text .title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1958,7 +2352,7 @@ button {
   gap: 10px;
 }
 .news--content--col2 .news-itembox .news-item .textbox .button-box .more-button .text {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2037,51 +2431,15 @@ button {
 .about {
   position: relative;
   width: 100%;
-  min-height: 1760px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
+  background-color: #182346;
+  padding: 200px 32px;
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .about {
-    min-height: 1660px;
-  }
-}
-.about .skeltonbg {
-  width: 22%;
-  height: 100%;
-  min-height: 1760px;
-  background-color: rgba(255, 255, 255, 0);
-}
-@media (max-width: 600px) {
-  .about .skeltonbg {
-    width: 0%;
-  }
-}
-@media (max-width: 425px) {
-  .about .skeltonbg {
-    min-height: 1660px;
-  }
-}
-.about .whitebg {
-  width: 78%;
-  height: 100%;
-  min-height: 1760px;
-  background-color: #fff;
-}
-@media (min-width: 1450px) {
-  .about .whitebg {
-    width: 70%;
-  }
-}
-@media (max-width: 600px) {
-  .about .whitebg {
-    width: 100%;
-  }
-}
-@media (max-width: 425px) {
-  .about .whitebg {
-    min-height: 1660px;
+    padding: 120px 0;
   }
 }
 .about--content {
@@ -2090,18 +2448,6 @@ button {
   justify-content: flex-start;
   flex-direction: column;
   gap: 120px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0 32px;
-}
-@media (max-width: 1000px) {
-  .about--content {
-    top: 0;
-    transform: translate(-50%, 0);
-    gap: 160px;
-  }
 }
 @media (max-width: 425px) {
   .about--content {
@@ -2127,10 +2473,16 @@ button {
     align-items: center;
   }
 }
+.about--content .cont .common-titlebox-normal .title {
+  color: #fff;
+}
 @media (max-width: 1000px) {
   .about--content .cont .common-titlebox-normal .title {
     text-align: center;
   }
+}
+.about--content .cont .common-titlebox-normal .sub-title {
+  color: #fff;
 }
 .about--content .cont .normal-img {
   width: calc(100% / 2 - 10% * (2 - 1) / 2);
@@ -2146,6 +2498,11 @@ button {
     max-height: 280px;
     -o-object-fit: cover;
        object-fit: cover;
+    margin-top: 64px;
+  }
+}
+@media (max-width: 768px) {
+  .about--content .cont .normal-img {
     margin-top: 0px;
   }
 }
@@ -2191,14 +2548,14 @@ button {
   }
 }
 .about--content .cont--textbox--text .text {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 200%;
   letter-spacing: 0.9px;
   text-align: left;
-  color: var(--color-primary, #182346);
+  color: #fff;
 }
 @media (max-width: 425px) {
   .about--content .cont--textbox--text .text {
@@ -2214,10 +2571,19 @@ button {
     display: none;
   }
 }
+.about--content .cont--textbox .common-button {
+  background-color: #fff;
+}
 @media (max-width: 1000px) {
-  .about--content .cont .common-button {
+  .about--content .cont--textbox .common-button {
     order: 4;
   }
+}
+.about--content .cont--textbox .common-button .text .normal {
+  color: #182346;
+}
+.about--content .cont--textbox .common-button .text .hover {
+  color: #182346;
 }
 
 .Interview {
@@ -2235,7 +2601,7 @@ button {
   }
 }
 .Interview--text {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -2268,6 +2634,7 @@ button {
 }
 .Interview .swiper {
   margin-bottom: 160px;
+  padding: 0 32px;
 }
 @media (max-width: 425px) {
   .Interview .swiper {
@@ -2319,7 +2686,7 @@ button {
   }
 }
 .Interview .swiper .swiper-wrapper .swiper-slide .imgbox .number {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2356,7 +2723,7 @@ button {
   position: absolute;
   bottom: 24px;
   left: 24px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -2385,7 +2752,7 @@ button {
   width: 100%;
 }
 .Interview .swiper .swiper-wrapper .swiper-slide .textcont .name {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -2404,7 +2771,7 @@ button {
   }
 }
 .Interview .swiper .swiper-wrapper .swiper-slide .textcont .name .job {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -2423,7 +2790,7 @@ button {
   background: var(--color-primary, #182346);
 }
 .Interview .swiper .swiper-wrapper .swiper-slide .textcont .more-button .text {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   overflow: hidden;
   cursor: pointer;
   position: relative;
@@ -2438,7 +2805,7 @@ button {
   color: var(--color-white, #182346);
   width: 100%;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2455,7 +2822,7 @@ button {
   color: var(--color-white, #182346);
   width: 100%;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2588,7 +2955,7 @@ button {
   margin-bottom: 0;
 }
 .Interview--overview .common-button .text {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   overflow: hidden;
   cursor: pointer;
   position: relative;
@@ -2603,7 +2970,7 @@ button {
   color: var(--color-white, #FFF);
   width: 100%;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2620,7 +2987,7 @@ button {
   color: var(--color-white, #FFF);
   width: 100%;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2672,7 +3039,7 @@ button {
   width: 140px;
 }
 .Interview--overview .common-button.header-button .text {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -2757,7 +3124,7 @@ button {
   }
 }
 .Entry--text {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2825,7 +3192,7 @@ button {
   }
 }
 .Entry--cardbox .Entry-card .card-title .title {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -2839,7 +3206,7 @@ button {
   }
 }
 .Entry--cardbox .Entry-card .card-title .sub-title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -2916,7 +3283,7 @@ button {
   }
 }
 .post-content__title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 140%;
@@ -2930,13 +3297,13 @@ button {
   color: #999999;
 }
 .post-content p {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 180%;
 }
 .post-content h2 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 26px;
   font-weight: 700;
   padding: 40px 0 31px;
@@ -2945,25 +3312,25 @@ button {
   margin-bottom: 26px;
 }
 .post-content h3 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 22px;
   font-weight: 700;
   padding: 31px 0;
 }
 .post-content h4 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 20px;
   font-weight: 700;
   padding: 31px 0;
 }
 .post-content h5 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding: 31px 0;
 }
 .post-content h6 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 700;
   padding: 31px 0;
@@ -2980,7 +3347,7 @@ button {
   border-radius: 6px;
 }
 .post-content ul li {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #666666;
@@ -2997,7 +3364,7 @@ button {
   border-radius: 6px;
 }
 .post-content ol li {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #666666;
@@ -3031,12 +3398,12 @@ button {
   border: 1px solid #CCCCCC;
 }
 .post-content .wp-block-table .wp-element-caption {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 12px;
   font-weight: 700;
 }
 .post-content .wp-block-quote p {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #666666;
@@ -3091,7 +3458,7 @@ button {
   color: #FFF;
   padding: 16px 10px 16px 0;
   border-radius: 34px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
@@ -3123,7 +3490,7 @@ button {
   }
 }
 .policy-content p {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 180%;
@@ -3133,13 +3500,13 @@ button {
   text-align: right;
 }
 .policy-content strong {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 180%;
 }
 .policy-content__title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
@@ -3150,7 +3517,7 @@ button {
   margin-bottom: 70px;
 }
 .policy-content h2 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 23px;
   font-weight: 700;
   padding: 0px 0 21px;
@@ -3158,25 +3525,25 @@ button {
   margin-bottom: 16px;
 }
 .policy-content h3 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 22px;
   font-weight: 700;
   padding: 31px 0;
 }
 .policy-content h4 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 20px;
   font-weight: 700;
   padding: 31px 0;
 }
 .policy-content h5 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding: 31px 0;
 }
 .policy-content h6 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 700;
   padding: 31px 0;
@@ -3192,7 +3559,7 @@ button {
   border-radius: 6px;
 }
 .policy-content ul li {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #000000;
@@ -3210,7 +3577,7 @@ button {
   border-radius: 6px;
 }
 .policy-content ol li {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #666666;
@@ -3244,12 +3611,12 @@ button {
   border: 1px solid #CCCCCC;
 }
 .policy-content .wp-block-table .wp-element-caption {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 12px;
   font-weight: 700;
 }
 .policy-content .wp-block-quote p {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: #666666;
@@ -3305,6 +3672,11 @@ button {
   .Phero--cont {
     flex-direction: column;
     padding-top: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .Phero--cont {
+    max-height: 950px;
   }
 }
 .Phero--textbox {
@@ -3394,7 +3766,7 @@ button {
 .Phero--textbox--list .index {
   color: var(--color-primary, #182346);
   font-feature-settings: "halt" on;
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -3430,7 +3802,7 @@ button {
      object-fit: contain;
 }
 .Phero--textbox--list .list--item .link--text {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -3453,7 +3825,7 @@ button {
   }
 }
 .Phero--imgbox .breadcrumbs {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -3478,13 +3850,18 @@ button {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   height: 90%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media (max-width: 768px) {
   .Phero--imgbox .hero-img {
     order: 3;
     margin-top: 120px;
+  }
+}
+@media (max-width: 500px) {
+  .Phero--imgbox .hero-img {
+    aspect-ratio: 534/625;
   }
 }
 .Phero--imgbox .hero-img.active {
@@ -3520,7 +3897,7 @@ button {
 }
 .PheroText .text--content {
   width: 50%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -3573,7 +3950,7 @@ button {
 }
 .PAmission .text--title {
   width: 70%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -3603,7 +3980,7 @@ button {
 }
 .PAmission .text--content {
   width: 70%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -3734,7 +4111,7 @@ button {
   }
 }
 .PAstrength--titlebox .textbox {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   width: calc(100% / 2 - 0px * (2 - 1) / 2);
   font-size: 16px;
   font-style: normal;
@@ -3788,7 +4165,7 @@ button {
   width: calc(100% / 2 - 0px * (2 - 1) / 2);
 }
 .PAstrength--cont--cardbox .card--number {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -3799,7 +4176,7 @@ button {
 }
 .PAstrength--cont--cardbox .card--title {
   color: var(--color-primary, #182346);
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 500;
@@ -3809,7 +4186,7 @@ button {
 }
 .PAstrength--cont--cardbox .card--text {
   color: var(--color-primary, #182346);
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-family: "Noto Sans JP";
   font-size: 16px;
   font-style: normal;
@@ -3889,7 +4266,7 @@ button {
   line-height: 160%; /* 28.8px */
   letter-spacing: 0.9px;
   width: 100%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
 }
 @media (max-width: 425px) {
   .PAstrength--contsp.accordion .question {
@@ -3900,7 +4277,7 @@ button {
 .PAstrength--contsp.accordion .anser span {
   padding-right: 16px;
   color: var(--color-secondary, #0050B5);
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -3937,7 +4314,7 @@ button {
 .PAstrength--contsp.accordion .anser div {
   margin: 0;
   padding: 24px 24px 24px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -3978,7 +4355,7 @@ button {
 .PABusiness--explain {
   width: 100%;
   margin-top: 80px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4028,7 +4405,7 @@ button {
   font-size: 12px;
   color: #0050B5;
   margin-bottom: 40px;
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-weight: 600;
   line-height: 100%;
   letter-spacing: 0.6px;
@@ -4063,7 +4440,7 @@ button {
 }
 .PABusiness--cardbox .card--subtitle {
   text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -4084,7 +4461,7 @@ button {
 }
 .PABusiness--cardbox .card--text {
   text-align: center;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4302,7 +4679,7 @@ button {
   }
 }
 .Pcareers--cont .more-button .text {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4437,7 +4814,7 @@ button {
 }
 .PCbusiness--type-box .category-box--title {
   white-space: nowrap;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -4503,7 +4880,7 @@ button {
   gap: 24px;
 }
 .PCbusiness--type-box .introduction-box .job-box--content .num-box .job-box-num {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -4533,7 +4910,7 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -4541,7 +4918,7 @@ button {
   color: #182346;
 }
 .PCbusiness--type-box .introduction-box .job-box--content .num-box .textbox--text {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4603,7 +4980,7 @@ button {
   line-height: 160%; /* 28.8px */
   letter-spacing: 0.9px;
   width: 100%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   gap: 24px;
 }
 @media (max-width: 425px) {
@@ -4614,7 +4991,7 @@ button {
 .PCbusiness--type-box .contsp.accordion .question span,
 .PCbusiness--type-box .contsp.accordion .anser span {
   color: var(--color-secondary, #0050B5);
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -4650,7 +5027,7 @@ button {
 .PCbusiness--type-box .contsp.accordion .anser div {
   margin: 0;
   padding: 24px 0px 24px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4713,7 +5090,7 @@ button {
 }
 .PCcareer-path--content .text {
   width: 60%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4797,7 +5174,7 @@ button {
   }
 }
 .PCcareer-path--cardbox .card--content .title {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -4812,7 +5189,7 @@ button {
   }
 }
 .PCcareer-path--cardbox .card--content .title span {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
 }
 @media (max-width: 425px) {
   .PCcareer-path--cardbox .card--content .title span {
@@ -4820,7 +5197,7 @@ button {
   }
 }
 .PCcareer-path--cardbox .card--content .subtext {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4835,7 +5212,7 @@ button {
   }
 }
 .PCcareer-path--cardbox .card .text {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -4873,7 +5250,7 @@ button {
 }
 .PCtraining--explain .explain-text {
   width: 35%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 200%;
@@ -4970,7 +5347,7 @@ button {
   line-height: 160%; /* 28.8px */
   letter-spacing: 0.9px;
   width: 100%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   gap: 24px;
   cursor: pointer;
 }
@@ -4990,7 +5367,7 @@ button {
 .PCtraining .contsp.accordion .question span,
 .PCtraining .contsp.accordion .anser span {
   color: var(--color-secondary, #0050B5);
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -5026,7 +5403,7 @@ button {
 .PCtraining .contsp.accordion .anser .text {
   margin: 0;
   padding: 54px 0px 64px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -5049,7 +5426,7 @@ button {
   }
 }
 .PCtraining .contsp.accordion .anser .text .cont1 {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -5090,7 +5467,7 @@ button {
 .PCtraining .contsp.accordion .anser .text .cont2--title {
   color: var(--color-secondary, #0050B5);
   font-feature-settings: "halt" on;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -5125,7 +5502,7 @@ button {
   }
 }
 .PCtraining .contsp.accordion .anser .text .cont2--list--item .dot {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -5137,7 +5514,7 @@ button {
   transform: translate(0%, -50%);
 }
 .PCtraining .contsp.accordion .anser .text .cont2--list--item .listtext {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -5174,7 +5551,7 @@ button {
 .PCskillup--explain {
   width: 100%;
   padding-top: 80px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -5236,7 +5613,7 @@ button {
 }
 .PCskillup--cardbox .card .column--title {
   text-align: left;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   color: #182346;
   font-size: 24px;
   font-style: normal;
@@ -5253,7 +5630,7 @@ button {
 }
 .PCskillup--cardbox .card .column--text {
   text-align: left;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   color: #182346;
   font-size: 16px;
   font-style: normal;
@@ -5498,7 +5875,6 @@ button {
   width: 100%;
   display: flex;
   gap: 24px;
-  border-top: 1px dotted #000;
   opacity: 0;
 }
 @media (max-width: 900px) {
@@ -5538,7 +5914,7 @@ button {
   }
 }
 .p-interview-archive__list .item__content .number .number-text {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 100%; /* 12px */
@@ -5546,7 +5922,7 @@ button {
   transform: translateY(30px);
   position: relative;
   display: block;
-  transition: 0.3s;
+  transition: 0.4s;
   color: var(--color-primary, #182346);
 }
 .p-interview-archive__list .item__content .item-title {
@@ -5572,8 +5948,8 @@ button {
   font-style: normal;
   font-weight: 500;
   letter-spacing: 1.6px;
-  font-family: "Poppins", sans-serif;
-  transition: 0.3s;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
+  transition: 0.6s;
   transform: translateY(30px);
 }
 @media (max-width: 768px) {
@@ -5599,8 +5975,8 @@ button {
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.7px;
-  font-family: "Noto Sans JP", sans-serif;
-  transition: 0.3s;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
+  transition: 0.8s;
   transform: translateY(30px);
 }
 @media (max-width: 600px) {
@@ -5610,7 +5986,7 @@ button {
 }
 .p-interview-archive__list .item__content .explanation {
   margin-bottom: 40px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -5632,6 +6008,7 @@ button {
   padding: 4px 11px 4px;
   text-wrap: nowrap;
   position: relative;
+  transition: 1s;
 }
 .p-interview-archive__list .item__content .explanation .text .cont {
   display: block;
@@ -5656,7 +6033,7 @@ button {
   position: relative;
   z-index: 0;
   opacity: 0;
-  transition: 0.3s;
+  transition: 1.2s;
 }
 @media (max-width: 900px) {
   .p-interview-archive__list .item__content .more-button {
@@ -5667,7 +6044,7 @@ button {
   }
 }
 .p-interview-archive__list .item__content .more-button .text {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -5740,7 +6117,7 @@ button {
   }
 }
 .p-interview-archive__list .item__thumbnail .number {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 100%; /* 12px */
@@ -5768,7 +6145,7 @@ button {
 }
 .p-interview-archive__list .item__thumbnail .explanation {
   margin-bottom: 40px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -5829,11 +6206,11 @@ button {
   transform: translateY(0px);
 }
 .p-interview-archive__list .item.interviewanim.active .item__content .explanation .text .back {
-  transition: 0.3s;
+  transition: 0.6s;
   transform: translate(-50%, -50%);
 }
 .p-interview-archive__list .item.interviewanim.active .item__content .explanation.active .text .cont {
-  transition: 0.3s;
+  transition: 0.6s;
   transform: translateX(0%);
 }
 .p-interview-archive__list .item.interviewanim.active .item__content .more-button {
@@ -5844,11 +6221,46 @@ button {
   transition: 0.3s;
 }
 .p-interview-archive__list .item.interviewanim.active .item__thumbnail .explanation .text .back {
-  transition: 0.3s;
+  transition: 0.6s;
   transform: translate(-50%, -50%);
 }
 .p-interview-archive__list .item.interviewanim.active .item__thumbnail .explanation.active .text .cont {
+  transition: 0.6s;
+  transform: translateX(0%);
+}
+.p-interview-archive__list .item.item1.active {
+  opacity: 1;
+}
+.p-interview-archive__list .item.item1.active .item__content .number .number-text {
+  transform: translateY(0px);
+}
+.p-interview-archive__list .item.item1.active .item__content .item-title .text {
+  transform: translateY(0px);
+}
+.p-interview-archive__list .item.item1.active .item__content .join .text {
+  transform: translateY(0px);
+}
+.p-interview-archive__list .item.item1.active .item__content .explanation .text .back {
+  transition: 0.6s;
+  transform: translate(-50%, -50%);
+}
+.p-interview-archive__list .item.item1.active .item__content .explanation.active .text .cont {
+  transition: 0.6s;
+  transform: translateX(0%);
+}
+.p-interview-archive__list .item.item1.active .item__content .more-button {
+  opacity: 1;
+}
+.p-interview-archive__list .item.item1.active .item__thumbnail img {
+  opacity: 1;
   transition: 0.3s;
+}
+.p-interview-archive__list .item.item1.active .item__thumbnail .explanation .text .back {
+  transition: 1s;
+  transform: translate(-50%, -50%);
+}
+.p-interview-archive__list .item.item1.active .item__thumbnail .explanation.active .text .cont {
+  transition: 1s;
   transform: translateX(0%);
 }
 .p-interview-archive__list .item:hover {
@@ -5882,6 +6294,7 @@ button {
 
 .single-interview {
   height: 95vh;
+  max-height: 861px;
 }
 @media (max-width: 1000px) {
   .single-interview {
@@ -5918,7 +6331,7 @@ button {
 }
 .single-interview .content .single-interview-textbox .explanation {
   margin-bottom: 40px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -5988,12 +6401,12 @@ button {
 }
 .single-interview .content .single-interview-textbox .title .text {
   display: block;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 40px */
-  transition: 0.3s;
+  transition: 0.6s ease-in;
   transform: translateY(100%);
 }
 @media (max-width: 768px) {
@@ -6016,14 +6429,14 @@ button {
 }
 .single-interview .content .single-interview-textbox .interview-date .text {
   display: block;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 300%;
   letter-spacing: 0.8px;
   color: var(--color-primary, #182346);
-  transition: 0.3s;
+  transition: 0.6s ease-in;
   transform: translateY(100%);
 }
 @media (max-width: 600px) {
@@ -6049,13 +6462,13 @@ button {
 }
 .single-interview .content .single-interview-textbox .interview-text .text {
   display: block;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 200%;
   letter-spacing: 0.7px;
-  transition: 0.3s;
+  transition: 0.6s ease-in;
   transform: translateY(100%);
 }
 @media (max-width: 600px) {
@@ -6093,6 +6506,7 @@ button {
   height: 90%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: 0.3s;
 }
 @media (max-width: 1000px) {
   .single-interview .content .single-interview-imgbox img {
@@ -6141,8 +6555,8 @@ button {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  gap: 200px;
   width: 100%;
+  position: relative;
 }
 .single-about--content::-webkit-scrollbar {
   display: none;
@@ -6150,7 +6564,6 @@ button {
 @media (max-width: 1000px) {
   .single-about--content {
     top: 3%;
-    gap: 120px;
   }
 }
 .single-about--content .cont {
@@ -6159,370 +6572,14 @@ button {
   justify-content: flex-end;
   gap: 10%;
   width: 100%;
+  margin-bottom: 200px;
 }
 @media (max-width: 1000px) {
   .single-about--content .cont {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 120px;
   }
-}
-.single-about--content .cont .pcbox {
-  display: block;
-  height: 600px;
-  width: 500px;
-  margin-right: auto;
-  position: fixed;
-  opacity: 0;
-}
-@media (max-width: 1200px) {
-  .single-about--content .cont .pcbox {
-    height: 500px;
-    width: 450px;
-  }
-}
-@media (max-width: 1000px) {
-  .single-about--content .cont .pcbox {
-    display: none !important;
-  }
-}
-.single-about--content .cont .pcbox.RISA-detail#PCMAINimg .IMG {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-200%, -50%);
-  transition: 0.3s;
-  opacity: 0;
-}
-@media (max-width: 1200px) {
-  .single-about--content .cont .pcbox.RISA-detail#PCMAINimg .IMG {
-    height: 500px;
-    width: 450px;
-  }
-}
-.single-about--content .cont .pcbox.RISA-detail#PCMAINimg.active {
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-  opacity: 1;
-  transition: opacity 0.6s;
-  overflow: hidden;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.RISA-detail#PCMAINimg.active {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg1 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg1 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg1 #IMG1 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page9.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg2 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg2 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg2 #IMG2 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page10.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg3 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg3 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg3 #IMG3 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page11.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg4 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg4 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.RISA-detail#PCMAINimg.activeimg4 #IMG4 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page12.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg .IMG {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-200%, -50%);
-  transition: 0.3s;
-  opacity: 0;
-}
-@media (max-width: 1200px) {
-  .single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg .IMG {
-    height: 500px;
-    width: 450px;
-  }
-}
-.single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.active {
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-  opacity: 1;
-  transition: opacity 0.6s;
-  overflow: hidden;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.active {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg1 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg1 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg1 #IMG1 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page1.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg2 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg2 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg2 #IMG2 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page2.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg3 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg3 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg3 #IMG3 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page3.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg4 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg4 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.MASANORI-detail#PCMAINimg.activeimg4 #IMG4 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page4.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.YUKI-detail#PCMAINimg .IMG {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-200%, -50%);
-  transition: 0.3s;
-  opacity: 0;
-}
-@media (max-width: 1200px) {
-  .single-about--content .cont .pcbox.YUKI-detail#PCMAINimg .IMG {
-    height: 500px;
-    width: 450px;
-  }
-}
-.single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.active {
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-  opacity: 1;
-  transition: opacity 0.6s;
-  overflow: hidden;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.active {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg1 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg1 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg1 #IMG1 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page5.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg2 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg2 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg2 #IMG2 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page6.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg3 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg3 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg3 #IMG3 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page7.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg4 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg4 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .cont .pcbox.YUKI-detail#PCMAINimg.activeimg4 #IMG4 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page8.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
 }
 .single-about--content .cont .normal-img {
   width: calc(100% / 2 - 10% * (2 - 1) / 2);
@@ -6551,7 +6608,6 @@ button {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  min-height: 600px;
 }
 @media (max-width: 1100px) {
   .single-about--content .cont--textbox {
@@ -6576,7 +6632,7 @@ button {
   text-align: center;
   margin-bottom: 0px;
   width: auto;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -6616,7 +6672,7 @@ button {
   }
 }
 .single-about--content .cont--textbox--text .text {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -6643,6 +6699,451 @@ button {
     order: 4;
   }
 }
+.single-about--content .cont.last {
+  margin-bottom: 0px;
+}
+.single-about--content .pcbox {
+  display: block;
+  height: 600px;
+  width: 500px;
+  margin-right: auto;
+  position: fixed;
+  opacity: 0;
+}
+@media (max-width: 1200px) {
+  .single-about--content .pcbox {
+    height: 500px;
+    width: 450px;
+  }
+}
+@media (max-width: 1000px) {
+  .single-about--content .pcbox {
+    display: none !important;
+  }
+}
+.single-about--content .pcbox .pcbox-cont {
+  height: 600px;
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg .IMG {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 0;
+}
+@media (max-width: 1200px) {
+  .single-about--content .pcbox.RISA-detail#PCMAINimg .IMG {
+    height: 500px;
+    width: 450px;
+  }
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.active {
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.RISA-detail#PCMAINimg.active {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg1 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg1 #IMG1 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page9.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg2 {
+  transition: 0.6s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg2 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg2 #IMG2 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page10.png);
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  opacity: 1;
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg3 {
+  transition: 0.6s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg3 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg3 #IMG3 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page11.png);
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  opacity: 1;
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg4 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg4 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg4 #IMG4 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page12.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.stickeyTOP {
+  position: sticky;
+  top: 20%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.RISA-detail#PCMAINimg.stickeyTOP {
+    top: 18.5%;
+    left: 54%;
+  }
+}
+.single-about--content .pcbox.RISA-detail#PCMAINimg.stickeyBOTTOM {
+  position: sticky;
+  top: 53%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+  opacity: 1;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.RISA-detail#PCMAINimg.stickeyBOTTOM {
+    top: 50.5%;
+    left: 54%;
+  }
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg .IMG {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 0;
+}
+@media (max-width: 1200px) {
+  .single-about--content .pcbox.MASANORI-detail#PCMAINimg .IMG {
+    height: 500px;
+    width: 450px;
+  }
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.active {
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.active {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg1 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg1 #IMG1 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page1.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg2 {
+  transition: 0.6s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg2 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg2 #IMG2 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page2.png);
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  opacity: 1;
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg3 {
+  transition: 0.6s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg3 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg3 #IMG3 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page3.png);
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  opacity: 1;
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg4 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg4 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg4 #IMG4 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page4.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.stickeyTOP {
+  position: sticky;
+  top: 20%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.stickeyTOP {
+    top: 18.5%;
+    left: 54%;
+  }
+}
+.single-about--content .pcbox.MASANORI-detail#PCMAINimg.stickeyBOTTOM {
+  position: sticky;
+  top: 53%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+  opacity: 1;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.stickeyBOTTOM {
+    top: 50.5%;
+    left: 54%;
+  }
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg .IMG {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 0;
+}
+@media (max-width: 1200px) {
+  .single-about--content .pcbox.YUKI-detail#PCMAINimg .IMG {
+    height: 500px;
+    width: 450px;
+  }
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.active {
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.YUKI-detail#PCMAINimg.active {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg1 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg1 #IMG1 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page5.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg2 {
+  transition: 0.3s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg2 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg2 #IMG2 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page6.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg3 {
+  transition: 0.3s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg3 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg3 #IMG3 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page7.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg4 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg4 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg4 #IMG4 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page8.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.stickeyTOP {
+  position: sticky;
+  top: 21%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.YUKI-detail#PCMAINimg.stickeyTOP {
+    top: 18.5%;
+    left: 54%;
+  }
+}
+.single-about--content .pcbox.YUKI-detail#PCMAINimg.stickeyBOTTOM {
+  position: sticky;
+  top: 53%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+  opacity: 1;
+}
+@media (max-width: 1100px) {
+  .single-about--content .pcbox.YUKI-detail#PCMAINimg.stickeyBOTTOM {
+    top: 49.5%;
+    left: 54%;
+  }
+}
 .single-about #ClosePCMAINOUtimg {
   width: 100%;
   height: 200px;
@@ -6661,6 +7162,10 @@ button {
     height: 120px;
   }
 }
+.single-about .bottom-cont {
+  width: 100%;
+  height: 1px;
+}
 
 .single-interview-post {
   padding: 200px 32px 200px;
@@ -6671,13 +7176,13 @@ button {
   }
 }
 .single-interview-post .common-titlebox .title {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 40px !important;
   margin-bottom: 24px !important;
   color: var(--color-primary, #182346);
 }
 .single-interview-post .common-titlebox .sub-title {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   color: var(--color-primary, #182346);
 }
@@ -6736,7 +7241,7 @@ button {
   }
 }
 .single-interview-post .wrapper .slide .imgbox .number {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -6779,7 +7284,7 @@ button {
   position: absolute;
   bottom: 24px;
   left: 24px;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -6805,7 +7310,7 @@ button {
   width: 100%;
 }
 .single-interview-post .wrapper .slide .textcont .name {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
@@ -6819,7 +7324,7 @@ button {
   gap: 10px;
 }
 .single-interview-post .wrapper .slide .textcont .name .job {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -6837,7 +7342,7 @@ button {
   background: var(--color-primary, #182346);
 }
 .single-interview-post .wrapper .slide .textcont .more-button .text {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   overflow: hidden;
   cursor: pointer;
   position: relative;
@@ -6852,7 +7357,7 @@ button {
   color: var(--color-white, #182346);
   width: 100%;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -6869,7 +7374,7 @@ button {
   color: var(--color-white, #182346);
   width: 100%;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -7016,7 +7521,7 @@ button {
 }
 .company-overview .company-info__label {
   width: 20%;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -7036,7 +7541,7 @@ button {
 }
 .company-overview .company-info__value {
   padding: 40px 0;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -7056,7 +7561,7 @@ button {
   padding-left: 1.5rem;
 }
 .company-overview .company-info__list-item {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -7154,7 +7659,7 @@ button {
   line-height: 200%;
 }
 .company-Approval__list .list .item p {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -7174,7 +7679,7 @@ button {
   }
 }
 .company-Approval__list .list .item p .text {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -7224,7 +7729,7 @@ button {
   font-weight: 400;
   line-height: 180%;
   letter-spacing: 0.05em;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
 }
 @media (max-width: 425px) {
   .notfound404 .Phero--textbox .Phero--textbox--list .text {

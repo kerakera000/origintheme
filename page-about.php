@@ -9,7 +9,7 @@ get_template_part('./template/head');
 
 <?php get_template_part('./template/header');?>
 
-<main class="main-layout">
+<main id="pageTop" class="main-layout">
     <div class="videobg">
         <video src="<?php echo get_template_directory_uri(); ?>/assets/video/bg.mp4" autoplay muted loop playsinline></video>
     </div>
@@ -98,6 +98,78 @@ get_template_part('./template/head');
                 <!-- Swiper -->
                 <div class="swiper PAmissionSwiper">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission2.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission3.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission4.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission5.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission6.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission2.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission3.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission4.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission5.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission6.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission2.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission3.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission4.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission5.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission6.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission2.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission3.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission4.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission5.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission6.png" alt="About">
+                        </div>
                         <div class="swiper-slide">
                             <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
                         </div>
@@ -364,7 +436,7 @@ get_template_part('./template/head');
                             </div>
                         </td>
                         <td class="table-cell noborder">
-                            <h3 class="title">未経験者の割合</h3>
+                            <h3 class="title">未経験からの入社率</h3>
                             <div class="imgbox">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pnumber/num5.svg" alt="">
                             </div>

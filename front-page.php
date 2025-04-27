@@ -14,9 +14,36 @@ get_template_part('./template/head');
         <video src="<?php echo get_template_directory_uri(); ?>/assets/video/bg.mp4" autoplay muted loop playsinline></video>
     </div>
 
-    <div class="hero">
-        <div class="bganim1"></div>
-        <div class="hero-textbox inner-content1400">
+    <div class="hero-textbox-wrapper">
+        <div class="hero">
+            <div class="bganim1"></div>
+            <div class="bganim2"></div>
+            <a href="#HEROTEXT" id="ScrollDown" class="common-button scroll-down nobg">
+                <div class="text">
+                    <p class="normal">Scroll</p>
+                    <p class="hover">Scroll</p>
+                </div>
+                <span class="arrow-right">
+                    <div class="arrow-box">
+                        <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/scroll/scroll.svg" alt="">
+                        <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/scroll/scroll.svg" alt="">
+                    </div>
+                </span>
+            </a>
+
+            <div id="SPherotextbox" class="hero--hero-textbox inner-content1200">
+                <h2 class="main-title">
+                    <span class="title1">Beyond</span>
+                    <span class="title2">Your</span>
+                    <span class="title3">Imagination</span>
+                </h2>
+                <h3 class="sub-text">
+                    <img class="subimg" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/souzou.svg" alt="">
+                </h3>
+            </div>
+        </div>
+
+        <div class="hero-textbox inner-content1200">
             <h2 class="main-title">
                 <span class="title1">Beyond</span>
                 <span class="title2">Your</span>
@@ -26,37 +53,24 @@ get_template_part('./template/head');
                 <img class="subimg" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/souzou.svg" alt="">
             </h3>
         </div>
-        <div class="bganim2"></div>
-        <a href="#HEROTEXT" id="ScrollDown" class="common-button scroll-down nobg">
-            <div class="text">
-                <p class="normal">Scroll</p>
-                <p class="hover">Scroll</p>
-            </div>
-            <span class="arrow-right">
-                <div class="arrow-box">
-                    <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/scroll/scroll.svg" alt="">
-                    <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/scroll/scroll.svg" alt="">
-                </div>
-            </span>
-        </a>
-    </div>
 
-    <div id="HEROTEXT" class="hero-text">
-        <div class="textbox">
-            <p class="text rightanim">
-                次々と真新しいデジタル技術が登場し、<br>
-                すさまじい速度で変化するこの時代。<br>
-                私たちは「HRテック」というフィールドから、<br>
-                数多くの企業のDX化を推進しています。<br>
-                「人事」の悩みを抱えながら、<br>
-                前へと向かっていく企業のために。<br>
-                セラクCOMPANY事業部には、<br>
-                異なる業界、業種から果敢に挑み、<br>
-                人事支援のプロとなった仲間がたくさんいます。<br>
-                やったことがなくても、<br class="br-sp">とにかくチャレンジしてみる。<br>
-                一人でできないことも、チームの力で<br class="br-sp">乗り越えていく。<br>
-                想像以上のあなたを、<br class="br-sp">ここから始めてみませんか。
-            </p>
+        <div class="hero-text">
+            <div class="textbox">
+                <p class="text rightanim">
+                    次々と真新しいデジタル技術が登場し、<br>
+                    すさまじい速度で変化するこの時代。<br>
+                    私たちは「HRテック」というフィールドから、<br>
+                    数多くの企業のDX化を推進しています。<br>
+                    「人事」の悩みを抱えながら、<br>
+                    前へと向かっていく企業のために。<br>
+                    セラクCOMPANY事業部には、<br>
+                    異なる業界、業種から果敢に挑み、<br>
+                    人事支援のプロとなった仲間がたくさんいます。<br>
+                    やったことがなくても、<br class="br-sp">とにかくチャレンジしてみる。<br>
+                    一人でできないことも、チームの力で<br class="br-sp">乗り越えていく。<br>
+                    想像以上のあなたを、<br class="br-sp">ここから始めてみませんか。
+                </p>
+            </div>
         </div>
     </div>
 
@@ -67,16 +81,16 @@ get_template_part('./template/head');
             </span>
         </div> -->
 
-        <div class="inner-content1400 ">
+        <div class="inner-content1200 ">
             <div class="news--content">
-                <div class="news--content--col1 rightanim">
+                <div class="news--content--col1 bottomanim-type1">
                     <div class="common-titlebox-normal">
                         <h2 class="title">News</h2>
                         <span class="sub-title">お知らせ</span>
                     </div>
                 </div>
-                <div class="news--content--col2 rightanim">
-                    <button class="common-button rightanim">
+                <div class="news--content--col2 bottomanim-type1">
+                    <button class="common-button">
                         <div class="text">
                             <p class="normal">View All</p>
                             <p class="hover">View All</p>
@@ -186,12 +200,10 @@ get_template_part('./template/head');
     </div>
 
     <div class="about">
-        <div class="skeltonbg"></div>
-        <div class="whitebg"></div>
         <div id="ABOUT" class="inner-content about--content">
             <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/aboutimg.png" alt="">
-                <div class="cont--textbox rightanim">
+                <img class="normal-img bottomanim-type1" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/aboutimg.png" alt="">
+                <div class="cont--textbox bottomanim-type2">
                     <div class="common-titlebox-normal">
                         <h2 class="title">About Us</h2>
                         <span class="sub-title">COMPANY事業部について</span>
@@ -212,8 +224,8 @@ get_template_part('./template/head');
                         </a>
                         <span class="arrow-right">
                             <div class="arrow-box">
-                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
-                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrowblue.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrowblue.svg  " alt="">
                             </div>
                         </span>
                     </button>
@@ -221,8 +233,8 @@ get_template_part('./template/head');
             </div>
 
             <div id="CAREER" class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/careerimg.png" alt="">
-                <div class="cont--textbox rightanim">
+                <img class="normal-img bottomanim-type1" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/careerimg.png" alt="">
+                <div class="cont--textbox bottomanim-type2">
                     <div class="common-titlebox-normal">
                         <h2 class="title">Career</h2>
                         <span class="sub-title">キャリア・研修について</span>
@@ -242,8 +254,8 @@ get_template_part('./template/head');
                         </a>
                         <span class="arrow-right">
                             <div class="arrow-box">
-                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
-                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrow.svg" alt="">
+                                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrowblue.svg" alt="">
+                                <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/button/arrowblue.svg" alt="">
                             </div>
                         </span>
                     </button>

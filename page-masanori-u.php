@@ -14,7 +14,7 @@ get_template_part('./template/head');
         <video src="<?php echo get_template_directory_uri(); ?>/assets/video/bg.mp4" autoplay muted loop playsinline></video>
     </div>
 
-    <div class="Phero single-interview">
+    <div id="PDH" class="Phero single-interview">
         <div id="InterviewDetail" class="Phero--cont inner-content1200 content">
             <div class="Phero--textbox single-interview-textbox">
                 <p class="explanation">
@@ -56,13 +56,13 @@ get_template_part('./template/head');
     <div class="single-about">
         <div id="ClosePCMAINOUtimg"></div>
         <div id="ABOUT" class="single-about--content inner-content1200">
+            <div id="PCMAINimg" class="pcbox MASANORI-detail">
+                <div id="IMG1" class="IMG"></div>
+                <div id="IMG2" class="IMG"></div>
+                <div id="IMG3" class="IMG"></div>
+                <div id="IMG4" class="IMG"></div>
+            </div>
             <div class="cont">
-                <div id="PCMAINimg" class="pcbox MASANORI-detail">
-                    <div id="IMG1" class="IMG"></div>
-                    <div id="IMG2" class="IMG"></div>
-                    <div id="IMG3" class="IMG"></div>
-                    <div id="IMG4" class="IMG"></div>
-                </div>
                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page1.png" alt="">
                 <div id="detailCont1" class="cont--textbox">
                     <div class="common-titlebox">
@@ -80,12 +80,6 @@ get_template_part('./template/head');
             </div>
 
             <div class="cont">
-                <div id="PCMAINimg" class="pcbox MASANORI-detail">
-                    <div id="IMG1" class="IMG"></div>
-                    <div id="IMG2" class="IMG"></div>
-                    <div id="IMG3" class="IMG"></div>
-                    <div id="IMG4" class="IMG"></div>
-                </div>
                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page2.png" alt="">
                 <div id="detailCont2" class="cont--textbox">
                     <div class="common-titlebox">
@@ -119,7 +113,7 @@ get_template_part('./template/head');
                 </div>
             </div>
 
-            <div class="cont">
+            <div class="cont last">
                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page4.png" alt="">
                 <div id="detailCont4" class="cont--textbox">
                     <div class="common-titlebox">
@@ -136,6 +130,7 @@ get_template_part('./template/head');
                 </div>
             </div>
         </div>
+        <div class="bottom-cont"></div>
         <div id="ClosePCMAINimg"></div>
     </div>
 

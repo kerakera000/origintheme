@@ -24,6 +24,7 @@ global $site_url;
   ?>
   <link rel="stylesheet" href="<?= $wp_path; ?>/assets/scss/app.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanjp.css">
 
   <!-- JS Library -->
   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>

@@ -9,7 +9,7 @@ get_template_part('./template/head');
 
 <?php get_template_part('./template/header');?>
 
-<main class="main-layout">
+<main id="pageTop" class="main-layout">
     <div class="videobg">
         <video src="<?php echo get_template_directory_uri(); ?>/assets/video/bg.mp4" autoplay muted loop playsinline></video>
     </div>
@@ -468,7 +468,7 @@ get_template_part('./template/head');
                 <div class="card">
                     <div class=column>
                         <h4 class="column--title">資格取得推奨制度</h4>
-                        <p class="column--text">セラクが推奨している資格を取得した場合、最大で80万円の報奨金が支給される制度です。現在、約300種の資格が推奨資格となっています。</p>
+                        <p class="column--text">セラクが推奨している資格を取得した場合、最大で20万円の報奨金が支給される制度です。現在、約300種の資格が推奨資格となっています。</p>
                     </div>
                 </div>
             </div>
