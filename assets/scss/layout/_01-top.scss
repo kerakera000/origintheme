@@ -28,19 +28,11 @@
         justify-content: flex-end;
         flex-direction: column;
         width: 100%;
+        padding: 0px 32px;
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        @media (min-width: 1101px) {
-            width: 70%;
-        }
-        @media (min-width: 1400px) {
-            width: 94%;
-        }
-        @media (max-width: 1100px) {
-            width: 95%;
-        }
         @media (max-width: 768px) {
             display: none;
         }
@@ -192,6 +184,12 @@
     @media (max-width: 768px) {
         padding: 0px 20px 30px;
     }
+    @media (max-width: 660px) {
+        padding: 0px 20px 70px;
+    }
+    @media (max-width: 425px) {
+        padding: 0px 20px 21vh;
+    }
     .bganim1{
         width: calc(100% + 1000px);
         position: absolute;
@@ -205,9 +203,6 @@
         transform: rotateZ(0deg);
         transition: 0.8s;
         @media (max-width: 768px) {
-            height: 45%;
-        }
-        @media (max-width: 425px) {
             height: 30%;
         }
         &.active{
@@ -223,11 +218,9 @@
                 height: 54%;
             }
             @media (max-width: 768px) {
-                height: 53%;
+                height: 38%;
+                transform: rotateZ(-15deg);
                 left: -13%;
-            }
-            @media (max-width: 425px) {
-                height: 32%;
             }
         }
         // 下矢印はスクロールに合わせて動くようにしたい
@@ -253,9 +246,6 @@
         transform: rotateZ(0deg);
         transition: 0.8s;
         @media (max-width: 768px) {
-            height: 55%;
-        }
-        @media (max-width: 425px) {
             height: 70%;
         }
         &.active{
@@ -271,10 +261,12 @@
                 height: 64%;
             }
             @media (max-width: 768px) {
-                height: 65%;
+                height: 68%;
+                transform: rotateZ(15deg);
+                left: -30%;
             }
-            @media (max-width: 425px) {
-                height: 80%;
+            @media (max-width: 400px) {
+                bottom: -22%;
             }
         }
         // ↓はスクロールに合わせて動くようにしたい
@@ -294,11 +286,12 @@
         flex-direction: column;
         width: 100%;
         z-index: 9;
+        transition: 0.3s;
         @media (min-width: 769px) {
             display: none;
         }
         &.scroll-active{
-            display: none;
+            opacity: 0;
         }
         .main-title{
             display: flex;
@@ -326,6 +319,9 @@
                     font-size: 80px;
                 }
                 @media (max-width: 525px) {
+                    font-size: 64px;
+                }
+                @media (max-width: 400px) {
                     font-size: 60px;
                 }
                 &.active{
@@ -353,6 +349,9 @@
                     font-size: 80px;
                 }
                 @media (max-width: 525px) {
+                    font-size: 64px;
+                }
+                @media (max-width: 400px) {
                     font-size: 60px;
                 }
                 &.active{
@@ -380,6 +379,9 @@
                     font-size: 80px;
                 }
                 @media (max-width: 525px) {
+                    font-size: 64px;
+                }
+                @media (max-width: 400px) {
                     font-size: 60px;
                 }
                 &.active{
@@ -406,7 +408,7 @@
                 margin-top: 34px;
                 width: 300px;
             }
-            @media screen and (max-width:375px) {
+            @media screen and (max-width:425px) {
                 margin-top: 24px;
                 width: 200px;
             }
@@ -604,7 +606,7 @@
             }
             .br-sp{
                 display: none;
-                @media (max-width: 425px) {
+                @media (max-width: 550px) {
                     display: block;
                 }
             }
@@ -876,7 +878,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    background-color: #182346;
+    background-color: rgba(24, 35, 70, 0.8);
     padding: 200px 32px;
     @media (max-width: 768px) {
         padding: 120px 0;
@@ -1157,7 +1159,7 @@
                         color: #182346;
                         gap: 10px;
                         @media (max-width: 425px) {
-                            width: 40%;
+                            width: 70%;
                         }
                         .job{
                             @include fosanjp;

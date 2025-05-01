@@ -55,13 +55,13 @@ get_template_part('./template/head');
 
     <div class="single-about">
         <div id="ClosePCMAINOUtimg"></div>
+        <div id="PCMAINimg" class="pcbox MASANORI-detail">
+            <div id="IMG1" class="IMG"></div>
+            <div id="IMG2" class="IMG"></div>
+            <div id="IMG3" class="IMG"></div>
+            <div id="IMG4" class="IMG"></div>
+        </div>
         <div id="ABOUT" class="single-about--content inner-content1200">
-            <div id="PCMAINimg" class="pcbox MASANORI-detail">
-                <div id="IMG1" class="IMG"></div>
-                <div id="IMG2" class="IMG"></div>
-                <div id="IMG3" class="IMG"></div>
-                <div id="IMG4" class="IMG"></div>
-            </div>
             <div class="cont">
                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page1.png" alt="">
                 <div id="detailCont1" class="cont--textbox">
@@ -98,14 +98,14 @@ get_template_part('./template/head');
 
             <div class="cont">
                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page3.png" alt="">
-                <div id="detailCont3" class="cont--textbox">
+                <div class="cont--textbox">
                     <div class="common-titlebox">
                         <h2 class="title">
                             事業部内で受け継がれる、<br>
                             支え合いの精神
                         </h2>
                     </div>
-                    <p class="cont--textbox--text">
+                    <p id="detailCont3" class="cont--textbox--text">
                         <span class="text">
                             まだ新人気分が抜け切らない頃、ピンチヒッターとしてリーダーの代理を任されたことがありました。お客さまとの打ち合わせは緊張しきりでしたが、そのときのプロジェクトマネージャーのフォローがあり、なんとか切り抜けることができました。思えば、あれがエンジニアとして一皮むけた瞬間だったのかもしれません。COMPANY事業部は風通しがいい環境だからこそ、先輩・後輩の垣根を超えた支え合いを重視しているので、私が後輩にサポートしてもらうことも珍しくありません。研修制度が充実していることもあり、後輩たちは早い段階から現場で活躍できるレベルです。後輩たちが活躍する姿は、私にとってもよい刺激になります。
                         </span>
@@ -116,7 +116,7 @@ get_template_part('./template/head');
             <div class="cont last">
                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page4.png" alt="">
                 <div id="detailCont4" class="cont--textbox">
-                    <div class="common-titlebox">
+                    <div id="adjustANIM" class="common-titlebox">
                         <h2 class="title">
                             お客さまの困りごとを<br>
                             解決するために全力を尽くす
@@ -134,7 +134,7 @@ get_template_part('./template/head');
         <div id="ClosePCMAINimg"></div>
     </div>
 
-    <div class="single-interview-post">
+    <div id="PDF" class="single-interview-post">
         <div class="inner-content1200">
             <div class="common-titlebox center">
                 <h2 class="title">Interview</h2>

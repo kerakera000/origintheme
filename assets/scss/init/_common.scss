@@ -459,9 +459,11 @@
         @media screen and (max-width:660px) {
             width: 100px;
             right: 0px;
+            bottom: 70px;
         }
-        @media screen and (max-width:600px) {
-            bottom: 25px;
+        @media screen and (max-width:426px) {
+            bottom: 20.5vh;
+            right: 10px;
         }
         &.active{
             opacity: 1;

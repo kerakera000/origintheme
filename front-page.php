@@ -54,7 +54,7 @@ get_template_part('./template/head');
             </h3>
         </div>
 
-        <div class="hero-text">
+        <div id="HEROTEXT" class="hero-text">
             <div class="textbox">
                 <p class="text rightanim">
                     次々と真新しいデジタル技術が登場し、<br>
@@ -323,7 +323,7 @@ get_template_part('./template/head');
                         <div class="imgbox">
                             <p class="number">(Interview 02)</p>
                             <div class="img">
-                            <img src="<?= $wp_path; ?>/assets/img/swiper/image3.png" alt="About">
+                            <img src="<?= $wp_path; ?>/assets/img/swiper/image2.png" alt="About">
                                 <h2 class="title">
                                     <span class="title-text">
                                         事業部のために、自身が<br>
@@ -362,7 +362,7 @@ get_template_part('./template/head');
                         <div class="imgbox">
                             <p class="number">(Interview 03)</p>
                             <div class="img">
-                                <img src="<?= $wp_path; ?>/assets/img/swiper/image2.png" alt="About">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image3.png" alt="About">
                                 <h2 class="title">
                                     <span class="title-text">
                                     事業部ならではの<br>
@@ -440,7 +440,7 @@ get_template_part('./template/head');
                         <div class="imgbox">
                             <p class="number">(Interview 02)</p>
                             <div class="img">
-                            <img src="<?= $wp_path; ?>/assets/img/swiper/image3.png" alt="About">
+                            <img src="<?= $wp_path; ?>/assets/img/swiper/image2.png" alt="About">
                                 <h2 class="title">
                                     <span class="title-text">
                                         事業部のために、自身が<br>
@@ -479,7 +479,7 @@ get_template_part('./template/head');
                         <div class="imgbox">
                             <p class="number">(Interview 03)</p>
                             <div class="img">
-                                <img src="<?= $wp_path; ?>/assets/img/swiper/image2.png" alt="About">
+                                <img src="<?= $wp_path; ?>/assets/img/swiper/image3.png" alt="About">
                                 <h2 class="title">
                                     <span class="title-text">
                                     事業部ならではの<br>

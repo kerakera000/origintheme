@@ -55,13 +55,13 @@ get_template_part('./template/head');
 
     <div class="single-about">
         <div id="ClosePCMAINOUtimg"></div>
+        <div id="PCMAINimg" class="pcbox YUKI-detail">
+            <div id="IMG1" class="IMG"></div>
+            <div id="IMG2" class="IMG"></div>
+            <div id="IMG3" class="IMG"></div>
+            <div id="IMG4" class="IMG"></div>
+        </div>
         <div id="ABOUT" class="single-about--content inner-content1200">
-            <div id="PCMAINimg" class="pcbox YUKI-detail">
-                <div id="IMG1" class="IMG"></div>
-                <div id="IMG2" class="IMG"></div>
-                <div id="IMG3" class="IMG"></div>
-                <div id="IMG4" class="IMG"></div>
-            </div>
             <div class="cont">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page5.png" alt="">
                 <div id="detailCont1" class="cont--textbox rightanim">
@@ -98,14 +98,14 @@ get_template_part('./template/head');
 
             <div class="cont">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page7.png" alt="">
-                <div id="detailCont3" class="cont--textbox rightanim">
+                <div class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                         「やりたいこと」より<br>
                         「為すべきこと」に価値を置く
                         </h2>
                     </div>
-                    <p class="cont--textbox--text">
+                    <p id="detailCont3" class="cont--textbox--text">
                         <span class="text">
                         かくいう私も入社半年でチームリーダーを任され、その後も着々とキャリアアップを重ねています。大きなターニングポイントは、上長から管理職に就くことを打診されたときです。プレーヤーとして勢いづいていた時期だったので、嬉しい反面、現場に心残りがあったのも事実。一方で、これまで築き上げてきたノウハウは管理職でこそ活かされるのではないか、という思いもありました。決意が固まったのは、上長からのある一言がきっかけです。「『置かれた場所で花を咲かす』という選択肢もある」。この言葉で迷いが吹っ切れ、自身の為すべきことが明確になりました。
                         </span>
@@ -116,7 +116,7 @@ get_template_part('./template/head');
             <div class="cont last">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page8.png" alt="">
                 <div id="detailCont4" class="cont--textbox rightanim">
-                    <div class="common-titlebox">
+                    <div id="adjustANIM" class="common-titlebox">
                         <h2 class="title">
                             事業部のさらなる成長を<br>
                             見据えて、人材育成に注力
@@ -134,7 +134,7 @@ get_template_part('./template/head');
         <div id="ClosePCMAINimg"></div>
     </div>
 
-    <div class="single-interview-post">
+    <div id="PDF" class="single-interview-post">
         <div class="inner-content1200">
             <div class="common-titlebox center">
                 <h2 class="title">Interview</h2>

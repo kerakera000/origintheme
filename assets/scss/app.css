@@ -480,11 +480,13 @@
   .common-button.scroll-down {
     width: 100px;
     right: 0px;
+    bottom: 70px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 426px) {
   .common-button.scroll-down {
-    bottom: 25px;
+    bottom: 20.5vh;
+    right: 10px;
   }
 }
 .common-button.scroll-down.active {
@@ -1417,25 +1419,11 @@ button {
   justify-content: flex-end;
   flex-direction: column;
   width: 100%;
+  padding: 0px 32px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-@media (min-width: 1101px) {
-  .hero-textbox-wrapper .hero-textbox {
-    width: 70%;
-  }
-}
-@media (min-width: 1400px) {
-  .hero-textbox-wrapper .hero-textbox {
-    width: 94%;
-  }
-}
-@media (max-width: 1100px) {
-  .hero-textbox-wrapper .hero-textbox {
-    width: 95%;
-  }
 }
 @media (max-width: 768px) {
   .hero-textbox-wrapper .hero-textbox {
@@ -1626,6 +1614,16 @@ button {
     padding: 0px 20px 30px;
   }
 }
+@media (max-width: 660px) {
+  .hero {
+    padding: 0px 20px 70px;
+  }
+}
+@media (max-width: 425px) {
+  .hero {
+    padding: 0px 20px 21vh;
+  }
+}
 .hero .bganim1 {
   width: calc(100% + 1000px);
   position: absolute;
@@ -1640,11 +1638,6 @@ button {
   transition: 0.8s;
 }
 @media (max-width: 768px) {
-  .hero .bganim1 {
-    height: 45%;
-  }
-}
-@media (max-width: 425px) {
   .hero .bganim1 {
     height: 30%;
   }
@@ -1668,13 +1661,9 @@ button {
 }
 @media (max-width: 768px) {
   .hero .bganim1.active {
-    height: 53%;
+    height: 38%;
+    transform: rotateZ(-15deg);
     left: -13%;
-  }
-}
-@media (max-width: 425px) {
-  .hero .bganim1.active {
-    height: 32%;
   }
 }
 .hero .bganim1.scroll-active {
@@ -1702,11 +1691,6 @@ button {
 }
 @media (max-width: 768px) {
   .hero .bganim2 {
-    height: 55%;
-  }
-}
-@media (max-width: 425px) {
-  .hero .bganim2 {
     height: 70%;
   }
 }
@@ -1729,12 +1713,14 @@ button {
 }
 @media (max-width: 768px) {
   .hero .bganim2.active {
-    height: 65%;
+    height: 68%;
+    transform: rotateZ(15deg);
+    left: -30%;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 400px) {
   .hero .bganim2.active {
-    height: 80%;
+    bottom: -22%;
   }
 }
 .hero .bganim2.scroll-active {
@@ -1752,6 +1738,7 @@ button {
   flex-direction: column;
   width: 100%;
   z-index: 9;
+  transition: 0.3s;
 }
 @media (min-width: 769px) {
   .hero--hero-textbox {
@@ -1759,7 +1746,7 @@ button {
   }
 }
 .hero--hero-textbox.scroll-active {
-  display: none;
+  opacity: 0;
 }
 .hero--hero-textbox .main-title {
   display: flex;
@@ -1796,6 +1783,11 @@ button {
 }
 @media (max-width: 525px) {
   .hero--hero-textbox .main-title .title1 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 400px) {
+  .hero--hero-textbox .main-title .title1 {
     font-size: 60px;
   }
 }
@@ -1830,6 +1822,11 @@ button {
   }
 }
 @media (max-width: 525px) {
+  .hero--hero-textbox .main-title .title2 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 400px) {
   .hero--hero-textbox .main-title .title2 {
     font-size: 60px;
   }
@@ -1866,6 +1863,11 @@ button {
 }
 @media (max-width: 525px) {
   .hero--hero-textbox .main-title .title3 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 400px) {
+  .hero--hero-textbox .main-title .title3 {
     font-size: 60px;
   }
 }
@@ -1898,7 +1900,7 @@ button {
     width: 300px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .hero--hero-textbox .sub-text {
     margin-top: 24px;
     width: 200px;
@@ -2147,7 +2149,7 @@ button {
 .hero-text .textbox .text .br-sp {
   display: none;
 }
-@media (max-width: 425px) {
+@media (max-width: 550px) {
   .hero-text .textbox .text .br-sp {
     display: block;
   }
@@ -2434,7 +2436,7 @@ button {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  background-color: #182346;
+  background-color: rgba(24, 35, 70, 0.8);
   padding: 200px 32px;
 }
 @media (max-width: 768px) {
@@ -2767,7 +2769,7 @@ button {
 }
 @media (max-width: 425px) {
   .Interview .swiper .swiper-wrapper .swiper-slide .textcont .name {
-    width: 40%;
+    width: 70%;
   }
 }
 .Interview .swiper .swiper-wrapper .swiper-slide .textcont .name .job {
@@ -6550,6 +6552,451 @@ button {
     padding: 0px 24px;
   }
 }
+.single-about .pcbox {
+  display: block;
+  height: 600px;
+  width: 500px;
+  margin-right: auto;
+  position: fixed;
+  opacity: 0;
+}
+@media (max-width: 1200px) {
+  .single-about .pcbox {
+    height: 500px;
+    width: 450px;
+  }
+}
+@media (max-width: 1000px) {
+  .single-about .pcbox {
+    display: none !important;
+  }
+}
+.single-about .pcbox .pcbox-cont {
+  height: 600px;
+}
+.single-about .pcbox.RISA-detail#PCMAINimg .IMG {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 0;
+}
+@media (max-width: 1200px) {
+  .single-about .pcbox.RISA-detail#PCMAINimg .IMG {
+    height: 500px;
+    width: 450px;
+  }
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.active {
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.RISA-detail#PCMAINimg.active {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.activeimg1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.RISA-detail#PCMAINimg.activeimg1 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.activeimg1 #IMG1 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page9.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.activeimg2 {
+  transition: 0.6s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.RISA-detail#PCMAINimg.activeimg2 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.activeimg2 #IMG2 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page10.png);
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  opacity: 1;
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.activeimg3 {
+  transition: 0.6s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.RISA-detail#PCMAINimg.activeimg3 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.activeimg3 #IMG3 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page11.png);
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  opacity: 1;
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.activeimg4 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.RISA-detail#PCMAINimg.activeimg4 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.activeimg4 #IMG4 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page12.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.stickeyTOP {
+  position: sticky;
+  top: 21%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.RISA-detail#PCMAINimg.stickeyTOP {
+    top: 18.5%;
+    left: 54%;
+    transform: translate(-112%, -50%);
+  }
+}
+.single-about .pcbox.RISA-detail#PCMAINimg.stickeyBOTTOM {
+  position: sticky;
+  top: 50.5%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+  opacity: 1;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.RISA-detail#PCMAINimg.stickeyBOTTOM {
+    top: 50.5%;
+    left: 54%;
+  }
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg .IMG {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 0;
+}
+@media (max-width: 1200px) {
+  .single-about .pcbox.MASANORI-detail#PCMAINimg .IMG {
+    height: 500px;
+    width: 450px;
+  }
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.active {
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.MASANORI-detail#PCMAINimg.active {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg1 {
+  position: fixed;
+  top: 54%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg1 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg1 #IMG1 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page1.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg2 {
+  transition: 0.6s;
+  position: fixed;
+  top: 54%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg2 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg2 #IMG2 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page2.png);
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  opacity: 1;
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg3 {
+  transition: 0.6s;
+  position: fixed;
+  top: 54%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg3 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg3 #IMG3 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page3.png);
+  transform: translate(-50%, -50%);
+  transition: 0.6s;
+  opacity: 1;
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg4 {
+  position: fixed;
+  top: 54%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg4 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg4 #IMG4 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page4.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.stickeyTOP {
+  position: sticky;
+  top: 21%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.MASANORI-detail#PCMAINimg.stickeyTOP {
+    top: 18.5%;
+    left: 54%;
+    transform: translate(-112%, -50%);
+  }
+}
+.single-about .pcbox.MASANORI-detail#PCMAINimg.stickeyBOTTOM {
+  position: sticky;
+  top: 52.5%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+  opacity: 1;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.MASANORI-detail#PCMAINimg.stickeyBOTTOM {
+    top: 52.2%;
+    left: 54%;
+  }
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg .IMG {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 0;
+}
+@media (max-width: 1200px) {
+  .single-about .pcbox.YUKI-detail#PCMAINimg .IMG {
+    height: 500px;
+    width: 450px;
+  }
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.active {
+  top: 50%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+  opacity: 1;
+  transition: opacity 0.6s;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.YUKI-detail#PCMAINimg.active {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.activeimg1 {
+  position: fixed;
+  top: 56%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.YUKI-detail#PCMAINimg.activeimg1 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.activeimg1 #IMG1 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page5.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.activeimg2 {
+  transition: 0.3s;
+  position: fixed;
+  top: 56%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.YUKI-detail#PCMAINimg.activeimg2 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.activeimg2 #IMG2 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page6.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.activeimg3 {
+  transition: 0.3s;
+  position: fixed;
+  top: 56%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.YUKI-detail#PCMAINimg.activeimg3 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.activeimg3 #IMG3 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page7.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.activeimg4 {
+  position: fixed;
+  top: 56%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 999;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.YUKI-detail#PCMAINimg.activeimg4 {
+    transform: translate(-110%, -50%);
+  }
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.activeimg4 #IMG4 {
+  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page8.png);
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+  opacity: 1;
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.stickeyTOP {
+  position: sticky;
+  top: 21%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.YUKI-detail#PCMAINimg.stickeyTOP {
+    top: 18.5%;
+    left: 54%;
+    transform: translate(-112%, -50%);
+  }
+}
+.single-about .pcbox.YUKI-detail#PCMAINimg.stickeyBOTTOM {
+  position: sticky;
+  top: 52%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  z-index: 998;
+  height: 0;
+  opacity: 1;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox.YUKI-detail#PCMAINimg.stickeyBOTTOM {
+    top: 50.5%;
+    left: 54%;
+  }
+}
 .single-about--content {
   display: flex;
   align-items: flex-start;
@@ -6557,6 +7004,7 @@ button {
   flex-direction: column;
   width: 100%;
   position: relative;
+  gap: 200px;
 }
 .single-about--content::-webkit-scrollbar {
   display: none;
@@ -6572,7 +7020,6 @@ button {
   justify-content: flex-end;
   gap: 10%;
   width: 100%;
-  margin-bottom: 200px;
 }
 @media (max-width: 1000px) {
   .single-about--content .cont {
@@ -6658,7 +7105,7 @@ button {
   }
 }
 .single-about--content .cont--textbox--text {
-  margin: 8% 0 6% 0;
+  margin: 8% 0 0 0;
   width: 100%;
   color: var(--color-primary, #182346);
 }
@@ -6701,448 +7148,6 @@ button {
 }
 .single-about--content .cont.last {
   margin-bottom: 0px;
-}
-.single-about--content .pcbox {
-  display: block;
-  height: 600px;
-  width: 500px;
-  margin-right: auto;
-  position: fixed;
-  opacity: 0;
-}
-@media (max-width: 1200px) {
-  .single-about--content .pcbox {
-    height: 500px;
-    width: 450px;
-  }
-}
-@media (max-width: 1000px) {
-  .single-about--content .pcbox {
-    display: none !important;
-  }
-}
-.single-about--content .pcbox .pcbox-cont {
-  height: 600px;
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg .IMG {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 0;
-}
-@media (max-width: 1200px) {
-  .single-about--content .pcbox.RISA-detail#PCMAINimg .IMG {
-    height: 500px;
-    width: 450px;
-  }
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.active {
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-  opacity: 1;
-  transition: opacity 0.6s;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.RISA-detail#PCMAINimg.active {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg1 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg1 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg1 #IMG1 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page9.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg2 {
-  transition: 0.6s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg2 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg2 #IMG2 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page10.png);
-  transform: translate(-50%, -50%);
-  transition: 0.6s;
-  opacity: 1;
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg3 {
-  transition: 0.6s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg3 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg3 #IMG3 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page11.png);
-  transform: translate(-50%, -50%);
-  transition: 0.6s;
-  opacity: 1;
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg4 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg4 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.activeimg4 #IMG4 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page12.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.stickeyTOP {
-  position: sticky;
-  top: 20%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 998;
-  height: 0;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.RISA-detail#PCMAINimg.stickeyTOP {
-    top: 18.5%;
-    left: 54%;
-  }
-}
-.single-about--content .pcbox.RISA-detail#PCMAINimg.stickeyBOTTOM {
-  position: sticky;
-  top: 53%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 998;
-  height: 0;
-  opacity: 1;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.RISA-detail#PCMAINimg.stickeyBOTTOM {
-    top: 50.5%;
-    left: 54%;
-  }
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg .IMG {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 0;
-}
-@media (max-width: 1200px) {
-  .single-about--content .pcbox.MASANORI-detail#PCMAINimg .IMG {
-    height: 500px;
-    width: 450px;
-  }
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.active {
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-  opacity: 1;
-  transition: opacity 0.6s;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.active {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg1 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg1 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg1 #IMG1 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page1.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg2 {
-  transition: 0.6s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg2 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg2 #IMG2 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page2.png);
-  transform: translate(-50%, -50%);
-  transition: 0.6s;
-  opacity: 1;
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg3 {
-  transition: 0.6s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg3 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg3 #IMG3 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page3.png);
-  transform: translate(-50%, -50%);
-  transition: 0.6s;
-  opacity: 1;
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg4 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg4 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.activeimg4 #IMG4 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page4.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.stickeyTOP {
-  position: sticky;
-  top: 20%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 998;
-  height: 0;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.stickeyTOP {
-    top: 18.5%;
-    left: 54%;
-  }
-}
-.single-about--content .pcbox.MASANORI-detail#PCMAINimg.stickeyBOTTOM {
-  position: sticky;
-  top: 53%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 998;
-  height: 0;
-  opacity: 1;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.MASANORI-detail#PCMAINimg.stickeyBOTTOM {
-    top: 50.5%;
-    left: 54%;
-  }
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg .IMG {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 600px;
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 0;
-}
-@media (max-width: 1200px) {
-  .single-about--content .pcbox.YUKI-detail#PCMAINimg .IMG {
-    height: 500px;
-    width: 450px;
-  }
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.active {
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-  opacity: 1;
-  transition: opacity 0.6s;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.YUKI-detail#PCMAINimg.active {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg1 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg1 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg1 #IMG1 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page5.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg2 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg2 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg2 #IMG2 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page6.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg3 {
-  transition: 0.3s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg3 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg3 #IMG3 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page7.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg4 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg4 {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.activeimg4 #IMG4 {
-  background-image: url(/wp-content/themes/origintheme/assets/img/interview/page8.png);
-  transform: translate(-50%, -50%);
-  transition: 0.3s;
-  opacity: 1;
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.stickeyTOP {
-  position: sticky;
-  top: 21%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 998;
-  height: 0;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.YUKI-detail#PCMAINimg.stickeyTOP {
-    top: 18.5%;
-    left: 54%;
-  }
-}
-.single-about--content .pcbox.YUKI-detail#PCMAINimg.stickeyBOTTOM {
-  position: sticky;
-  top: 53%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 998;
-  height: 0;
-  opacity: 1;
-}
-@media (max-width: 1100px) {
-  .single-about--content .pcbox.YUKI-detail#PCMAINimg.stickeyBOTTOM {
-    top: 49.5%;
-    left: 54%;
-  }
 }
 .single-about #ClosePCMAINOUtimg {
   width: 100%;

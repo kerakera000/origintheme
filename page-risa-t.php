@@ -53,13 +53,13 @@ get_template_part('./template/head');
 
     <div class="single-about">
         <div id="ClosePCMAINOUtimg"></div>
+        <div id="PCMAINimg" class="pcbox RISA-detail">
+            <div id="IMG1" class="IMG"></div>
+            <div id="IMG2" class="IMG"></div>
+            <div id="IMG3" class="IMG"></div>
+            <div id="IMG4" class="IMG"></div>
+        </div>
         <div id="ABOUT" class="single-about--content inner-content1200">
-            <div id="PCMAINimg" class="pcbox RISA-detail">
-                <div id="IMG1" class="IMG"></div>
-                <div id="IMG2" class="IMG"></div>
-                <div id="IMG3" class="IMG"></div>
-                <div id="IMG4" class="IMG"></div>
-            </div>
             <div class="cont">
                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page9.png" alt="">
                 <div id="detailCont1" class="cont--textbox rightanim">
@@ -95,14 +95,14 @@ get_template_part('./template/head');
 
             <div class="cont">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page11.png" alt="">
-                <div id="detailCont3" class="cont--textbox rightanim">
+                <div class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                         保守業務を通じて、<br>
                         セラク社員の利便性を高める
                         </h2>
                     </div>
-                    <p class="cont--textbox--text">
+                    <p id="detailCont3" class="cont--textbox--text">
                         <span class="text">
                         現在は、社内で導入しているCOMPANY(R)の保守業務を担当しています。つまり、セラク自体がお客さまであり、社員たちがエンドユーザーにあたるわけです。保守業務の内容としては、WEB上で扱う申請書の改修や追加などが挙げられます。いずれも社員の利便性向上が狙いです。また、教育課のサポート役も兼任しているので、新入社員の方々と接点をもつこともあります。この業務の醍醐味は、研修生の成長を間近で見届けられること。研修課題へのフィードバックが次回の研修に活かされていると、こちらまで嬉しくなります。
                         </span>
@@ -113,10 +113,10 @@ get_template_part('./template/head');
             <div class="cont last">
                 <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page12.png" alt="">
                 <div id="detailCont4" class="cont--textbox rightanim">
-                    <div class="common-titlebox">
+                    <div id="adjustANIM" class="common-titlebox">
                         <h2 class="title">
-                        社員の「人のよさ」が<br>
-                        事業部の強い武器になる
+                            社員の「人のよさ」が<br>
+                            事業部の強い武器になる
                         </h2>
                     </div>
                     <p class="cont--textbox--text">
