@@ -14,8 +14,8 @@ get_template_part('./template/head');
         <video src="<?php echo get_template_directory_uri(); ?>/assets/video/bg.mp4" autoplay muted loop playsinline></video>
     </div>
 
-    <div class="Phero archive-interview-Phero">
-        <div class="Phero--cont inner-content1200">
+    <div id="Pherolist" class="Phero archive-interview-Phero">
+        <div id="PherolistBox" class="Phero--cont inner-content1200">
             <div class="Phero--textbox">
                 <div class="common-titlebox">
                     <p id="Ctitle" class="title page-title">
@@ -85,7 +85,12 @@ get_template_part('./template/head');
                                 (Interview 01)
                             </span>
                         </span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview1.png" alt="" />
+                        <div class="imgbox PC-img">
+                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview1.png" alt="" />
+                        </div>
+                        <div class="imgbox SP-img">
+                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewsp1.png" alt="" />
+                        </div>
                         <p class="explanation">
                             <span class="text">
                                 <span class="back"></span>
@@ -137,6 +142,7 @@ get_template_part('./template/head');
                                 </span>
                             </p>
                             <span class="arrow-right">
+                                <div class="normal-imgbox">
                                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
                                 <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
                             </span>
@@ -148,7 +154,14 @@ get_template_part('./template/head');
                                 (Interview 02)
                             </span>
                         </span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview2.png" alt="" />
+                        <div class="imgbox">
+                            <div class="imgbox PC-img">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview2.png" alt="" />
+                            </div>
+                            <div class="imgbox SP-img">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewsp2.png" alt="" />
+                            </div>
+                        </div>
                         <p class="explanation">
                             <span class="text">
                                 <span class="back"></span>
@@ -211,7 +224,14 @@ get_template_part('./template/head');
                                 (Interview 03)
                             </span>
                         </span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview3.png" alt="" />
+                        <div class="imgbox">
+                            <div class="imgbox PC-img">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview3.png" alt="" />
+                            </div>
+                            <div class="imgbox SP-img">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewsp3.png" alt="" />
+                            </div>
+                        </div>
                         <p class="explanation">
                             <span class="text">
                                 <span class="back"></span>

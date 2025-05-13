@@ -57,11 +57,16 @@
             line-height: 200%; /* 32px */
             letter-spacing: 0.8px;
             color: var(--color-primary, #182346);
+            min-width: 168px;
             @media (max-width: 768px) {
                 width: 23%;
             }
             @media (max-width: 425px) {
                 font-size: 14px;
+                max-width: 90px;
+                min-width: 90px;
+                width: auto;
+                padding-right: 24px;
             }
         }
       
@@ -77,6 +82,12 @@
             @media (max-width: 425px) {
                 font-size: 14px;
                 padding: 32px 0;
+            }
+            .sp{
+                display: none;
+                @media (max-width: 425px) {
+                    display: block;
+                }
             }
         }
       

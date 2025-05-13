@@ -210,11 +210,7 @@ get_template_part('./template/head');
                     </div>
                     <p class="cont--textbox--text">
                         <span class="text">
-                            COMPANY事業部は統合人事システム<br>
-                            「COMPANY(R)︎」の新規導入から運用まで、<br class="br-nosp">
-                            幅広くサポート。お客さまの事業成長を後押<br class="br-nosp">
-                            しすることで、社会の基盤をつくり、経済の<br class="br-nosp">
-                            一端を支えています。
+                            COMPANY事業部は統合人事システム<br>「COMPANY(R)︎」の新規導入から運用まで、<br class="br-nosp">幅広くサポート。お客さまの事業成長を後押<br class="br-nosp">しすることで、社会の基盤をつくり、経済の<br class="br-nosp">一端を支えています。
                         </span>
                     </p>
                     <button class="common-button">
@@ -241,10 +237,7 @@ get_template_part('./template/head');
                     </div>
                     <p class="cont--textbox--text">
                         <span class="text">
-                            社員がキャリアビジョンを達成できるよう、<br class="br-nosp">
-                            実践的な研修プログラムを提供しています。<br class="br-nosp">
-                            職種も多岐に渡り、一人ひとりの適性に合わ<br class="br-nosp">
-                            せたキャリアを選択することが可能です。
+                            社員がキャリアビジョンを達成できるよう、<br class="br-nosp">実践的な研修プログラムを提供しています。<br class="br-nosp">職種も多岐に渡り、一人ひとりの適性に合わ<br class="br-nosp">せたキャリアを選択することが可能です。
                         </span>
                     </p>
                     <button class="common-button">

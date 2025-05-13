@@ -82,7 +82,7 @@ get_template_part('./template/head');
                     </tr>
                     <tr class="company-info__row">
                         <th class="company-info__label">上場証券取引所</th>
-                        <td class="company-info__value">東京証券取引所スタンダード市場（証券コード：6199）</td>
+                        <td class="company-info__value">東京証券取引所スタンダード市場<br class="sp">（証券コード：6199）</td>
                     </tr>
                     <tr class="company-info__row">
                         <th class="company-info__label">サービス</th>

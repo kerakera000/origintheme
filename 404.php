@@ -17,7 +17,7 @@ get_template_part('./template/head');
         <div class="Phero--cont inner-content1200">
             <div class="Phero--textbox">
                 <div class="common-titlebox">
-                    <p id="Ctitle" class="title page-title">
+                    <p id="Ctitle C404" class="title page-title">
                         <span id="Ctitle-text" class="text">404 Not Found.</span>
                     </p>
                     <p id="Csubtitle" class="sub-title">

@@ -49,7 +49,7 @@
                 delay: 0,
             },
             loop: true,
-            speed: 6000,
+            speed: 15000,
             breakpoints: {
                 768: {
                     slidesPerView: 3.4,
@@ -323,6 +323,7 @@
             if (scroll + (windowHeight / 2 - 200) > position && 
                 scroll + (windowHeight / 2 - 200) < position + elementHeight) {
                 $(this).addClass('active');
+                console.log('active');
             }
         });
     });
@@ -470,26 +471,6 @@
             }
         });
 
-    });
-
-    // PCbusiness--type-boxの高さ調整関数
-    function adjustCategoryBoxHeight() {
-        $('.PCbusiness--type-box').each(function() {
-            const $typeBox = $(this);
-            const $categoryBox = $typeBox.find('.category-box');
-            if ($categoryBox.length) {
-                // PCbusiness--type-boxの現在の高さを取得
-                const typeBoxHeight = $typeBox.outerHeight();
-                // category-boxの高さを設定
-                $categoryBox.height(typeBoxHeight);
-            }
-        });
-    }
-
-    // DOM読み込み完了時とリサイズ時に高さ調整を実行
-    $(window).on('load', function() {
-        adjustCategoryBoxHeight();
-        $(window).on('resize', adjustCategoryBoxHeight);
     });
     
 })(jQuery);

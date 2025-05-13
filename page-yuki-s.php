@@ -54,84 +54,83 @@ get_template_part('./template/head');
     </div>
 
     <div class="single-about">
-        <div id="ClosePCMAINOUtimg"></div>
-        <div id="PCMAINimg" class="pcbox YUKI-detail">
-            <div id="IMG1" class="IMG"></div>
-            <div id="IMG2" class="IMG"></div>
-            <div id="IMG3" class="IMG"></div>
-            <div id="IMG4" class="IMG"></div>
+        <div class="single-about--sticky-box inner-content1200">
+            <div id="PCMAINimg" class="pcbox YUKI-detail">
+                <div id="IMG1" class="IMG"></div>
+                <div id="IMG2" class="IMG"></div>
+                <div id="IMG3" class="IMG"></div>
+                <div id="IMG4" class="IMG"></div>
+            </div>
+            <div id="ABOUT" class="single-about--content">
+                <div class="cont">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page5.png" alt="">
+                    <div id="detailCont1" class="cont--textbox rightanim">
+                        <div class="common-titlebox">
+                            <h2 class="title">
+                            マネージャーと<br>
+                            プレーヤーの2足のわらじ
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
+                            現在は、事業部のマネジメントに携わっています。プロジェクトの責任者として現場の業務を管理することもあり、いわばプレイングマネージャーのようなポジションです。具体的なマネジメント業務でいうと、1ON1の運営や各種手当の施策検討、人事評価制度の見直しなどが挙げられます。いずれも社員が働きやすい職場を目指した試みです。COMPANY事業部の前身はエンジニア数名からのスタートでしたが、10年足らずで現在の150名規模にまで拡大しました。急成長した分、事業部内のアップデートは必須。多様な価値観を取り入れながら、環境整備を進めています。
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page6.png" alt="">
+                    <div id="detailCont2" class="cont--textbox rightanim">
+                        <div class="common-titlebox">
+                            <h2 class="title">
+                            経歴を問わず、だれにでも<br>
+                            チャンスが巡ってくる環境
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
+                            COMPANY(R)は、大手企業を中心に普及しています。そのため、COMPANY事業部のエンジニアは大規模なプロジェクトに携わる機会が多くあります。技術的な成長も望めますし、さまざまな企業文化に触れることで視野も広がるでしょう。また、早い段階から責任のある仕事を任せてもらえる点も事業部の魅力のひとつです。IT未経験からスタートして、やがてチームリーダーやプロジェクトマネージャーに抜擢された人も少なくありません。技術力も重要ですが、課題解決に向き合う胆力もまた重要。前向きな気持ちでトライをし続けられる人ほど、COMPANY事業部で輝けます。
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cont">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page7.png" alt="">
+                    <div class="cont--textbox rightanim">
+                        <div class="common-titlebox">
+                            <h2 class="title">
+                            「やりたいこと」より<br>
+                            「為すべきこと」に価値を置く
+                            </h2>
+                        </div>
+                        <p id="detailCont3" class="cont--textbox--text">
+                            <span class="text">
+                            かくいう私も入社半年でチームリーダーを任され、その後も着々とキャリアアップを重ねています。大きなターニングポイントは、上長から管理職に就くことを打診されたときです。プレーヤーとして勢いづいていた時期だったので、嬉しい反面、現場に心残りがあったのも事実。一方で、これまで築き上げてきたノウハウは管理職でこそ活かされるのではないか、という思いもありました。決意が固まったのは、上長からのある一言がきっかけです。「『置かれた場所で花を咲かす』という選択肢もある」。この言葉で迷いが吹っ切れ、自身の為すべきことが明確になりました。
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="cont last">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page8.png" alt="">
+                    <div id="detailCont4" class="cont--textbox rightanim">
+                        <div id="adjustANIM" class="common-titlebox">
+                            <h2 class="title">
+                                事業部のさらなる成長を<br>
+                                見据えて、人材育成に注力
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
+                                経営層もCOMPANY事業部に大きな期待を寄せています。その期待に応えていくなかで、変化を恐れず積極的に挑戦していく組織風土が根づいていきました。社員の成長を促しつつ、安心して働き続けられる環境づくりが最たるもので、いまなお進化の途中にあるといえます。こうした取り組みは、上長のサポートや同僚、部下の理解があってこそ実現するものだと考えています。取り組みの一環として、今後はこれまで以上に人材育成に力を注いでいきたいです。なぜなら、組織力は人と人との相互作用によって磨き上げられるからです。技術はあとからついてくるので、まずはCOMPANY事業部の方針に共感してくれる仲間を増やし、成長を後押ししていきます。
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="ABOUT" class="single-about--content inner-content1200">
-            <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page5.png" alt="">
-                <div id="detailCont1" class="cont--textbox rightanim">
-                    <div class="common-titlebox">
-                        <h2 class="title">
-                        マネージャーと<br>
-                        プレーヤーの2足のわらじ
-                        </h2>
-                    </div>
-                    <p class="cont--textbox--text">
-                        <span class="text">
-                        現在は、事業部のマネジメントに携わっています。プロジェクトの責任者として現場の業務を管理することもあり、いわばプレイングマネージャーのようなポジションです。具体的なマネジメント業務でいうと、1ON1の運営や各種手当の施策検討、人事評価制度の見直しなどが挙げられます。いずれも社員が働きやすい職場を目指した試みです。COMPANY事業部の前身はエンジニア数名からのスタートでしたが、10年足らずで現在の150名規模にまで拡大しました。急成長した分、事業部内のアップデートは必須。多様な価値観を取り入れながら、環境整備を進めています。
-                        </span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page6.png" alt="">
-                <div id="detailCont2" class="cont--textbox rightanim">
-                    <div class="common-titlebox">
-                        <h2 class="title">
-                        経歴を問わず、だれにでも<br>
-                        チャンスが巡ってくる環境
-                        </h2>
-                    </div>
-                    <p class="cont--textbox--text">
-                        <span class="text">
-                        COMPANY(R)は、大手企業を中心に普及しています。そのため、COMPANY事業部のエンジニアは大規模なプロジェクトに携わる機会が多くあります。技術的な成長も望めますし、さまざまな企業文化に触れることで視野も広がるでしょう。また、早い段階から責任のある仕事を任せてもらえる点も事業部の魅力のひとつです。IT未経験からスタートして、やがてチームリーダーやプロジェクトマネージャーに抜擢された人も少なくありません。技術力も重要ですが、課題解決に向き合う胆力もまた重要。前向きな気持ちでトライをし続けられる人ほど、COMPANY事業部で輝けます。
-                        </span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page7.png" alt="">
-                <div class="cont--textbox rightanim">
-                    <div class="common-titlebox">
-                        <h2 class="title">
-                        「やりたいこと」より<br>
-                        「為すべきこと」に価値を置く
-                        </h2>
-                    </div>
-                    <p id="detailCont3" class="cont--textbox--text">
-                        <span class="text">
-                        かくいう私も入社半年でチームリーダーを任され、その後も着々とキャリアアップを重ねています。大きなターニングポイントは、上長から管理職に就くことを打診されたときです。プレーヤーとして勢いづいていた時期だったので、嬉しい反面、現場に心残りがあったのも事実。一方で、これまで築き上げてきたノウハウは管理職でこそ活かされるのではないか、という思いもありました。決意が固まったのは、上長からのある一言がきっかけです。「『置かれた場所で花を咲かす』という選択肢もある」。この言葉で迷いが吹っ切れ、自身の為すべきことが明確になりました。
-                        </span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="cont last">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page8.png" alt="">
-                <div id="detailCont4" class="cont--textbox rightanim">
-                    <div id="adjustANIM" class="common-titlebox">
-                        <h2 class="title">
-                            事業部のさらなる成長を<br>
-                            見据えて、人材育成に注力
-                        </h2>
-                    </div>
-                    <p class="cont--textbox--text">
-                        <span class="text">
-                            経営層もCOMPANY事業部に大きな期待を寄せています。その期待に応えていくなかで、変化を恐れず積極的に挑戦していく組織風土が根づいていきました。社員の成長を促しつつ、安心して働き続けられる環境づくりが最たるもので、いまなお進化の途中にあるといえます。こうした取り組みは、上長のサポートや同僚、部下の理解があってこそ実現するものだと考えています。取り組みの一環として、今後はこれまで以上に人材育成に力を注いでいきたいです。なぜなら、組織力は人と人との相互作用によって磨き上げられるからです。技術はあとからついてくるので、まずはCOMPANY事業部の方針に共感してくれる仲間を増やし、成長を後押ししていきます。
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-cont"></div>
-        <div id="ClosePCMAINimg"></div>
     </div>
 
     <div id="PDF" class="single-interview-post">

@@ -514,10 +514,10 @@ get_template_part('./template/head');
             <button class="more-button">
                 <p class="text">
                     <span class="normal">
-                    View More
+                    View Next
                     </span>
                     <span class="hover">
-                    View More
+                    View Next
                     </span>
                 </p>
                 <span class="arrow-right">

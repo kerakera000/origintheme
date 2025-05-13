@@ -79,10 +79,10 @@ global $site_url;
                     <p class="normal">中途採用</p>
                     <p class="hover">中途採用</p>
                 </a>
-                <a href="/entry" class="entry-linkbox-link">
+                <!-- <a href="/entry" class="entry-linkbox-link">
                     <p class="normal">カジュアル面談</p>
                     <p class="hover">カジュアル面談</p>
-                </a>
+                </a> -->
             </div>
         </div>
 

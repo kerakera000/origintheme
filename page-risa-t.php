@@ -61,7 +61,7 @@ get_template_part('./template/head');
         </div>
         <div id="ABOUT" class="single-about--content inner-content1200">
             <div class="cont">
-                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page9.png" alt="">
+                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page9.png" alt="">
                 <div id="detailCont1" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">

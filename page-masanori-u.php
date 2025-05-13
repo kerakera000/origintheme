@@ -63,8 +63,8 @@ get_template_part('./template/head');
         </div>
         <div id="ABOUT" class="single-about--content inner-content1200">
             <div class="cont">
-                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page1.png" alt="">
-                <div id="detailCont1" class="cont--textbox">
+                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page1.png" alt="">
+                <div id="detailCont1" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                             チームリーダーとして<br>
@@ -80,8 +80,8 @@ get_template_part('./template/head');
             </div>
 
             <div class="cont">
-                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page2.png" alt="">
-                <div id="detailCont2" class="cont--textbox">
+                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page2.png" alt="">
+                <div id="detailCont2" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                             研修を受けていたからこそ、<br>
@@ -97,8 +97,8 @@ get_template_part('./template/head');
             </div>
 
             <div class="cont">
-                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page3.png" alt="">
-                <div class="cont--textbox">
+                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page3.png" alt="">
+                <div id="detailCont3" class="cont--textbox rightanim">
                     <div class="common-titlebox">
                         <h2 class="title">
                             事業部内で受け継がれる、<br>
@@ -114,8 +114,8 @@ get_template_part('./template/head');
             </div>
 
             <div class="cont last">
-                <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page4.png" alt="">
-                <div id="detailCont4" class="cont--textbox">
+                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page4.png" alt="">
+                <div id="detailCont4" class="cont--textbox rightanim">
                     <div id="adjustANIM" class="common-titlebox">
                         <h2 class="title">
                             お客さまの困りごとを<br>

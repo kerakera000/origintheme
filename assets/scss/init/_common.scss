@@ -390,7 +390,7 @@
                 position: relative;
                 overflow: hidden;
                 .normal{
-                    @include fosan;
+                    @include fosanjp;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 500;
@@ -405,7 +405,7 @@
                     transition: all 0.3s ease;
                 }
                 .hover{
-                    @include fosan;
+                    @include fosanjp;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 500;

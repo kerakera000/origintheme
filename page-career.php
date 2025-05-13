@@ -82,16 +82,16 @@ get_template_part('./template/head');
                 <h2 class="title">職種紹介</h2>
             </div>
             <div class="PCbusiness--type-box">
-                <div class="category-box">
+                <div id="categorybox1" class="category-box">
                     <h2 class="category-box--title">
                         カスタマーサクセス/<br>
                         エンジニア職
                     </h2>
                     <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/job1.png" alt="">
-                    <img class="category-box--imgsp" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/jobsp1.png" alt="">
+                    <img class="category-box--imgsp" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/jobsp2.png" alt="">
                 </div>
 
-                <div class="introduction-box">
+                <div id="typeboX1" class="introduction-box">
                     <div class="job-box">
                         <div class="job-box--content">
                             <div class="num-box">
@@ -144,12 +144,12 @@ get_template_part('./template/head');
                 </div>
             </div>
             <div class="PCbusiness--type-box last">
-                <div class="category-box">
+                <div id="categorybox2" class="category-box">
                     <h2 class="category-box--title">ビジネス職</h2>
                     <img class="category-box--img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/job2.png" alt="">
-                    <img class="category-box--imgsp" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/jobsp2.png" alt="">
+                    <img class="category-box--imgsp" src="<?php echo get_template_directory_uri(); ?>/assets/img/Pcareer/jobsp1.png" alt="">
                 </div>
-                <div class="introduction-box">
+                <div id="typeboX2" class="introduction-box">
                     <div class="job-box">
                         <div class="job-box--content">
                             <div class="num-box">
@@ -485,10 +485,10 @@ get_template_part('./template/head');
             <button class="more-button">
                 <p class="text">
                     <span class="normal">
-                    View More
+                    View Next
                     </span>
                     <span class="hover">
-                    View More
+                    View Next
                     </span>
                 </p>
                 <span class="arrow-right">
