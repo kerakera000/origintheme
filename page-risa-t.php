@@ -4,7 +4,7 @@ global $site_url;
 
 ?>
 <?php
-get_template_part('./template/head');
+get_template_part('./template/head-singles');
 ?>
 
 <?php get_template_part('./template/header');?>
@@ -52,83 +52,83 @@ get_template_part('./template/head');
     </div>
 
     <div class="single-about">
-        <div id="ClosePCMAINOUtimg"></div>
-        <div id="PCMAINimg" class="pcbox RISA-detail">
-            <div id="IMG1" class="IMG"></div>
-            <div id="IMG2" class="IMG"></div>
-            <div id="IMG3" class="IMG"></div>
-            <div id="IMG4" class="IMG"></div>
-        </div>
-        <div id="ABOUT" class="single-about--content inner-content1200">
-            <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page9.png" alt="">
-                <div id="detailCont1" class="cont--textbox rightanim">
-                    <div class="common-titlebox">
-                        <h2 class="title">
+        <div class="single-about--sticky-box inner-content1200">
+            <div id="PCMAINimg" class="pcbox RISA-detail">
+                <div id="IMG1" class="IMG"></div>
+                <div id="IMG2" class="IMG"></div>
+                <div id="IMG3" class="IMG"></div>
+                <div id="IMG4" class="IMG"></div>
+            </div>
+            <div id="ABOUT" class="single-about--content">
+                <div class="cont">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page9.png" alt="">
+                    <div id="detailCont1" class="cont--textbox rightanim-single">
+                        <div class="common-titlebox">
+                            <h2 class="title">
                             前職のときに抱いた、<br>
                             業務改善システムへの憧れ
-                        </h2>
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
+                            以前は、ビルメンテナンス会社の管理部門に在籍していました。そこは社内のデジタル化が進んでおらず、勤怠管理表から会議の資料に至るまで、あらゆる書類が紙でした。当然のことながら業務は煩雑化しており、DXとは無縁で紙の資料に囲まれる日々…。CMで目にする業務改善システムがちょっとした憧れになっていました。転職先にセラクを選んだのも、システムを駆使した業務改善に取り組んでいたからです。とくにCOMPANY事業部は、私にうってつけの環境。COMPANY(R)の存在を知ったときは「前職のときにこれが欲しかった！」と感銘を受けたほどです。
+                            </span>
+                        </p>
                     </div>
-                    <p class="cont--textbox--text">
-                        <span class="text">
-                            以前は、ビルメンテナンス会社の管理部門に在籍していました。そこは社内のデジタル化が進んでおらず、勤怠管理表から会議の資料に至るまで、あらゆる書類が紙でした。当然のことながら業務は煩雑化しており、DXとは無縁で紙の資料に囲まれる日々…。CMで目にする業務改善システムがちょっとした憧れになっていました。転職先にセラクを選んだのも、システムを駆使した業務改善に取り組んでいたからです。とくにCOMPANY事業部は、私にうってつけの環境。COMPANY(R)の存在を知ったときは「前職のときにこれが欲しかった！」と感銘を受けたほどです
-                        </span>
-                    </p>
                 </div>
-            </div>
 
-            <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page10.png" alt="">
-                <div id="detailCont2" class="cont--textbox rightanim">
-                    <div class="common-titlebox">
-                        <h2 class="title">
-                        IT未経験者の不安を解消する、<br>
-                        手厚い研修制度
-                        </h2>
+                <div class="cont">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page10.png" alt="">
+                    <div id="detailCont2" class="cont--textbox rightanim-single">
+                        <div class="common-titlebox">
+                            <h2 class="title">
+                            IT未経験者の不安を解消する、<br>
+                            手厚い研修制度
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
+                            セラクを選んだもうひとつの理由は、研修制度が充実していたからです。IT業界は未経験だったため、スキルアップのサポートは転職するうえでゆずれない条件でした。その期待通り、入社後は2か月間に渡り研修が組まれました。「ビジネス基礎」や「労務知識基礎」などのカリキュラムが揃うなか、最も印象に残ったのがCOMPANY(R)の実機研修です。はじめこそ理解が追いつきませんでしたが、研修を重ねるうちに点と点が結ばれていき、全体像が見えてくるような感じでした。あの研修があったからこそ、業務への移行もスムーズだったのだと思います。
+                            </span>
+                        </p>
                     </div>
-                    <p class="cont--textbox--text">
-                        <span class="text">
-                        セラクを選んだもうひとつの理由は、研修制度が充実していたからです。IT業界は未経験だったため、スキルアップのサポートは転職するうえでゆずれない条件でした。その期待通り、入社後は2か月間に渡り研修が組まれました。「ビジネス基礎」や「労務知識基礎」などのカリキュラムが揃うなか、最も印象に残ったのがCOMPANY(R)の実機研修です。はじめこそ理解が追いつきませんでしたが、研修を重ねるうちに点と点が結ばれていき、全体像が見えてくるような感じでした。あの研修があったからこそ、業務への移行もスムーズだったのだと思います。</span>
-                    </p>
                 </div>
-            </div>
 
-            <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page11.png" alt="">
-                <div class="cont--textbox rightanim">
-                    <div class="common-titlebox">
-                        <h2 class="title">
-                        保守業務を通じて、<br>
-                        セラク社員の利便性を高める
-                        </h2>
+                <div class="cont">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page11.png" alt="">
+                    <div id="detailCont3" class="cont--textbox rightanim-single">
+                        <div class="common-titlebox">
+                            <h2 class="title">
+                            保守業務を通じて、<br>
+                            セラク社員の利便性を高める
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
+                            現在は、社内で導入しているCOMPANY(R)の保守業務を担当しています。つまり、セラク自体がお客さまであり、社員たちがエンドユーザーにあたるわけです。保守業務の内容としては、WEB上で扱う申請書の改修や追加などが挙げられます。いずれも社員の利便性向上が狙いです。また、教育課のサポート役も兼任しているので、新入社員の方々と接点をもつこともあります。この業務の醍醐味は、研修生の成長を間近で見届けられること。研修課題へのフィードバックが次回の研修に活かされていると、こちらまで嬉しくなります。
+                            </span>
+                        </p>
                     </div>
-                    <p id="detailCont3" class="cont--textbox--text">
-                        <span class="text">
-                        現在は、社内で導入しているCOMPANY(R)の保守業務を担当しています。つまり、セラク自体がお客さまであり、社員たちがエンドユーザーにあたるわけです。保守業務の内容としては、WEB上で扱う申請書の改修や追加などが挙げられます。いずれも社員の利便性向上が狙いです。また、教育課のサポート役も兼任しているので、新入社員の方々と接点をもつこともあります。この業務の醍醐味は、研修生の成長を間近で見届けられること。研修課題へのフィードバックが次回の研修に活かされていると、こちらまで嬉しくなります。
-                        </span>
-                    </p>
                 </div>
-            </div>
 
-            <div class="cont last">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page12.png" alt="">
-                <div id="detailCont4" class="cont--textbox rightanim">
-                    <div id="adjustANIM" class="common-titlebox">
-                        <h2 class="title">
+                <div class="cont last">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page12.png" alt="">
+                    <div id="detailCont4" class="cont--textbox rightanim-single">
+                        <div class="common-titlebox">
+                            <h2 class="title">
                             社員の「人のよさ」が<br>
                             事業部の強い武器になる
-                        </h2>
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
+                            COMPANY事業部の魅力は、社員の「人のよさ」だと思います。単なる「やさしい」という意味合いではなく、チームワークを重視しつつ、個人を尊重する風土が根づいているんです。朝礼時に社員が輪になって並ぶのも、強い結束力の表われです。私が二件目の案件を担当したときには、こんなことがありました。当時は未熟で、プロジェクトについていくのがやっとの状態。いよいよお手上げになったとき、先輩方が助け舟を出してくれたんです。聞けば「苦戦しているのは見ていたけれど、ギリギリまで挑戦させたかった」とのこと。メンバーの成長を見守り、いざというときに手を差し伸べる姿勢もまた、COMPANY事業部の「人のよさ」ですね。
+                            </span>
+                        </p>
                     </div>
-                    <p class="cont--textbox--text">
-                        <span class="text">
-                        COMPANY事業部の魅力は、社員の「人のよさ」だと思います。単なる「やさしい」という意味合いではなく、チームワークを重視しつつ、個人を尊重する風土が根づいているんです。朝礼時に社員が輪になって並ぶのも、強い結束力の表われです。私が二件目の案件を担当したときには、こんなことがありました。当時は未熟で、プロジェクトについていくのがやっとの状態。いよいよお手上げになったとき、先輩方が助け舟を出してくれたんです。聞けば「苦戦しているのは見ていたけれど、ギリギリまで挑戦させたかった」とのこと。メンバーの成長を見守り、いざというときに手を差し伸べる姿勢もまた、COMPANY事業部の「人のよさ」ですね。
-                        </span>
-                    </p>
                 </div>
             </div>
         </div>
-        <div class="bottom-cont"></div>
-        <div id="ClosePCMAINimg"></div>
     </div>
 
     <div id="PDF" class="single-interview-post">

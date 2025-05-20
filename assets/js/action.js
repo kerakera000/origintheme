@@ -207,6 +207,24 @@
     });
 
     $(window).on('scroll', function() {
+        $('.rightanim-single').each(function() {
+            var position = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            var elementHeight = $(this).height();
+
+            // 要素が画面内に入ってきた時
+            if (scroll > position - windowHeight + 100 && scroll < position + elementHeight) {
+                $(this).addClass('active');
+            }
+            // 要素が画面上部に隠れた時
+            else {
+                $(this).removeClass('active');
+            }
+        });
+    });
+
+    $(window).on('scroll', function() {
         $('.leftanim').each(function() {
             var position = $(this).offset().top;
             var scroll = $(window).scrollTop();
@@ -308,22 +326,6 @@
                 }, 300);
             } else {
                 // $(this).removeClass('active');
-            }
-        });
-    });
-
-    $(window).on('scroll', function() {
-        $('#PCMAINimg').each(function() {
-            var position = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            var elementHeight = $(this).height();
-
-            // 要素が画面の真ん中から100px下に来た時を判定
-            if (scroll + (windowHeight / 2 - 200) > position && 
-                scroll + (windowHeight / 2 - 200) < position + elementHeight) {
-                $(this).addClass('active');
-                console.log('active');
             }
         });
     });
@@ -472,7 +474,7 @@
         });
 
     });
-    
+
 })(jQuery);
 
 

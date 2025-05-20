@@ -544,6 +544,20 @@
   transform: translateX(0);
 }
 
+@media screen and (max-width: 1000px) {
+  .rightanim-single {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.6s ease;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .rightanim-single.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .leftanim {
   opacity: 0;
   transform: translateX(-20px);
@@ -676,6 +690,8 @@ body {
   font-size: 1.4rem;
   color: #222222;
   letter-spacing: 1px;
+  touch-action: manipulation;
+  touch-action: pan-x pan-y;
 }
 body.is-hidden {
   overflow: hidden;
@@ -698,6 +714,14 @@ body.is-hidden {
   transition: opacity 0.3s;
 }
 .wrap.js-load {
+  opacity: 1;
+}
+
+.single-head {
+  width: 100%;
+  transition: opacity 0.3s;
+}
+.single-head.js-load {
   opacity: 1;
 }
 
@@ -6658,11 +6682,11 @@ button {
 .single-about {
   width: 100%;
   background-color: #fff;
-  padding: 200px 32px 0;
+  padding: 200px 32px;
 }
-@media (max-width: 425px) {
+@media (max-width: 1000px) {
   .single-about {
-    padding: 0px 24px;
+    padding: 0px 24px 120px;
   }
 }
 .single-about--sticky-box {
@@ -6670,19 +6694,41 @@ button {
   position: relative;
   display: flex;
   align-items: flex-start;
+  justify-content: center;
 }
 .single-about .pcbox {
   display: block;
   height: 600px;
   width: 500px;
-  margin-right: auto;
+  margin-right: 100px;
   position: sticky;
   opacity: 1;
-  top: 0;
+  top: 200px;
+}
+@media (max-width: 1100px) {
+  .single-about .pcbox {
+    margin-right: 50px;
+  }
 }
 @media (max-width: 1000px) {
   .single-about .pcbox {
     display: none !important;
+  }
+}
+@media (max-height: 900px) {
+  .single-about .pcbox {
+    top: 21vh;
+  }
+}
+@media (max-height: 800px) {
+  .single-about .pcbox {
+    height: 34vw;
+  }
+}
+@media (min-width: 1101px) and (max-height: 800px) {
+  .single-about .pcbox {
+    height: 34vw;
+    width: 30vw;
   }
 }
 .single-about .pcbox .pcbox-cont {
@@ -6701,61 +6747,10 @@ button {
   transition: 0.3s;
   opacity: 0;
 }
-@media (min-width: 1201px) and (max-height: 800px) {
+@media (max-height: 800px) {
   .single-about .pcbox.RISA-detail#PCMAINimg .IMG {
-    height: 550px;
-    width: 450px;
-  }
-}
-@media (min-width: 1201px) and (max-height: 700px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg .IMG {
-    height: 460px;
-    width: 420px;
-  }
-}
-@media (max-width: 1200px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg .IMG {
-    height: 500px;
-    width: 450px;
-  }
-}
-@media (max-width: 1200px) and (max-height: 800px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg .IMG {
-    height: 450px;
-    width: 420px;
-  }
-}
-@media (max-width: 1200px) and (max-height: 700px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg .IMG {
-    height: 460px;
-    width: 420px;
-  }
-}
-.single-about .pcbox.RISA-detail#PCMAINimg.active {
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-  opacity: 1;
-  transition: opacity 0.6s;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.active {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about .pcbox.RISA-detail#PCMAINimg.activeimg1 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.activeimg1 {
-    transform: translate(-105%, -50%);
+    height: 34vw;
+    width: 30vw;
   }
 }
 .single-about .pcbox.RISA-detail#PCMAINimg.activeimg1 #IMG1 {
@@ -6764,115 +6759,23 @@ button {
   transition: 0.3s;
   opacity: 1;
 }
-.single-about .pcbox.RISA-detail#PCMAINimg.activeimg2 {
-  transition: 0.6s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.activeimg2 {
-    transform: translate(-105%, -50%);
-  }
-}
 .single-about .pcbox.RISA-detail#PCMAINimg.activeimg2 #IMG2 {
   background-image: url(/wp-content/themes/origintheme/assets/img/interview/page10.png);
   transform: translate(-50%, -50%);
-  transition: 0.6s;
+  transition: 0.3s;
   opacity: 1;
-}
-.single-about .pcbox.RISA-detail#PCMAINimg.activeimg3 {
-  transition: 0.6s;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.activeimg3 {
-    transform: translate(-105%, -50%);
-  }
 }
 .single-about .pcbox.RISA-detail#PCMAINimg.activeimg3 #IMG3 {
   background-image: url(/wp-content/themes/origintheme/assets/img/interview/page11.png);
   transform: translate(-50%, -50%);
-  transition: 0.6s;
+  transition: 0.3s;
   opacity: 1;
-}
-.single-about .pcbox.RISA-detail#PCMAINimg.activeimg4 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.activeimg4 {
-    transform: translate(-105%, -50%);
-  }
 }
 .single-about .pcbox.RISA-detail#PCMAINimg.activeimg4 #IMG4 {
   background-image: url(/wp-content/themes/origintheme/assets/img/interview/page12.png);
   transform: translate(-50%, -50%);
   transition: 0.3s;
   opacity: 1;
-}
-.single-about .pcbox.RISA-detail#PCMAINimg.stickeyTOP {
-  position: sticky;
-  top: 22%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 998;
-  height: 0;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.stickeyTOP {
-    top: 20%;
-    left: 54%;
-    transform: translate(-115%, -50%);
-  }
-}
-@media (max-width: 1050px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.stickeyTOP {
-    transform: translate(-113.5%, -50%);
-  }
-}
-@media (max-width: 1050px) and (max-height: 800px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.stickeyTOP {
-    transform: translate(-115%, -50%);
-  }
-}
-.single-about .pcbox.RISA-detail#PCMAINimg.stickeyBOTTOM {
-  position: sticky;
-  top: 51.5%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 998;
-  height: 0;
-  opacity: 1;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.stickeyBOTTOM {
-    top: 48.5%;
-    left: 54%;
-    transform: translate(-112%, -50%);
-  }
-}
-@media (max-width: 1050px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.stickeyBOTTOM {
-    transform: translate(-113.5%, -50%);
-  }
-}
-@media (max-width: 1050px) and (max-height: 800px) {
-  .single-about .pcbox.RISA-detail#PCMAINimg.stickeyBOTTOM {
-    transform: translate(-115%, -50%);
-  }
 }
 .single-about .pcbox.MASANORI-detail#PCMAINimg .IMG {
   background-size: cover;
@@ -6887,61 +6790,10 @@ button {
   transition: 0.3s;
   opacity: 0;
 }
-@media (min-width: 1201px) and (max-height: 800px) {
+@media (max-height: 800px) {
   .single-about .pcbox.MASANORI-detail#PCMAINimg .IMG {
-    height: 550px;
-    width: 450px;
-  }
-}
-@media (min-width: 1201px) and (max-height: 700px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg .IMG {
-    height: 460px;
-    width: 420px;
-  }
-}
-@media (max-width: 1200px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg .IMG {
-    height: 500px;
-    width: 450px;
-  }
-}
-@media (max-width: 1200px) and (max-height: 800px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg .IMG {
-    height: 450px;
-    width: 420px;
-  }
-}
-@media (max-width: 1200px) and (max-height: 700px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg .IMG {
-    height: 460px;
-    width: 420px;
-  }
-}
-.single-about .pcbox.MASANORI-detail#PCMAINimg.active {
-  top: 50%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-  opacity: 1;
-  transition: opacity 0.6s;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg.active {
-    transform: translate(-110%, -50%);
-  }
-}
-.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg1 {
-  position: fixed;
-  top: 54%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg1 {
-    transform: translate(-105%, -50%);
+    height: 34vw;
+    width: 30vw;
   }
 }
 .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg1 #IMG1 {
@@ -6950,107 +6802,22 @@ button {
   transition: 0.3s;
   opacity: 1;
 }
-.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg2 {
-  transition: 0.6s;
-  position: fixed;
-  top: 54%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg2 {
-    transform: translate(-105%, -50%);
-  }
-}
 .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg2 #IMG2 {
   background-image: url(/wp-content/themes/origintheme/assets/img/interview/page2.png);
   transform: translate(-50%, -50%);
-  transition: 0.6s;
+  transition: 0.3s;
   opacity: 1;
-}
-.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg3 {
-  transition: 0.6s;
-  position: fixed;
-  top: 54%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg3 {
-    transform: translate(-105%, -50%);
-  }
 }
 .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg3 #IMG3 {
   background-image: url(/wp-content/themes/origintheme/assets/img/interview/page3.png);
   transform: translate(-50%, -50%);
-  transition: 0.6s;
+  transition: 0.3s;
   opacity: 1;
-}
-.single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg4 {
-  position: fixed;
-  top: 54%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 999;
-  display: block;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg4 {
-    transform: translate(-105%, -50%);
-  }
 }
 .single-about .pcbox.MASANORI-detail#PCMAINimg.activeimg4 #IMG4 {
   background-image: url(/wp-content/themes/origintheme/assets/img/interview/page4.png);
   transform: translate(-50%, -50%);
   transition: 0.3s;
-  opacity: 1;
-}
-.single-about .pcbox.MASANORI-detail#PCMAINimg.stickeyTOP {
-  position: sticky;
-  top: 22.5%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 998;
-  height: 0;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg.stickeyTOP {
-    top: 19.5%;
-    left: 54%;
-    transform: translate(-114.5%, -50%);
-  }
-}
-@media (max-width: 1050px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg.stickeyTOP {
-    transform: translate(-111.5%, -50%);
-  }
-}
-@media (max-width: 1050px) and (max-height: 800px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg.stickeyTOP {
-    transform: translate(-114.5%, -50%);
-  }
-}
-.single-about .pcbox.MASANORI-detail#PCMAINimg.stickeyBOTTOM {
-  position: sticky;
-  top: 53.5%;
-  left: 50%;
-  transform: translate(-120%, -50%);
-  z-index: 998;
-  height: 0;
-  opacity: 1;
-}
-@media (max-width: 1100px) {
-  .single-about .pcbox.MASANORI-detail#PCMAINimg.stickeyBOTTOM {
-    top: 50.2%;
-    left: 54%;
-    transform: translate(-113.5%, -50%);
-  }
-}
-.single-about .pcbox.YUKI-detail {
   opacity: 1;
 }
 .single-about .pcbox.YUKI-detail#PCMAINimg .IMG {
@@ -7065,6 +6832,12 @@ button {
   transform: translate(-50%, -50%);
   transition: 0.3s;
   opacity: 0;
+}
+@media (max-height: 800px) {
+  .single-about .pcbox.YUKI-detail#PCMAINimg .IMG {
+    height: 34vw;
+    width: 30vw;
+  }
 }
 .single-about .pcbox.YUKI-detail#PCMAINimg.activeimg1 #IMG1 {
   background-image: url(/wp-content/themes/origintheme/assets/img/interview/page5.png);
@@ -7099,12 +6872,16 @@ button {
   position: relative;
   gap: 350px;
 }
-.single-about--content::-webkit-scrollbar {
-  display: none;
-}
 @media (max-width: 1000px) {
   .single-about--content {
     width: 100%;
+    padding: 0;
+    gap: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .single-about--content {
+    gap: 120px;
   }
 }
 .single-about--content .cont {

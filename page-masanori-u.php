@@ -3,8 +3,8 @@ global $wp_path;
 global $site_url;
 
 ?>
-<?php
-get_template_part('./template/head');
+    <?php
+get_template_part('./template/head-singles');
 ?>
 
 <?php get_template_part('./template/header');?>
@@ -54,84 +54,83 @@ get_template_part('./template/head');
     </div>
 
     <div class="single-about">
-        <div id="ClosePCMAINOUtimg"></div>
-        <div id="PCMAINimg" class="pcbox MASANORI-detail">
-            <div id="IMG1" class="IMG"></div>
-            <div id="IMG2" class="IMG"></div>
-            <div id="IMG3" class="IMG"></div>
-            <div id="IMG4" class="IMG"></div>
-        </div>
-        <div id="ABOUT" class="single-about--content inner-content1200">
-            <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page1.png" alt="">
-                <div id="detailCont1" class="cont--textbox rightanim">
-                    <div class="common-titlebox">
-                        <h2 class="title">
+        <div class="single-about--sticky-box inner-content1200">
+            <div id="PCMAINimg" class="pcbox MASANORI-detail">
+                <div id="IMG1" class="IMG"></div>
+                <div id="IMG2" class="IMG"></div>
+                <div id="IMG3" class="IMG"></div>
+                <div id="IMG4" class="IMG"></div>
+            </div>
+            <div id="ABOUT" class="single-about--content">
+                <div class="cont">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page1.png" alt="">
+                    <div id="detailCont1" class="cont--textbox rightanim-single">
+                        <div class="common-titlebox">
+                            <h2 class="title">
                             チームリーダーとして<br>
                             新規導入・保守案件の束ね役に
-                        </h2>
-                    </div>
-                    <p class="cont--textbox--text">
-                        <span class="text">
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
                             現在担当しているのは、主にCOMPANY(R)の新規導入と保守業務です。お客さまから導入の依頼があると、プロジェクトが立ち上がりチームで業務を進めます。導入後は、機能の追加・改善などを行う保守業務に移行。プロジェクトによっては、お客さまと数年がかりのお付き合いになることも珍しくありません。お客さまの要望や必要な機能をまとめるのは、リーダーである私の役目です。ときにはレベルの高い要求もありますが、悩んだ分だけ、やりがいも大きくなる。突破口を拓けたときは、言葉で言い尽くせないほどの高揚感があります。
-                        </span>
-                    </p>
+                            </span>
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page2.png" alt="">
-                <div id="detailCont2" class="cont--textbox rightanim">
-                    <div class="common-titlebox">
-                        <h2 class="title">
+                <div class="cont">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page2.png" alt="">
+                    <div id="detailCont2" class="cont--textbox rightanim-single">
+                        <div class="common-titlebox">
+                            <h2 class="title">
                             研修を受けていたからこそ、<br>
                             いまがある
-                        </h2>
-                    </div>
-                    <p class="cont--textbox--text">
-                        <span class="text">
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
                             人事業務にまつわる管理システムはまだまだ成長段階にあり、COMPANY(R)にかかわる案件は年々増えています。その流れを受けて、お客さまからの要求も高度化しているため、COMPANY事業部では、各プロジェクトを手助けするサポートチームを発足。私もその一員となり、助っ人役として立ち回っています。こうしてチームリーダーや事業部内のエンジニアサポートチームにアサインされていますが、もともとITにまつわるスキルを持ちあわせていたわけではありません。ゼロからのスタートだったので、入社後の研修には大分救われました。世の中に企業がある限り人事領域がなくなることはないので、一生モノのスキルを身につけたといえます。現在はより成長できる環境が整備されており、研修内容が以前にも増して充実しています。
-                        </span>
-                    </p>
+                            </span>
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="cont">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page3.png" alt="">
-                <div id="detailCont3" class="cont--textbox rightanim">
-                    <div class="common-titlebox">
-                        <h2 class="title">
+                <div class="cont">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page3.png" alt="">
+                    <div id="detailCont3" class="cont--textbox rightanim-single">
+                        <div class="common-titlebox">
+                            <h2 class="title">
                             事業部内で受け継がれる、<br>
                             支え合いの精神
-                        </h2>
-                    </div>
-                    <p id="detailCont3" class="cont--textbox--text">
-                        <span class="text">
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
                             まだ新人気分が抜け切らない頃、ピンチヒッターとしてリーダーの代理を任されたことがありました。お客さまとの打ち合わせは緊張しきりでしたが、そのときのプロジェクトマネージャーのフォローがあり、なんとか切り抜けることができました。思えば、あれがエンジニアとして一皮むけた瞬間だったのかもしれません。COMPANY事業部は風通しがいい環境だからこそ、先輩・後輩の垣根を超えた支え合いを重視しているので、私が後輩にサポートしてもらうことも珍しくありません。研修制度が充実していることもあり、後輩たちは早い段階から現場で活躍できるレベルです。後輩たちが活躍する姿は、私にとってもよい刺激になります。
-                        </span>
-                    </p>
+                            </span>
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="cont last">
-                <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page4.png" alt="">
-                <div id="detailCont4" class="cont--textbox rightanim">
-                    <div id="adjustANIM" class="common-titlebox">
-                        <h2 class="title">
+                <div class="cont last">
+                    <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page4.png" alt="">
+                    <div id="detailCont4" class="cont--textbox rightanim-single">
+                        <div class="common-titlebox">
+                            <h2 class="title">
                             お客さまの困りごとを<br>
                             解決するために全力を尽くす
-                        </h2>
-                    </div>
-                    <p class="cont--textbox--text">
-                        <span class="text">
+                            </h2>
+                        </div>
+                        <p class="cont--textbox--text">
+                            <span class="text">
                             モチベーションの源泉は、お客さまからのフィードバックです。「こういうシステムが欲しかったんだよ！」という弾んだ声に、こちらまで嬉しくなります。私の行動原理は至ってシンプルで、お客さまに喜んでいただくために課題を解決したいんです。そんな思いで仕事に打ちこんできましたが、COMPANY(R)を利用されている企業の数だけ課題があり、幅広いニーズに応えていくためには、組織力の強化はもちろんのこと、個人のスキルアップも不可欠。私も後輩のお手本になれるように、率先して社内勉強会などに参加していきたいです。
-                        </span>
-                    </p>
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="bottom-cont"></div>
-        <div id="ClosePCMAINimg"></div>
     </div>
 
     <div id="PDF" class="single-interview-post">

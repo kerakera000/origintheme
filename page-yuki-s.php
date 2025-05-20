@@ -4,7 +4,7 @@ global $site_url;
 
 ?>
 <?php
-get_template_part('./template/head');
+get_template_part('./template/head-singles');
 ?>
 
 <?php get_template_part('./template/header');?>
@@ -64,7 +64,7 @@ get_template_part('./template/head');
             <div id="ABOUT" class="single-about--content">
                 <div class="cont">
                     <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page5.png" alt="">
-                    <div id="detailCont1" class="cont--textbox rightanim">
+                    <div id="detailCont1" class="cont--textbox rightanim-single">
                         <div class="common-titlebox">
                             <h2 class="title">
                             マネージャーと<br>
@@ -81,7 +81,7 @@ get_template_part('./template/head');
 
                 <div class="cont">
                     <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page6.png" alt="">
-                    <div id="detailCont2" class="cont--textbox rightanim">
+                    <div id="detailCont2" class="cont--textbox rightanim-single">
                         <div class="common-titlebox">
                             <h2 class="title">
                             経歴を問わず、だれにでも<br>
@@ -98,14 +98,14 @@ get_template_part('./template/head');
 
                 <div class="cont">
                     <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page7.png" alt="">
-                    <div class="cont--textbox rightanim">
+                    <div id="detailCont3" class="cont--textbox rightanim-single">
                         <div class="common-titlebox">
                             <h2 class="title">
                             「やりたいこと」より<br>
                             「為すべきこと」に価値を置く
                             </h2>
                         </div>
-                        <p id="detailCont3" class="cont--textbox--text">
+                        <p class="cont--textbox--text">
                             <span class="text">
                             かくいう私も入社半年でチームリーダーを任され、その後も着々とキャリアアップを重ねています。大きなターニングポイントは、上長から管理職に就くことを打診されたときです。プレーヤーとして勢いづいていた時期だったので、嬉しい反面、現場に心残りがあったのも事実。一方で、これまで築き上げてきたノウハウは管理職でこそ活かされるのではないか、という思いもありました。決意が固まったのは、上長からのある一言がきっかけです。「『置かれた場所で花を咲かす』という選択肢もある」。この言葉で迷いが吹っ切れ、自身の為すべきことが明確になりました。
                             </span>
@@ -115,8 +115,8 @@ get_template_part('./template/head');
 
                 <div class="cont last">
                     <img class="normal-img leftanim" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/page8.png" alt="">
-                    <div id="detailCont4" class="cont--textbox rightanim">
-                        <div id="adjustANIM" class="common-titlebox">
+                    <div id="detailCont4" class="cont--textbox rightanim-single">
+                        <div class="common-titlebox">
                             <h2 class="title">
                                 事業部のさらなる成長を<br>
                                 見据えて、人材育成に注力

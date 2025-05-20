@@ -32,7 +32,8 @@ body {
 	font-size: 1.4rem;
 	color: $font-color;
 	letter-spacing: 1px;
-
+	touch-action: manipulation;
+	touch-action: pan-x pan-y;
 	&.is-hidden {
 		overflow: hidden;
 	}
@@ -49,6 +50,13 @@ body {
 }
 .wrap {
 	overflow: hidden;
+	width: 100%;
+	transition: opacity .3s;
+	&.js-load{
+		opacity: 1;
+	}
+}
+.single-head{
 	width: 100%;
 	transition: opacity .3s;
 	&.js-load{
