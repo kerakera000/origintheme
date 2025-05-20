@@ -14,16 +14,20 @@ get_template_part('./template/head');
         <video src="<?php echo get_template_directory_uri(); ?>/assets/video/bg.mp4" autoplay muted loop playsinline></video>
     </div>
 
-    <div class="Phero archive-interview-Phero">
-        <div class="Phero--cont inner-content1200">
+    <div id="Pherolist" class="Phero archive-interview-Phero">
+        <div id="PherolistBox" class="Phero--cont inner-content1200">
             <div class="Phero--textbox">
-                <h2 class="common-titlebox">
-                    <span class="title">Interview</span>
-                    <span class="sub-title">インタビュー</span>
-                </h2>
+                <div class="common-titlebox">
+                    <p id="Ctitle" class="title page-title">
+                        <span id="Ctitle-text" class="text">Interview</span>
+                    </p>
+                    <p id="Csubtitle" class="sub-title">
+                        <span id="Csubtitle-text" class="text">インタビュー</span>
+                    </p>
+                </div>
             </div>
             <div class="Phero--imgbox">
-                <p class="breadcrumbs">Top - Interview</p>
+                <p class="breadcrumbs">Top - <span class="text">Interview</span></p>
             </div>
         </div>
     </div>
@@ -31,17 +35,32 @@ get_template_part('./template/head');
     <div class="p-interview-archive">
         <div class="content">
             <div class="p-interview-archive__list">
-                <a class="item inner-content1200" href="/masanori-u">
+                <div class="content-back"></div>
+                <a class="item inner-content1200 item1" href="/masanori-u">
                     <div class="item__content">
-                        <p class="number">(Interview 01)</p>
-                        <h2 class="item-title">Masanori.U</h2>
-                        <p class="join">エンジニア / 2018年入社（中途）</p>
+                        <p class="number">
+                            <span class="number-text">
+                                (Interview 01)
+                            </span>
+                        </p>
+                        <h2 class="item-title">
+                            <span class="text">
+                                Masanori.U
+                            </span>
+                        </h2>
+                        <p class="join">
+                            <span class="text">
+                                エンジニア / 2018年入社（中途）
+                            </span>
+                        </p>
                         <p class="explanation">
                             <span class="text">
-                            「課題解決」という、
+                                <span class="back"></span>
+                                <span class="cont">「課題解決」という、</span>
                             </span>
                             <span class="text">
-                            真っ直ぐな思いに突き動かされて
+                                <span class="back"></span>
+                                <span class="cont">真っ直ぐな思いに突き動かされて</span>
                             </span>
                         </p>
 
@@ -62,31 +81,54 @@ get_template_part('./template/head');
                     </div>
                     <div class="item__thumbnail">
                         <span class="number">
-                            (Interview 01)
+                            <span class="number-text">
+                                (Interview 01)
+                            </span>
                         </span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview1.png" alt="" />
+                        <div class="imgbox PC-img">
+                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview1.png" alt="" />
+                        </div>
+                        <div class="imgbox SP-img">
+                            <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewsp1.png" alt="" />
+                        </div>
                         <p class="explanation">
                             <span class="text">
-                            「課題解決」という、
+                                <span class="back"></span>
+                                <span class="cont">「課題解決」という、</span>
                             </span>
                             <span class="text">
-                            真っ直ぐな思いに突き動かされて
+                                <span class="back"></span>
+                                <span class="cont">真っ直ぐな思いに突き動かされて</span>
                             </span>
                         </p>
                     </div>
                 </a>
 
-                <a class="item inner-content1200" href="/yuki-s">
+                <a class="item inner-content1200 interviewanim" href="/yuki-s">
                     <div class="item__content">
-                        <p class="number">(Interview 02)</p>
-                        <h2 class="item-title">Yuki.S</h2>
-                        <p class="join">エンジニア / 2022年入社（中途）</p>
+                        <p class="number">
+                            <span class="number-text">
+                                (Interview 02)
+                            </span>
+                        </p>
+                        <h2 class="item-title">
+                            <span class="text">
+                                Yuki.S
+                            </span>
+                        </h2>
+                        <p class="join">
+                            <span class="text">
+                                エンジニア / 2022年入社（中途）
+                            </span>
+                        </p>
                         <p class="explanation">
                             <span class="text">
-                            事業部のために、自身が
+                                <span class="back"></span>
+                                <span class="cont">事業部のために、自身が</span>
                             </span>
                             <span class="text">
-                            「為すべきこと」を突き詰める
+                                <span class="back"></span>
+                                <span class="cont">「為すべきこと」を突き詰める</span>
                             </span>
                         </p>
 
@@ -100,6 +142,7 @@ get_template_part('./template/head');
                                 </span>
                             </p>
                             <span class="arrow-right">
+                                <div class="normal-imgbox">
                                 <img class="normal-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
                                 <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
                             </span>
@@ -107,31 +150,56 @@ get_template_part('./template/head');
                     </div>
                     <div class="item__thumbnail">
                         <span class="number">
-                            (Interview 02)
+                            <span class="number-text">
+                                (Interview 02)
+                            </span>
                         </span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview2.png" alt="" />
+                        <div class="imgbox">
+                            <div class="imgbox PC-img">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview2.png" alt="" />
+                            </div>
+                            <div class="imgbox SP-img">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewsp2.png" alt="" />
+                            </div>
+                        </div>
                         <p class="explanation">
                             <span class="text">
-                            事業部のために、自身が
+                                <span class="back"></span>
+                                <span class="cont">事業部のために、自身が</span>
                             </span>
                             <span class="text">
-                            「為すべきこと」を突き詰める
+                                <span class="back"></span>
+                                <span class="cont">「為すべきこと」を突き詰める</span>
                             </span>
                         </p>
                     </div>
                 </a>
 
-                <a class="item inner-content1200" href="/risa-t">
+                <a class="item inner-content1200 interviewanim" href="/risa-t">
                     <div class="item__content">
-                        <p class="number">(Interview 03)</p>
-                        <h2 class="item-title">Risa.T</h2>
-                        <p class="join">エンジニア / 2022年入社（中途）</p>
+                        <p class="number">
+                            <span class="number-text">
+                                (Interview 03)
+                            </span>
+                        </p>
+                        <h2 class="item-title">
+                            <span class="text">
+                                Risa.T
+                            </span>
+                        </h2>
+                        <p class="join">
+                            <span class="text">
+                                エンジニア / 2022年入社（中途）
+                            </span>
+                        </p>
                         <p class="explanation">
                             <span class="text">
-                            事業部ならではの
+                                <span class="back"></span>
+                                <span class="cont">事業部ならではの</span>
                             </span>
                             <span class="text">
-                            「人のよさ」が個人の成長を促す
+                                <span class="back"></span>
+                                <span class="cont">「人のよさ」が個人の成長を促す</span>
                             </span>
                         </p>
 
@@ -152,15 +220,26 @@ get_template_part('./template/head');
                     </div>
                     <div class="item__thumbnail">
                         <span class="number">
-                            (Interview 03)
+                            <span class="number-text">
+                                (Interview 03)
+                            </span>
                         </span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview3.png" alt="" />
+                        <div class="imgbox">
+                            <div class="imgbox PC-img">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interview3.png" alt="" />
+                            </div>
+                            <div class="imgbox SP-img">
+                                <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/interview/interviewsp3.png" alt="" />
+                            </div>
+                        </div>
                         <p class="explanation">
                             <span class="text">
-                            事業部ならではの
+                                <span class="back"></span>
+                                <span class="cont">事業部ならではの</span>
                             </span>
                             <span class="text">
-                            「人のよさ」が個人の成長を促す
+                                <span class="back"></span>
+                                <span class="cont">「人のよさ」が個人の成長を促す</span>
                             </span>
                         </p>
                     </div>
@@ -169,7 +248,7 @@ get_template_part('./template/head');
         </div>
     </div>
 
-    <div class="Entry entry-interview">
+    <div class="Entry">
         <div class="inner-content">
             <div class="common-titlebox center">
                 <h2 class="title">Entry</h2>

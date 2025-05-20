@@ -390,7 +390,7 @@
                 position: relative;
                 overflow: hidden;
                 .normal{
-                    @include fosan;
+                    @include fosanjp;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 500;
@@ -405,7 +405,7 @@
                     transition: all 0.3s ease;
                 }
                 .hover{
-                    @include fosan;
+                    @include fosanjp;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 500;
@@ -447,27 +447,27 @@
     &.scroll-down{
         width: 130px;
         height: 40px;
-        position: relative;
-        margin: auto 0px 48px 0;
         z-index: 10;
         opacity: 0;
         transition: all 0.3s ease;
         transform: translateY(10px);
         margin-left: auto;
+        position: absolute;
+        bottom: 30px;
+        margin: 0;
+        right: 20px;
         @media screen and (max-width:660px) {
-            width: 80px;
-            position: absolute;
-            bottom: 115px;
-            right: 0;
-            margin: 0;
+            width: 100px;
+            right: 0px;
+            bottom: 70px;
         }
-        @media screen and (max-width:375px) {
-            bottom: 15px;
+        @media screen and (max-width:426px) {
+            bottom: 20.5vh;
+            right: 10px;
         }
         &.active{
             opacity: 1;
             transition: all 0.3s ease;
-            transform: translateY(0px);
         }
         &.scroll-active{
             opacity: 0;
@@ -517,6 +517,20 @@
     }
 }
 
+.rightanim-single {
+    @media screen and (max-width: 1000px) {
+        opacity: 0;
+        transform: translateX(20px);
+        transition: all 0.6s ease;
+    }
+    &.active {
+        @media screen and (max-width: 1000px) {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
 .leftanim {
     opacity: 0;
     transform: translateX(-20px);
@@ -533,6 +547,25 @@
     transition: all 0.6s ease;
     &.active {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
+    }
+}
+.bottomanim-type1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bottomanim-type2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    &.active {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

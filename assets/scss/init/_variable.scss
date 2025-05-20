@@ -92,16 +92,16 @@ $font-dir : "../fonts";
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @mixin fosan {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans", sans-serif;
 }
 @mixin fosanjp {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "YakuHanJP", "Noto Sans JP", sans-serif;
 }
 @mixin poppins {
-  font-family: "Poppins", sans-serif;
+  font-family: "YakuHanJP", "Poppins", sans-serif;
 }
 @mixin marcellus {
-  font-family: "Marcellus", sans-serif;
+  font-family: "YakuHanJP", "Marcellus", sans-serif;
 }
 //ゴシック
 @mixin fogo {
@@ -109,6 +109,13 @@ $font-dir : "../fonts";
   font-family:"Zen Kaku Gothic New", 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 
 }
+@mixin yakuhanjp {
+  font-family: "YakuHanJP", sans-serif;
+}
+.yakuhanjp {
+  font-family: "YakuHanJP", sans-serif;
+}
+
 @mixin foopensa {
   font-family: "Open Sans", serif;
 }
@@ -126,6 +133,8 @@ $font-dir : "../fonts";
 @mixin web-font03 {
   //font-family: 'futura-condensed-bold', sans-serif;
 }
+
+
 
 //  ------------------------------------
 //   FORM設定

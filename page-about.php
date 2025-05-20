@@ -9,7 +9,7 @@ get_template_part('./template/head');
 
 <?php get_template_part('./template/header');?>
 
-<main class="main-layout">
+<main id="pageTop" class="main-layout">
     <div class="videobg">
         <video src="<?php echo get_template_directory_uri(); ?>/assets/video/bg.mp4" autoplay muted loop playsinline></video>
     </div>
@@ -63,7 +63,7 @@ get_template_part('./template/head');
                 </div>
             </div>
             <div class="Phero--imgbox">
-                <p class="breadcrumbs">Top - About Us</p>
+                <p class="breadcrumbs">Top - <span class="text">About Us</span></p>
                 <img id="HeroImg" class="hero-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/top/aboutimg.png" alt="">
             </div>
         </div>
@@ -74,9 +74,10 @@ get_template_part('./template/head');
                 セラクのCOMPANY事業部では、総合人事システムCOMPANY(R)の新規導入から運用に至るまで、幅広いサポートを提供しています。属人化の撤廃や工数削減、業務効率化など、お客さまが抱える人事業務の課題を解決し、事業成長を力強く後押しします。私たちは数々の大手企業から信頼をいただき、社会の基盤を支えるパートナーとしての役割を果たしています。
             </span>
         </p>
+        <div id="MISSION"></div>
     </div>
 
-    <div id="MISSION" class="PAmission">
+    <div class="PAmission">
         <div class="inner-content1200">
             <div class="common-titlebox left">
                 <span class="sub-title">Mission</span>
@@ -85,10 +86,10 @@ get_template_part('./template/head');
         </div>
         <p class="text inner-content1200">
             <span class="text--title">
-                顧客とともに伴走し、事業成長に貢献する
+                顧客とともに伴走し、<br class="sp">事業成長に貢献する
             </span>
             <span class="text--content">
-            統合人事システムCOMPANY(R)は、プログラミングの知識がない人事担当者でもノーコードでシステムを改修できますが、新規導入や運用/保守には、私たちプロのサポートが必要不可欠です。セラクCOMPANY事業部は、お客さまがコア業務に集中できるよう最適な環境を整える伴走者となり、その先にある事業成長を後押しすること。それが私たちの果たすべきミッションです。
+                統合人事システムCOMPANY(R)は、プログラミングの知識がない人事担当者でもノーコードでシステムを改修できますが、新規導入や運用/保守には、私たちプロのサポートが必要不可欠です。セラクCOMPANY事業部は、お客さまがコア業務に集中できるよう最適な環境を整える伴走者となり、その先にある事業成長を後押しすること。それが私たちの果たすべきミッションです。
             </span>
         </p>
 
@@ -100,20 +101,110 @@ get_template_part('./template/head');
                         <div class="swiper-slide">
                             <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide min">
                             <img src="<?= $wp_path; ?>/assets/img/mission/mission2.png" alt="About">
                         </div>
                         <div class="swiper-slide">
                             <img src="<?= $wp_path; ?>/assets/img/mission/mission3.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission4.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission5.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission6.png" alt="About">
                         </div>
                         <div class="swiper-slide">
                             <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
                         </div>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide min">
                             <img src="<?= $wp_path; ?>/assets/img/mission/mission2.png" alt="About">
                         </div>
                         <div class="swiper-slide">
                             <img src="<?= $wp_path; ?>/assets/img/mission/mission3.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission4.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission5.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission6.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission2.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission3.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission4.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission5.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission6.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission2.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission3.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission4.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission5.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission6.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission2.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission3.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission4.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission5.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission6.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission1.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission2.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission3.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission4.png" alt="About">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission5.png" alt="About">
+                        </div>
+                        <div class="swiper-slide min">
+                            <img src="<?= $wp_path; ?>/assets/img/mission/mission6.png" alt="About">
                         </div>
                     </div>
 
@@ -139,7 +230,7 @@ get_template_part('./template/head');
             </div>
             <div class="textbox">
                 <p class="text">
-                人事業務は時代とともに複雑化しており、お客さまの数だけ課題があるといっても過言ではありません。COMPANY事業部では業界トップクラスのメンバー体制のほか、COMPANY(R)実機環境を取り入れたプロフェッショナルの育成にも注力。こうした取り組みがセラクの強みとなり、お客さまとの信頼関係を築く基盤になっています。
+                    人事業務は時代とともに複雑化しており、お客さまの数だけ課題があるといっても過言ではありません。COMPANY事業部では業界トップクラスのメンバー体制のほか、COMPANY(R)実機環境を取り入れたプロフェッショナルの育成にも注力。こうした取り組みがセラクの強みとなり、お客さまとの信頼関係を築く基盤になっています。
                 </p>
             </div>
         </div>
@@ -152,7 +243,7 @@ get_template_part('./template/head');
                     導入から運用まで手厚くサポート
                     </h3>
                     <p class="card--text">
-                    セラクは、COMPANY(R)︎の新規導入から運用まで一貫した体制で、お客さまをサポートしています。稼働後のサポート体制も充実しており、お客さまの困りごとにリモートで対応するほか、セラクの従業員がお客さまのもとに半常駐・常駐するプランも用意。最短ルートで業務改革に貢献します。
+                        セラクは、COMPANY(R)︎の新規導入から運用まで一貫した体制で、お客さまをサポートしています。稼働後のサポート体制も充実しており、お客さまの困りごとにリモートで対応するほか、セラクの従業員がお客さまのもとに半常駐・常駐するプランも用意。最短ルートで業務改革に貢献します。
                     </p>
                 </div>
                 <div class="card">
@@ -345,7 +436,7 @@ get_template_part('./template/head');
                             </div>
                         </td>
                         <td class="table-cell noborder">
-                            <h3 class="title">未経験者の割合</h3>
+                            <h3 class="title">未経験からの入社率</h3>
                             <div class="imgbox">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Pnumber/num5.svg" alt="">
                             </div>
@@ -413,7 +504,7 @@ get_template_part('./template/head');
     </div>
 
     <div class="Pcareers">
-        <div class="Pcareers--cont inner-content1200">
+        <a href="/career" class="Pcareers--cont inner-content1200">
             <div class="common-titlebox flex">
                 <span class="next">(Next)</span>
                 <h2 class="title">Career</h2>
@@ -423,10 +514,10 @@ get_template_part('./template/head');
             <button class="more-button">
                 <p class="text">
                     <span class="normal">
-                    View More
+                    View Next
                     </span>
                     <span class="hover">
-                    View More
+                    View Next
                     </span>
                 </p>
                 <span class="arrow-right">
@@ -434,10 +525,10 @@ get_template_part('./template/head');
                     <img class="hover-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/newsitem/arrownews.svg" alt="">
                 </span>
             </button>
-        </div>
+        </a>
     </div>
 
-    <div class="Entry top">
+    <div class="Entry">
         <div class="inner-content">
             <div class="common-titlebox center">
                 <h2 class="title">Entry</h2>

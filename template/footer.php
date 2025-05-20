@@ -11,7 +11,7 @@ wp_reset_postdata();
         <div class="footer-content">
             <img class="footer-content--logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.svg" alt="">
             <div id="" class="footer--linkbox">
-                <a class="link" href="/#ABOUT">
+                <a class="link" href="/about">
                     <span class="text">
                     About Us
                     </span>
@@ -19,15 +19,15 @@ wp_reset_postdata();
                     About Us
                     </span>
                 </a>
-                <a class="link" href="/#HOWTOUSE">
+                <a class="link" href="/career">
                     <span class="text">
-                    Career Step
+                    Career
                     </span>
                     <span class="hover">
-                    Career Step
+                    Career
                     </span>
                 </a>
-                <a class="link" href="/#SHOPINFO">
+                <a class="link" href="/interview">
                     <span class="text">
                     Interview
                     </span>
@@ -35,12 +35,12 @@ wp_reset_postdata();
                     Interview
                     </span>
                 </a>
-                <a class="link" href="/#RESERVE">
+                <a class="link" href="/profile">
                     <span class="text">
-                    Company
+                    Profile
                     </span>
                     <span class="hover">
-                    Company
+                    Profile
                     </span>
                 </a>
                 <a class="link" href="/#RESERVE">

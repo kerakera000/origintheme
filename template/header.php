@@ -8,17 +8,14 @@ global $site_url;
         <a href="/">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.svg" alt="">
         </a>
-        <a href="" class="link">
+        <p class="link">
             <span class="text">
                 COMPANY事業部 採用サイト
             </span>
-            <span class="hover">
-                COMPANY事業部 採用サイト
-            </span>
-        </a>
+        </p>
     </div>
     <div id="SPHEADER" class="header--linkbox">
-        <a class="link" href="/#ABOUT">
+        <a class="link" href="/about">
             <span class="text">
             About Us
             </span>
@@ -29,7 +26,7 @@ global $site_url;
             COMPANY事業部について
             </span>
         </a>
-        <a class="link" href="/#CAREER">
+        <a class="link" href="/career">
             <span class="text">
             Career
             </span>
@@ -40,7 +37,7 @@ global $site_url;
             キャリア・研修について
             </span>
         </a>
-        <a class="link" href="/#INTERVIEW">
+        <a class="link" href="/interview">
             <span class="text">
             Interview
             </span>
@@ -51,12 +48,12 @@ global $site_url;
             社員インタビュー
             </span>
         </a>
-        <a class="link" href="/company">
+        <a class="link" href="/profile">
             <span class="text">
-            Company
+            Profile
             </span>
             <span class="hover">
-            Company
+            Profile
             </span>
             <span class="sp">
             会社情報
@@ -82,10 +79,10 @@ global $site_url;
                     <p class="normal">中途採用</p>
                     <p class="hover">中途採用</p>
                 </a>
-                <a href="/entry" class="entry-linkbox-link">
+                <!-- <a href="/entry" class="entry-linkbox-link">
                     <p class="normal">カジュアル面談</p>
                     <p class="hover">カジュアル面談</p>
-                </a>
+                </a> -->
             </div>
         </div>
 

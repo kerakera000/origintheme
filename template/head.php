@@ -13,6 +13,7 @@ global $site_url;
   <meta name="apple-mobile-web-app-status-bar-style" content="default ">
   <!-- favicon -->
   <link rel="shortcut icon" href="<?= $wp_path?>/assets/img/favicon/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanjp.css">
 
   <?php
   get_template_part ('./include/seo');
@@ -23,6 +24,7 @@ global $site_url;
   ?>
   <link rel="stylesheet" href="<?= $wp_path; ?>/assets/scss/app.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@4.1.1/dist/css/yakuhanjp.css">
 
   <!-- JS Library -->
   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
