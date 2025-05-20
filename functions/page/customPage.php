@@ -6,38 +6,8 @@
 function create_custom_pages_with_optional_parents() {
   $pages = [
     [
-      'title' => 'COMPANY事業部について',
+      'title' => 'ABOUT',
       'slug' => 'about',
-      'parent_slug' => '',
-    ],
-    [
-      'title' => 'キャリア研修について',
-      'slug' => 'career',
-      'parent_slug' => '',
-    ],
-    [
-      'title' => '会社情報',
-      'slug' => 'profile',
-      'parent_slug' => '',
-    ],
-    [
-      'title' => 'インタビュー',
-      'slug' => 'interview',
-      'parent_slug' => '',
-    ],
-    [
-      'title' => 'Masanori.U',
-      'slug' => 'masanori-u',
-      'parent_slug' => '',
-    ],
-    [
-      'title' => 'Yuki.S',
-      'slug' => 'yuki-s',
-      'parent_slug' => '',
-    ],
-    [
-      'title' => 'Risa.T',
-      'slug' => 'risa-t',
       'parent_slug' => '',
     ],
   ];
