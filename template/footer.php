@@ -11,44 +11,52 @@ wp_reset_postdata();
         <div class="footer-content">
             <img class="footer-content--logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.svg" alt="">
             <div id="" class="footer--linkbox">
+                <a class="link" href="/">
+                    <span class="text">
+                    TOP
+                    </span>
+                    <span class="hover">
+                    TOP
+                    </span>
+                </a>
                 <a class="link" href="/about">
                     <span class="text">
-                    About Us
+                    ABOUT US
                     </span>
                     <span class="hover">
-                    About Us
+                    ABOUT US
                     </span>
                 </a>
-                <a class="link" href="/career">
+                <a class="link" href="/service">
                     <span class="text">
-                    Career
+                    SERVICE
                     </span>
                     <span class="hover">
-                    Career
+                    SERVICE
                     </span>
                 </a>
-                <a class="link" href="/interview">
+                <a class="link" href="/news">
                     <span class="text">
-                    Interview
+                    NEWS
                     </span>
                     <span class="hover">
-                    Interview
+                    NEWS
                     </span>
                 </a>
-                <a class="link" href="/profile">
+                <a class="link" href="/access">
                     <span class="text">
-                    Profile
+                    ACCESS
                     </span>
                     <span class="hover">
-                    Profile
+                    ACCESS
                     </span>
                 </a>
-                <a class="link" href="/#RESERVE">
+                <a class="link contact-link" href="/contact">
                     <span class="text">
-                    Entry
+                    お問い合わせ
                     </span>
                     <span class="hover">
-                    Entry
+                    お問い合わせ
                     </span>
                 </a>
             </div>
