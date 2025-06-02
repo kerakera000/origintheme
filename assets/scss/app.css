@@ -21,6 +21,17 @@
   padding-top: 94px;
 }
 
+.common-image {
+  width: 100%;
+  height: 100%;
+}
+.common-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /* CSS Document */
 /*
   ------------------------------------

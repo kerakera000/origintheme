@@ -16,6 +16,7 @@ get_template_part('./template/head');
             <div class="common-image">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/bnr03.png" alt="">
             </div>
+
         </div>
         <?php get_template_part('./template/banner'); ?>
     </div>
