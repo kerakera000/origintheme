@@ -1,1 +1,49 @@
 @use "../init/index" as *;
+
+
+.ViewMore-Common{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    &__text{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 180%;
+        transition: all 0.3s ease;
+    }
+    &:hover{
+        .ViewMore-Common__text{
+            text-decoration: underline;
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+.Card-Common{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    &__title{
+        font-size: 42px;
+        font-weight: 500;
+        line-height: 180%;
+        margin-bottom: 14px;
+    }
+    &__text{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 180%;
+        margin-bottom: 43px;
+    }
+}
+
+.max-1440{
+    max-width: 1440px;
+}
+
+.max-1080{
+    max-width: 1080px;
+}
+

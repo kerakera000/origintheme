@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="253" height="253" viewBox="0 0 253 253">
+  <g id="グループ_65" data-name="グループ 65" transform="translate(-1102 -599)">
+    <g id="楕円形_3" data-name="楕円形 3" transform="translate(1102 599)" fill="none" stroke="#1c1c1c" stroke-width="1" stroke-dasharray="1 1">
+      <circle cx="126.5" cy="126.5" r="126.5" stroke="none"/>
+      <circle cx="126.5" cy="126.5" r="126" fill="none"/>
+    </g>
+    <text id="SCROLL" transform="translate(1231 710)" fill="#272727" font-size="12" font-family="Gotham-Medium, Gotham" font-weight="500" letter-spacing="1.2em"><tspan x="-61.128" y="0">SCROLL</tspan></text>
+    <text id="DOWN" transform="translate(1231 745)" fill="#272727" font-size="12" font-family="Gotham-Medium, Gotham" font-weight="500" letter-spacing="1.2em"><tspan x="-42.594" y="0">DOWN</tspan></text>
+  </g>
+</svg>
