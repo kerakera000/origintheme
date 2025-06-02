@@ -10,6 +10,8 @@
 @use "init/variable" as vars;
 
 /* Layout Components */
+@use "layout/00-banner" as banner;
+@use "layout/00-content-header" as content-header;
 @use "layout/00-footer" as footer;
 @use "layout/00-header" as header;
 @use "layout/00-sidebar" as sidebar;

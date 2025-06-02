@@ -1,1 +1,19 @@
 @use "../init/index" as *;
+
+// トップページ専用
+.front-page{
+    padding: 32px 0 0;
+    @media screen and (max-width: 1080px) {
+        padding: 32px 32px 0;
+    }
+}
+
+// コンテンツ幅
+.max-content {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 94px;
+}
+
+

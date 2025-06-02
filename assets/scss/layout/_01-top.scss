@@ -1,6 +1,16 @@
 @use "../init/index" as *;
 
-
+.front-page-content{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 1800px;
+    .front-page-content-left{
+        width: 100%;
+        max-width: 780px;
+    }
+}
 
 
 // 投稿系
