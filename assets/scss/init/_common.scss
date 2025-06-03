@@ -1,6 +1,13 @@
 @use "../init/index" as *;
 
-// トップページ専用
+// よく使用する色
+$color-common-pink: #E21C43;
+$color-common-black: #333333;
+$color-common-white: #FFFFFF;
+
+$color-button-type1: #E33435;
+
+$color-border-type1: #E21C43;
 .front-page{
     padding: 32px 0 0;
     @media screen and (max-width: 1080px) {
@@ -27,3 +34,127 @@
     }
 }
 
+.common-titlebox-underline{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 13px;
+    width: 100%;
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 13px;
+        .icon{
+            width: 21px;
+            height: 21px;
+        }
+        .text{
+            font-size: 20px;
+            color: $color-common-pink;
+        }
+    }
+    .underline{
+        width: 100%;
+        height: 2px;
+        background-color: $color-common-pink;
+    }
+}
+
+.common-titlebox-label{
+    padding: 10px 22px 9px;
+    background-color: $color-common-pink;
+    border-radius: 4px;
+    .title{
+        font-size: 20px;
+        color: $color-common-white;
+    }
+}
+
+
+.common-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-common-black;
+}
+
+.common-popularity-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: $color-common-white;
+    border: 1px solid #ffffff00;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    &.half-width{
+        @include gaps(24px, 2);
+        justify-content: flex-start;
+        padding: 0 28px;
+    }
+    .text{
+        font-family: 15px;
+        color: $color-common-pink;
+        margin: 12px 0;
+    }
+    .icon{
+        width: 8px;
+        height: 14px;
+        position: absolute;
+        right: 28px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &:hover{
+        background-color: $color-button-type1;
+        border: 1px solid $color-border-type1;
+        transition: all 0.3s ease;
+        opacity: 1;
+        .text{
+            color: $color-common-white;
+        }
+        .icon{
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+
+.common-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 20px;
+    transition: box-shadow 0.2s;
+    &:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    &__image {
+        width: 100%;
+        aspect-ratio: 16/9;
+        background: #e0e0e0;
+        border-radius: 0px;
+        margin-bottom: 13px;
+        img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+        }
+    }
+    &__title {
+        color: #ff4b5c;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    &__desc {
+        color: #333;
+        font-size: 13px;
+    }
+}

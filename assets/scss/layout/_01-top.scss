@@ -5,10 +5,81 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    height: 1800px;
-    .front-page-content-left{
+    &__left{
         width: 100%;
         max-width: 780px;
+        .front-bunner-box{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 30px;
+            margin-bottom: 48px;
+        }
+        // タイトル下のテキスト
+        .front-explane-text{
+            margin: 21px 0 23px;
+        }
+
+        .front-explane-text-label{
+            margin: 16px 24px 22px;
+        }
+
+        .front-popularity-box{
+            margin-bottom: 36px;
+            &__buttons{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                gap: 20px 24px;
+            }
+        }
+
+        .front-newitem-box{
+            margin-bottom: 40px;
+            &__list{
+                position: relative;
+                #SwiperNewItem {
+                    .swiper-wrapper {
+                        display: flex;
+                        align-items: stretch;
+                        justify-content: flex-start;
+                    }
+                
+                    .swiper-slide {
+                        height: auto;
+                        display: flex;
+                        align-items: stretch;
+                        // カードの影や余白
+                        margin-right: 0;
+                    }
+                }
+                // ナビゲーションボタン
+                .swiper-button-next,
+                .swiper-button-prev {
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: #ff4b5c;
+                    color: #fff;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+                    &:after {
+                        font-size: 20px;
+                    }
+                }
+                .swiper-button-prev {
+                    left: -20px;
+                }
+                .swiper-button-next {
+                    right: -20px;
+                }
+            }
+        }
     }
 }
 
@@ -402,6 +473,22 @@
     100% {
         transform: translateX(-100%);
     }
+}
+
+// レスポンシブ対応
+@media (max-width: 900px) {
+  .front-newitem-box__list #SwiperNewItem .swiper-slide {
+    max-width: 320px;
+  }
+}
+@media (max-width: 600px) {
+  .front-newitem-box__list #SwiperNewItem .swiper-slide {
+    max-width: 90vw;
+  }
+  .front-newitem-box__list #SwiperNewItem .swiper-button-next,
+  .front-newitem-box__list #SwiperNewItem .swiper-button-prev {
+    display: none;
+  }
 }
 
 

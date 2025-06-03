@@ -1,38 +1,40 @@
 // 通常のjs
 console.log('common.js');
+const mySwiper = new Swiper('#SwiperNewItem', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 24,
+   
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+   
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+   
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
 
-window.addEventListener('load', () => {
-    const typebox = document.querySelector('#typeboX1');
-    const categorybox = document.querySelector('#categorybox1');
-
-    if (typebox && categorybox) {
-        const updateHeight = () => {
-            const typeboxHeight = typebox.offsetHeight;
-            categorybox.style.height = `${typeboxHeight}px`;
-        };
-
-        const observer = new MutationObserver(updateHeight);
-        observer.observe(typebox, { attributes: true, childList: true, subtree: true });
-
-        updateHeight();
-        window.addEventListener('resize', updateHeight);
-    }
+    // レスポンシブ設定
+    // breakpoints: {
+    //   // 600px未満の場合
+    //   600: {
+    //     slidesPerView: 1,
+    //     spaceBetween: 16
+    //   },
+    //   // 900px未満の場合
+    //   900: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 20
+    //   }
+    // }
 });
-
 window.addEventListener('load', () => {
-    const typebox = document.querySelector('#typeboX2');
-    const categorybox = document.querySelector('#categorybox2');
-
-    if (typebox && categorybox) {
-        const updateHeight = () => {
-            const typeboxHeight = typebox.offsetHeight;
-            categorybox.style.height = `${typeboxHeight}px`;
-        };
-
-        const observer = new MutationObserver(updateHeight);
-        observer.observe(typebox, { attributes: true, childList: true, subtree: true });
-
-        updateHeight();
-        window.addEventListener('resize', updateHeight);
-    }
 });
