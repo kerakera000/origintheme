@@ -157,6 +157,42 @@
   font-size: 13px;
 }
 
+.common-flexbox-list {
+  position: relative;
+}
+.common-flexbox-list .swiper .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+.common-flexbox-list .swiper .swiper-slide {
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  margin-right: 0;
+}
+.common-flexbox-list .swiper-button-next,
+.common-flexbox-list .swiper-button-prev {
+  top: 50%;
+  transform: translateY(-50%);
+  background: #E21D1E;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+.common-flexbox-list .swiper-button-next:after,
+.common-flexbox-list .swiper-button-prev:after {
+  font-size: 20px;
+}
+.common-flexbox-list .swiper-button-prev {
+  left: -20px;
+}
+.common-flexbox-list .swiper-button-next {
+  right: -20px;
+}
+
 /* CSS Document */
 /*
   ------------------------------------
@@ -1060,40 +1096,11 @@ button {
 .front-page-content__left .front-newitem-box {
   margin-bottom: 40px;
 }
-.front-page-content__left .front-newitem-box__list {
-  position: relative;
+.front-page-content__left .front-attention-box {
+  margin-bottom: 27px;
 }
-.front-page-content__left .front-newitem-box__list #SwiperNewItem .swiper-wrapper {
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-start;
-}
-.front-page-content__left .front-newitem-box__list #SwiperNewItem .swiper-slide {
-  height: auto;
-  display: flex;
-  align-items: stretch;
-  margin-right: 0;
-}
-.front-page-content__left .front-newitem-box__list .swiper-button-next,
-.front-page-content__left .front-newitem-box__list .swiper-button-prev {
-  top: 50%;
-  transform: translateY(-50%);
-  background: #ff4b5c;
-  color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-}
-.front-page-content__left .front-newitem-box__list .swiper-button-next:after,
-.front-page-content__left .front-newitem-box__list .swiper-button-prev:after {
-  font-size: 20px;
-}
-.front-page-content__left .front-newitem-box__list .swiper-button-prev {
-  left: -20px;
-}
-.front-page-content__left .front-newitem-box__list .swiper-button-next {
-  right: -20px;
+.front-page-content__left .front-thisweek-headquarters-box {
+  margin-bottom: 40px;
 }
 
 .post-content {

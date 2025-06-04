@@ -79,6 +79,7 @@ $color-border-type1: #E21C43;
     color: $color-common-black;
 }
 
+// 人気ボタン
 .common-popularity-button{
     width: 100%;
     display: flex;
@@ -121,6 +122,7 @@ $color-border-type1: #E21C43;
     }
 }
 
+// カード
 .common-card {
     width: 100%;
     display: flex;
@@ -156,5 +158,45 @@ $color-border-type1: #E21C43;
     &__desc {
         color: #333;
         font-size: 13px;
+    }
+}
+// フレックスボックスリスト
+.common-flexbox-list{
+    position: relative;
+    .swiper {
+        .swiper-wrapper {
+            display: flex;
+            align-items: stretch;
+            justify-content: flex-start;
+        }
+    
+        .swiper-slide {
+            height: auto;
+            display: flex;
+            align-items: stretch;
+            // カードの影や余白
+            margin-right: 0;
+        }
+    }
+    // ナビゲーションボタン
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: 50%;
+        transform: translateY(-50%);
+        background: #E21D1E;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        &:after {
+            font-size: 20px;
+        }
+    }
+    .swiper-button-prev {
+        left: -20px;
+    }
+    .swiper-button-next {
+        right: -20px;
     }
 }
