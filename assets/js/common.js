@@ -3,9 +3,9 @@ console.log('common.js');
 const mySwiper = new Swiper('#SwiperNewItem', {
     // Optional parameters
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 1.5,
     spaceBetween: 24,
-   
+    centeredSlides: true,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
@@ -23,18 +23,13 @@ const mySwiper = new Swiper('#SwiperNewItem', {
     },
 
     // レスポンシブ設定
-    // breakpoints: {
-    //   // 600px未満の場合
-    //   600: {
-    //     slidesPerView: 1,
-    //     spaceBetween: 16
-    //   },
-    //   // 900px未満の場合
-    //   900: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 20
-    //   }
-    // }
+    breakpoints: {
+      // 600px未満の場合
+      600: {
+        slidesPerView: 3,
+        spaceBetween: 24
+      },
+    }
 });
 window.addEventListener('load', () => {
 });

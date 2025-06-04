@@ -35,4 +35,4 @@ global $site_url;
   <?php wp_head()?>
 </head>
 <body id="pageTop">
-<div class="single-head" style="background-color: #F2F2F2;">
+<div class="main-content">

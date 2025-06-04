@@ -10,21 +10,28 @@ $color-button-type1: #E33435;
 $color-border-type1: #E21C43;
 .front-page{
     padding: 32px 0 0;
-    @media screen and (max-width: 1080px) {
-        padding: 32px 32px 0;
-    }
+}
+.main-content{
+    background-color: #F2F2F2;
+    overflow: scroll;
 }
 
 // コンテンツ幅
 .max-content {
     width: 100%;
     max-width: 1080px;
+    min-width: 1080px;
     margin: 0 auto;
     padding-top: 94px;
+    padding: 0 32px;
+    @media screen and (max-width: 600px) {
+        min-width: 100%;
+        padding: 0;
+    }
 }
 
-
-.common-image{
+// 画像
+.common-bunner-image{
     width: 100%;
     height: 100%;
     img{
@@ -34,6 +41,7 @@ $color-border-type1: #E21C43;
     }
 }
 
+// アンダーライン付きタイトル
 .common-titlebox-underline{
     display: flex;
     align-items: flex-start;
@@ -62,6 +70,7 @@ $color-border-type1: #E21C43;
     }
 }
 
+// ラベル付きタイトル
 .common-titlebox-label{
     padding: 10px 22px 9px;
     background-color: $color-common-pink;
@@ -72,11 +81,14 @@ $color-border-type1: #E21C43;
     }
 }
 
-
+// テキスト
 .common-text{
     font-size: 14px;
     font-weight: 500;
     color: $color-common-black;
+    @media screen and (max-width: 600px) {
+        font-size: 13px;
+    }
 }
 
 // 人気ボタン
@@ -122,8 +134,35 @@ $color-border-type1: #E21C43;
     }
 }
 
+// 中央寄せ
+.common-center-button-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// ボタン
+.common-button{
+    height: 38px;
+    width: 135px;
+    background-color: $color-common-white;
+    border: 1px solid $color-border-type1;
+    border-radius: 4px;
+    color: $color-common-pink;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    &:hover{
+        background-color: $color-button-type1;
+        border: 1px solid $color-border-type1;
+        transition: all 0.3s ease;
+        opacity: 1;
+    }
+}
+
 // カード
-.common-card {
+.common-card{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -138,7 +177,7 @@ $color-border-type1: #E21C43;
     }
     &__image {
         width: 100%;
-        aspect-ratio: 16/9;
+        aspect-ratio: 16/10;
         background: #e0e0e0;
         border-radius: 0px;
         margin-bottom: 13px;
@@ -154,6 +193,9 @@ $color-border-type1: #E21C43;
         font-size: 16px;
         font-weight: bold;
         margin-bottom: 8px;
+        &.center{
+            text-align: center;
+        }
     }
     &__desc {
         color: #333;
@@ -163,26 +205,48 @@ $color-border-type1: #E21C43;
 // フレックスボックスリスト
 .common-flexbox-list{
     position: relative;
-    .swiper {
-        .swiper-wrapper {
-            display: flex;
-            align-items: stretch;
-            justify-content: flex-start;
+    .swiper-wrapper {
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 24px;
+        &.wrapper-flex{
+            flex-wrap: wrap;
+            @media screen and (max-width: 600px) {
+                flex-wrap: nowrap;
+            }
         }
-    
+        &.no-swiper{
+            @media screen and (max-width: 600px) {
+                overflow-x: scroll;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
+        }
         .swiper-slide {
+            @include gaps(24px, 3);
             height: auto;
             display: flex;
             align-items: stretch;
             // カードの影や余白
             margin-right: 0;
+            @media screen and (max-width: 600px) {
+                @include gaps(24px, 1.5);
+            }
+        }
+    }
+    .swiper{
+        .swiper-wrapper {
+            gap: 0px;
         }
     }
     // ナビゲーションボタン
     .swiper-button-next,
     .swiper-button-prev {
         top: 50%;
-        transform: translateY(-50%);
         background: #E21D1E;
         color: #fff;
         width: 40px;
@@ -190,13 +254,19 @@ $color-border-type1: #E21C43;
         border-radius: 50%;
         box-shadow: 0 2px 8px rgba(0,0,0,0.12);
         &:after {
-            font-size: 20px;
+            font-size: 14px;
         }
     }
     .swiper-button-prev {
         left: -20px;
+        @media screen and (max-width: 600px) {
+            left: 25px;
+        }
     }
     .swiper-button-next {
         right: -20px;
+        @media screen and (max-width: 600px) {
+            right: 25px;
+        }
     }
 }

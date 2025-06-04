@@ -29,10 +29,18 @@
         }
         // フランチャイズを探す
         .front-search-box{
+            width: 100%;
+            @media screen and (max-width: 600px) {
+                padding: 0 20px;
+            }
         }
         // 人気のフランチャイズ
         .front-popularity-box{
             margin-bottom: 36px;
+            width: 100%;
+            @media screen and (max-width: 600px) {
+                padding: 0 20px;
+            }
             &__buttons{
                 width: 100%;
                 display: flex;
@@ -44,30 +52,90 @@
         }
         // 新着のフランチャイズ
         .front-newitem-box{
+            width: 100%;
             margin-bottom: 40px;
+            @media screen and (max-width: 600px) {
+                padding: 0 20px;
+            }
+            &__flexbox-list{
+                @media screen and (max-width: 600px) {
+                    margin: 0 -20px;
+                    width: calc(100% + 40px);
+                }
+            }
         }
         // 注目のフランチャイズ
         .front-attention-box{
+            width: 100%;
             margin-bottom: 27px;
+            @media screen and (max-width: 600px) {
+                padding: 0 20px;
+            }
+            &__button{
+                margin: 22px 0 63px;
+            }
+            &__flexbox-list{
+                @media screen and (max-width: 600px) {
+                    margin: 0 -20px;
+                    width: calc(100% + 40px);
+                }
+            }
         }
         // 今週のFC本部
         .front-thisweek-headquarters-box{
+            width: 100%;
         }
-        // シニアオーナーの声
+        // 先輩オーナーの声
         .front-senior-owner-voice-box{
+            width: 100%;
             margin-bottom: 40px;
+            @media screen and (max-width: 600px) {
+                padding: 0 20px;
+            }
+            &__button{
+                margin: 28px 0 40px;
+            }
         }
         // フランチャイズを知る
         .front-learn-about-franchising-box{
+            width: 100%;
             margin-bottom: 40px;
+            @media screen and (max-width: 600px) {
+                padding: 0 20px;
+            }
+            &__button{
+                margin: 28px 0 40px;
+            }
         }
         // FC本部の声
         .front-thisweek-headquarters-box{
+            width: 100%;
             margin-bottom: 40px;
+            @media screen and (max-width: 600px) {
+                padding: 0 20px;
+            }
         }
         // メディア掲載実績
         .front-Message-from-FC-Headquarters-box{
+            width: 100%;
             margin-bottom: 40px;
+            @media screen and (max-width: 600px) {
+                padding: 0 20px;
+            }
+        }
+
+        .front-media-achievement-box{
+            width: 100%;
+            margin-bottom: 40px;
+            @media screen and (max-width: 600px) {
+                padding: 0 20px;
+            }
+            &__flexbox-list{
+                @media screen and (max-width: 600px) {
+                    margin: 0 -20px;
+                    width: calc(100% + 40px);
+                }
+            }
         }
     }
 }

@@ -103,7 +103,7 @@ get_template_part('./template/head');
 
                 <p class="common-text front-explane-text">新規掲載フランチャイズをチェックしよう！</p>
 
-                <div class="common-flexbox-list">
+                <div class="front-newitem-box__flexbox-list common-flexbox-list">
                     <div id="SwiperNewItem" class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -190,7 +190,7 @@ get_template_part('./template/head');
 
                 <p class="common-text front-explane-text-label">編集部オススメのフランチャイズ情報をチェックしよう</p>
 
-                <div class="common-flexbox-list">
+                <div class="front-attention-box__flexbox-list common-flexbox-list">
                     <div id="SwiperNewItem" class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -240,6 +240,12 @@ get_template_part('./template/head');
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
+
+                <div class="front-attention-box__button common-center-button-box">
+                    <button class="common-button">
+                        検索する
+                    </button>
+                </div>
             </div>
 
             <!-- 今週のFC本部 -->
@@ -252,18 +258,8 @@ get_template_part('./template/head');
 
                 <p class="common-text front-explane-text-label">今週イチオシのFC本部をご紹介</p>
 
-                <div id="SwiperNewItem" class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                </div>
-                            </div>
-                        </div>
+                <div class="common-flexbox-list">
+                    <div class="swiper-wrapper no-swiper">
                         <div class="swiper-slide">
                             <div class="common-card">
                                 <div class="common-card__image">
@@ -298,7 +294,7 @@ get_template_part('./template/head');
                 </div>
             </div>
 
-            <!-- シニアオーナーの声 -->
+            <!-- 先輩オーナーの声 -->
             <div class="front-senior-owner-voice-box">
                 <div class="common-titlebox-label">
                     <h2 class="title">
@@ -308,41 +304,8 @@ get_template_part('./template/head');
 
                 <p class="common-text front-explane-text-label">FC本部の本音を知ろう！</p>
 
-                <div id="SwiperNewItem" class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="common-flexbox-list">
+                    <div class="swiper-wrapper no-swiper">
                         <div class="swiper-slide">
                             <div class="common-card">
                                 <div class="common-card__image">
@@ -377,6 +340,12 @@ get_template_part('./template/head');
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="front-senior-owner-voice-box__button common-center-button-box">
+                    <button class="common-button">
+                        検索する
+                    </button>
                 </div>
             </div>
 
@@ -390,15 +359,15 @@ get_template_part('./template/head');
 
                 <p class="common-text front-explane-text-label">フランチャイズについての知識を深めよう</p>
 
-                <div id="SwiperNewItem" class="swiper">
-                    <div class="swiper-wrapper">
+                <div class="common-flexbox-list">
+                    <div class="swiper-wrapper wrapper-flex no-swiper">
                         <div class="swiper-slide">
                             <div class="common-card">
                                 <div class="common-card__image">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
                                 </div>
                                 <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
+                                    <h3 class="common-card__title center">フランチャイズ1</h3>
                                 </div>
                             </div>
                         </div>
@@ -408,7 +377,7 @@ get_template_part('./template/head');
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
                                 </div>
                                 <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
+                                    <h3 class="common-card__title center">フランチャイズ1</h3>
                                 </div>
                             </div>
                         </div>
@@ -418,7 +387,7 @@ get_template_part('./template/head');
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
                                 </div>
                                 <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
+                                    <h3 class="common-card__title center">フランチャイズ1</h3>
                                 </div>
                             </div>
                         </div>
@@ -428,11 +397,17 @@ get_template_part('./template/head');
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
                                 </div>
                                 <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
+                                    <h3 class="common-card__title center">フランチャイズ1</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="front-learn-about-franchising-box__button common-center-button-box">
+                    <button class="common-button">
+                        検索する
+                    </button>
                 </div>
             </div>
 
@@ -446,18 +421,8 @@ get_template_part('./template/head');
 
                 <p class="common-text front-explane-text-label">FC本部の本音を知ろう！</p>
 
-                <div id="SwiperNewItem" class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                </div>
-                            </div>
-                        </div>
+                <div class="common-flexbox-list">
+                    <div class="swiper-wrapper no-swiper">
                         <div class="swiper-slide">
                             <div class="common-card">
                                 <div class="common-card__image">
@@ -493,7 +458,7 @@ get_template_part('./template/head');
             </div>
 
             <!-- メディア掲載実績 -->
-            <div class="front-Message-from-FC-Headquarters-box">
+            <div class="front-media-achievement-box">
                 <div class="common-titlebox-label">
                     <h2 class="title">
                     メディア掲載実績
@@ -502,7 +467,7 @@ get_template_part('./template/head');
 
                 <p class="common-text front-explane-text-label">(サービス名)多数のメディアでご紹介いただいております</p>
 
-                <div class="common-flexbox-list">
+                <div class="front-media-achievement-box__flexbox-list common-flexbox-list">
                     <div id="SwiperNewItem" class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -547,6 +512,7 @@ get_template_part('./template/head');
                             </div>
                         </div>
                     </div>
+
                     <!-- ナビゲーションボタン -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
