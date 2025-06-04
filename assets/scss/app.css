@@ -1067,6 +1067,12 @@ button {
   width: 100%;
   max-width: 780px;
 }
+.front-page-content__left .front-explane-text {
+  margin: 21px 0 23px;
+}
+.front-page-content__left .front-explane-text-label {
+  margin: 16px 24px 22px;
+}
 .front-page-content__left .front-bunner-box {
   width: 100%;
   display: flex;
@@ -1075,12 +1081,6 @@ button {
   flex-direction: column;
   gap: 30px;
   margin-bottom: 48px;
-}
-.front-page-content__left .front-explane-text {
-  margin: 21px 0 23px;
-}
-.front-page-content__left .front-explane-text-label {
-  margin: 16px 24px 22px;
 }
 .front-page-content__left .front-popularity-box {
   margin-bottom: 36px;
@@ -1099,7 +1099,16 @@ button {
 .front-page-content__left .front-attention-box {
   margin-bottom: 27px;
 }
+.front-page-content__left .front-senior-owner-voice-box {
+  margin-bottom: 40px;
+}
+.front-page-content__left .front-learn-about-franchising-box {
+  margin-bottom: 40px;
+}
 .front-page-content__left .front-thisweek-headquarters-box {
+  margin-bottom: 40px;
+}
+.front-page-content__left .front-Message-from-FC-Headquarters-box {
   margin-bottom: 40px;
 }
 

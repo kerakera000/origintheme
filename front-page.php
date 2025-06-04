@@ -13,6 +13,7 @@ get_template_part('./template/head');
     <?php get_template_part('./template/content-header'); ?>
     <div class="front-page-content">
         <div class="front-page-content__left">
+            <!-- バナーコンテンツ -->
             <div class="front-bunner-box">
                 <a class="common-bunner-image">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/bnr03.png" alt="">
@@ -24,7 +25,7 @@ get_template_part('./template/head');
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/bnr03.png" alt="">
                 </a>
             </div>
-            
+            <!-- フランチャイズを探す -->
             <div class="front-search-box">
                 <div class="common-titlebox-underline">
                     <h2 class="title">
@@ -39,6 +40,7 @@ get_template_part('./template/head');
 
             </div>
 
+            <!-- 人気のフランチャイズ -->
             <div class="front-popularity-box">
                 <div class="common-titlebox-underline">
                     <h2 class="title">
@@ -88,7 +90,7 @@ get_template_part('./template/head');
                 </div>
             </div>
 
-
+            <!-- 新着のフランチャイズ -->
             <div class="front-newitem-box">
                 <div class="common-titlebox-underline">
                     <h2 class="title">
@@ -178,6 +180,7 @@ get_template_part('./template/head');
                 </div>
             </div>
 
+            <!-- 注目のフランチャイズ -->
             <div class="front-attention-box">
                 <div class="common-titlebox-label">
                     <h2 class="title">
@@ -239,6 +242,7 @@ get_template_part('./template/head');
                 </div>
             </div>
 
+            <!-- 今週のFC本部 -->
             <div class="front-thisweek-headquarters-box">
                 <div class="common-titlebox-label">
                     <h2 class="title">
@@ -257,7 +261,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +271,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -279,7 +281,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -290,29 +291,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -320,6 +298,7 @@ get_template_part('./template/head');
                 </div>
             </div>
 
+            <!-- シニアオーナーの声 -->
             <div class="front-senior-owner-voice-box">
                 <div class="common-titlebox-label">
                     <h2 class="title">
@@ -401,6 +380,7 @@ get_template_part('./template/head');
                 </div>
             </div>
 
+            <!-- フランチャイズを知る -->
             <div class="front-learn-about-franchising-box">
                 <div class="common-titlebox-label">
                     <h2 class="title">
@@ -419,7 +399,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -430,7 +409,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -441,7 +419,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -452,29 +429,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -482,6 +436,7 @@ get_template_part('./template/head');
                 </div>
             </div>
 
+            <!-- FC本部の声 -->
             <div class="front-Message-from-FC-Headquarters-box">
                 <div class="common-titlebox-label">
                     <h2 class="title">
@@ -500,7 +455,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -511,7 +465,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -522,7 +475,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -533,29 +485,6 @@ get_template_part('./template/head');
                                 </div>
                                 <div class="common-card__content">
                                     <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="common-card">
-                                <div class="common-card__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                </div>
-                                <div class="common-card__content">
-                                    <h3 class="common-card__title">フランチャイズ1</h3>
-                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                 </div>
                             </div>
                         </div>
@@ -563,6 +492,7 @@ get_template_part('./template/head');
                 </div>
             </div>
 
+            <!-- メディア掲載実績 -->
             <div class="front-Message-from-FC-Headquarters-box">
                 <div class="common-titlebox-label">
                     <h2 class="title">
@@ -582,7 +512,6 @@ get_template_part('./template/head');
                                     </div>
                                     <div class="common-card__content">
                                         <h3 class="common-card__title">フランチャイズ1</h3>
-                                        <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                     </div>
                                 </div>
                             </div>
@@ -593,7 +522,6 @@ get_template_part('./template/head');
                                     </div>
                                     <div class="common-card__content">
                                         <h3 class="common-card__title">フランチャイズ1</h3>
-                                        <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                     </div>
                                 </div>
                             </div>
@@ -604,7 +532,6 @@ get_template_part('./template/head');
                                     </div>
                                     <div class="common-card__content">
                                         <h3 class="common-card__title">フランチャイズ1</h3>
-                                        <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                     </div>
                                 </div>
                             </div>
@@ -615,29 +542,6 @@ get_template_part('./template/head');
                                     </div>
                                     <div class="common-card__content">
                                         <h3 class="common-card__title">フランチャイズ1</h3>
-                                        <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="common-card">
-                                    <div class="common-card__image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                    </div>
-                                    <div class="common-card__content">
-                                        <h3 class="common-card__title">フランチャイズ1</h3>
-                                        <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="common-card">
-                                    <div class="common-card__image">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
-                                    </div>
-                                    <div class="common-card__content">
-                                        <h3 class="common-card__title">フランチャイズ1</h3>
-                                        <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
                                     </div>
                                 </div>
                             </div>

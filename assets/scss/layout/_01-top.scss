@@ -8,6 +8,16 @@
     &__left{
         width: 100%;
         max-width: 780px;
+        // タイトル下のテキスト
+        .front-explane-text{
+            margin: 21px 0 23px;
+        }
+
+        // ラベル付きタイトル下のテキスト
+        .front-explane-text-label{
+            margin: 16px 24px 22px;
+        }
+        // バナーコンテンツ
         .front-bunner-box{
             width: 100%;
             display: flex;
@@ -17,15 +27,10 @@
             gap: 30px;
             margin-bottom: 48px;
         }
-        // タイトル下のテキスト
-        .front-explane-text{
-            margin: 21px 0 23px;
+        // フランチャイズを探す
+        .front-search-box{
         }
-
-        .front-explane-text-label{
-            margin: 16px 24px 22px;
-        }
-
+        // 人気のフランチャイズ
         .front-popularity-box{
             margin-bottom: 36px;
             &__buttons{
@@ -37,15 +42,31 @@
                 gap: 20px 24px;
             }
         }
-
+        // 新着のフランチャイズ
         .front-newitem-box{
             margin-bottom: 40px;
         }
-
+        // 注目のフランチャイズ
         .front-attention-box{
             margin-bottom: 27px;
         }
+        // 今週のFC本部
         .front-thisweek-headquarters-box{
+        }
+        // シニアオーナーの声
+        .front-senior-owner-voice-box{
+            margin-bottom: 40px;
+        }
+        // フランチャイズを知る
+        .front-learn-about-franchising-box{
+            margin-bottom: 40px;
+        }
+        // FC本部の声
+        .front-thisweek-headquarters-box{
+            margin-bottom: 40px;
+        }
+        // メディア掲載実績
+        .front-Message-from-FC-Headquarters-box{
             margin-bottom: 40px;
         }
     }
