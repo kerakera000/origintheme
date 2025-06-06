@@ -38,6 +38,101 @@ get_template_part('./template/head');
 
                 <p class="common-text front-explane-text">お好みの条件を複数選択し、「検索」出来ます</p>
 
+                <div class="front-search-box__flexbox-list">
+                    <div class="js-accordion-toggle">
+                        <span class="text">業種から探す</span>
+                        <span class="icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/arrow-accordion-pink.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="js-accordion-content" style="display:none;">
+                        <!-- ここにボタンコンポーネントを配置 -->
+                        <button class="common-accordion-button">
+                        飲食(100件)
+                        </button>
+                        <button class="common-accordion-button">
+                        サービス業(100件)
+                        </button>
+                        <button class="common-accordion-button">
+                        代理店業(100件)
+                        </button>
+                        <button class="common-accordion-button">
+                        小売業(100件)
+                        </button>
+                        <button class="common-accordion-button">
+                        教育・保育業(100件)
+                        </button>
+                        <button class="common-accordion-button">
+                        美容・健康(100件)
+                        </button>
+                        <button class="common-accordion-button">
+                        無店舗(100件)
+                        </button>
+                        <button class="common-accordion-button">
+                        介護・福祉(100件)
+                        </button>
+                        <button class="common-accordion-button">
+                        海外(100件)
+                        </button>
+                    </div>
+
+                    <span class="addjust-line"></span>
+
+                    <div class="js-accordion-toggle">
+                        <span class="text">開業資金から探す</span>
+                        <span class="icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/arrow-accordion-pink.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="js-accordion-content" style="display:none;">
+                        <button class="common-accordion-button">1円〜100万円(100件)</button>
+                        <button class="common-accordion-button">101万円〜300万円(100件)</button>
+                        <button class="common-accordion-button">301万円〜500万円(100件)</button>
+                        <button class="common-accordion-button">501万円〜1000万円(100件)</button>
+                        <button class="common-accordion-button">1001万円以上(100件)</button>
+                    </div>
+
+                    <span class="addjust-line"></span>
+
+                    <div class="js-accordion-toggle">
+                        <span class="text">エリアから探す</span>
+                        <span class="icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/arrow-accordion-pink.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="js-accordion-content" style="display:none;">
+                        <button class="common-accordion-button">北海道・東北</button>
+                        <button class="common-accordion-button">関東</button>
+                        <button class="common-accordion-button">中部</button>
+                        <button class="common-accordion-button">近畿</button>
+                        <button class="common-accordion-button">中国・四国</button>
+                        <button class="common-accordion-button">九州・沖縄</button>
+                    </div>
+
+                    <span class="addjust-line"></span>
+
+                    <div class="js-accordion-toggle">
+                        <span class="text">特徴から探す</span>
+                        <span class="icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/arrow-accordion-pink.svg" alt="">
+                        </span>
+                    </div>
+                    <div class="js-accordion-content" style="display:none;">
+                        <button class="common-accordion-button">副業からスタート</button>
+                        <button class="common-accordion-button">未経験からスタート</button>
+                        <button class="common-accordion-button">無店舗で開業</button>
+                        <button class="common-accordion-button">女性が活躍</button>
+                        <button class="common-accordion-button">設立2年以内FC本部</button>
+                        <button class="common-accordion-button">好きな時間に仕事</button>
+                        <button class="common-accordion-button">加盟金100万円以下</button>
+                        <button class="common-accordion-button">土・日・祝休み</button>
+                        <button class="common-accordion-button">スピード開業</button>
+                        <button class="common-accordion-button">法人新規事業向け</button>
+                        <button class="common-accordion-button">1人で店舗運営</button>
+                        <button class="common-accordion-button">今月のおすすめFC</button>
+                    </div>
+
+                </div>
             </div>
 
             <!-- 人気のフランチャイズ -->
