@@ -11,8 +11,8 @@ get_template_part('./template/head');
 
 <main class="max-content front-page">
     <?php get_template_part('./template/content-header'); ?>
-    <div class="front-page-content">
-        <div class="front-page-content__left">
+    <div class="common-container front-page-content">
+        <div class="common-left-content front-page-content__left">
             <!-- バナーコンテンツ -->
             <div class="front-bunner-box">
                 <a class="common-bunner-image">

@@ -6,10 +6,61 @@
 function create_custom_pages_with_optional_parents() {
   $pages = [
     [
-      'title' => 'ABOUT',
+      'title' => 'アバウト',
       'slug' => 'about',
       'parent_slug' => '',
     ],
+    [
+      'title' => 'サインアップ',
+      'slug' => 'sign-up',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => 'サインイン',
+      'slug' => 'sign-in',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => 'お気に入り',
+      'slug' => 'favorites',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => 'マイページ',
+      'slug' => 'my-page',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => 'フリーワード',
+      'slug' => 'free-word',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => '資料請求',
+      'slug' => 'request-material',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => 'FC本部登録フォーム',
+      'slug' => 'branch-registration-form',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => '検索条件',
+      'slug' => 'search-conditions',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => '説明会予約',
+      'slug' => 'event-reservation',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => 'お問い合わせ',
+      'slug' => 'contact',
+      'parent_slug' => '',
+    ],
+    
   ];
 
   // foreach ($pages as $page) {

@@ -35,6 +35,19 @@ $color-accordion-button-background: #FFFAFB;
     }
 }
 
+// 全体レイアウト
+.common-container{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+.common-left-content{
+    width: 100%;
+    max-width: 780px;
+}
+
 // 画像
 .common-bunner-image{
     width: 100%;

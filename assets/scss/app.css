@@ -34,6 +34,19 @@
   }
 }
 
+.common-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.common-left-content {
+  width: 100%;
+  max-width: 780px;
+}
+
 .common-bunner-image {
   width: 100%;
   height: 100%;
@@ -1063,17 +1076,6 @@ button {
   }
 }
 
-.front-page-content {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 30px;
-}
-.front-page-content__left {
-  width: 100%;
-  max-width: 780px;
-}
 .front-page-content__left .front-explane-text {
   margin: 21px 0 23px;
 }
