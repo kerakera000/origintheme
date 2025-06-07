@@ -4,24 +4,35 @@ global $site_url;
 ?>
 
 <header id="HEADER" class="header">
-    <div class="header--logo">
-        <span class="site-title">フラッサイズ PIVOT</span>
-    </div>
-    <div class="header--center">
-        <span class="total-shops">総店舗数 <span class="count">1234</span>件</span>
-        <form class="header-search">
-            <input type="text" placeholder="フリーワード検索">
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
-    <div class="header--right">
-        <button class="favorite-btn"><i class="fa fa-heart"></i> お気に入り</button>
-        <button class="login-btn"><i class="fa fa-user"></i> ログイン</button>
-        <button class="register-btn">無料会員登録</button>
+    <div class="max-content-header">
+        <div class="header--logo">
+            <span class="site-title">フラッサイズ PIVOT</span>
+        </div>
+        <div class="header--center">
+            <span class="total-shops">総店舗数 <span class="count">1234</span>件</span>
+            <form class="header-search">
+                <input type="text" placeholder="フリーワード検索" name="search">
+                <button type="submit" class="submit">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/search.svg" alt="検索">
+                </button>
+            </form>
+        </div>
+        <div class="header--right">
+            <button class="favorite-btn">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/favorite.svg" alt="お気に入り">
+                お気に入り
+            </button>
+            <button class="login-btn">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/signin.svg" alt="ログイン">
+                ログイン
+            </button>
+            <button class="register-btn">無料会員登録</button>
+        </div>
     </div>
 </header>
 
 <header id="SPheaderButton" class="SP-header">
     <span class="line1"></span>
+    <span class="line2"></span>
     <span class="line3"></span>
 </header>

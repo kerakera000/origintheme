@@ -1,4 +1,13 @@
 <?php
+/**
+ * 会社概要ページのテンプレート
+ * 
+ * 企業情報、事業内容、経営理念などを表示するページ
+ * 会社の基本情報をユーザーに伝える重要なページ
+ *
+ * @package Origintheme
+ */
+
 global $wp_path;
 global $site_url;
 

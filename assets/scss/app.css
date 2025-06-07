@@ -20,6 +20,21 @@
   }
 }
 
+.max-content-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1080px;
+  min-width: 1080px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .max-content-header {
+    min-width: 100%;
+  }
+}
+
 .max-content {
   width: 100%;
   max-width: 1080px;
@@ -684,7 +699,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #c39731;
+  background-color: #E21D43;
 }
 
 * {
@@ -736,8 +751,15 @@ button {
 }
 
 .nav-icon {
-  margin-right: 8px;
-  font-size: 18px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav-icon img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
@@ -916,34 +938,36 @@ button {
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
   position: fixed;
   z-index: 2000;
   background: #fff;
-  padding: 0 2%;
   height: 60px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  top: 0;
+  left: 0;
+  box-shadow: 0 3px 46px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  overflow: scroll;
+}
+@media (max-width: 600px) {
+  .header {
+    overflow: hidden;
+  }
 }
 .header .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
   height: 100%;
 }
-@media (max-width: 1080px) {
+@media (max-width: 600px) {
   .header .header__container {
     max-width: 100%;
-  }
-}
-@media (max-width: 1024px) {
-  .header .header__container {
-    flex-direction: column;
-    height: auto;
-    padding: 0 1%;
+    justify-content: flex-start;
   }
 }
 .header .header--logo {
@@ -954,51 +978,79 @@ button {
 }
 @media (max-width: 600px) {
   .header .header--logo {
-    font-size: 14px;
+    margin-right: 56px;
   }
 }
 .header .header--center {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 57px;
+  border-left: 1px solid #D6D6D6;
+  height: 24px;
+  padding-left: 16px;
+}
+@media (max-width: 600px) {
+  .header .header--center {
+    border-left: none;
+    padding-left: 0;
+  }
 }
 .header .header--center .total-shops {
-  color: #666;
+  color: #333333;
   font-size: 14px;
+  display: flex;
+  align-items: baseline;
 }
 .header .header--center .total-shops .count {
   color: #e60033;
   font-weight: bold;
-  font-size: 18px;
-  margin: 0 2px;
+  font-size: 24px;
+  margin: 0 3px 0 1px;
 }
 .header .header--center .header-search {
   display: flex;
   align-items: center;
   background: #f5f5f5;
   border-radius: 4px;
-  padding: 2px 8px;
+  padding: 10px 12px 9px 13.9px;
+  width: 258px;
+}
+@media (max-width: 600px) {
+  .header .header--center .header-search {
+    display: none;
+  }
 }
 .header .header--center .header-search input[type=text] {
   border: none;
   background: transparent;
   outline: none;
-  padding: 6px 8px;
   font-size: 14px;
-  width: 140px;
+  width: 100%;
 }
-.header .header--center .header-search button {
+.header .header--center .header-search .submit {
   background: none;
   border: none;
   color: #888;
   font-size: 16px;
   cursor: pointer;
   padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header--center .header-search .submit img {
+  width: 11.47px;
+  height: 11.51px;
 }
 .header .header--right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 27px;
+}
+@media (max-width: 600px) {
+  .header .header--right {
+    display: none;
+  }
 }
 .header .header--right button {
   display: flex;
@@ -1009,7 +1061,6 @@ button {
   font-size: 14px;
   color: #333;
   cursor: pointer;
-  padding: 6px 12px;
   border-radius: 4px;
   transition: background 0.2s;
 }
@@ -1017,15 +1068,29 @@ button {
   font-size: 15px;
 }
 .header .header--right .favorite-btn {
-  color: #e60033;
+  color: #333333;
+}
+.header .header--right .favorite-btn img {
+  width: 18.791px;
+  height: 16.358px;
+  margin-right: 7.2px;
+}
+.header .header--right .login-btn {
+  color: #333333;
+}
+.header .header--right .login-btn img {
+  width: 18.592px;
+  height: 18.592px;
+  margin-right: 7.2px;
 }
 .header .header--right .register-btn {
   background: #e60033;
   color: #fff;
   font-weight: bold;
-  padding: 6px 16px;
+  padding: 9px 19px 10px;
   border-radius: 4px;
   transition: background 0.2s;
+  margin-left: 11px;
 }
 .header .header--right .register-btn:hover {
   background: #b80028;
@@ -1034,7 +1099,7 @@ button {
 .SP-header {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .SP-header {
     position: fixed;
     width: 18px;
@@ -1050,7 +1115,7 @@ button {
     width: 100%;
     height: 2px;
     min-height: 2px;
-    background-color: #333333;
+    background-color: #E21D1D;
     display: block;
     transition: 0.3s;
   }
@@ -1061,18 +1126,18 @@ button {
     rotate: 45deg;
     transition: 0.3s;
     transform: translate(6px, 5px);
-    background-color: #666666;
+    background-color: #E21D1D;
   }
   .SP-header.open .line2 {
     width: 0;
     transition: 0.3s;
-    background-color: #666666;
+    background-color: #E21D1D;
   }
   .SP-header.open .line3 {
     rotate: -45deg;
     transition: 0.3s;
     transform: translate(0px, 1px);
-    background-color: #666666;
+    background-color: #E21D1D;
   }
 }
 
