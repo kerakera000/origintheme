@@ -23,6 +23,7 @@ get_template_part('./template/head');
     <?php get_template_part('./template/content-header'); ?>
     <div class="common-container favorites-page-content">
         <div class="common-left-content favorites-page-content__left">
+
             <!-- お気に入り -->
             <div class="favorites-mainbox">
                 <div class="common-sub-titlebox favorites-mainbox__title">
@@ -97,6 +98,7 @@ get_template_part('./template/head');
                     </button>
                 </div>
             </div>
+            
         </div>
         <?php get_template_part('./template/banner'); ?>
     </div>

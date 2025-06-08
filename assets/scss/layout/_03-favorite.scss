@@ -82,12 +82,35 @@
                         margin-left: auto;
                     }
                 }
+
+                // Responsive: stack .fc-box__button below on small screens
+                @media screen and (max-width: 600px) {
+                    .fc-box {
+                        flex-wrap: wrap;
+                        gap: 10px 0;
+                    }
+
+                    .fc-box__button {
+                        width: 100%;
+                        margin-top: 15px;
+                        margin-left: 42px;
+                    }
+                }
             }
             &__button{
                 padding-top: 40px;
             }
+            @media screen and (max-width: 600px) {
+              padding: 0 20px;
+            }
         }
     }
 }
-    
 
+
+
+@media screen and (max-width: 600px) {
+  .banner-list {
+    display: none;
+  }
+}

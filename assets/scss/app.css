@@ -1973,10 +1973,31 @@ button {
   height: 33px;
   margin-left: auto;
 }
+@media screen and (max-width: 600px) {
+  .favorites-page-content__left .favorites-mainbox__list .fc-box {
+    flex-wrap: wrap;
+    gap: 10px 0;
+  }
+  .favorites-page-content__left .favorites-mainbox__list .fc-box__button {
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 42px;
+  }
+}
 .favorites-page-content__left .favorites-mainbox__button {
   padding-top: 40px;
 }
+@media screen and (max-width: 600px) {
+  .favorites-page-content__left .favorites-mainbox {
+    padding: 0 20px;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .banner-list {
+    display: none;
+  }
+}
 .notfound404 .Phero {
   height: auto;
   padding: 0 32px 225px;
