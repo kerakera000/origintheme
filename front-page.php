@@ -337,15 +337,110 @@ get_template_part('./template/head');
                     <div class="swiper-button-prev"></div>
                 </div>
 
-                <div class="common-sub-titlebox">
+                <div class="front-attention-box__sub-titlebox common-sub-titlebox">
                     <h3 class="title">説明会を探す</h3>
                     <span class="underline"></span>
+                </div>
+
+                <p class="common-text front-explane-text-label-nomargin">編集部オススメのフランチャイズ情報をチェックしよう</p>
+
+                <div class="front-attention-box__accordion-list">
+                    <div class="common-search-accordion-content">
+                        <!-- ボタン -->
+                        <button class="button">
+                            <span class="text">開催地</span>
+                            <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/acordion-under-pink.svg" alt="">
+                        </button>
+                        <!-- アコーディオン -->
+                        <div class="content">
+                            <!-- ここにアコーディオンで表示したい内容を入れる -->
+                            <ul>
+                                <li>東京</li>
+                                <li>大阪</li>
+                                <li>名古屋</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="common-search-accordion-content">
+                        <!-- ボタン -->
+                        <button class="button">
+                            <span class="text">業種</span>
+                            <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/acordion-under-pink.svg" alt="">
+                        </button>
+                        <!-- アコーディオン -->
+                        <div class="content">
+                            <!-- ここにアコーディオンで表示したい内容を入れる -->
+                            <ul>
+                                <li>東京</li>
+                                <li>大阪</li>
+                                <li>名古屋</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="common-search-accordion-content">
+                        <!-- ボタン -->
+                        <button class="button">
+                            <span class="text">開催月</span>
+                            <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/acordion-under-pink.svg" alt="">
+                        </button>
+                        <!-- アコーディオン -->
+                        <div class="content">
+                            <!-- ここにアコーディオンで表示したい内容を入れる -->
+                            <ul>
+                                <li>東京</li>
+                                <li>大阪</li>
+                                <li>名古屋</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="front-attention-box__button common-center-button-box">
                     <button class="common-button">
                         検索する
                     </button>
+                </div>
+
+                <div class="front-attention-box__sub-titlebox common-sub-titlebox">
+                    <h3 class="title">注目の説明会</h3>
+                </div>
+
+                <div class="common-flexbox-list">
+                    <div class="swiper-wrapper no-swiper">
+                        <div class="swiper-slide">
+                            <div class="common-card">
+                                <div class="common-card__image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
+                                </div>
+                                <div class="common-card__content">
+                                    <h3 class="common-card__title">フランチャイズ1</h3>
+                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="common-card">
+                                <div class="common-card__image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
+                                </div>
+                                <div class="common-card__content">
+                                    <h3 class="common-card__title">フランチャイズ1</h3>
+                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="common-card">
+                                <div class="common-card__image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/franchise01.jpg" alt="フランチャイズ1">
+                                </div>
+                                <div class="common-card__content">
+                                    <h3 class="common-card__title">フランチャイズ1</h3>
+                                    <p class="common-card__desc">FC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入りますFC本部の説明が入ります</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
