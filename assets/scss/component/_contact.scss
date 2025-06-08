@@ -1,0 +1,30 @@
+@use "../init/index" as *;
+
+.Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 425px;
+    background-color: #E7EFF2;
+    &__title{
+        font-size: 42px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    &__text{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 31px;
+    }
+    &__button{
+        font-size: 14px;
+        font-weight: 500;
+        background-color: #111111;
+        color: #fff;
+        padding: 14px ;
+        width: 132px;
+        text-align: center;
+    }
+}

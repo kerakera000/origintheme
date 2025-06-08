@@ -31,7 +31,6 @@
 .Card-Common__title {
   font-size: 42px;
   font-weight: 500;
-  line-height: 180%;
   margin-bottom: 14px;
 }
 .Card-Common__text {
@@ -1083,6 +1082,7 @@ button {
   justify-content: center;
   flex-direction: column;
   gap: 143px;
+  margin-bottom: 140px;
 }
 .ARTfinance__cont {
   width: 100%;
@@ -1101,6 +1101,33 @@ button {
 .ARTfinance__cont .imgbox .img {
   width: 100%;
   height: 100%;
+}
+.ARTfinance__subcont {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 124px;
+}
+.ARTfinance__subcont .card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 26px;
+}
+.ARTfinance__subcont .card .imgbox {
+  width: 100%;
+}
+.ARTfinance__subcont .card .imgbox img {
+  width: 100%;
+}
+.ARTfinance__subcont .card__text {
+  width: 100%;
+}
+.ARTfinance__subcont .card.type2 {
+  margin-top: 100px;
 }
 
 .post-content {
@@ -1486,6 +1513,146 @@ button {
     transform: translateX(-100%);
   }
 }
+.philosophy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px 0 60px 0;
+  background: #fff;
+}
+.philosophy__image {
+  margin: 40px auto 0 auto;
+  max-width: 520px;
+}
+.philosophy__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  background: #fafafa;
+}
+
+.philosophy-common-title {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+}
+
+.philosophy-common-subtitle {
+  color: #aaa;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.philosophy-common-line {
+  width: 40px;
+  height: 2px;
+  background: #b3c6d9;
+}
+
+.philosophy-common-content {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.philosophy-common-main-text {
+  font-size: 2rem;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.philosophy-common-description {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.about-common-title {
+  text-align: left;
+  width: 100%;
+}
+.about-common-title .title {
+  font-size: 2.5rem;
+  color: #2a3b4d;
+  margin-bottom: 8px;
+}
+.about-common-title .subtitle {
+  font-size: 1.1rem;
+  color: #aaa;
+}
+
+.page-about-company {
+  width: 100%;
+  background-color: #d5dce2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 100px 0;
+  margin-bottom: 50px;
+}
+.page-about-company__cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-table {
+  width: 100%;
+}
+.company-table th, .company-table td {
+  border-bottom: 1px solid #c5c5c5;
+  padding: 16px 18px 16px 0;
+  text-align: left;
+}
+.company-table th {
+  font-weight: 600;
+  width: 180px;
+  color: #2a3b4d;
+}
+.company-table td {
+  color: #333;
+}
+.page-about-access {
+  width: 100%;
+  background: #f7f9fa;
+  padding: 80px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.page-about-access__cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-about-access__map {
+  width: 100%;
+}
+.page-about-access__map img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.page-about-access__info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+.page-about-access__info p {
+  margin-bottom: 12px;
+}
+
 .notfound404 .Phero {
   height: auto;
   padding: 0 32px 225px;
@@ -2958,4 +3125,34 @@ button.swiper-pagination-bullet {
   transform-origin: center bottom;
   backface-visibility: hidden;
   overflow: hidden;
+}
+
+/* Component Components */
+.Contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 425px;
+  background-color: #E7EFF2;
+}
+.Contact__title {
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.Contact__text {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 31px;
+}
+.Contact__button {
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #111111;
+  color: #fff;
+  padding: 14px;
+  width: 132px;
+  text-align: center;
 }/*# sourceMappingURL=app.css.map */
