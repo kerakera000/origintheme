@@ -1,0 +1,103 @@
+@use "../init/index" as *;
+
+.search-conditions-page-content{
+    &__left{
+        // 検索条件
+        .search-mainbox{
+            &__search-box{
+                width: 100%;
+                margin-bottom: 30px;
+                padding-top: 20px;
+                @media screen and (max-width: 600px) {
+                    padding: 0 20px;
+                }
+                .flexbox-list{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    background-color: #fff;
+                    border-radius: 12px;
+                    padding: 41px 30px 41px;
+                    .js-accordion-toggle {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        border-radius: 8px 8px 0 0;
+                        cursor: pointer;
+                        position: relative;
+                        .text{
+                            font-size: 18px;
+                            color: #222;
+                        }
+                        .icon {
+                            margin-left: 8px;
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                                transform: rotate(180deg);
+                                transition: 0.3s;
+                            }
+                        }
+                        &.is-open .icon img{
+                            transform: rotate(0deg);
+                            transition: 0.3s;
+                        }
+                    }
+
+                    .js-accordion-content {
+                        width: 100%;
+                        box-sizing: border-box;
+                        animation: fadeInAccordion 0.3s;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+                        gap: 21px;
+                        margin-top: 21px;
+                        .sc-button {
+                            width: calc(33.333% - 14px);
+                            margin-bottom: 15px;
+                            height: 50px;
+                            background-color: #fef5f5;
+                        }
+                    }
+
+                    .addjust-line{
+                        margin: 40px 0 37px;
+                        width: 100%;
+                        height: 1px;
+                        background-color: #DBDBDB;
+                    }
+                }
+            }
+        }
+        
+        .search-mainbox{
+            width: 100%;
+            @media screen and (max-width: 600px) {
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .banner-list {
+    display: none;
+  }
+}

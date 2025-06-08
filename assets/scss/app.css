@@ -2169,6 +2169,100 @@ button {
     display: none;
   }
 }
+.search-conditions-page-content__left .search-mainbox__search-box {
+  width: 100%;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .search-conditions-page-content__left .search-mainbox__search-box {
+    padding: 0 20px;
+  }
+}
+.search-conditions-page-content__left .search-mainbox__search-box .flexbox-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 41px 30px 41px;
+}
+.search-conditions-page-content__left .search-mainbox__search-box .flexbox-list .js-accordion-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  position: relative;
+}
+.search-conditions-page-content__left .search-mainbox__search-box .flexbox-list .js-accordion-toggle .text {
+  font-size: 18px;
+  color: #222;
+}
+.search-conditions-page-content__left .search-mainbox__search-box .flexbox-list .js-accordion-toggle .icon {
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-conditions-page-content__left .search-mainbox__search-box .flexbox-list .js-accordion-toggle .icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+.search-conditions-page-content__left .search-mainbox__search-box .flexbox-list .js-accordion-toggle.is-open .icon img {
+  transform: rotate(0deg);
+  transition: 0.3s;
+}
+.search-conditions-page-content__left .search-mainbox__search-box .flexbox-list .js-accordion-content {
+  width: 100%;
+  box-sizing: border-box;
+  animation: fadeInAccordion 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 21px;
+  margin-top: 21px;
+}
+.search-conditions-page-content__left .search-mainbox__search-box .flexbox-list .js-accordion-content .sc-button {
+  width: calc(33.333% - 14px);
+  margin-bottom: 15px;
+  height: 50px;
+  background-color: #fef5f5;
+}
+.search-conditions-page-content__left .search-mainbox__search-box .flexbox-list .addjust-line {
+  margin: 40px 0 37px;
+  width: 100%;
+  height: 1px;
+  background-color: #DBDBDB;
+}
+.search-conditions-page-content__left .search-mainbox {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .search-conditions-page-content__left .search-mainbox {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner-list {
+    display: none;
+  }
+}
 .notfound404 .Phero {
   height: auto;
   padding: 0 32px 225px;
