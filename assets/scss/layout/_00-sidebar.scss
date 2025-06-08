@@ -10,6 +10,9 @@
     bottom: 10px;
     right: 0;
     z-index: 3000;
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
     &.close{
         display: none;
     }
@@ -46,6 +49,11 @@
             text-align: center;
             padding: 12px 18px 13px 20px;
             background-color: #fff;
+            @media screen and (max-width: 600px) {
+                br{
+                    display: none;
+                }
+            }
         }
         .button{
             min-width: 16px;

@@ -10,6 +10,10 @@
         .front-explane-text-label{
             margin: 16px 24px 22px;
         }
+        // マージンなし
+        .front-explane-text-label-nomargin{
+            margin: 16px 0 18px;
+        }
         // バナーコンテンツ
         .front-bunner-box{
             width: 100%;
@@ -131,12 +135,27 @@
                 padding: 0 20px;
             }
             &__button{
-                margin: 22px 0 63px;
+                margin: 22px 0
             }
             &__flexbox-list{
                 @media screen and (max-width: 600px) {
                     margin: 0 -20px;
                     width: calc(100% + 40px);
+                }
+            }
+            &__sub-titlebox{
+                margin-top: 27.2px;
+                margin-bottom: 13.8px;
+            }
+            &__accordion-list{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 24.5px;
+                width: 100%;
+                @media screen and (max-width: 600px) {
+                    gap: 20px;
+                    flex-direction: column;
                 }
             }
         }

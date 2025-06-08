@@ -30,4 +30,12 @@
         // アイコンの向きやaria属性など必要に応じて追加
     });
 
+    // 開催地アコーディオン
+    $(document).on('click', '.common-search-accordion-content .button', function() {
+        var $parent = $(this).closest('.common-search-accordion-content');
+        var $content = $parent.find('.content');
+        $content.slideToggle(200);
+        $(this).toggleClass('is-open');
+    });
+
 })(jQuery);

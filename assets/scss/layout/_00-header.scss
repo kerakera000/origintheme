@@ -39,6 +39,10 @@
         letter-spacing: 1px;
         @media (max-width: 600px) {
             margin-right: 56px;
+            height: 38.39px;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 3px;
         }
     }
     .header--center {
@@ -46,7 +50,6 @@
         align-items: center;
         gap: 57px;
         border-left: 1px solid #D6D6D6;
-        height: 24px;
         padding-left: 16px;
         @media (max-width: 600px) {
             border-left: none;
@@ -191,7 +194,7 @@
             .line3 {
                 rotate: -45deg;
                 transition: 0.3s;
-                transform: translate(0px, 1px);
+                transform: translate(5px, -4px);
                 background-color: #E21D1D;
             }
         }
