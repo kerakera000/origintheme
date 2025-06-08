@@ -2,6 +2,9 @@
   display: flex;
   width: 100%;
   margin-bottom: 24px;
+  @media (max-width: 600px) {
+    overflow: scroll;
+  }
 }
 .nav-item {
   flex: 1;
@@ -15,6 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 269px;
 }
 .nav-item:last-child {
   background: #fff;

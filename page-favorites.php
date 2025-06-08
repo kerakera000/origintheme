@@ -24,6 +24,9 @@ get_template_part('./template/head');
     <div class="common-container favorites-page-content">
         <div class="common-left-content favorites-page-content__left">
             <!-- コンテンツをここに追加 -->
+             <div class="favorites-page-○○">
+
+             </div>
         </div>
         <?php get_template_part('./template/banner'); ?>
     </div>

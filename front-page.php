@@ -8,6 +8,7 @@ get_template_part('./template/head');
 ?>
 
 <?php get_template_part('./template/header');?>
+<?php get_template_part('./template/sidebar');?>
 
 <main class="max-content front-page">
     <?php get_template_part('./template/content-header'); ?>
@@ -334,6 +335,11 @@ get_template_part('./template/head');
                     <!-- ナビゲーションボタン -->
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
+                </div>
+
+                <div class="common-sub-titlebox">
+                    <h3 class="title">説明会を探す</h3>
+                    <span class="underline"></span>
                 </div>
 
                 <div class="front-attention-box__button common-center-button-box">

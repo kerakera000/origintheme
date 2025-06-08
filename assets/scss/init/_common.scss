@@ -17,6 +17,11 @@ $color-accordion-button-background: #FFFAFB;
     background-color: #F2F2F2;
     overflow: scroll;
     padding: 0 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
     @media screen and (max-width: 600px) {
         padding: 0;
     }
@@ -25,13 +30,14 @@ $color-accordion-button-background: #FFFAFB;
 .max-content-header{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 100%;
     max-width: 1080px;
     min-width: 1080px;
     margin: 0 auto;
     @media screen and (max-width: 600px) {
         min-width: 100%;
+        justify-content: flex-start;
     }
 }
 
@@ -44,7 +50,6 @@ $color-accordion-button-background: #FFFAFB;
     padding-top: 94px;
     @media screen and (max-width: 600px) {
         min-width: 100%;
-        padding: 0;
     }
 }
 
@@ -109,6 +114,24 @@ $color-accordion-button-background: #FFFAFB;
     .title{
         font-size: 20px;
         color: $color-common-white;
+    }
+}
+
+// サブタイトル
+.common-sub-titlebox{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 13px;
+    .title{
+        font-size: 20px;
+        color: $color-common-pink;
+    }
+    .underline{
+        width: 23px;
+        height: 2px;
+        background-color: $color-common-pink;
     }
 }
 
