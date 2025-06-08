@@ -93,7 +93,7 @@ get_template_part('./template/head');
                     <span class="addjust-line"></span>
                 </div>
                 <div class="favorites-mainbox__button common-center-button-box">
-                    <button class="common-button">
+                    <button class="common-button-pink">
                         一括資料請求
                     </button>
                 </div>

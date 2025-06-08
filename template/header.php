@@ -39,28 +39,22 @@ global $site_url;
 
 <header id="SPHEADER" class="SP-header-content">
     <div class="sp-header-inner">
-        <div class="sp-header-top">
-            <span class="site-title">フラッサイズ PIVOT</span>
-            <button id="SidebarClose" class="close-btn">
-                <span class="close-icon"></span>
-            </button>
-        </div>
-        <form class="sp-header-search">
+        <form class="header-search">
             <input type="text" placeholder="フリーワード検索" name="search">
             <button type="submit" class="submit">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/search.svg" alt="検索">
             </button>
         </form>
         <nav class="sp-header-nav">
-            <a href="<?php echo home_url('/favorites'); ?>" class="sp-nav-item">
+            <a href="/favorites" class="favorite-btn">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/favorite.svg" alt="お気に入り">
                 お気に入り
             </a>
-            <a href="<?php echo home_url('/sign-in'); ?>" class="sp-nav-item">
+            <a href="/sign-in" class="login-btn">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/signin.svg" alt="ログイン">
                 ログイン
             </a>
-            <a href="<?php echo home_url('/sign-up'); ?>" class="sp-nav-item register">無料会員登録</a>
         </nav>
+        <a href="/sign-up" class="register-btn">無料会員登録</a>
     </div>
 </header>

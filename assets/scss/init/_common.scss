@@ -19,6 +19,7 @@ $color-accordion-button-background: #FFFAFB;
     padding: 0 20px;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    min-height: 100vh;
     &::-webkit-scrollbar {
         display: none;
     }
