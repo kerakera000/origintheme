@@ -1892,6 +1892,91 @@ button {
     transform: translateY(0);
   }
 }
+.favorites-page-content__left .favorites-mainbox {
+  width: 100%;
+}
+.favorites-page-content__left .favorites-mainbox__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.favorites-page-content__left .favorites-mainbox__list .addjust-line {
+  width: 100%;
+  height: 1px;
+  background-color: #DBDBDB;
+}
+.favorites-page-content__left .favorites-mainbox__list .fc-box {
+  margin: 20px 0 20px;
+  width: 100%;
+  display: flex;
+}
+.favorites-page-content__left .favorites-mainbox__list .fc-box__check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.favorites-page-content__left .favorites-mainbox__list .fc-box__check-box input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  border: 1px solid #E21C43;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.favorites-page-content__left .favorites-mainbox__list .fc-box__check-box input[type=checkbox]:checked::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 4px;
+  height: 10px;
+  border: solid #E21C43;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+.favorites-page-content__left .favorites-mainbox__list .fc-box__logo-box {
+  margin-left: 15px;
+  width: 80px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: #DBDBDB;
+  font-size: 14px;
+  color: #090909;
+}
+.favorites-page-content__left .favorites-mainbox__list .fc-box__fc-link {
+  display: flex;
+}
+.favorites-page-content__left .favorites-mainbox__list .fc-box__fc-link .link {
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.favorites-page-content__left .favorites-mainbox__list .fc-box__fc-link .link__text {
+  height: 33px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #090909;
+}
+.favorites-page-content__left .favorites-mainbox__list .fc-box__button {
+  height: 33px;
+  margin-left: auto;
+}
+.favorites-page-content__left .favorites-mainbox__button {
+  padding-top: 40px;
+}
+
 .notfound404 .Phero {
   height: auto;
   padding: 0 32px 225px;

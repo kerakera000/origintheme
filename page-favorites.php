@@ -24,12 +24,77 @@ get_template_part('./template/head');
     <div class="common-container favorites-page-content">
         <div class="common-left-content favorites-page-content__left">
             <!-- お気に入り -->
-            <div class="favorites-page-list">
-                <div class="common-sub-titlebox">
-                    <h3 class="title">お気に入り</h3>
-                    <div class="common-flexbox-list"></div>
+            <div class="favorites-mainbox">
+                <div class="common-sub-titlebox favorites-mainbox__title">
+                    <h3 class="title">お気に入り</h3> 
+                </div>
+                <div class="favorites-mainbox__list">
                     <span class="addjust-line"></span>
-                  
+
+                    <div class="fc-box">
+                        <div class="fc-box__check-box">
+                            <input type="checkbox" class="checkbox" name="favorite-select[]" value="fc-id">
+                        </div>
+                        <div class="fc-box__logo-box">
+                            FCロゴ
+                        </div>
+                        <div class="fc-box__fc-link">
+                            <a href="" class="link">
+                                <span class="link__text">FC本部名</span>
+                                <img class="link__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/arrow-pink.svg" alt="">
+                            </a>
+                        </div>
+                        <button class="fc-box__button common-button">
+                            お気に入り解除
+                        </button>
+                    </div>
+                    
+                    <span class="addjust-line"></span>
+
+                    <div class="fc-box">
+                        <div class="fc-box__check-box">
+                            <input type="checkbox" class="checkbox" name="favorite-select[]" value="fc-id">
+                        </div>
+                        <div class="fc-box__logo-box">
+                            FCロゴ
+                        </div>
+                        <div class="fc-box__fc-link">
+                            <a href="" class="link">
+                                <span class="link__text">FC本部名</span>
+                                <img class="link__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/arrow-pink.svg" alt="">
+                            </a>
+                        </div>
+                        <button class="fc-box__button common-button">
+                            お気に入り解除
+                        </button>
+                    </div>
+                    
+                    <span class="addjust-line"></span>
+
+                    <div class="fc-box">
+                        <div class="fc-box__check-box">
+                            <input type="checkbox" class="checkbox" name="favorite-select[]" value="fc-id">
+                        </div>
+                        <div class="fc-box__logo-box">
+                            FCロゴ
+                        </div>
+                        <div class="fc-box__fc-link">
+                            <a href="" class="link">
+                                <span class="link__text">FC本部名</span>
+                                <img class="link__icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/arrow-pink.svg" alt="">
+                            </a>
+                        </div>
+                        <button class="fc-box__button common-button">
+                            お気に入り解除
+                        </button>
+                    </div>
+                    
+                    <span class="addjust-line"></span>
+                </div>
+                <div class="favorites-mainbox__button common-center-button-box">
+                    <button class="common-button">
+                        一括資料請求
+                    </button>
                 </div>
             </div>
         </div>
