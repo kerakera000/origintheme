@@ -27,6 +27,31 @@ get_template_part('./template/header');
     <div class="common-container signup-page-content">
         <div class="common-left-content signup-page-content__left">
             <!-- サインアップフォームをここに追加 -->
+            <div class="common-sub-titlebox">
+                <h3 class="title">会員登録</h3>
+            </div>
+            <div class="common-form-step">
+                <div class="step1 step-item active">
+                    <span class="step-num">1</span>
+                    <span class="step-label">入力</span>
+                </div>
+
+                <div class="step2 step-item">
+                    <span class="step-num">2</span>
+                    <span class="step-label">確認</span>
+                </div>
+
+                <div class="step3 step-item">
+                    <span class="step-num">3</span>
+                    <span class="step-label">完了</span>
+                </div>
+            </div>
+             <div>
+                <button class="common-button-pink">
+                    確認
+                </button>
+             </div>
+
         </div>
 
         <?php

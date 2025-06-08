@@ -217,6 +217,25 @@
   color: #FFFFFF;
 }
 
+.common-button-pink {
+  height: 38px;
+  width: 135px;
+  background-color: #E33435;
+  border: 1px solid #E21C43;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+}
+.common-button-pink:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #E21C43;
+  transition: all 0.3s ease;
+  opacity: 1;
+  color: #E33435;
+}
+
 .common-search-accordion-content {
   width: calc(100% / 3 - 24.5px * (3 - 1) / 3);
 }
@@ -376,6 +395,32 @@
   }
 }
 
+.common-form-step {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  background-color: #FFFFFF;
+  border: 1px solid #d3d3d3;
+}
+.common-form-step .step-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 2 - 0px * (2 - 1) / 2);
+}
+.common-form-step .step-item.active {
+  background-image: url(../img/signup/step2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 52px;
+}
+.common-form-step .step-item.active .step-num {
+  color: #FFFFFF;
+}
+.common-form-step .step-item.active .step-label {
+  color: #FFFFFF;
+}
 /* CSS Document */
 /*
   ------------------------------------

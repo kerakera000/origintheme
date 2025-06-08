@@ -219,6 +219,26 @@ $color-accordion-button-background: #FFFAFB;
     }
 }
 
+// ピンクボタン
+.common-button-pink{
+    height: 38px;
+    width: 135px;
+    background-color: $color-button-type1;
+    border: 1px solid $color-border-type1;
+    border-radius: 3px;
+    color: $color-common-white;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    &:hover{
+        background-color: $color-common-white;
+        border: 1px solid $color-border-type1;
+        transition: all 0.3s ease;
+        opacity: 1;
+        color: $color-button-type1;
+    }
+}
+
 // アコーディオンボタン
 .common-search-accordion-content {
     @include gaps(24.5px, 3);
@@ -372,6 +392,57 @@ $color-accordion-button-background: #FFFAFB;
         right: -20px;
         @media screen and (max-width: 600px) {
             right: 25px;
+        }
+    }
+}
+
+.common-form-step{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    background-color: $color-common-white;
+    border: 1px solid #d3d3d3;
+    .step-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include gaps(0px, 2);
+        .step-num{
+
+        }
+        .step-label{
+
+        }
+        &.step1{
+
+        }
+        &.step2{
+
+        }
+        &.step3{
+
+        }
+        &.active{
+            background-image: url(../img/signup/step2.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 52px;
+            .step-num{
+                color: $color-common-white;
+            }
+            .step-label{
+                color: $color-common-white;
+            }
+            &.step1{
+
+            }
+            &.step2{
+                
+            }
+            &.step3{
+                
+            }
         }
     }
 }
