@@ -23,10 +23,15 @@ get_template_part('./template/head');
     <?php get_template_part('./template/content-header'); ?>
     <div class="common-container favorites-page-content">
         <div class="common-left-content favorites-page-content__left">
-            <!-- コンテンツをここに追加 -->
-             <div class="favorites-page-○○">
-
-             </div>
+            <!-- お気に入り -->
+            <div class="favorites-page-list">
+                <div class="common-sub-titlebox">
+                    <h3 class="title">お気に入り</h3>
+                    <div class="common-flexbox-list"></div>
+                    <span class="addjust-line"></span>
+                  
+                </div>
+            </div>
         </div>
         <?php get_template_part('./template/banner'); ?>
     </div>
