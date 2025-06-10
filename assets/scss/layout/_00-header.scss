@@ -38,7 +38,7 @@
         color: #333;
         letter-spacing: 1px;
         @media (max-width: 768px) {
-            margin-right: 56px;
+            margin-right: 7%;
             height: 38.39px;
             display: flex;
             align-items: flex-end;
@@ -125,6 +125,8 @@
         }
         .favorite-btn {
             color: #333333;
+            display: flex;
+            align-items: center;
             img {
                 width: 18.791px;
                 height: 16.358px;
@@ -133,6 +135,8 @@
         }
         .login-btn {
             color: #333333;
+            display: flex;
+            align-items: center;
             img {
                 width: 18.592px;
                 height: 18.592px;
