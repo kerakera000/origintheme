@@ -222,6 +222,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 143px;
+    margin-bottom: 140px;
     &__cont{
         width: 100%;
         display: flex;
@@ -243,9 +244,32 @@
     &__subcont{
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: flex-start;
         gap: 124px;
+        .card{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 26px;
+            .imgbox{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            &__text{
+                width: 100%;
+            }
+            &.type1{
+                
+            }
+            &.type2{
+                margin-top: 100px;
+            }
+        }
     }
 }
 

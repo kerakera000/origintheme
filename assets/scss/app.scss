@@ -22,3 +22,6 @@
 @use "module/lightGallery" as lightGallery;
 @use "module/modaal" as modal;
 @use "module/swiper" as swiper;
+
+/* Component Components */
+@use "component/contact.scss" as contact;

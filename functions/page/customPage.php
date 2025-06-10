@@ -6,9 +6,29 @@
 function create_custom_pages_with_optional_parents() {
   $pages = [
     [
-      'title' => 'ABOUT',
+      'title' => 'アールビー・アート・アセット株式会社について',
       'slug' => 'about',
       'parent_slug' => '',
+    ],
+    [
+      'title' => 'サービス一覧',
+      'slug' => 'service',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => '美術品担保ローン',
+      'slug' => 'art-finance',
+      'parent_slug' => '',
+    ],
+    [
+      'title' => '保険サービス',
+      'slug' => 'insurance',
+      'parent_slug' => 'art-finance',
+    ],
+    [
+      'title' => '査定・買取サービス',
+      'slug' => 'appraisal-purchase-service',
+      'parent_slug' => 'art-finance',
     ],
   ];
 

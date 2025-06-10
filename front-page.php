@@ -124,32 +124,37 @@ get_template_part('./template/head');
         <div class="ARTfinance__subcont max-1080">
             <div class="card type1">
                 <div class="imgbox">
-                    <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/ARTfinance/loan.svg" alt="">
-                    <p>美術品担保ローン</p>
+                    <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/ARTfinance/insurance.png" alt="">
                 </div>
-                <div class="Card-Common">
-                    <h2 class="Card-Common__title">SERVICE</h2>
-                    <p class="Card-Common__text">弊社が提供する事業、主要サービスのご紹介をいたします。
+                <div class="card__text Card-Common">
+                    <h2 class="Card-Common__title">INSURANCE</h2>
+                    <p class="Card-Common__text">
+                    お客様の大切な美術品を保険商品を通してお守りいたします。<br>
+                    アールビー・アート・アセット株式会社は美術品に関する保険を<br>
+                    中心に、その他の損害保険商品を取り扱う保険代理店です。<br>
+                    美術品の保険でお困りの方は是非ご相談ください。
                     </p>
                     <a href="" class="ViewMore-Common">
                         <span class="ViewMore-Common__text">VIEW MORE</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ViewMoreArrowWhite.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ViewMoreArrowBlack.svg" alt="">
                     </a>
                 </div>
             </div>
 
             <div class="card type2">
                 <div class="imgbox">
-                    <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/ARTfinance/loan.svg" alt="">
-                    <p>美術品担保ローン</p>
+                    <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/ARTfinance/appraisal.png" alt="">
                 </div>
-                <div class="Card-Common">
-                    <h2 class="Card-Common__title">SERVICE</h2>
-                    <p class="Card-Common__text">弊社が提供する事業、主要サービスのご紹介をいたします。
+                <div class="card__text Card-Common">
+                    <h2 class="Card-Common__title">APPRAISAL/<br>PURCHASE SERVICE</h2>
+                    <p class="Card-Common__text">
+                    美術品・骨董品に対する査定・買取サービスをしております。<br>
+                    また、お客様の状況に応じてオークションへの出品も可能です。<br>
+                    お客様のニーズに合わせて国内外のオークション会社と連携いたします。
                     </p>
                     <a href="" class="ViewMore-Common">
                         <span class="ViewMore-Common__text">VIEW MORE</span>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ViewMoreArrowWhite.png" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ViewMoreArrowBlack.svg" alt="">
                     </a>
                 </div>
             </div>
