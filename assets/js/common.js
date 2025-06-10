@@ -38,11 +38,11 @@ const frontSwiper = new Swiper('#frontSwiper', {
   slidesPerView: 1.2,
   spaceBetween: 24,
   centeredSlides: true,
-  // speed: 1000,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  speed: 1000,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',

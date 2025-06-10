@@ -1512,7 +1512,7 @@ button {
 }
 .front-page-content__left .front-swiper-box .swiper-button-next,
 .front-page-content__left .front-swiper-box .swiper-button-prev {
-  top: 50%;
+  top: 40%;
   background: #E21D1E;
   color: #fff;
   width: 40px;
