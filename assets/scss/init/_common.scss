@@ -23,7 +23,7 @@ $color-accordion-button-background: #FFFAFB;
     &::-webkit-scrollbar {
         display: none;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         padding: 0;
     }
 }
@@ -36,7 +36,7 @@ $color-accordion-button-background: #FFFAFB;
     max-width: 1080px;
     min-width: 1080px;
     margin: 0 auto;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         min-width: 100%;
         justify-content: flex-start;
     }
@@ -49,7 +49,7 @@ $color-accordion-button-background: #FFFAFB;
     min-width: 1080px;
     margin: 0 auto;
     padding-top: 94px;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         min-width: 100%;
     }
 }
@@ -131,6 +131,9 @@ $color-accordion-button-background: #FFFAFB;
     color: $color-common-pink;
     transition: all 0.3s ease;
     @include gaps(20px, 3);
+    @media screen and (max-width: 768px) {
+        @include gaps(20px, 1);
+    }
     &:hover{
         background-color: $color-button-type1;
         border: 1px solid $color-border-type1;
@@ -162,7 +165,7 @@ $color-accordion-button-background: #FFFAFB;
     font-size: 14px;
     font-weight: 500;
     color: $color-common-black;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         font-size: 13px;
     }
 }
@@ -182,7 +185,7 @@ $color-accordion-button-background: #FFFAFB;
         @include gaps(24px, 2);
         justify-content: flex-start;
         padding: 0 28px;
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             @include gaps(24px, 1);
         }
     }
@@ -264,7 +267,7 @@ $color-accordion-button-background: #FFFAFB;
 // アコーディオンボタン
 .common-search-accordion-content {
     @include gaps(24.5px, 3);
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         @include gaps(20px, 1);
     }
     .button {
@@ -359,12 +362,12 @@ $color-accordion-button-background: #FFFAFB;
         gap: 24px;
         &.wrapper-flex{
             flex-wrap: wrap;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 flex-wrap: nowrap;
             }
         }
         &.no-swiper{
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 overflow-x: scroll;
                 -ms-overflow-style: none;
                 scrollbar-width: none;
@@ -380,7 +383,7 @@ $color-accordion-button-background: #FFFAFB;
             align-items: stretch;
             // カードの影や余白
             margin-right: 0;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 @include gaps(24px, 1.5);
             }
         }
@@ -406,13 +409,13 @@ $color-accordion-button-background: #FFFAFB;
     }
     .swiper-button-prev {
         left: -20px;
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             left: 25px;
         }
     }
     .swiper-button-next {
         right: -20px;
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 768px) {
             right: 25px;
         }
     }

@@ -28,7 +28,7 @@
         .front-search-box{
             width: 100%;
             margin-bottom: 30px;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 padding: 0 20px;
             }
             &__flexbox-list{
@@ -101,7 +101,7 @@
         .front-popularity-box{
             margin-bottom: 36px;
             width: 100%;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 padding: 0 20px;
             }
             &__buttons{
@@ -117,11 +117,11 @@
         .front-newitem-box{
             width: 100%;
             margin-bottom: 40px;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 padding: 0 20px;
             }
             &__flexbox-list{
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 768px) {
                     margin: 0 -20px;
                     width: calc(100% + 40px);
                 }
@@ -131,14 +131,14 @@
         .front-attention-box{
             width: 100%;
             margin-bottom: 27px;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 padding: 0 20px;
             }
             &__button{
                 margin: 22px 0
             }
             &__flexbox-list{
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 768px) {
                     margin: 0 -20px;
                     width: calc(100% + 40px);
                 }
@@ -153,7 +153,7 @@
                 justify-content: flex-start;
                 gap: 24.5px;
                 width: 100%;
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 768px) {
                     gap: 20px;
                     flex-direction: column;
                 }
@@ -167,7 +167,7 @@
         .front-senior-owner-voice-box{
             width: 100%;
             margin-bottom: 40px;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 padding: 0 20px;
             }
             &__button{
@@ -178,7 +178,7 @@
         .front-learn-about-franchising-box{
             width: 100%;
             margin-bottom: 40px;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 padding: 0 20px;
             }
             &__button{
@@ -189,7 +189,7 @@
         .front-thisweek-headquarters-box{
             width: 100%;
             margin-bottom: 40px;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 padding: 0 20px;
             }
         }
@@ -197,7 +197,7 @@
         .front-Message-from-FC-Headquarters-box{
             width: 100%;
             margin-bottom: 40px;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 padding: 0 20px;
             }
         }
@@ -205,11 +205,11 @@
         .front-media-achievement-box{
             width: 100%;
             margin-bottom: 40px;
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 768px) {
                 padding: 0 20px;
             }
             &__flexbox-list{
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 768px) {
                     margin: 0 -20px;
                     width: calc(100% + 40px);
                 }

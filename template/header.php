@@ -6,7 +6,7 @@ global $site_url;
 <header id="HEADER" class="header">
     <div class="max-content-header">
         <div class="header--logo">
-            <span class="site-title">フラッサイズ PIVOT</span>
+            <span class="site-title">フランチャイズ PIVOT</span>
         </div>
         <div class="header--center">
             <span class="total-shops">総店舗数 <span class="count">1234</span>件</span>
