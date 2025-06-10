@@ -18,15 +18,15 @@ global $site_url;
             </form>
         </div>
         <div class="header--right">
-            <button class="favorite-btn">
+            <a href="/favorites" class="favorite-btn">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/favorite.svg" alt="お気に入り">
                 お気に入り
-            </button>
-            <button class="login-btn">
+            </a>
+            <a href="/sign-in" class="login-btn">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/signin.svg" alt="ログイン">
                 ログイン
-            </button>
-            <button class="register-btn">無料会員登録</button>
+            </a>
+            <a href="/sign-up" class="register-btn">無料会員登録</a>
         </div>
     </div>
 </header>

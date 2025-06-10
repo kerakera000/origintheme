@@ -117,6 +117,27 @@ $color-accordion-button-background: #FFFAFB;
         color: $color-common-white;
     }
 }
+// アコーディオンボタン
+.common-accordion-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-common-white;
+    border: 1px solid $color-border-type1;
+    border-radius: 4px;
+    padding: 11px 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: $color-common-pink;
+    transition: all 0.3s ease;
+    @include gaps(20px, 3);
+    &:hover{
+        background-color: $color-button-type1;
+        border: 1px solid $color-border-type1;
+        color: $color-common-white;
+        transition: all 0.3s ease;
+    }
+}
 
 // サブタイトル
 .common-sub-titlebox{
