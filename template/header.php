@@ -5,6 +5,7 @@ global $site_url;
 
 <header id="HEADER" class="header">
     <div class="header--logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/icon.svg" alt="">
     </div>
     <div id="SPHEADER" class="header--linkbox">
         <a class="link" href="/">

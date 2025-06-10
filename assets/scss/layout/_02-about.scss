@@ -1,23 +1,63 @@
 @use "../init/index" as *;
 
+.aboutkv{
+    width: 100%;
+    height: 542px;
+    margin: 136px 0 94px;
+    padding: 0 24px;
+    &__background{
+        width: 100%;
+        height: 100%;
+        background-image: url(/wp-content/themes/origintheme/assets/img/about/kv.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .titlebox{
+            width: 100%;
+            max-width: 1080px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .title-cont{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                &__title{
+                    font-size: 52px;
+                    color: #ffffff;
+                    line-height: 1.8;
+                }
+                &__text{
+                    width: 100%;
+                    text-align: center;
+                    font-size: 14px;
+                    line-height: 19px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
 .philosophy {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 80px 0 60px 0;
+    padding: 0px 0 78px 0;
     background: #fff;
 
     &__image {
-        margin: 40px auto 0 auto;
+        margin: 0px auto 0 auto;
         max-width: 520px;
         img {
         width: 100%;
-        height: auto;
-        display: block;
-        border: 1px solid #eee;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-        background: #fafafa;
         }
     }
 }
@@ -28,9 +68,9 @@
 }
 
 .philosophy-common-subtitle {
-    color: #aaa;
-    font-size: 1.1rem;
-    margin-bottom: 12px;
+    color: #6A6A6A;
+    font-size: 14px;
+    margin-bottom: 34px;
 }
 
 .philosophy-common-line {
@@ -40,7 +80,7 @@
 }
 
 .philosophy-common-content {
-    margin-bottom: 32px;
+    margin-bottom: 37px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,14 +88,16 @@
 }
 
 .philosophy-common-main-text {
-    font-size: 2rem;
+    font-size: 30px;
     margin-bottom: 18px;
+    line-height: 1.47;
     text-align: center;
+    margin-top: 33px;
 }
 
 .philosophy-common-description {
     color: #444;
-    font-size: 1.1rem;
+    font-size: 14px;
     line-height: 1.8;
     margin-bottom: 0;
     text-align: center;
@@ -63,6 +105,7 @@
 .about-common-title {
     text-align: left;
     width: 100%;
+    margin-bottom: 42px;
     .title {
         font-size: 2.5rem;
         color: #2a3b4d;
@@ -82,7 +125,6 @@
     align-items: flex-start;
     justify-content: center;
     padding: 100px 0;
-    margin-bottom: 50px;
     &__cont{
         width: 100%;
         display: flex;
@@ -94,6 +136,7 @@
 
 .company-table {
     width: 100%;
+    border-top: 1px solid #c5c5c5;
     th, td {
         border-bottom: 1px solid #c5c5c5;
         padding: 16px 18px 16px 0;
@@ -101,11 +144,42 @@
     }
     th {
         font-weight: 600;
-        width: 180px;
+        width: 28%;
         color: #2a3b4d;
     }
     td {
         color: #333;
+        .items{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+            margin-bottom: 4px;
+            &__title{
+                font-size: 14px;
+                color: #2a3b4d;
+                width: 70px;
+                line-height: 14px;
+            }
+            &__colon{
+                font-size: 14px;
+                color: #2a3b4d;
+                width: 10px;
+                line-height: 14px;
+                display: flex;
+                align-items: center;
+            }
+            &__flexbox{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-direction: column;
+                gap: 6px;
+            }
+            &__text{
+                font-size: 14px;
+            }
+        }
     }
     tr {
         &:nth-child(even) {
@@ -116,7 +190,7 @@
 .page-about-access {
     width: 100%;
     background: #f7f9fa;
-    padding: 80px 0;
+    padding: 80px 0 150px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -128,9 +202,11 @@
     }
     &__map {
         width: 100%;
+        margin-bottom: 44px;
         img {
             width: 100%;
             height: auto;
+            object-fit: cover;
             border-radius: 8px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.08);
         }
@@ -140,8 +216,15 @@
         align-items: flex-start;
         justify-content: flex-start;
         width: 100%;
-        p {
-            margin-bottom: 12px;
+        .cont{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            p{
+                font-size: 14px;
+                line-height: 1.8;
+            }
         }
     }
 }

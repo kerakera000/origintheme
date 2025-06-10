@@ -7,72 +7,34 @@ wp_reset_postdata();
 <!-- footer -->
 
 <footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <img class="footer-content--logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo/logo.svg" alt="">
-            <div id="" class="footer--linkbox">
-                <a class="link" href="/">
-                    <span class="text">
-                    TOP
-                    </span>
-                    <span class="hover">
-                    TOP
-                    </span>
-                </a>
-                <a class="link" href="/about">
-                    <span class="text">
-                    ABOUT US
-                    </span>
-                    <span class="hover">
-                    ABOUT US
-                    </span>
-                </a>
-                <a class="link" href="/service">
-                    <span class="text">
-                    SERVICE
-                    </span>
-                    <span class="hover">
-                    SERVICE
-                    </span>
-                </a>
-                <a class="link" href="/news">
-                    <span class="text">
-                    NEWS
-                    </span>
-                    <span class="hover">
-                    NEWS
-                    </span>
-                </a>
-                <a class="link" href="/access">
-                    <span class="text">
-                    ACCESS
-                    </span>
-                    <span class="hover">
-                    ACCESS
-                    </span>
-                </a>
-                <a class="link contact-link" href="/contact">
-                    <span class="text">
-                    お問い合わせ
-                    </span>
-                    <span class="hover">
-                    お問い合わせ
-                    </span>
-                </a>
-            </div>
+    <div class="footer__cont max-1080">
+      <div class="footer__left">
+        <div class="footer__logo">RB Art Asset</div>
+        <div class="footer__info">
+        © 2025. RB ART asset Co.,Ltd.
         </div>
-        <div class="footer-content type2">
-            <div class="icon-logo">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer/footer_img 2.svg" alt="">
-                <p class="sub-text">
-                ISO27001登録範囲：東京本社、MSC、大阪支社における情報通信システムの企画、設計、開発、製作、保守・運用業務及び経営管理業務<br>
-                ISO9001登録範囲：東京本社、MSCにおけるITインフラソリューションのサービス、製品の加工、及び販売
-                </p>
+      </div>
+      <div class="footer__center">
+        <nav class="footer__nav">
+            <a href="#">TOP</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">SERVICE</a>
+            <a href="#">NEWS</a>
+            <a href="#">ACCESS</a>
+            <div class="right">
+                <button class="footer__btn">お問い合わせ</button>
             </div>
-            <p class="copyright">
-                ©︎ SERAKU.Co.,Ltd. All Rights Reserved.
-            </p>
+        </nav>
+        <div class="footer__links">
+          <span>保険勧誘方針</span>
+          <span>個人情報保護に関する基本方針</span>
+          <span>個人情報保護法等に基づく公表事項</span>
+          <span>反社会的勢力に対する基本方針</span>
+          <span>指定信用情報機関</span>
+          <span>貸金業務にかかる指定紛争解決機関のご紹介</span>
         </div>
+      </div>
+
     </div>
 </footer>
 </div>

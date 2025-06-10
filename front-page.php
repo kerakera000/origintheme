@@ -112,7 +112,7 @@ get_template_part('./template/head');
                 </p>
                 <a href="" class="ViewMore-Common">
                     <span class="ViewMore-Common__text">VIEW MORE</span>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ViewMoreArrowWhite.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/ViewMoreArrowBlack.svg" alt="">
                 </a>
             </div>
 
