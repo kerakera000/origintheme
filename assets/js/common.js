@@ -33,3 +33,28 @@ const mySwiper = new Swiper('#SwiperNewItem', {
 });
 window.addEventListener('load', () => {
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  const openSearchModalBtn = document.getElementById('Open-Searh-Modal');
+  const searchModalContainer = document.getElementById('Search-Modal');
+
+  if (openSearchModalBtn && searchModalContainer) {
+    openSearchModalBtn.addEventListener('click', () => {
+      searchModalContainer.classList.add('is-active');
+    });
+  }
+
+  // 閉じるボタン処理
+  document.addEventListener('click', (e) => {
+    if (e.target.matches('#close-modal')) {
+      searchModalContainer.classList.remove('is-active');
+    }
+  });
+
+  // Escapeキーで閉じる
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && searchModalContainer.classList.contains('is-active')) {
+      searchModalContainer.classList.remove('is-active');
+    }
+  });
+});

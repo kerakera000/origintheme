@@ -14,11 +14,11 @@
 @use "layout/00-content-header" as content-header;
 @use "layout/00-footer" as footer;
 @use "layout/00-header" as header;
+@use "layout/00-search-modal" as search-modal;
 @use "layout/00-sidebar" as sidebar;
 @use "layout/01-top" as top;
 @use "layout/02-about" as about;
 @use "layout/03-favorite" as favorite;
-@use "layout/03-search-conditions" as conditions;
 @use "layout/06-404" as error;
 
 /* Module Components */

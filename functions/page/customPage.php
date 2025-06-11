@@ -139,6 +139,5 @@ function create_custom_pages_with_optional_parents() {
   //   ));
   // }
 }
-
-add_action('after_setup_theme', 'create_custom_pages_with_optional_parents');
 ?>
+
