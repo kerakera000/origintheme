@@ -14,6 +14,27 @@ get_template_part('./template/head');
     <?php get_template_part('./template/content-header'); ?>
     <div class="common-container front-page-content">
         <div class="common-left-content front-page-content__left">
+            <div class="front-swiper-box">
+                <div id="frontSwiper" class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/kv1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/kv2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/kv1.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/kv2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
             <!-- バナーコンテンツ -->
             <div class="front-bunner-box">
                 <a class="common-bunner-image">

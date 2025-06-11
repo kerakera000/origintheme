@@ -4,12 +4,12 @@
  */
 ?>
 <div class="content-header-nav">
-  <a href="#" class="nav-item nav-search">
+  <button id="Search-Condition-Button" class="nav-item nav-search">
     <span class="nav-icon">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/search-white.svg" alt="検索">
     </span>
     フランチャイズを探す
-  </a>
+  </button>
   <a href="#" class="nav-item nav-ranking">
     <span class="nav-icon">
       <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header/rank.svg" alt="ランキング">
@@ -26,3 +26,5 @@
     このサイト名について
   </a>
 </div>
+
+<?php get_template_part('./template/search-condition-modal');?>
