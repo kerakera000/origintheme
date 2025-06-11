@@ -1,151 +1,176 @@
 @use "../init/index" as *;
 
-.search-conditions-page-content {
-    &__left{
-        // 検索条件
-        .search-mainbox {
-            &__search-box {
+.modal-search-condition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: -1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    &.open{
+        opacity: 1;
+        z-index: 4000;
+        transition: 0.3s;
+    }
+    .search-mainbox {
+        max-width: 1080px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 41px 30px 41px;
+        position: relative;
+        .close-button{
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #b32e2e;
+            font-size: 24px;
+        }
+        &__search-box {
+            width: 100%;
+            margin-bottom: 30px;
+            padding-top: 20px;
+            .flexbox-list {
                 width: 100%;
-                margin-bottom: 30px;
-                padding-top: 20px;
-                .flexbox-list {
-                    width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+                .js-accordion-toggle,
+                .list-title {
                     display: flex;
                     align-items: center;
-                    justify-content: flex-start;
-                    flex-direction: column;
-                    background-color: #fff;
-                    border-radius: 12px;
-                    padding: 41px 30px 41px;
-                    .js-accordion-toggle,
-                    .list-title {
+                    justify-content: center;
+                    width: 100%;
+                    border-radius: 8px 8px 0 0;
+                    cursor: pointer;
+                    position: relative;
+                    .text {
+                        font-size: 18px;
+                        color: #222;
+                    }
+                    .icon {
+                        margin-left: 8px;
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        width: 100%;
-                        border-radius: 8px 8px 0 0;
-                        cursor: pointer;
-                        position: relative;
-                        .text {
-                            font-size: 18px;
-                            color: #222;
-                        }
-                        .icon {
+                        @media screen and (max-width: 768px) {
+                            margin: 0 30px;
                             margin-left: 8px;
-                            width: 20px;
-                            height: 20px;
-                            position: absolute;
-                            right: 0;
-                            top: 50%;
-                            transform: translateY(-50%);
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            @media screen and (max-width: 768px) {
-                                margin: 0 30px;
-                                margin-left: 8px;
-                            }
-                            img {
-                                width: 100%;
-                                height: 100%;
-                                object-fit: contain;
-                                transform: rotate(180deg);
-                                transition: 0.3s;
-                            }
                         }
-                        &.is-open .icon img {
-                            transform: rotate(0deg);
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            transform: rotate(180deg);
                             transition: 0.3s;
                         }
                     }
+                    &.is-open .icon img {
+                        transform: rotate(0deg);
+                        transition: 0.3s;
+                    }
+                }
 
-                    .js-accordion-content {
-                        width: 100%;
-                        box-sizing: border-box;
-                        animation: fadeInAccordion 0.3s;
-                        display: flex;
-                        align-items: center;
-                        justify-content: flex-start;
-                        flex-wrap: wrap;
-                        gap: 21px;
-                        margin-top: 21px;
+                .js-accordion-content {
+                    width: 100%;
+                    box-sizing: border-box;
+                    animation: fadeInAccordion 0.3s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    gap: 21px;
+                    margin-top: 21px;
+                    .sc-button {
+                        width: calc(33.333% - 14px);
+                        margin-bottom: 6px;
+                        height: 45px;
+                        background-color: #fff8f8;
+                    }
+                    @media screen and (max-width: 768px) {
                         .sc-button {
-                            width: calc(33.333% - 14px);
-                            margin-bottom: 6px;
-                            height: 45px;
-                            background-color: #fff8f8;
-                        }
-                        @media screen and (max-width: 768px) {
-                            .sc-button {
-                                width: 100%;
-                                margin: 0 10px;
-                            }
-                        }
-                    }
-
-                    &__date-search {
-                        width: 100%;
-                        display: contents;
-                        align-items: center;
-                        .options{
-                            width: 75%;
-                            margin: 21px 0 25px 0;
-                            display: flex;
-                            align-items: center;
-                            justify-items: center;
-                            justify-content: space-between;
-                            @media screen and (max-width: 768px) {
-                                display: contents;
-                            }
-                            .s-button {
-                                height: 45px;
-                                &__text{
-                                    color: #888;
-                                }
-                                @media screen and (max-width: 768px) {
-                                    width: 100%;
-                                    height: 45px;
-                                    margin: 10px 0;
-                                }
-                            }
-                            .bt-line {
-                                margin: 0 18px 0 18px;
-                                width: 45px;
-                                height: 3px;
-                                background-color: #b2b2b2;
-                                @media screen and (max-width: 768px) {
-                                    display: none;
-                                }
-                            }
-                        }
-                        .pink-button {
-                            width: 200px;
-                            height: 45px;
-                            @media screen and (max-width: 768px) {
-                                margin-top: 15px;
-                            }
-                        }
-                    }
-
-                    .addjust-line {
-                        margin: 40px 0 37px;
-                        width: 100%;
-                        height: 1px;
-                        background-color: #DBDBDB;
-                        @media screen and (max-width: 768px) {
-                            margin: 10px 0 10px;
                             width: 100%;
-                            height: 0px;
+                            margin: 0 10px;
                         }
                     }
                 }
+
+                &__date-search {
+                    width: 100%;
+                    display: contents;
+                    align-items: center;
+                    .options{
+                        width: 75%;
+                        margin: 21px 0 25px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-items: center;
+                        justify-content: space-between;
+                        @media screen and (max-width: 768px) {
+                            display: contents;
+                        }
+                        .s-button {
+                            height: 45px;
+                            &__text{
+                                color: #888;
+                            }
+                            @media screen and (max-width: 768px) {
+                                width: 100%;
+                                height: 45px;
+                                margin: 10px 0;
+                            }
+                        }
+                        .bt-line {
+                            margin: 0 18px 0 18px;
+                            width: 45px;
+                            height: 3px;
+                            background-color: #b2b2b2;
+                            @media screen and (max-width: 768px) {
+                                display: none;
+                            }
+                        }
+                    }
+                    .pink-button {
+                        width: 200px;
+                        height: 45px;
+                        @media screen and (max-width: 768px) {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+
+                .addjust-line {
+                    margin: 40px 0 37px;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #DBDBDB;
+                    @media screen and (max-width: 768px) {
+                        margin: 10px 0 10px;
+                        width: 100%;
+                        height: 0px;
+                    }
+                }
             }
-            @media screen and (max-width: 768px) {
-                padding: 0 20px;
-            }
+        }
+        @media screen and (max-width: 768px) {
+            padding: 0 20px;
         }
     }
 }
+
 
 
 

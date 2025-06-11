@@ -68,4 +68,21 @@ const frontSwiper = new Swiper('#frontSwiper', {
   }
 });
 window.addEventListener('load', () => {
+  // 検索条件モーダルの制御
+  const searchConditionButton = document.getElementById('Search-Condition-Button');
+  const modalSearchCondition = document.getElementById('Modal-Search-Condition');
+  const closeSearchConditionButton = document.getElementById('Close-Search-Condition-Button');
+
+  if (searchConditionButton && modalSearchCondition) {
+    searchConditionButton.addEventListener('click', () => {
+      modalSearchCondition.classList.toggle('open');
+    });
+
+    // 閉じるボタンのクリックイベント
+    if (closeSearchConditionButton) {
+      closeSearchConditionButton.addEventListener('click', () => {
+        modalSearchCondition.classList.remove('open');
+      });
+    }
+  }
 });
