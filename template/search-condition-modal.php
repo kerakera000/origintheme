@@ -14,7 +14,9 @@ global $site_url;
             <div class="common-left-content search-conditions-page-content__left">
                 <!-- 検索条件 -->
                 <div class="search-mainbox">
-                    <button id="Close-Search-Condition-Button" class="close-button">×</button>
+                    <button id="Close-Search-Condition-Button" class="close-button">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/close-button.svg" alt="">
+                    </button>
                     <div class="search-mainbox__search-box">
                         <div class="flexbox-list">                      
                             <div class="common-sub-titlebox">
