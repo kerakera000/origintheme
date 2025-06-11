@@ -32,6 +32,10 @@ global $site_url;
   <script src="<?= $wp_path?>/assets/js/action.js"></script>
   <script src="<?= $wp_path?>/assets/js/comment.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <?php wp_head()?>
 </head>
 <body id="pageTop">
