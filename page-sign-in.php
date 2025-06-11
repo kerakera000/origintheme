@@ -24,6 +24,20 @@ get_template_part('./template/head');
     <div class="common-container signin-page-content">
         <div class="common-left-content signin-page-content__left">
             <!-- コンテンツをここに追加 -->
+            <div class="signin-mainbox">
+                <div class="common-sub-titlebox signin-mainbox__title">
+                    <h3 class="title">ログイン</h3> 
+                </div>
+
+                <form method="post" action="cgi-bin/main.py">
+                <p>メールアドレス </p>
+                <input type="text" name="id" size="20">
+                <p>パスワード</p>
+                <input type="password" name="password" size="20">
+                <p><input type="submit" value="ログイン"></p>
+                </form>
+
+            </div>
         </div>
         <?php get_template_part('./template/banner'); ?>
     </div>

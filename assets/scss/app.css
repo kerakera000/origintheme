@@ -2357,6 +2357,10 @@ button {
     display: none;
   }
 }
+.signin-mainbox {
+  width: 100%;
+}
+
 .notfound404 .Phero {
   height: auto;
   padding: 0 32px 225px;

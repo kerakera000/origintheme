@@ -19,6 +19,8 @@
 @use "layout/02-about" as about;
 @use "layout/03-favorite" as favorite;
 @use "layout/03-search-conditions" as conditions;
+@use "layout/04-signup" as signup;
+@use "layout/05-signin" as signin;
 @use "layout/06-404" as error;
 
 /* Module Components */
