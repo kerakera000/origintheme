@@ -95,6 +95,14 @@ function create_custom_pages_with_optional_parents() {
       'slug' => 'contact',
       'parent_slug' => '',
     ],
+
+    // テストページ２
+    // お役立ちコラムページネイション
+    [
+      'title' => 'テスト２',
+      'slug' => 'test-2',
+      'parent_slug' => '',
+    ],
   ];
 
   // foreach ($pages as $page) {
