@@ -3,6 +3,7 @@
 // よく使用する色
 $color-common-pink: #E21C43;
 $color-common-black: #333333;
+$color-common-grey: #bfbfbf;
 $color-common-white: #FFFFFF;
 
 $color-button-type1: #E33435;
@@ -468,6 +469,50 @@ $color-accordion-button-background: #FFFAFB;
             &.step3{
                 
             }
+        }
+    }
+}
+
+.common-pagination-button-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 35px;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 400px; //
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .common-pagination-button,
+    .common-pagination-pc-button {
+        background-color: $color-common-white;
+        color: $color-common-black;
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 1px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        &:hover {
+            background-color: $color-common-grey;
+            color: $color-common-white;
+        }
+            
+    }
+    .common-now-button,
+    .common-other-button {
+        background-color: $color-common-grey;
+        color: $color-common-black;
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 1px;
+    }
+    @media screen and (max-width: 768px) {
+        .common-pagination-pc-button {
+            display: none;
         }
     }
 }

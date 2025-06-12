@@ -31,7 +31,7 @@ get_template_part('./template/header');
 
             <div class="useful-columm">
                 <div class="common-text useful-text">
-                    フランチャイズ関連情報
+                    記事カテゴリ名
                 </div>
                 <div class="common-flexbox-list fr-flexbox-list">
                     <div class="swiper-wrapper wrapper-flex">
@@ -185,6 +185,27 @@ get_template_part('./template/header');
                         </div>
                     </div>
                 </div>
+
+                <div class="common-center-button-box">
+                    <button class="common-button-pink more-button">
+                        もっと見る
+                    </button>
+                </div>
+
+                <div class="center-text-box">1〜20件 / 全100件</div>
+
+                <div class="common-pagination-button-box">
+                    <button class="common-pagination-button common-now-button">1</button>
+                    <button class="common-pagination-button">2</button>
+                    <button class="common-pagination-button">3</button>
+                    <button class="common-pagination-button">4</button>
+                    <button class="common-pagination-pc-button">5</button>
+                    <button class="common-other-button">...</button>
+                    <button class="common-pagination-button">＞</button>
+                    <button class="common-pagination-button">最後＞＞</button>
+                </div>
+
+                <div class="center-text-box">検索条件を変更</div>
             </div>
         </div>
 
