@@ -2622,6 +2622,80 @@ button {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .test2-page-content__left {
+    padding: 0 20px;
+  }
+}
+.test2-page-content__left .useful-title {
+  margin: 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .test2-page-content__left .useful-title {
+    margin: 15px 0;
+  }
+}
+.test2-page-content__left .useful-text {
+  font-size: 20px;
+}
+.test2-page-content__left .useful-columm {
+  width: 100%;
+  padding: 15px 0;
+}
+.test2-page-content__left .useful-columm .common-text {
+  margin: 10px 0;
+}
+.test2-page-content__left .useful-columm .more-button {
+  margin: 30px 0;
+}
+.test2-page-content__left .useful-columm .big-flexbox-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.test2-page-content__left .useful-columm .big-flexbox-list .swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+.test2-page-content__left .useful-columm .big-flexbox-list .swiper-slide {
+  width: calc(50% - 17.5px);
+}
+@media screen and (max-width: 768px) {
+  .test2-page-content__left .useful-columm .big-flexbox-list .swiper-slide .common-card {
+    padding: 10px 10px;
+  }
+  .test2-page-content__left .useful-columm .big-flexbox-list .swiper-slide .common-card .common-card__title {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .test2-page-content__left .useful-columm .fr-flexbox-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  .test2-page-content__left .useful-columm .fr-flexbox-list .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  .test2-page-content__left .useful-columm .fr-flexbox-list .swiper-slide {
+    width: calc(50% - 17.5px);
+  }
+  .test2-page-content__left .useful-columm .fr-flexbox-list .swiper-slide .common-card {
+    padding: 10px 10px;
+  }
+  .test2-page-content__left .useful-columm .fr-flexbox-list .swiper-slide .common-card .common-card__title {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-list {
+    display: none;
+  }
+}
 .notfound404 .Phero {
   height: auto;
   padding: 0 32px 225px;

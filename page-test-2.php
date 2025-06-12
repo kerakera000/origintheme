@@ -21,8 +21,8 @@ get_template_part('./template/header');
     get_template_part('./template/content-header');
     ?>
 
-    <div class="common-container contact-page-content">
-        <div class="common-left-content test-page-content__left">
+    <div class="common-container test2-page-content">
+        <div class="common-left-content test2-page-content__left">
             <!-- お役立ちコラム(テスト2) -->
 
             <div class="common-sub-titlebox useful-title">
