@@ -2666,7 +2666,7 @@ button {
     padding: 10px 10px;
   }
   .test-page-content__left .useful-columm .big-flexbox-list .swiper-slide .common-card .common-card__title {
-    ont-size: 13px;
+    font-size: 13px;
   }
 }
 @media screen and (max-width: 768px) {
