@@ -448,6 +448,51 @@
 .common-form-step .step-item.active .step-label {
   color: #FFFFFF;
 }
+.common-pagination-button-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 35px;
+}
+@media screen and (max-width: 768px) {
+  .common-pagination-button-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+}
+.common-pagination-button-box .common-pagination-button,
+.common-pagination-button-box .common-pagination-pc-button {
+  background-color: #FFFFFF;
+  color: #333333;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.common-pagination-button-box .common-pagination-button:hover,
+.common-pagination-button-box .common-pagination-pc-button:hover {
+  background-color: #bfbfbf;
+  color: #FFFFFF;
+}
+.common-pagination-button-box .common-now-button,
+.common-pagination-button-box .common-other-button {
+  background-color: #bfbfbf;
+  color: #333333;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 1px;
+}
+@media screen and (max-width: 768px) {
+  .common-pagination-button-box .common-pagination-pc-button {
+    display: none;
+  }
+}
+
 /* CSS Document */
 /*
   ------------------------------------
@@ -3132,6 +3177,38 @@ button {
   }
 }
 @media screen and (max-width: 768px) {
+  .test2-page-content__left {
+    padding: 0 20px;
+  }
+}
+.test2-page-content__left .useful-title {
+  margin: 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .test2-page-content__left .useful-title {
+    margin: 15px 0;
+  }
+}
+.test2-page-content__left .useful-text {
+  font-size: 20px;
+}
+.test2-page-content__left .useful-columm {
+  width: 100%;
+  padding: 15px 0;
+}
+.test2-page-content__left .useful-columm .common-text {
+  margin: 10px 0;
+}
+.test2-page-content__left .useful-columm .more-button {
+  display: none;
+  margin: 30px 0;
+}
+@media screen and (max-width: 768px) {
+  .test2-page-content__left .useful-columm .more-button {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
   .test-page-content__left {
     padding: 0 20px;
   }
@@ -3189,14 +3266,26 @@ button {
     flex-wrap: wrap;
     gap: 35px;
   }
-  .test-page-content__left .useful-columm .fr-flexbox-list .swiper-slide {
+  .test2-page-content__left .useful-columm .fr-flexbox-list .swiper-slide {
     width: calc(50% - 17.5px);
   }
-  .test-page-content__left .useful-columm .fr-flexbox-list .swiper-slide .common-card {
+  .test2-page-content__left .useful-columm .fr-flexbox-list .swiper-slide .common-card {
     padding: 10px 10px;
   }
-  .test-page-content__left .useful-columm .fr-flexbox-list .swiper-slide .common-card .common-card__title {
+  .test2-page-content__left .useful-columm .fr-flexbox-list .swiper-slide .common-card .common-card__title {
     font-size: 13px;
+  }
+}
+.test2-page-content__left .useful-columm .center-text-box {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .test2-page-content__left .useful-columm .center-text-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
   }
 }
 
