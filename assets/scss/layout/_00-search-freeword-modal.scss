@@ -147,18 +147,6 @@
                         flex-wrap: wrap;
                         gap: 21px;
                         margin-top: 21px;
-                        .sc-button {
-                            width: calc(33.333% - 14px);
-                            margin-bottom: 6px;
-                            height: 45px;
-                            background-color: #fff8f8;
-                        }
-                        @media screen and (max-width: 768px) {
-                            .sc-button {
-                                width: 100%;
-                                margin: 0 10px;
-                            }
-                        }
                     }
 
                     &__date-search {

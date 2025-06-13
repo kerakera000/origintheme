@@ -33,12 +33,14 @@ global $site_url;
                                     </span>
                                 </div>
                                 <div class="js-accordion-content" style="display:none;">
-                                    <button class="common-button sc-button">北海道・東北</button>
-                                    <button class="common-button sc-button">関東</button>
-                                    <button class="common-button sc-button">中部</button>
-                                    <button class="common-button sc-button">近畿</button>
-                                    <button class="common-button sc-button">中国・四国</button>
-                                    <button class="common-button sc-button">九州・沖縄</button>
+                                    <div class="accordion-button-group">
+                                        <button class="common-accordion-button">北海道・東北</button>
+                                        <button class="common-accordion-button">関東</button>
+                                        <button class="common-accordion-button">中部</button>
+                                        <button class="common-accordion-button">近畿</button>
+                                        <button class="common-accordion-button">中国・四国</button>
+                                        <button class="common-accordion-button">九州・沖縄</button>
+                                    </div>
                                 </div>
 
                                 <span class="addjust-line"></span>
@@ -50,11 +52,13 @@ global $site_url;
                                     </span>
                                 </div>
                                 <div class="js-accordion-content" style="display:none;">
-                                    <button class="common-button sc-button">1円〜100万円(100件)</button>
-                                    <button class="common-button sc-button">101万円〜300万円(100件)</button>
-                                    <button class="common-button sc-button">301万円〜500万円(100件)</button>
-                                    <button class="common-button sc-button">501万円〜1000万円(100件)</button>
-                                    <button class="common-button sc-button">1001万円以上(100件)</button>
+                                    <div class="accordion-button-group">
+                                        <button class="common-accordion-button">1円〜100万円(100件)</button>
+                                        <button class="common-accordion-button">101万円〜300万円(100件)</button>
+                                        <button class="common-accordion-button">301万円〜500万円(100件)</button>
+                                        <button class="common-accordion-button">501万円〜1000万円(100件)</button>
+                                        <button class="common-accordion-button">1001万円以上(100件)</button>
+                                    </div>
                                 </div>
 
                                 <span class="addjust-line"></span>
