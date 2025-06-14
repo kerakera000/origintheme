@@ -564,9 +564,6 @@
   border-top: 2px solid #d3d3d3;
   border-bottom: 2px solid #d3d3d3;
 }
-.common-form-step .step-item.active.step2 {
-  border-left: 2px solid #E21C43;
-}
 .common-form-step .step-item.active.step2 .border-box {
   position: absolute;
   top: 0;
@@ -3107,10 +3104,6 @@ button {
     display: none;
   }
 }
-.signup-page-content__left {
-  padding: 0 20px;
-}
-
 @media screen and (max-width: 768px) {
   .test2-page-content__left {
     padding: 0 20px;

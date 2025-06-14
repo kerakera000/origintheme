@@ -38,12 +38,12 @@ get_template_part('./template/header');
                     <img class="step-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/signup/step.png" alt="">
                     <img class="step-img-gray" src="<?php echo get_template_directory_uri(); ?>/assets/img/signup/stepgray.png" alt="">
                 </div>
-                <div id="STEP2" class="step2 step-item">
+                <div id="STEP2" class="step2 step-item ">
                     <div class="border-box"></div>
                     <span class="step-num">2</span>
                     <span class="step-label">確認</span>
                     <img class="step-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/signup/step.png" alt="">
-                    <img class="step-img-gray" src="<?php echo get_template_directory_uri(); ?>/assets/img/signup/stepgray.png" alt="">
+                    <img class="step-img-gray" src="<?php echo get_template_directory_uri(); ?>/assets/img/signup/stepgray2.png" alt="">
                 </div>
 
                 <div id="STEP3" class="step3 step-item">
