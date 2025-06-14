@@ -194,7 +194,7 @@ get_template_part('./template/header');
 
                 <div class="center-text-box">1〜20件 / 全100件</div>
 
-                <div class="common-pagination-button-box">
+                <div class="common-pagination-button-box fr-pagenation">
                     <button class="common-pagination-button common-now-button">1</button>
                     <button class="common-pagination-button">2</button>
                     <button class="common-pagination-button">3</button>
