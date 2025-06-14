@@ -560,7 +560,6 @@ $color-accordion-button-background: #FFFAFB;
                 color: $color-common-black;
             }
             &.step1{
-                border-left: 2px solid #E21C43;
                 .border-box{
                     position: absolute;
                     top: 0;
@@ -568,6 +567,7 @@ $color-accordion-button-background: #FFFAFB;
                     height: 100%;
                     border-top: 2px solid #d3d3d3;
                     border-bottom: 2px solid #d3d3d3;
+                    border-left: 2px solid #d3d3d300;
                 }
             }
             &.step2{

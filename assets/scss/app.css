@@ -553,9 +553,6 @@
 .common-form-step .step-item.active .step-label {
   color: #333333;
 }
-.common-form-step .step-item.active.step1 {
-  border-left: 2px solid #E21C43;
-}
 .common-form-step .step-item.active.step1 .border-box {
   position: absolute;
   top: 0;
@@ -563,6 +560,7 @@
   height: 100%;
   border-top: 2px solid #d3d3d3;
   border-bottom: 2px solid #d3d3d3;
+  border-left: 2px solid rgba(211, 211, 211, 0);
 }
 .common-form-step .step-item.active.step2 .border-box {
   position: absolute;
