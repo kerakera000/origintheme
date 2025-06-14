@@ -429,6 +429,7 @@ $color-accordion-button-background: #FFFAFB;
     gap: 24px;
     background-color: $color-common-white;
     border: 1px solid #d3d3d3;
+    height: 52px;
     .step-item{
         display: flex;
         align-items: center;
@@ -453,12 +454,12 @@ $color-accordion-button-background: #FFFAFB;
             background-image: url(../img/signup/step2.svg);
             background-size: contain;
             background-repeat: no-repeat;
-            height: 52px;
+            height: 100%;
             .step-num{
-                color: $color-common-white;
+                color: $color-common-black;
             }
             .step-label{
-                color: $color-common-white;
+                color: $color-common-black;
             }
             &.step1{
 

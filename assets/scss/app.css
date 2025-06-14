@@ -429,6 +429,7 @@
   gap: 24px;
   background-color: #FFFFFF;
   border: 1px solid #d3d3d3;
+  height: 52px;
 }
 .common-form-step .step-item {
   display: flex;
@@ -440,13 +441,13 @@
   background-image: url(../img/signup/step2.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 52px;
+  height: 100%;
 }
 .common-form-step .step-item.active .step-num {
-  color: #FFFFFF;
+  color: #333333;
 }
 .common-form-step .step-item.active .step-label {
-  color: #FFFFFF;
+  color: #333333;
 }
 .common-pagination-button-box {
   display: flex;
