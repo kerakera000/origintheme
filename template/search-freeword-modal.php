@@ -41,15 +41,17 @@ global $site_url;
                                     </span>
                                 </div>
                                 <div class="js-accordion-content" style="display:none;">
-                                    <button class="common-button sc-button">飲食(100件)</button>
-                                    <button class="common-button sc-button">サービス業(100件)</button>
-                                    <button class="common-button sc-button">代理店業(100件)</button>
-                                    <button class="common-button sc-button">小売業(100件)</button>
-                                    <button class="common-button sc-button">教育・保育業(100件)</button>
-                                    <button class="common-button sc-button">美容・健康(100件)</button>
-                                    <button class="common-button sc-button">無店舗(100件)</button>
-                                    <button class="common-button sc-button">介護・福祉(100件)</button>
-                                    <button class="common-button sc-button">海外(100件)</button>
+                                    <div class="accordion-button-group">
+                                        <button class="common-accordion-button">飲食(100件)</button>
+                                        <button class="common-accordion-button">サービス業(100件)</button>
+                                        <button class="common-accordion-button">代理店業(100件)</button>
+                                        <button class="common-accordion-button">小売業(100件)</button>
+                                        <button class="common-accordion-button">教育・保育業(100件)</button>
+                                        <button class="common-accordion-button">美容・健康(100件)</button>
+                                        <button class="common-accordion-button">無店舗(100件)</button>
+                                        <button class="common-accordion-button">介護・福祉(100件)</button>
+                                        <button class="common-accordion-button">海外(100件)</button>
+                                    </div>
                                 </div>
 
                                 <span class="addjust-line"></span>
@@ -61,11 +63,13 @@ global $site_url;
                                     </span>
                                 </div>
                                 <div class="js-accordion-content" style="display:none;">
-                                    <button class="common-button sc-button">1円〜100万円(100件)</button>
-                                    <button class="common-button sc-button">101万円〜300万円(100件)</button>
-                                    <button class="common-button sc-button">301万円〜500万円(100件)</button>
-                                    <button class="common-button sc-button">501万円〜1000万円(100件)</button>
-                                    <button class="common-button sc-button">1001万円以上(100件)</button>
+                                    <div class="accordion-button-group">
+                                        <button class="common-accordion-button">1円〜100万円(100件)</button>
+                                        <button class="common-accordion-button">101万円〜300万円(100件)</button>
+                                        <button class="common-accordion-button">301万円〜500万円(100件)</button>
+                                        <button class="common-accordion-button">501万円〜1000万円(100件)</button>
+                                        <button class="common-accordion-button">1001万円以上(100件)</button>
+                                    </div>
                                 </div>
 
                                 <span class="addjust-line"></span>
@@ -77,12 +81,14 @@ global $site_url;
                                     </span>
                                 </div>
                                 <div class="js-accordion-content" style="display:none;">
-                                    <button class="common-button sc-button">北海道・東北</button>
-                                    <button class="common-button sc-button">関東</button>
-                                    <button class="common-button sc-button">中部</button>
-                                    <button class="common-button sc-button">近畿</button>
-                                    <button class="common-button sc-button">中国・四国</button>
-                                    <button class="common-button sc-button">九州・沖縄</button>
+                                    <div class="accordion-button-group">
+                                        <button class="common-accordion-button">北海道・東北</button>
+                                        <button class="common-accordion-button">関東</button>
+                                        <button class="common-accordion-button">中部</button>
+                                        <button class="common-accordion-button">近畿</button>
+                                        <button class="common-accordion-button">中国・四国</button>
+                                        <button class="common-accordion-button">九州・沖縄</button>
+                                    </div>
                                 </div>
 
                                 <span class="addjust-line"></span>
@@ -94,18 +100,20 @@ global $site_url;
                                     </span>
                                 </div>
                                 <div class="js-accordion-content" style="display:none;">
-                                    <button class="common-button sc-button">副業からスタート</button>
-                                    <button class="common-button sc-button">未経験からスタート</button>
-                                    <button class="common-button sc-button">無店舗で営業</button>
-                                    <button class="common-button sc-button">女性が活躍</button>
-                                    <button class="common-button sc-button">設立初期FC本部</button>
-                                    <button class="common-button sc-button">好きな時間に働ける仕事</button>
-                                    <button class="common-button sc-button">加盟金100万円以下</button>
-                                    <button class="common-button sc-button">土地・店舗活用</button>
-                                    <button class="common-button sc-button">スピード開業可能</button>
-                                    <button class="common-button sc-button">法人新規事業向け</button>
-                                    <button class="common-button sc-button">１人で独立開業</button>
-                                    <button class="common-button sc-button">今月のおすすめFC</button>
+                                    <div class="accordion-button-group">
+                                        <button class="common-accordion-button">副業からスタート</button>
+                                        <button class="common-accordion-button">未経験からスタート</button>
+                                        <button class="common-accordion-button">無店舗で営業</button>
+                                        <button class="common-accordion-button">女性が活躍</button>
+                                        <button class="common-accordion-button">設立初期FC本部</button>
+                                        <button class="common-accordion-button">好きな時間に働ける仕事</button>
+                                        <button class="common-accordion-button">加盟金100万円以下</button>
+                                        <button class="common-accordion-button">土地・店舗活用</button>
+                                        <button class="common-accordion-button">スピード開業可能</button>
+                                        <button class="common-accordion-button">法人新規事業向け</button>
+                                        <button class="common-accordion-button">１人で独立開業</button>
+                                        <button class="common-accordion-button">今月のおすすめFC</button>
+                                    </div>
                                 </div>
 
                                 <span class="addjust-line"></span>
