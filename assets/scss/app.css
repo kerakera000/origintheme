@@ -120,7 +120,7 @@
 .accordion-button-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 21px;
+  gap: 20px;
   width: 100%;
 }
 .accordion-button-group .common-accordion-button {
@@ -434,22 +434,118 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 24px;
-  background-color: #FFFFFF;
-  border: 1px solid #d3d3d3;
   height: 52px;
+  margin: 20px 0;
+  overflow: hidden;
+  border-radius: 5px;
 }
 .common-form-step .step-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 2 - 0px * (2 - 1) / 2);
+  width: calc(100% / 3 - 0px * (3 - 1) / 3);
+  height: 100%;
+  position: relative;
+  background-color: #FFFFFF;
+}
+.common-form-step .step-item .step-num {
+  position: relative;
+  z-index: 1;
+}
+.common-form-step .step-item .step-label {
+  position: relative;
+  z-index: 1;
+}
+.common-form-step .step-item.step1 {
+  z-index: 7;
+}
+.common-form-step .step-item.step1 .step-img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0%;
+  width: 259px;
+  min-width: 259px;
+  height: 100%;
+}
+.common-form-step .step-item.step1 .step-img-gray {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  right: 0%;
+  width: 259px;
+  min-width: 259px;
+  height: 100%;
+}
+.common-form-step .step-item.step1 .border-box {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 100%;
+  width: 100%;
+  border-top: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+  border-left: 2px solid #d3d3d3;
+  border-radius: 4px 0 0 4px;
+}
+.common-form-step .step-item.step1.non-gray .step-img-gray {
+  opacity: 0;
+}
+.common-form-step .step-item.step2 {
+  z-index: 6;
+}
+.common-form-step .step-item.step2 .step-img {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0%;
+  width: 259px;
+  min-width: 259px;
+  height: 100%;
+}
+.common-form-step .step-item.step2 .step-img-gray {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  right: 0%;
+  width: 259px;
+  min-width: 259px;
+  height: 100%;
+}
+.common-form-step .step-item.step2 .border-box {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 100%;
+  width: 100%;
+  border-top: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+}
+.common-form-step .step-item.step2.non-gray .step-img-gray {
+  opacity: 0;
+}
+.common-form-step .step-item.step3 {
+  z-index: 5;
+}
+.common-form-step .step-item.step3 .border-box {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 100%;
+  width: 100%;
+  border-top: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+  border-right: 2px solid #d3d3d3;
+  border-radius: 0 4px 4px 0;
 }
 .common-form-step .step-item.active {
-  background-image: url(../img/signup/step2.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
+  overflow: hidden;
+}
+.common-form-step .step-item.active .step-img {
+  opacity: 1;
+}
+.common-form-step .step-item.active .step-img-gray {
+  opacity: 0;
 }
 .common-form-step .step-item.active .step-num {
   color: #333333;
@@ -457,6 +553,50 @@
 .common-form-step .step-item.active .step-label {
   color: #333333;
 }
+.common-form-step .step-item.active.step1 {
+  border-left: 2px solid #E21C43;
+}
+.common-form-step .step-item.active.step1 .border-box {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 100%;
+  border-top: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+}
+.common-form-step .step-item.active.step2 {
+  border-left: 2px solid #E21C43;
+}
+.common-form-step .step-item.active.step2 .border-box {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 100%;
+  border-top: 2px solid #d3d3d3;
+  border-bottom: 2px solid #d3d3d3;
+}
+.common-form-step .step-item.active.step3 .border-box {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  height: 100%;
+  border: 2px solid #E21C43;
+}
+
+.common-step-main-content {
+  width: 100%;
+  border: 1px solid #E21C43;
+  border-radius: 2px;
+  padding: 40px;
+}
+.common-step-main-content .cont {
+  width: 100%;
+  display: none;
+}
+.common-step-main-content .cont.active {
+  display: flex;
+}
+
 .common-pagination-button-box {
   display: flex;
   justify-content: center;
@@ -903,7 +1043,7 @@ button {
 
 .nav-item {
   flex: 1;
-  background: #e53950;
+  background: #E21D43;
   color: #fff;
   text-align: center;
   padding: 16px 0;
@@ -2967,6 +3107,10 @@ button {
     display: none;
   }
 }
+.signup-page-content__left {
+  padding: 0 20px;
+}
+
 @media screen and (max-width: 768px) {
   .test2-page-content__left {
     padding: 0 20px;

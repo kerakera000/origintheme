@@ -31,26 +31,46 @@ get_template_part('./template/header');
                 <h3 class="title">会員登録</h3>
             </div>
             <div class="common-form-step">
-                <div class="step1 step-item active">
+                <div id="STEP1" class="step1 step-item active">
+                    <div class="border-box"></div>
                     <span class="step-num">1</span>
                     <span class="step-label">入力</span>
+                    <img class="step-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/signup/step.png" alt="">
+                    <img class="step-img-gray" src="<?php echo get_template_directory_uri(); ?>/assets/img/signup/stepgray.png" alt="">
                 </div>
-
-                <div class="step2 step-item">
+                <div id="STEP2" class="step2 step-item">
+                    <div class="border-box"></div>
                     <span class="step-num">2</span>
                     <span class="step-label">確認</span>
+                    <img class="step-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/signup/step.png" alt="">
+                    <img class="step-img-gray" src="<?php echo get_template_directory_uri(); ?>/assets/img/signup/stepgray.png" alt="">
                 </div>
 
-                <div class="step3 step-item">
+                <div id="STEP3" class="step3 step-item">
+                    <div class="border-box"></div>
                     <span class="step-num">3</span>
                     <span class="step-label">完了</span>
                 </div>
             </div>
-             <div>
-                <button class="common-button-pink">
-                    確認
-                </button>
-             </div>
+
+            <div class="common-step-main-content">
+
+                <div id="STEPCONT1" class="first-content cont active">
+                    <button id="Button1" class="common-button-pink">
+                        確認
+                    </button>
+                </div>
+
+                <div id="STEPCONT2" class="second-content cont">
+                    <button id="Button2" class="common-button-pink">
+                        登録
+                    </button>
+                </div>
+
+                <div id="STEPCONT3" class="third-content cont">
+                </div>
+
+            </div>
 
         </div>
 
