@@ -46,12 +46,11 @@ get_template_part('./template/header');
                     <span class="step-label">完了</span>
                 </div>
             </div>
-             <div>
+            <div>
                 <button class="common-button-pink">
                     確認
                 </button>
-             </div>
-
+            </div>
         </div>
 
         <?php

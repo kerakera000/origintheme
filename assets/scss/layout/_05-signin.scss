@@ -2,4 +2,51 @@
 
 .signin-mainbox{
     width: 100%;
+    max-width: 780px;
+    &__title{
+        padding: 15px 0;
+    }
+
+    &__form{
+        border-radius: 2px;
+        border: 2px solid #E21C43;
+        width: 100%;
+        
+        &__innerbox{
+            padding: 40px;
+            input{
+                width: 100%; 
+            }
+            .inner-text-1{
+                color: #E21C43;
+                padding-bottom: 30px;
+            }
+            .inner-text-2{
+                color: #E21C43;
+                padding-bottom: 10px;
+            }
+            .inner-black{
+                color: #333333;
+                padding-bottom: 10px;
+            }
+            .password-text{
+                display: flex;
+                .password-forget{
+                    margin: 0 0 0 auto;
+                    font-size: 13px;
+                }
+            }
+            .input-box{
+                padding-bottom: 30px;
+                border: none;
+                input {
+                    width: 100%;
+                    border: none; /* ボーダーを削除 */
+                    outline: none; /* フォーカス時のアウトラインを削除 */
+                    /* 必要に応じて背景色やパディングを調整 */
+                }
+            }
+
+        }
+    }
 }
