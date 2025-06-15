@@ -32,12 +32,14 @@ get_template_part('./template/head');
                     <div class="signin-mainbox__form__innerbox">
                         <p class="inner-text-1">登録いただいたメールアドレスとパスワードを入力してください</p>
                         <form method="post" action="cgi-bin/main.py">
-                            <p class="inner-black">メールアドレス</p>
+                            <div class="input-text">
+                                <p class="inner-black">メールアドレス</p>
+                            </div>
                             <div class="input-box">
                                 <input type="text" name="id" size="20">
                             </div>
                             
-                            <div class="password-text">
+                            <div class="input-text">
                                 <p class="inner-black">パスワード</p>
                                 <a class="inner-text-2 password-forget">パスワードを忘れた方</a>
                             </div>
