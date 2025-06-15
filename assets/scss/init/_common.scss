@@ -288,12 +288,13 @@ $color-accordion-button-background: #FFFAFB;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: #fff;
-        border: 1px solid #e0e0e0;
+        background: $color-common-white;
+        border: 1px solid $color-common-grey;
         border-radius: 4px;
         padding: 8px 16px;
         font-size: 16px;
-        color: #888;
+        color: $color-common-grey;
+
         cursor: pointer;
         transition: border-color 0.2s;
         outline: none;
@@ -609,13 +610,14 @@ $color-accordion-button-background: #FFFAFB;
     }
 }
 
-.common-flexbox-list {
+// 必須タグ付きタイトル
+.common-required-tag-box {
     display: flex;
     align-items: center;
     .tag {
-        border: 1px solid #E21C43;
+        border: 1px solid $color-common-pink;
         border-radius: 2px;
-        background-color: #E21C43;
+        background-color: $color-common-pink;
         color: #ffffff;
         display: inline-flex;
         width: auto;
@@ -630,10 +632,30 @@ $color-accordion-button-background: #FFFAFB;
     }
 }
 
-&__rf-title {
-    margin: 20px 0;
+// 任意タグ付きタイトル
+.common-option-tag-box {
+    display: flex;
+    align-items: center;
+    .tag {
+        border: 1px solid $color-common-black;
+        border-radius: 2px;
+        background-color: $color-common-black;
+        color: #ffffff;
+        display: inline-flex;
+        width: auto;
+        padding: 2px 2px;
+        height: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    .title {
+        margin-left: 10px;
+        font-size: 21px;
+    }
 }
-&__selection-box {
+
+// ラジオボタン横並び
+.common-radio-selection-box {
     display: flex;
     gap: 15px;
     .radio-box {
@@ -678,6 +700,30 @@ $color-accordion-button-background: #FFFAFB;
             opacity: 1;
         }
     }
+}
+
+
+// 記入欄
+.common-text-input-box {
+    display: flex;
+    align-items: center;
+    background: $color-common-white;
+    border: solid 1px $color-common-grey;
+    border-radius: 4px;
+    padding: 10px 12px;
+    width: 100%;
+    input[type="text"] {
+        border: none;
+        background: transparent;
+        outline: none;
+        font-size: 14px;
+        width: 100%;
+    }
+    input::placeholder {
+        color: $color-common-grey;
+        font-size: 14px; /* フォントサイズ */
+    }
+
 }
 
 .common-pagination-button-box {
