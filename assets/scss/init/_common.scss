@@ -3,6 +3,7 @@
 // よく使用する色
 $color-common-pink: #E21C43;
 $color-common-black: #333333;
+$color-common-grey: #bfbfbf;
 $color-common-white: #FFFFFF;
 
 $color-button-type1: #E33435;
@@ -118,7 +119,12 @@ $color-accordion-button-background: #FFFAFB;
     }
 }
 // アコーディオンボタン
-.common-accordion-button{
+.accordion-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+    .common-accordion-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,18 +135,25 @@ $color-accordion-button-background: #FFFAFB;
     font-size: 16px;
     font-weight: 500;
     color: $color-common-pink;
+    width: calc((100% - 42px) / 3); // ← 統合
     transition: all 0.3s ease;
+
     @include gaps(20px, 3);
+
     @media screen and (max-width: 768px) {
         @include gaps(20px, 1);
+        width: 100%; // SP時に1列表示
     }
-    &:hover{
+
+    &:hover {
         background-color: $color-button-type1;
         border: 1px solid $color-border-type1;
         color: $color-common-white;
         transition: all 0.3s ease;
     }
+    }
 }
+
 
 // サブタイトル
 .common-sub-titlebox{
@@ -421,53 +434,219 @@ $color-accordion-button-background: #FFFAFB;
     }
 }
 
+// ステップパンくずリスト
 .common-form-step{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 24px;
-    background-color: $color-common-white;
-    border: 1px solid #d3d3d3;
+    height: 52px;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 5px;
     .step-item{
         display: flex;
         align-items: center;
         justify-content: center;
-        @include gaps(0px, 2);
+        @include gaps(0px, 3);
+        height: 100%;
+        position: relative;
+        background-color: $color-common-white;
         .step-num{
-
+            position: relative;
+            z-index: 1;
         }
         .step-label{
-
+            position: relative;
+            z-index: 1;
         }
         &.step1{
-
+            z-index: 7;
+            .step-img{
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: 0%;
+                width: 259px;
+                min-width: 259px;
+                height: 100%;
+            }
+            .step-img-gray{
+                position: absolute;
+                opacity: 1;
+                top: 0;
+                right: 0%;
+                width: 259px;
+                min-width: 259px;
+                height: 100%;
+            }
+            .border-box{
+                position: absolute;
+                top: 0;
+                right: 0%;
+                height: 100%;
+                width: 100%;
+                border-top: 2px solid #d3d3d3;
+                border-bottom: 2px solid #d3d3d3;
+                border-left: 2px solid #d3d3d3;
+                border-radius: 4px 0 0 4px;
+            }
+            &.non-gray{
+                .step-img-gray{
+                    opacity: 0;
+                }
+            }
         }
         &.step2{
-
+            z-index: 6;
+            .step-img{
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: 0%;
+                width: 259px;
+                min-width: 259px;
+                height: 100%;
+            }
+            .step-img-gray{
+                position: absolute;
+                opacity: 1;
+                top: 0;
+                right: 0%;
+                width: 259px;
+                min-width: 259px;
+                height: 100%;
+            }
+            .border-box{
+                position: absolute;
+                top: 0;
+                right: 0%;
+                height: 100%;
+                width: 100%;
+                border-top: 2px solid #d3d3d3;
+                border-bottom: 2px solid #d3d3d3;
+            }
+            &.non-gray{
+                .step-img-gray{
+                    opacity: 0;
+                }
+            }
         }
         &.step3{
-
+            z-index: 5;
+            .border-box{
+                position: absolute;
+                top: 0;
+                right: 0%;
+                height: 100%;
+                width: 100%;
+                border-top: 2px solid #d3d3d3;
+                border-bottom: 2px solid #d3d3d3;
+                border-right: 2px solid #d3d3d3;
+                border-radius: 0 4px 4px 0;
+            }
         }
         &.active{
-            background-image: url(../img/signup/step2.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            height: 52px;
+            overflow: hidden;
+            .step-img{
+                opacity: 1;
+            }
+            .step-img-gray{
+                opacity: 0;
+            }
             .step-num{
-                color: $color-common-white;
+                color: $color-common-black;
             }
             .step-label{
-                color: $color-common-white;
+                color: $color-common-black;
             }
             &.step1{
-
+                .border-box{
+                    position: absolute;
+                    top: 0;
+                    right: 0%;
+                    height: 100%;
+                    border-top: 2px solid #d3d3d3;
+                    border-bottom: 2px solid #d3d3d3;
+                    border-left: 2px solid #d3d3d300;
+                }
             }
             &.step2{
-                
+                .border-box{
+                    position: absolute;
+                    top: 0;
+                    right: 0%;
+                    height: 100%;
+                    border-top: 2px solid #d3d3d3;
+                    border-bottom: 2px solid #d3d3d3;
+                }
             }
             &.step3{
-                
+                .border-box{
+                    position: absolute;
+                    top: 0;
+                    right: 0%;
+                    height: 100%;
+                    border: 2px solid $color-common-pink;
+                }
             }
+        }
+    }
+}
+
+// ステップメインコンテンツ
+.common-step-main-content{
+    width: 100%;
+    border: 1px solid #E21C43;
+    border-radius: 2px;
+    padding: 40px;
+    .cont{
+        width: 100%;
+        display: none;
+        &.active{
+            display: flex;
+        }
+    }
+}
+
+.common-pagination-button-box {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 400px; //
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+
+    .common-pagination-button,
+    .common-pagination-pc-button {
+        background-color: $color-common-white;
+        color: $color-common-black;
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 1px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        &:hover {
+            background-color: $color-common-grey;
+            color: $color-common-white;
+        }
+            
+    }
+    .common-now-button,
+    .common-other-button {
+        background-color: $color-common-grey;
+        color: $color-common-black;
+        padding: 6px 12px;
+        font-size: 14px;
+        border-radius: 1px;
+    }
+    @media screen and (max-width: 768px) {
+        .common-pagination-pc-button {
+            display: none;
         }
     }
 }
