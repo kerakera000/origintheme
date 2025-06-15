@@ -52,8 +52,7 @@ get_template_part('./template/header');
                     <span class="step-label">完了</span>
                 </div>
             </div>
-
-            <div class="common-step-main-content">
+　　　　　　　<div class="common-step-main-content">
 
                 <div id="STEPCONT1" class="first-content cont active">
                     <button id="Button1" class="common-button-pink">
@@ -70,8 +69,7 @@ get_template_part('./template/header');
                 <div id="STEPCONT3" class="third-content cont">
                 </div>
 
-            </div>
-
+            　</div>
         </div>
 
         <?php
