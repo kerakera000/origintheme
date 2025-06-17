@@ -716,8 +716,9 @@ $color-accordion-button-background: #FFFAFB;
         border: none;
         background: transparent;
         outline: none;
-        font-size: 14px;
         width: 100%;
+        color: $color-common-black;
+        font-size: 18px;
     }
     input::placeholder {
         color: $color-common-grey;
@@ -726,6 +727,54 @@ $color-accordion-button-background: #FFFAFB;
 
 }
 
+// 同意チェックボックス
+.common-agreement-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $color-common-black;
+
+    a {
+      color: $color-common-pink;
+      text-decoration: underline;
+      margin: 0 4px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 6px;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $color-common-pink;
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      background-color: $color-common-white;
+
+      &:checked {
+        background-color: $color-common-white;
+      }
+      &:checked::after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        width: 6px;
+        height: 10px;
+        border: solid $color-common-pink;
+        border-width: 0 1px 1px 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+// ページネイション
 .common-pagination-button-box {
     display: flex;
     justify-content: center;

@@ -692,8 +692,9 @@
   border: none;
   background: transparent;
   outline: none;
-  font-size: 14px;
   width: 100%;
+  color: #333333;
+  font-size: 18px;
 }
 .common-text-input-box input::-moz-placeholder {
   color: #bfbfbf;
@@ -702,6 +703,50 @@
 .common-text-input-box input::placeholder {
   color: #bfbfbf;
   font-size: 14px; /* フォントサイズ */
+}
+
+.common-agreement-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.common-agreement-box label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #333333;
+}
+.common-agreement-box label a {
+  color: #E21C43;
+  text-decoration: underline;
+  margin: 0 4px;
+}
+.common-agreement-box label input[type=checkbox] {
+  margin-right: 6px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E21C43;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+.common-agreement-box label input[type=checkbox]:checked {
+  background-color: #FFFFFF;
+}
+.common-agreement-box label input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 10px;
+  border: solid #E21C43;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
 }
 
 .common-pagination-button-box {
@@ -3441,6 +3486,34 @@ button {
 .request-material-page-content__left .request-form__margin-b {
   margin: 0 0 20px 0;
 }
+.request-material-page-content__left .request-form__left-box {
+  display: flex;
+  align-items: center;
+}
+.request-material-page-content__left .request-form__left-box .left {
+  position: relative;
+  width: 100%;
+  max-width: 35%;
+}
+.request-material-page-content__left .request-form__left-box .left label.unit-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 18px;
+  pointer-events: none;
+}
+.request-material-page-content__left .request-form__left-box .left input.unit-placeholder {
+  margin-left: auto;
+  display: block;
+  text-align: right;
+  color: #333333;
+  font-size: 18px;
+}
+.request-material-page-content__left .request-form__left-box .unit {
+  margin-left: 15px;
+  font-size: 21px;
+}
 .request-material-page-content__left .request-form__corporations-form {
   display: none;
 }
@@ -3455,6 +3528,73 @@ button {
 }
 .request-material-page-content__left .request-form__accordion .request-button {
   padding: 13.5px;
+}
+.request-material-page-content__left .request-form__fc-card-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.request-material-page-content__left .request-form__fc-card-list .fc-card {
+  width: calc((100% - 48px) / 3);
+  margin-top: 20px;
+}
+.request-material-page-content__left .request-form__fc-card-list .fc-card .image {
+  width: 100%;
+  aspect-ratio: 16/10;
+  margin-bottom: 12px;
+  background-color: #dfdfdf;
+}
+.request-material-page-content__left .request-form__fc-card-list .fc-card .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.request-material-page-content__left .request-form__fc-card-list .fc-card .fc-name {
+  color: #E21C43;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.request-material-page-content__left .request-form__fc-card-list .fc-card .desc {
+  font-size: 13px;
+  color: #333333;
+  margin-bottom: 12px;
+}
+.request-material-page-content__left .request-form__fc-card-list .fc-card .desc p {
+  margin-bottom: 4px;
+}
+.request-material-page-content__left .request-form__fc-card-list .fc-card .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+.request-material-page-content__left .request-form__fc-card-list .fc-card .checkbox input[type=checkbox] {
+  margin: 0 8px 0 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #E21C43;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+.request-material-page-content__left .request-form__fc-card-list .fc-card .checkbox input[type=checkbox]:checked {
+  background-color: #FFFFFF;
+}
+.request-material-page-content__left .request-form__fc-card-list .fc-card .checkbox input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 10px;
+  border: solid #E21C43;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
 }
 
 @media screen and (max-width: 768px) {

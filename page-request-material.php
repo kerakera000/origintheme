@@ -284,6 +284,114 @@ get_template_part('./template/head');
                                 </ul>
                             </div>
                         </div>
+                        
+                        <div class="common-option-tag-box request-form__margin">
+                            <div class="tag">任意</div>
+                            <div class="title">出店ご予算</div>
+                        </div>
+                        <div class="request-form__left-box">
+                            <div class="common-text-input-box left">
+                                <label class="unit-label">約</label>
+                                <input class="unit-placeholder" type="text" name="">
+                            </div>
+                            <span class="unit">万円</span>
+                        </div>
+                        <div class="common-option-tag-box request-form__margin">
+                            <div class="tag">任意</div>
+                            <div class="title">自己資金</div>
+                        </div>
+                        <div class="request-form__left-box">
+                            <div class="common-text-input-box left">
+                                <label class="unit-label">約</label>
+                                <input class="unit-placeholder" type="text" name="">
+                            </div>
+                            <span class="unit">万円</span>
+                        </div>
+                        <div class="common-option-tag-box request-form__margin">
+                            <div class="tag">任意</div>
+                            <div class="title">借入予定額</div>
+                        </div>
+                        <div class="request-form__left-box">
+                            <div class="common-text-input-box left">
+                                <label class="unit-label">約</label>
+                                <input class="unit-placeholder" type="text" name="">
+                            </div>
+                            <span class="unit">万円</span>
+                        </div>
+                        <div class="common-option-tag-box request-form__margin">
+                            <div class="tag">任意</div>
+                            <div class="title">最低希望純利益/月</div>
+                        </div>
+                        <div class="request-form__left-box">
+                            <div class="common-text-input-box left">
+                                <label class="unit-label">約</label>
+                                <input class="unit-placeholder" type="text" name="">
+                            </div>
+                            <span class="unit">万円</span>
+                        </div>
+                        <div class="common-agreement-box">
+                            <label>
+                                <input type="checkbox" name="agree_policy" required>
+                                <a href="/privacy-policy" target="_blank">個人情報保護方針</a>に同意する
+                            </label>
+                        </div>
+
+                        <div class="common-sub-titlebox request-form__margin-big">
+                            <h3 class="title">おすすめのFC</h3>
+                        </div>
+                        <div class="request-form__fc-card-list">
+                            <div class="fc-card">
+                                <div class="image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
+                                </div>
+                                <div class="fc-name">FC本部名</div>
+                                <div class="desc">
+                                    <p>業種<br>&#9632;業種が入ります</p>
+                                    <p>開業資金<br>&#9632;開業資金が入ります</p>
+                                    <p>エリア<br>&#9632;エリアが入ります</p>
+                                </div>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="fc_request[]" value="fc_<?php echo $i; ?>">
+                                    同時に資料請求
+                                </label>
+                            </div>
+                        </div>
+                        <div class="request-form__fc-card-list">
+                            <div class="fc-card">
+                                <div class="image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
+                                </div>
+                                <div class="fc-name">FC本部名</div>
+                                <div class="desc">
+                                    <p>業種<br>&#9632;業種が入ります</p>
+                                    <p>開業資金<br>&#9632;開業資金が入ります</p>
+                                    <p>エリア<br>&#9632;エリアが入ります</p>
+                                </div>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="fc_request[]" value="fc_<?php echo $i; ?>">
+                                    同時に資料請求
+                                </label>
+                            </div>
+                        </div>
+                        <div class="request-form__fc-card-list">
+                            <div class="fc-card">
+                                <div class="image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
+                                </div>
+                                <div class="fc-name">FC本部名</div>
+                                <div class="desc">
+                                    <p>業種<br>&#9632;業種が入ります</p>
+                                    <p>開業資金<br>&#9632;開業資金が入ります</p>
+                                    <p>エリア<br>&#9632;エリアが入ります</p>
+                                </div>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="fc_request[]" value="fc_<?php echo $i; ?>">
+                                    同時に資料請求
+                                </label>
+                            </div>
+                        </div>
+
+
 
                     </div>
                     <div class="common-center-button-box">
