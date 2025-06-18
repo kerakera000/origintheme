@@ -20,6 +20,184 @@ get_template_part('./template/head');
         </div>
     </section>
 
+    <section class="announcements">
+        <div class="container">
+            <div class="announcements__grid">
+                <div class="announcement-card announcement-card--event">
+                    <div class="announcement-card__header">
+                        <div class="announcement-card__icon">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="announcement-card__title">
+                            <h3>Event Information</h3>
+                            <span class="announcement-card__badge">NEW</span>
+                        </div>
+                    </div>
+                    <div class="announcement-card__content">
+                        <div class="announcement-item">
+                            <div class="announcement-item__date">
+                                <span class="date-day">15</span>
+                                <span class="date-month">DEC</span>
+                            </div>
+                            <div class="announcement-item__details">
+                                <h4>Year-End Running Event Confirmed!</h4>
+                                <p>On December 28th (Saturday) only, we will hold a special running event to enjoy the Christmas illuminations.</p>
+                                <div class="announcement-item__tags">
+                                    <span class="tag tag--limited">Limited</span>
+                                    <span class="tag tag--special">Special Price</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="announcement-item">
+                            <div class="announcement-item__date">
+                                <span class="date-day">20</span>
+                                <span class="date-month">DEC</span>
+                            </div>
+                            <div class="announcement-item__details">
+                                <h4>New Year Running Tour Reservations Open</h4>
+                                <p>Reservations for the New Year Running Tour starting January 3rd are now open. Enjoy a special running experience starting with the first sunrise of the year.</p>
+                                <div class="announcement-item__tags">
+                                    <span class="tag tag--new">New Plan</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="announcement-item">
+                            <div class="announcement-item__date">
+                                <span class="date-day">25</span>
+                                <span class="date-month">DEC</span>
+                            </div>
+                            <div class="announcement-item__details">
+                                <h4>Christmas Running Special Plan</h4>
+                                <p>A special running event limited to Christmas Day. Enjoy running with the night illuminations and the beautiful night view of Tokyo.</p>
+                                <div class="announcement-item__tags">
+                                    <span class="tag tag--limited">Limited</span>
+                                    <span class="tag tag--special">Night View</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="announcement-item">
+                            <div class="announcement-item__date">
+                                <span class="date-day">30</span>
+                                <span class="date-month">DEC</span>
+                            </div>
+                            <div class="announcement-item__details">
+                                <h4>New Year's Eve Countdown Run</h4>
+                                <p>A special running event starting with the countdown on New Year's Eve. Experience the moment of welcoming the New Year at a special place.</p>
+                                <div class="announcement-item__tags">
+                                    <span class="tag tag--limited">Limited</span>
+                                    <span class="tag tag--new">Countdown</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="announcement-item">
+                            <div class="announcement-item__date">
+                                <span class="date-day">05</span>
+                                <span class="date-month">JAN</span>
+                            </div>
+                            <div class="announcement-item__details">
+                                <h4>New Year Shrine Visit Running Tour</h4>
+                                <p>A special running tour to enjoy with the New Year's shrine visit. Enjoy running while feeling the fresh air of the New Year and praying at the shrine.</p>
+                                <div class="announcement-item__tags">
+                                    <span class="tag tag--new">Shrine Visit</span>
+                                    <span class="tag tag--special">New Year</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="announcement-item">
+                            <div class="announcement-item__date">
+                                <span class="date-day">10</span>
+                                <span class="date-month">JAN</span>
+                            </div>
+                            <div class="announcement-item__details">
+                                <h4>Coming of Age Day Special Running Tour</h4>
+                                <p>A special running tour to commemorate Coming of Age Day. Run while feeling the traditional culture of Japan with new adults in kimono.</p>
+                                <div class="announcement-item__tags">
+                                    <span class="tag tag--limited">Limited</span>
+                                    <span class="tag tag--new">Tradition</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="announcement-item">
+                            <div class="announcement-item__date">
+                                <span class="date-day">15</span>
+                                <span class="date-month">JAN</span>
+                            </div>
+                            <div class="announcement-item__details">
+                                <h4>Little New Year Special Running Plan</h4>
+                                <p>A special running plan tailored to Little New Year. Enjoy running while experiencing mochi pounding and traditional events.</p>
+                                <div class="announcement-item__tags">
+                                    <span class="tag tag--new">Experience</span>
+                                    <span class="tag tag--special">Tradition</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="announcement-card announcement-card--emergency">
+                    <div class="announcement-card__header">
+                        <div class="announcement-card__icon">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div class="announcement-card__title">
+                            <h3>Emergency Contact</h3>
+                            <span class="announcement-card__badge announcement-card__badge--urgent">URGENT</span>
+                        </div>
+                    </div>
+                    <div class="announcement-card__content">
+                        <!-- <div class="emergency-notice">
+                            <div class="emergency-notice__status">
+                                <span class="status-indicator status-indicator--normal"></span>
+                                <span class="status-text">Operating Normally</span>
+                            </div>
+                            <div class="emergency-notice__message">
+                                <p>Currently, all tours are operating as usual. If there are any changes due to weather or traffic conditions, we will notify you on this page.</p>
+                            </div>
+                        </div> -->
+
+                        <!-- Example in case of emergency (commented out) -->
+                        
+                        <div class="emergency-notice emergency-notice--warning">
+                            <div class="emergency-notice__status">
+                                <span class="status-indicator status-indicator--warning"></span>
+                                <span class="status-text">Warning Issued</span>
+                            </div>
+                            <div class="emergency-notice__message">
+                                <p><strong>Warning Due to Approaching Typhoon</strong><br>
+                                Today's tour on December 15th will be conducted with some course changes due to the approaching typhoon. Please contact us at least one hour before the start if you plan to participate.</p>
+                            </div>
+                        </div>
+                       
+
+                        <!-- Example in case of emergency (commented out) -->
+                        
+                        <div class="emergency-notice emergency-notice--danger">
+                            <div class="emergency-notice__status">
+                                <span class="status-indicator status-indicator--danger"></span>
+                                <span class="status-text">Emergency</span>
+                            </div>
+                            <div class="emergency-notice__message">
+                                <p><strong>Today's tour on December 15th is canceled</strong><br>
+                                Due to the heavy rain warning, today's tour is canceled for safety reasons. We will contact those who planned to participate individually.</p>
+                            </div>
+                        </div>
+                       
+
+                        <div class="emergency-contact">
+                            <h4>Emergency Contact</h4>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>emergency@tokyotoilet.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="tour-overview">
         <div class="container">
             <h2 class="section-title">Tour Overview</h2>
@@ -148,73 +326,60 @@ get_template_part('./template/head');
 
     <section class="course-gallery">
         <div class="container">
-            <h2 class="section-title">Trial Run Gallery</h2>
-            <p class="gallery-subtitle">Introducing scenes from our previous trial runs</p>
+            <h2 class="section-title">Gallery</h2>
             
             <div class="gallery-grid">
                 <div class="gallery-item" data-category="start">
                     <div class="gallery-item__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/start.jpg" alt="Shibuya Station Start" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1.jpg" alt="Shibuya Station Start" loading="lazy">
                     </div>
                     <div class="gallery-item__content">
-                        <span class="gallery-item__tag">Start</span>
-                        <h3>Gathering at Shibuya Station</h3>
-                        <p>Members gathered in the fresh morning air</p>
+                        <h3>Nishi-Sando Public Toilet</h3>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="toilet">
                     <div class="gallery-item__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/toilet1.jpg" alt="Designer Toilet" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/2.jpg" alt="Designer Toilet" loading="lazy">
                     </div>
                     <div class="gallery-item__content">
-                        <span class="gallery-item__tag">Toilet</span>
-                        <h3>Harajuku Toilet</h3>
-                        <p>Beautiful toilet designed by an architect</p>
+                        <h3>Sasazuka Greenway Public Toilet</h3>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="shrine">
                     <div class="gallery-item__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/shrine.jpg" alt="Yoyogi Hachimangu Shrine" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/3.jpg" alt="Yoyogi Hachimangu Shrine" loading="lazy">
                     </div>
                     <div class="gallery-item__content">
-                        <span class="gallery-item__tag">Shrine</span>
-                        <h3>Yoyogi Hachimangu Shrine</h3>
-                        <p>Praying and lunch break</p>
+                        <h3>Hatagaya Public Toilet</h3>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="group">
                     <div class="gallery-item__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/group.jpg" alt="Group Photo" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/4.jpg" alt="Group Photo" loading="lazy">
                     </div>
                     <div class="gallery-item__content">
-                        <span class="gallery-item__tag">Members</span>
-                        <h3>Goal Celebration</h3>
-                        <p>Celebrating the finish together</p>
+                        <h3>Ura-Sando Public Toilet</h3>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="toilet">
                     <div class="gallery-item__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/toilet2.jpg" alt="Ebisu Toilet" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/5.jpg" alt="Ebisu Toilet" loading="lazy">
                     </div>
                     <div class="gallery-item__content">
-                        <span class="gallery-item__tag">Toilet</span>
-                        <h3>Ebisu Toilet</h3>
-                        <p>Modern design toilet</p>
+                        <h3>Hiroo East Park Toilet</h3>
                     </div>
                 </div>
 
                 <div class="gallery-item" data-category="lunch">
                     <div class="gallery-item__image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/lunch.jpg" alt="Lunch Time" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/6.jpg" alt="Lunch Time" loading="lazy">
                     </div>
                     <div class="gallery-item__content">
-                        <span class="gallery-item__tag">Lunch</span>
-                        <h3>Lunch at the Shrine</h3>
-                        <p>A wonderful break like in the movie</p>
+                        <h3>Nanago Street Park Toilet</h3>
                     </div>
                 </div>
             </div>
@@ -231,6 +396,63 @@ get_template_part('./template/head');
                 <div class="gallery-stat">
                     <span class="gallery-stat__number">100%</span>
                     <span class="gallery-stat__label">Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-platforms">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fa-solid fa-globe"></i>
+                Book Your Experience
+            </h2>
+            <p class="booking-description">Choose your preferred booking platform to reserve your Tokyo Toilet Running Tour</p>
+            
+            <div class="booking-buttons">
+                <a href="https://www.airbnb.com/experiences/your-experience-id" target="_blank" rel="noopener noreferrer" class="booking-btn booking-btn--airbnb">
+                    <div class="booking-btn__icon">
+                        <i class="fa-brands fa-airbnb"></i>
+                    </div>
+                    <div class="booking-btn__content">
+                        <span class="booking-btn__platform">Airbnb</span>
+                        <span class="booking-btn__text">Book on Airbnb Experiences</span>
+                    </div>
+                    <div class="booking-btn__arrow">
+                        <i class="fa-solid fa-external-link-alt"></i>
+                    </div>
+                </a>
+                
+                <div class="booking-divider">
+                    <span>or</span>
+                </div>
+                
+                <a href="#contact" class="booking-btn booking-btn--direct">
+                    <div class="booking-btn__icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="booking-btn__content">
+                        <span class="booking-btn__platform">Direct</span>
+                        <span class="booking-btn__text">Contact Us Directly</span>
+                    </div>
+                    <div class="booking-btn__arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="booking-features">
+                <div class="booking-feature">
+                    <i class="fa-solid fa-shield-alt"></i>
+                    <span>Secure Booking</span>
+                </div>
+                <div class="booking-feature">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Instant Confirmation</span>
+                </div>
+                <div class="booking-feature">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Best Price Guarantee</span>
                 </div>
             </div>
         </div>
