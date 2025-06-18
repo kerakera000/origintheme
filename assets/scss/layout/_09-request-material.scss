@@ -2,15 +2,26 @@
 
 .request-material-page-content {
     &__left {
+        .fc-main-text {
+            font-size: 16px;
+            margin-top: 20px;
+        }
         @media screen and (max-width: 768px) {
             margin: 20px;
         }
         .request-form {
+            width: 100%;
             &__margin {
                 margin: 20px 0 0 0;
             }
             &__margin-big {
                 margin: 40px 0 0 0;
+                .button-more-width {
+                width: 220px;
+                }
+                .button-mid-width {
+                width: 200px;
+                }
             }
             &__margin-min {
                 margin: 10px 0 0 0;
@@ -54,6 +65,16 @@
             }
             &__columm-title-box {
                 font-size: 22px;
+            }
+            &__confirm-box {
+                .text {
+                    font-size: 18px;
+                    a {
+                        color: #E21C43;
+                        text-decoration: underline;
+                        margin: 0 4px;
+                    }
+                }
             }
             &__input-box {
                 padding: 50px 12px;
