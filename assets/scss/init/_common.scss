@@ -118,6 +118,7 @@ $color-accordion-button-background: #FFFAFB;
         color: $color-common-white;
     }
 }
+
 // アコーディオンボタン
 .accordion-button-group {
   display: flex;
@@ -283,7 +284,7 @@ $color-accordion-button-background: #FFFAFB;
     @media screen and (max-width: 768px) {
         @include gaps(20px, 1);
     }
-    .button {
+    .ac-button {
         width: 100%;
         display: flex;
         align-items: center;
@@ -317,13 +318,23 @@ $color-accordion-button-background: #FFFAFB;
         border: 1px solid #e0e0e0;
         border-top: none;
         border-radius: 0 0 4px 4px;
+        width: 100%;
+    }
+    .accordion-option {
+        cursor: pointer;
+        padding: 5px;
+        margin-bottom: 4px;
+        transition: background-color 0.2s;
+    }
+    .accordion-option:hover {
+        background-color: #f7f7f7;
+    }
+    .accordion-option.active {
+        background-color: #e2e2f4;
+        border-color: #999;
     }
 }
 
-// アコーディオン
-.common-search-accordion-content{
-    width: 100%;
-}
 
 // カード
 .common-card{
@@ -611,6 +622,7 @@ $color-accordion-button-background: #FFFAFB;
 }
 
 // 必須タグ付きタイトル
+// 必須タグ付きタイトル
 .common-required-tag-box {
     display: flex;
     align-items: center;
@@ -640,17 +652,21 @@ $color-accordion-button-background: #FFFAFB;
         margin-left: 10px;
         font-size: 10px;
     }
-    @media screen and (max-width: 768px) {
-        .common-required-tag-box .text {
-            margin-left: 0;
-            margin-top: 4px;
-        }
-        .common-required-tag-box {
-            flex-wrap: wrap;
-            align-items: flex-start;
-            padding-bottom: 15px;
-        }
+}
+
+@media screen and (max-width: 768px) {
+  .common-required-tag-box {
+    flex-direction: column;
+    align-items: flex-start;
+    // padding-bottom: 15px; // オプション: 既存デザインに合わせて必要ならコメント解除
+    .text {
+      white-space: normal;
+      word-break: break-word;
+      width: 100%;
+      margin-top: 4px;
+      margin-left: 0;
     }
+  }
 }
 
 // 任意タグ付きタイトル
@@ -668,11 +684,31 @@ $color-accordion-button-background: #FFFAFB;
         height: 20px;
         align-items: center;
         justify-content: center;
+        white-space: nowrap;
     }
     .title {
         margin-left: 10px;
         font-size: 21px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
+    .text {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+  .common-option-tag-box {
+    flex-direction: column;
+    align-items: flex-start;
+    .text {
+        white-space: normal;
+        word-break: break-word;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+  }
 }
 
 // ラジオボタン横並び
@@ -732,6 +768,7 @@ $color-accordion-button-background: #FFFAFB;
     border-radius: 4px;
     padding: 10px 12px;
     width: 100%;
+    height: 45px;
     input[type="text"],
     input[type="email"],
     input[type="number"],
@@ -944,30 +981,5 @@ $color-accordion-button-background: #FFFAFB;
         .common-pagination-pc-button {
             display: none;
         }
-    }
-}
-
-
-
-@media screen and (max-width: 768px) {
-    .common-button-post-pink {
-        margin: 0 auto;
-    }
-
-    .common-post-num-box {
-        flex-wrap: wrap;
-    }
-
-    .common-post-num-box .common-button-post-pink {
-        width: 230px;
-    }
-      .common-required-tag-box .text {
-    margin-left: 0;
-    margin-top: 4px;
-    }
-    .common-required-tag-box {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding-bottom: 15px;
     }
 }

@@ -107,3 +107,55 @@ window.addEventListener('load', () => {
     }
   }
 });
+
+// ▼▼▼ アコーディオン選択処理 ▼▼▼
+document.addEventListener('DOMContentLoaded', function () {
+  const accordionContainers = document.querySelectorAll('.accordion-container');
+
+  accordionContainers.forEach(container => {
+    const selectedValue = container.querySelector('.accordion-selected-value');
+    const options = container.querySelectorAll('.accordion-option');
+    const content = container.querySelector('.accordion-content');
+
+    if (selectedValue && content) {
+      selectedValue.addEventListener('click', function () {
+        content.classList.toggle('open');
+      });
+
+      options.forEach(option => {
+        option.addEventListener('click', function () {
+          options.forEach(o => o.classList.remove('active'));
+          this.classList.add('active');
+          selectedValue.textContent = this.textContent;
+          content.classList.remove('open');
+        });
+      });
+    }
+  });
+
+  // ▼▼▼ アコーディオン開閉・選択肢選択でテキスト変更（.ac-button用） ▼▼▼
+  const acButtons = document.querySelectorAll('.ac-button');
+  acButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const parentButton = this.closest('button');
+      const accordion = parentButton?.nextElementSibling;
+      if (accordion && accordion.classList.contains('accordion-content')) {
+        accordion.classList.toggle('open');
+      }
+      // オプション選択でテキスト変更
+      if (accordion) {
+        const options = accordion.querySelectorAll('.accordion-option');
+        options.forEach(option => {
+          option.addEventListener('click', function () {
+            const selectedText = this.textContent || this.innerText;
+            const targetText = parentButton.querySelector('.text');
+            if (targetText) {
+              targetText.textContent = selectedText;
+            }
+            accordion.classList.remove('open');
+          });
+        });
+      }
+    });
+  });
+});

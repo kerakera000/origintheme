@@ -82,14 +82,14 @@ get_template_part('./template/head');
                             <div class="title">名前</div>
                         </div>
                         <form class="common-text-input-box">
-                            <input type="text" placeholder="例） 山田太郎" name="" required pattern="^[^\d]+$">
+                            <input type="text" placeholder="例） 山田太郎" name="" required pattern="^[^\d]+$" required>
                         </form>
                         <div class="common-required-tag-box request-form__margin">
                             <div class="tag">必須</div>
                             <div class="title">フリガナ</div>
                         </div>
                         <form class="common-text-input-box">
-                            <input type="text" placeholder="例） ヤマダタロウ" name="" required pattern="^[ァ-ヴー　]+$">
+                            <input type="text" placeholder="例） ヤマダタロウ" name="" required pattern="^[ァ-ヴー]+$" required>
                         </form>
                         <div id="corporations" class="request-form__corporations-form request-form__margin">
                             <div class="common-required-tag-box">
@@ -97,7 +97,7 @@ get_template_part('./template/head');
                                 <div class="title">法人名</div>
                             </div>
                             <form class="common-text-input-box">
-                                <input type="text" placeholder="例） 株式会社フランチャイズ" name="" required maxlength="100">
+                                <input type="text" placeholder="例） 株式会社フランチャイズ" name="" required maxlength="100" required>
                             </form>
                         </div>
 
@@ -128,19 +128,19 @@ get_template_part('./template/head');
                             <div class="title">都道府県</div>
                         </div>
                         <form class="common-text-input-box request-form__margin-b">
-                            <input type="text" placeholder="例） 東京都" name="" maxlength="50">
+                            <input type="text" placeholder="例） 東京都" name="" maxlength="50" required>
                         </form>
                         <div class="request-form__columm-title-box">
                             <div class="title">市区町村</div>
                         </div>
                         <form class="common-text-input-box request-form__margin-b">
-                            <input type="text" placeholder="例） 渋谷区" name="" maxlength="50">
+                            <input type="text" placeholder="例） 渋谷区" name="" maxlength="50" required>
                         </form>
                         <div class="request-form__columm-title-box">
                             <div class="title">番地・建物名</div>
                         </div>
                         <form class="common-text-input-box request-form__margin-b">
-                            <input type="text" placeholder="例） 1-1 フランチャイズマンション 101号室" name="" maxlength="50">
+                            <input type="text" placeholder="例） 1-1 フランチャイズマンション 101号室" name="" maxlength="50" required>
                         </form>
 
                         <!-- idセクション -->
@@ -156,9 +156,8 @@ get_template_part('./template/head');
                             <div class="title">メールアドレス</div>
                         </div>
                         <form class="common-text-input-box">
-                            <input type="email" name="email" required placeholder="例）test@example.com">
+                            <input type="email" name="email" required placeholder="例）test@example.com" required>
                         </form>
-
 
                         <div class="common-required-tag-box request-form__margin">
                             <div class="tag">必須</div>
@@ -222,7 +221,7 @@ get_template_part('./template/head');
                             <div class="tag">必須</div>
                             <div class="title">会社HPもしくは沿革</div>
                         </div>
-                        <form class="common-text-input-box request-form__input-box">
+                        <form class="common-text-input-box request-form__input-box" required>
                             <input type="text" placeholder="" name="">
                         </form>
                         <div class="common-required-tag-box request-form__margin-min">
@@ -230,20 +229,15 @@ get_template_part('./template/head');
                             <div class="title">出展予定地（都道府県）</div>
                         </div>
                         <div class="common-search-accordion-content request-form__accordion">
-                            <!-- ボタン -->
-                            <button class="button s-button request-button">
-                                <span class="text s-button__text"></span>
+                            <button class="button ac-button">
+                            <span class="text"></span>
                                 <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/acordion-under-pink.svg" alt="">
                             </button>
-                            <!-- アコーディオン -->
-                            <div class="content">
-                                <!-- ここにアコーディオンで表示したい内容を入れる -->
-                                <ul>
-                                    <li>北海道</li>
-                                    <li>青森</li>
-                                    <li>新潟</li>
-                                </ul>
-                            </div>
+                            <ul class="content">
+                                <li class="accordion-option">北海道</li>
+                                <li class="accordion-option">青森</li>
+                                <li class="accordion-option">新潟</li>
+                            </ul>
                         </div>
                         <div class="common-option-tag-box request-form__margin">
                             <div class="tag">任意</div>
@@ -257,47 +251,37 @@ get_template_part('./template/head');
                             <div class="title">物件</div>
                         </div>
                         <div class="common-search-accordion-content request-form__accordion">
-                            <!-- ボタン -->
-                            <button class="button s-button request-button">
-                                <span class="text s-button__text"></span>
+                            <button class="button ac-button">
+                            <span class="text"></span>
                                 <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/acordion-under-pink.svg" alt="">
                             </button>
-                            <!-- アコーディオン -->
-                            <div class="content">
-                                <!-- ここにアコーディオンで表示したい内容を入れる -->
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
+                            <ul class="content">
+                                <li class="accordion-option">1</li>
+                                <li class="accordion-option">2</li>
+                                <li class="accordion-option">3</li>
+                            </ul>
                         </div>
                         <div class="common-required-tag-box request-form__margin-min">
                             <div class="tag">必須</div>
                             <div class="title">物件 その他</div>
                         </div>
                         <form class="common-text-input-box">
-                            <input type="text" placeholder="" name="">
+                            <input type="text" placeholder="" name="" required>
                         </form>
                         <div class="common-required-tag-box request-form__margin-min">
                             <div class="tag">必須</div>
                             <div class="title">店舗責任者</div>
                         </div>
                         <div class="common-search-accordion-content request-form__accordion">
-                            <!-- ボタン -->
-                            <button class="button s-button request-button">
-                                <span class="text s-button__text"></span>
+                            <button class="button ac-button">
+                            <span class="text"></span>
                                 <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/acordion-under-pink.svg" alt="">
                             </button>
-                            <!-- アコーディオン -->
-                            <div class="content">
-                                <!-- ここにアコーディオンで表示したい内容を入れる -->
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
+                            <ul class="content">
+                                <li class="accordion-option">1</li>
+                                <li class="accordion-option">2</li>
+                                <li class="accordion-option">3</li>
+                            </ul>
                         </div>
                         
                         <div class="common-option-tag-box request-form__margin">
@@ -354,52 +338,60 @@ get_template_part('./template/head');
                         <div class="common-sub-titlebox request-form__margin-big">
                             <h3 class="title">おすすめのFC</h3>
                         </div>
-                        <div class="request-form__fc-card-list">
-                            <div class="fc-card">
-                                <div class="image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
+                        <div class="common-flexbox-list request-form__fc-card-list">
+                            <div class="swiper-wrapper no-swiper">
+                                <div class="swiper-slide">
+                                    <div class="fc-card">
+                                        <div class="fc-image">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
+                                        </div>
+                                        <div class="fc-name">FC本部名</div>
+                                        <div class="desc">
+                                            <p>業種<br>&#9632;業種が入ります</p>
+                                            <p>開業資金<br>&#9632;開業資金が入ります</p>
+                                            <p>エリア<br>&#9632;エリアが入ります</p>
+                                        </div>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="fc_request[]" value="">
+                                            同時に資料請求
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="fc-name">FC本部名</div>
-                                <div class="desc">
-                                    <p>業種<br>&#9632;業種が入ります</p>
-                                    <p>開業資金<br>&#9632;開業資金が入ります</p>
-                                    <p>エリア<br>&#9632;エリアが入ります</p>
+                                <div class="swiper-slide">
+                                    <div class="fc-card">
+                                        <div class="fc-image">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
+                                        </div>
+                                        <div class="fc-name">FC本部名</div>
+                                        <div class="desc">
+                                            <p>業種<br>&#9632;業種が入ります</p>
+                                            <p>開業資金<br>&#9632;開業資金が入ります</p>
+                                            <p>エリア<br>&#9632;エリアが入ります</p>
+                                        </div>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="fc_request[]" value="">
+                                            同時に資料請求
+                                        </label>
+                                    </div>
                                 </div>
-                                <label class="checkbox">
-                                    <input type="checkbox" name="fc_request[]" value="fc_<?php echo $i; ?>">
-                                    同時に資料請求
-                                </label>
-                            </div>
-                            <div class="fc-card">
-                                <div class="image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
+                                <div class="swiper-slide">
+                                    <div class="fc-card">
+                                        <div class="fc-image">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
+                                        </div>
+                                        <div class="fc-name">FC本部名</div>
+                                        <div class="desc">
+                                            <p>業種<br>&#9632;業種が入ります</p>
+                                            <p>開業資金<br>&#9632;開業資金が入ります</p>
+                                            <p>エリア<br>&#9632;エリアが入ります</p>
+                                        </div>
+                                        <label class="checkbox">
+                                            <input type="checkbox" name="fc_request[]" value="">
+                                            同時に資料請求
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="fc-name">FC本部名</div>
-                                <div class="desc">
-                                    <p>業種<br>&#9632;業種が入ります</p>
-                                    <p>開業資金<br>&#9632;開業資金が入ります</p>
-                                    <p>エリア<br>&#9632;エリアが入ります</p>
-                                </div>
-                                <label class="checkbox">
-                                    <input type="checkbox" name="fc_request[]" value="fc_<?php echo $i; ?>">
-                                    同時に資料請求
-                                </label>
-                            </div>
-                            <div class="fc-card">
-                                <div class="image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
-                                </div>
-                                <div class="fc-name">FC本部名</div>
-                                <div class="desc">
-                                    <p>業種<br>&#9632;業種が入ります</p>
-                                    <p>開業資金<br>&#9632;開業資金が入ります</p>
-                                    <p>エリア<br>&#9632;エリアが入ります</p>
-                                </div>
-                                <label class="checkbox">
-                                    <input type="checkbox" name="fc_request[]" value="fc_<?php echo $i; ?>">
-                                    同時に資料請求
-                                </label>
-                            </div>
+                            </div>            
                         </div>
                     </div>
 
