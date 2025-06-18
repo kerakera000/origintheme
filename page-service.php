@@ -37,7 +37,7 @@ get_template_part('./template/head');
                 <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Service/service1.png" alt="">
             </div>
 
-            <a href="/insurance" class="card__text Card-Common">
+            <a href="/art-finance" class="card__text Card-Common">
                 <h2 class="Card-Common__title">ART FINANCE</h2>
                 <p class="Card-Common__text">
                 お持ちの美術品を資産として有効活用してみませんか。<br>
@@ -76,7 +76,7 @@ get_template_part('./template/head');
                 <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Service/service3.png" alt="">
             </div>
 
-            <a href="/insurance" class="card__text Card-Common">
+            <a href="/appraisal-purchase-service" class="card__text Card-Common">
                 <h2 class="Card-Common__title">APPRAISAL/<br>PURCHASE SERVICE</h2>
                 <p class="Card-Common__text">
                 お持ちの美術品を資産として有効活用してみませんか。<br>

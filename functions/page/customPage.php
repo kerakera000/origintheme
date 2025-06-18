@@ -23,12 +23,12 @@ function create_custom_pages_with_optional_parents() {
     [
       'title' => '保険サービス',
       'slug' => 'insurance',
-      'parent_slug' => 'art-finance',
+      'parent_slug' => '',
     ],
     [
       'title' => '査定・買取サービス',
       'slug' => 'appraisal-purchase-service',
-      'parent_slug' => 'art-finance',
+      'parent_slug' => '',
     ],
   ];
 
