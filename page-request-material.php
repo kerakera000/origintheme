@@ -82,14 +82,14 @@ get_template_part('./template/head');
                             <div class="title">名前</div>
                         </div>
                         <form class="common-text-input-box">
-                            <input type="text" placeholder="例） 山田太郎" name="">
+                            <input type="text" placeholder="例） 山田太郎" name="" required pattern="^[^\d]+$">
                         </form>
                         <div class="common-required-tag-box request-form__margin">
                             <div class="tag">必須</div>
                             <div class="title">フリガナ</div>
                         </div>
                         <form class="common-text-input-box">
-                            <input type="text" placeholder="例） ヤマダタロウ" name="">
+                            <input type="text" placeholder="例） ヤマダタロウ" name="" required pattern="^[ァ-ヴー　]+$">
                         </form>
                         <div id="corporations" class="request-form__corporations-form request-form__margin">
                             <div class="common-required-tag-box">
@@ -97,7 +97,7 @@ get_template_part('./template/head');
                                 <div class="title">法人名</div>
                             </div>
                             <form class="common-text-input-box">
-                                <input type="text" placeholder="例） 株式会社フランチャイズ" name="">
+                                <input type="text" placeholder="例） 株式会社フランチャイズ" name="" required maxlength="100">
                             </form>
                         </div>
 
@@ -106,27 +106,41 @@ get_template_part('./template/head');
                             <div class="tag">任意</div>
                             <div class="title">郵便番号</div>
                         </div>
+
+                        <div class="common-post-num-box">
+                            <form class="common-vor-num-input-box">
+                                <input type="text" name="zip1" placeholder="123" pattern="^\d{3}$" maxlength="3"/>
+                            </form>
+                            <span class="common-bt-line"></span>
+                            <form class="common-nach-num-input-box">
+                                <input type="text" name="zip2" placeholder="4567" pattern="^\d{4}$" maxlength="4">
+                            </form>
+                            <button id="" class="common-button-post-pink">
+                                郵便番号から住所を入力
+                            </button>
+                        </div>
+
                         <div class="common-required-tag-box request-form__margin">
                             <div class="tag">必須</div>
                             <div class="title">住所</div>
                         </div>
-                        <div class="request-form__columm-title-box">
+                        <div class="request-form__columm-title-box request-form__margin-min">
                             <div class="title">都道府県</div>
                         </div>
                         <form class="common-text-input-box request-form__margin-b">
-                            <input type="text" placeholder="例） 東京都" name="">
+                            <input type="text" placeholder="例） 東京都" name="" maxlength="50">
                         </form>
                         <div class="request-form__columm-title-box">
                             <div class="title">市区町村</div>
                         </div>
                         <form class="common-text-input-box request-form__margin-b">
-                            <input type="text" placeholder="例） 渋谷区" name="">
+                            <input type="text" placeholder="例） 渋谷区" name="" maxlength="50">
                         </form>
                         <div class="request-form__columm-title-box">
                             <div class="title">番地・建物名</div>
                         </div>
                         <form class="common-text-input-box request-form__margin-b">
-                            <input type="text" placeholder="例） 1-1 フランチャイズマンション 101号室" name="">
+                            <input type="text" placeholder="例） 1-1 フランチャイズマンション 101号室" name="" maxlength="50">
                         </form>
 
                         <!-- idセクション -->
@@ -135,23 +149,24 @@ get_template_part('./template/head');
                             <div class="title">電話番号</div>
                         </div>
                         <form class="common-text-input-box">
-                            <input type="text" placeholder="例） 09012345678" name="">
+                            <input type="tel" placeholder="例） 09012345678" name="phone" pattern="^\d{10,11}$" required>
                         </form>
                         <div class="common-required-tag-box request-form__margin">
                             <div class="tag">必須</div>
                             <div class="title">メールアドレス</div>
                         </div>
                         <form class="common-text-input-box">
-                            <input type="text" placeholder="例） test@example.com" name="">
+                            <input type="email" name="email" required placeholder="例）test@example.com">
                         </form>
 
 
                         <div class="common-required-tag-box request-form__margin">
                             <div class="tag">必須</div>
                             <div class="title">パスワード</div>
+                            <div class="text">※半角アルファベットの大文字と小文字、および数字を組み合わせた８文字以上で設定してください。</div>
                         </div>
                         <form class="common-text-input-box">
-                            <input type="text" placeholder="例） Franchise12345678" name="">
+                            <input type="password" placeholder="例） Franchise12345678" name="" pattern="^(?=.*[a-zA-Z])(?=.*\d)[A-Za-z\d]{8,}$" required>
                         </form>
 
                         <!-- 年齢・性別セクション -->
@@ -181,7 +196,7 @@ get_template_part('./template/head');
                             <div class="title">年齢</div>
                         </div>
                         <form class="common-text-input-box">
-                            <input type="text" placeholder="例） 40" name="">
+                            <input type="number" placeholder="例） 40" name="" min="18" max="100" required>
                         </form>
 
                         <!-- 追加情報セクション -->
@@ -292,7 +307,7 @@ get_template_part('./template/head');
                         <div class="request-form__left-box">
                             <div class="common-text-input-box left">
                                 <label class="unit-label">約</label>
-                                <input class="unit-placeholder" type="text" name="">
+                                <input class="unit-placeholder" type="number" name="" min="0" step="1">
                             </div>
                             <span class="unit">万円</span>
                         </div>
@@ -303,7 +318,7 @@ get_template_part('./template/head');
                         <div class="request-form__left-box">
                             <div class="common-text-input-box left">
                                 <label class="unit-label">約</label>
-                                <input class="unit-placeholder" type="text" name="">
+                                <input class="unit-placeholder" type="number" name="" min="0" step="1">
                             </div>
                             <span class="unit">万円</span>
                         </div>
@@ -314,7 +329,7 @@ get_template_part('./template/head');
                         <div class="request-form__left-box">
                             <div class="common-text-input-box left">
                                 <label class="unit-label">約</label>
-                                <input class="unit-placeholder" type="text" name="">
+                                <input class="unit-placeholder" type="number" name="" min="0" step="1">
                             </div>
                             <span class="unit">万円</span>
                         </div>
@@ -325,14 +340,14 @@ get_template_part('./template/head');
                         <div class="request-form__left-box">
                             <div class="common-text-input-box left">
                                 <label class="unit-label">約</label>
-                                <input class="unit-placeholder" type="text" name="">
+                                <input class="unit-placeholder" type="number" name="" min="0" step="1">
                             </div>
                             <span class="unit">万円</span>
                         </div>
                         <div class="common-agreement-box">
                             <label>
                                 <input type="checkbox" name="agree_policy" required>
-                                <a href="/privacy-policy" target="_blank">個人情報保護方針</a>に同意する
+                                <a href="" target="_blank">個人情報保護方針</a>に同意する
                             </label>
                         </div>
 
@@ -355,8 +370,21 @@ get_template_part('./template/head');
                                     同時に資料請求
                                 </label>
                             </div>
-                        </div>
-                        <div class="request-form__fc-card-list">
+                            <div class="fc-card">
+                                <div class="image">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
+                                </div>
+                                <div class="fc-name">FC本部名</div>
+                                <div class="desc">
+                                    <p>業種<br>&#9632;業種が入ります</p>
+                                    <p>開業資金<br>&#9632;開業資金が入ります</p>
+                                    <p>エリア<br>&#9632;エリアが入ります</p>
+                                </div>
+                                <label class="checkbox">
+                                    <input type="checkbox" name="fc_request[]" value="fc_<?php echo $i; ?>">
+                                    同時に資料請求
+                                </label>
+                            </div>
                             <div class="fc-card">
                                 <div class="image">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
@@ -373,29 +401,10 @@ get_template_part('./template/head');
                                 </label>
                             </div>
                         </div>
-                        <div class="request-form__fc-card-list">
-                            <div class="fc-card">
-                                <div class="image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/fc-sample.jpg" alt="FC画像">
-                                </div>
-                                <div class="fc-name">FC本部名</div>
-                                <div class="desc">
-                                    <p>業種<br>&#9632;業種が入ります</p>
-                                    <p>開業資金<br>&#9632;開業資金が入ります</p>
-                                    <p>エリア<br>&#9632;エリアが入ります</p>
-                                </div>
-                                <label class="checkbox">
-                                    <input type="checkbox" name="fc_request[]" value="fc_<?php echo $i; ?>">
-                                    同時に資料請求
-                                </label>
-                            </div>
-                        </div>
-
-
-
                     </div>
-                    <div class="common-center-button-box">
-                        <button id="Button1" class="common-button-pink request-form__margin">
+
+                    <div class="common-center-button-box request-form__margin-big">
+                        <button id="Button1" class="common-button-pink">
                             確認
                         </button>
                     </div>
