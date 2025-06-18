@@ -118,6 +118,7 @@ $color-accordion-button-background: #FFFAFB;
         color: $color-common-white;
     }
 }
+
 // アコーディオンボタン
 .accordion-button-group {
   display: flex;
@@ -283,17 +284,18 @@ $color-accordion-button-background: #FFFAFB;
     @media screen and (max-width: 768px) {
         @include gaps(20px, 1);
     }
-    .button {
+    .ac-button {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: #fff;
-        border: 1px solid #e0e0e0;
+        background: $color-common-white;
+        border: 1px solid $color-common-grey;
         border-radius: 4px;
         padding: 8px 16px;
         font-size: 16px;
-        color: #888;
+        color: $color-common-grey;
+
         cursor: pointer;
         transition: border-color 0.2s;
         outline: none;
@@ -316,13 +318,23 @@ $color-accordion-button-background: #FFFAFB;
         border: 1px solid #e0e0e0;
         border-top: none;
         border-radius: 0 0 4px 4px;
+        width: 100%;
+    }
+    .accordion-option {
+        cursor: pointer;
+        padding: 5px;
+        margin-bottom: 4px;
+        transition: background-color 0.2s;
+    }
+    .accordion-option:hover {
+        background-color: #f7f7f7;
+    }
+    .accordion-option.active {
+        background-color: #e2e2f4;
+        border-color: #999;
     }
 }
 
-// アコーディオン
-.common-search-accordion-content{
-    width: 100%;
-}
 
 // カード
 .common-card{
@@ -604,10 +616,350 @@ $color-accordion-button-background: #FFFAFB;
         display: none;
         &.active{
             display: flex;
+            flex-direction: column;
         }
     }
 }
 
+// 必須タグ付きタイトル
+.common-required-tag-box {
+    display: flex;
+    align-items: center;
+    .tag {
+        border: 1px solid $color-common-pink;
+        border-radius: 2px;
+        background-color: $color-common-pink;
+        color: #ffffff;
+        display: inline-flex;
+        width: auto;
+        padding: 2px 2px;
+        height: 20px;
+        width: 37px;
+        height: 20px; 
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+    }
+    .title {
+        margin-left: 10px;
+        font-size: 22px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .text {
+        margin-left: 10px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .common-required-tag-box {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding-bottom: 0;
+        .title-box {
+            .tag {
+            margin-right: 8px;
+            flex-shrink: 0;
+            }
+            .title {
+            flex-shrink: 1;
+            margin-left: 0;
+            }
+            .text {
+            margin-left: 10px;
+            margin-top: 0;
+            }
+        }
+    }
+}
+
+// 任意タグ付きタイトル
+.common-option-tag-box {
+    
+    .title-box {
+        display: flex;
+        align-items: center;
+        .tag {
+            border: 1px solid $color-common-black;
+            border-radius: 2px;
+            background-color: $color-common-black;
+            color: #ffffff;
+            display: inline-flex;
+            width: auto;
+            padding: 2px 2px;
+            height: 20px;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+        .title {
+            margin-left: 10px;
+            font-size: 21px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .text {
+            margin-left: 10px;
+            font-size: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .common-option-tag-box {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 0;
+    .tag {
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+    .title {
+      flex-shrink: 1;
+      margin-left: 0;
+    }
+    .text {
+      margin-left: 10px;
+      margin-top: 0;
+    }
+  }
+}
+
+// ラジオボタン横並び
+.common-radio-selection-box {
+    display: flex;
+    gap: 15px;
+    .radio-box {
+        position: relative;
+        display: block;
+        margin: 10px 0;
+        padding-right: 15px 0;
+        padding-left: 28px;
+        font-size: 15px;
+        user-select: none;
+
+        .input {
+            display: none;
+        }
+
+        .my-radio {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 22px;
+            width: 22px;
+            border: solid 1px #E21D1E;
+            border-radius: 50%;
+            box-sizing: border-box;
+
+            &::after {
+            content: "";
+            position: absolute;
+            background: #E21D1E;
+            border-radius: 50%;
+            top: 5px;
+            bottom: 5px;
+            left: 5px;
+            right: 5px;
+            opacity: 0;
+            transition: opacity 0.2s;
+            }
+        }
+
+        // 選択状態で::afterを表示
+        input:checked + .my-radio::after {
+            opacity: 1;
+        }
+    }
+}
+
+// 入力欄
+.common-text-input-box {
+    display: flex;
+    align-items: center;
+    background: $color-common-white;
+    border: solid 1px $color-common-grey;
+    border-radius: 4px;
+    padding: 10px 12px;
+    width: 100%;
+    height: 45px;
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="tel"] {
+        border: none;
+        background: transparent;
+        outline: none;
+        width: 100%;
+        color: $color-common-black;
+        font-size: 18px;
+    }
+    input::placeholder {
+        color: $color-common-grey;
+        font-size: 21px;
+    }
+}
+
+// 郵便番号
+.common-post-num-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-start !important;
+    text-align: left !important;
+}
+.common-post-num-box .common-button-post-pink {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.common-bt-line {
+    width: 22px;
+    height: 3px;
+    background-color: #7a7a7a;
+}
+.common-button-post-pink {
+    height: 38px;
+    width: 230px;
+    background-color: $color-button-type1;
+    border: 1px solid $color-border-type1;
+    border-radius: 3px;
+    color: $color-common-white;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    &:hover{
+        background-color: $color-common-white;
+        border: 1px solid $color-border-type1;
+        transition: all 0.3s ease;
+        opacity: 1;
+        color: $color-button-type1;
+    }
+    @media screen and (max-width: 768px) {
+        .common-button-post-pink {
+            margin: 0 auto;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .common-post-num-box {
+        flex-wrap: wrap;
+    }
+
+    .common-post-num-box .common-button-post-pink {
+        width: 230px;
+    }
+}
+.common-vor-num-input-box {
+    display: flex;
+    align-items: center;
+    background: $color-common-white;
+    border: solid 1px $color-common-grey;
+    border-radius: 4px;
+    padding: 10px 12px;
+    width: 70px;
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="tel"] {
+        border: none;
+        background: transparent;
+        outline: none;
+        width: 100%;
+        color: $color-common-black;
+        font-size: 18px;
+        height: 28px;
+        text-align: center;
+        line-height: 40px;
+    }
+    input::placeholder {
+        color: $color-common-grey;
+        font-size: 21px;
+    }
+}
+.common-nach-num-input-box {
+    display: flex;
+    align-items: center;
+    background: $color-common-white;
+    border: solid 1px $color-common-grey;
+    border-radius: 4px;
+    padding: 10px 12px;
+    width: 90px;
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="tel"] {
+        border: none;
+        background: transparent;
+        outline: none;
+        width: 100%;
+        color: $color-common-black;
+        font-size: 18px;
+        height: 28px;
+        text-align: center;
+        line-height: 40px;
+    }
+    input::placeholder {
+        color: $color-common-grey;
+        font-size: 21px;
+    }
+}
+
+// 同意チェックボックス
+.common-agreement-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: $color-common-black;
+
+    a {
+      color: $color-common-pink;
+      text-decoration: underline;
+      margin: 0 4px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 6px;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 1px solid $color-common-pink;
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      background-color: $color-common-white;
+
+      &:checked {
+        background-color: $color-common-white;
+      }
+      &:checked::after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 6px;
+        width: 6px;
+        height: 10px;
+        border: solid $color-common-pink;
+        border-width: 0 1px 1px 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+// ページネイション
 .common-pagination-button-box {
     display: flex;
     justify-content: center;
@@ -649,4 +1001,11 @@ $color-accordion-button-background: #FFFAFB;
             display: none;
         }
     }
+}
+
+.common-addjust-line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $color-common-grey;
 }

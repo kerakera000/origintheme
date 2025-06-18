@@ -105,6 +105,7 @@ global $site_url;
                                                 </ul>
                                             </div>
                                         </div>
+
                                     </div>
 
                                     <div class="front-attention-box__button common-center-button-box">
