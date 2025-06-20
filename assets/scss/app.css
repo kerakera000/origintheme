@@ -3806,7 +3806,7 @@ button {
 .request-material-page-content__left .request-form__accordion {
   width: 100%;
 }
-.request-material-page-content__left .request-form__accordion .ac-button {
+.request-material-page-content__left .request-form__accordion .ac-height {
   width: 100%;
   height: 45px;
 }
