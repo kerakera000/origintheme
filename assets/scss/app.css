@@ -628,7 +628,7 @@
 }
 .common-required-tag-box .title {
   margin-left: 10px;
-  font-size: 22px;
+  font-size: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -677,7 +677,7 @@
 }
 .common-option-tag-box .title {
   margin-left: 10px;
-  font-size: 21px;
+  font-size: 20px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -770,15 +770,15 @@
   outline: none;
   width: 100%;
   color: #333333;
-  font-size: 18px;
+  font-size: 19px;
 }
 .common-text-input-box input::-moz-placeholder {
   color: #bfbfbf;
-  font-size: 21px;
+  font-size: 19px;
 }
 .common-text-input-box input::placeholder {
   color: #bfbfbf;
-  font-size: 21px;
+  font-size: 19px;
 }
 
 .common-post-num-box {
@@ -859,7 +859,7 @@
   width: 100%;
   color: #333333;
   font-size: 18px;
-  height: 28px;
+  height: 23px;
   text-align: center;
   line-height: 40px;
 }
@@ -892,7 +892,7 @@
   width: 100%;
   color: #333333;
   font-size: 18px;
-  height: 28px;
+  height: 23px;
   text-align: center;
   line-height: 40px;
 }
@@ -3472,7 +3472,7 @@ button {
   }
 }
 .signup-page-content__left .fc-main-text {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 20px;
 }
 .signup-page-content__left .sign-up-form {
@@ -3719,7 +3719,7 @@ button {
   }
 }
 .request-material-page-content__left .fc-main-text {
-  font-size: 16px;
+  font-size: 14px;
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
@@ -3783,7 +3783,7 @@ button {
   display: block;
 }
 .request-material-page-content__left .request-form__columm-title-box {
-  font-size: 22px;
+  font-size: 19px;
 }
 .request-material-page-content__left .request-form__confirm-box .text {
   font-size: 18px;
@@ -3825,6 +3825,7 @@ button {
 }
 .request-material-page-content__left .request-form__fc-card-list .fc-card .fc-image {
   width: 100%;
+  max-width: 216px;
   aspect-ratio: 16/10;
   margin-bottom: 12px;
   background-color: #dfdfdf;

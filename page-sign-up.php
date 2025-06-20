@@ -60,6 +60,7 @@ get_template_part('./template/header');
                         <div class="common-sub-titlebox">
                             <h3 class="title">登録料・利用料・年会費は全て無料です！</h3>
                         </div>
+                        <div class="common-text fc-main-text">FC名が入りますFC名が入ります</div>
                     </div>
 
                     <div class="common-required-tag-box sign-up-form__margin-big">
