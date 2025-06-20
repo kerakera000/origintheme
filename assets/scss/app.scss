@@ -17,7 +17,10 @@
 @use "layout/02-about" as about;
 @use "layout/03-service" as service;
 @use "layout/04-artfinance" as artfinance;
+@use "layout/05-appraisal" as appraisal;
 @use "layout/06-404" as error;
+@use "layout/07-news" as news;
+@use "layout/08-contactpage" as contactpage;
 
 /* Module Components */
 @use "module/action" as action;

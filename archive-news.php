@@ -16,9 +16,9 @@ get_template_part('./template/head');
             <div class="titlebox">
                 <span class="servicekvRB"></span>
                 <div class="title-cont">
-                    <h2 class="title-cont__title">APPRAISAL / PURCHASE SERVICE</h2>
+                    <h2 class="title-cont__title">NEWS</h2>
                     <p class="title-cont__text">
-                    美術品鑑定・買取サービス
+                    お知らせ
                     </p>
                 </div>
             </div>

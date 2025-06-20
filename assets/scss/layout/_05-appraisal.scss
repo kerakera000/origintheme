@@ -1,0 +1,30 @@
+@use "../init/index" as *;
+
+.appraisal-breadcrumb{
+    width: 400px;
+}
+
+.appraisal-imgbox{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    .img{
+        @include gaps(40px 2);
+    }
+}
+
+.appraisal-subject-list {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+  list-style: disc;
+  color: #00679D;
+  line-height: 2;
+  li {
+    margin-bottom: 0.3em;
+    .text{
+        font-size: 1.1em;
+        color: #111111;
+        line-height: 2;
+    }
+  }
+}

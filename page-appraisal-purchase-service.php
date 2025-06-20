@@ -23,7 +23,7 @@ get_template_part('./template/head');
             </div>
         </div>
         <div class="servicekv__breadcrumb max-1080">
-            <div class="breadcrumb art-finance-breadcrumb">
+            <div class="breadcrumb appraisal-breadcrumb">
                 <a href="" class="breadcrumb__link">TOP</a>
                 <img class="breadcrumb__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/service/breadcamb.svg" alt="arrow">
                 <a href="" class="breadcrumb__link">SERVICE</a>
@@ -37,6 +37,43 @@ get_template_part('./template/head');
         <div class="titlebox">
             <h2 class="philosophy-common-title">FEATURES</h2>
             <p class="philosophy-common-subtitle">特徴</p>
+        </div>
+
+        <div class="art-finance-stepbox">
+            <div class="card">
+                <div class="card__number">
+                    <span class="num">1</span>
+                </div>
+                <div class="card__text">
+                    <h3 class="title">多角的な査定に対応</h3>
+                    <p class="text">
+                    アイアート株式会社をはじめとするオークション企業との連携により、適正な市場価格での査定・ご案内が可能です。
+                    また、日本アート保存協会とも連携していることから、市場価格での査定が難しい美術品にも価値を割り出すことができます。
+                    </p>
+                    <div class="appraisal-imgbox">
+                        <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/appraisal-purchase-service/img1.svg" alt="">
+                        <img class="img" src="<?php echo get_template_directory_uri(); ?>/assets/img/appraisal-purchase-service/img2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="titlebox">
+            <h2 class="philosophy-common-title">SUBJECTS</h2>
+            <p class="philosophy-common-subtitle">査定・買取対象</p>
+        </div>
+
+        <div class="appraisal-subjectbox">
+            <ul class="appraisal-subject-list">
+                <li><p class="text">絵画（日本画・洋画・現代アート、版画）</p></li>
+                <li><p class="text">掛け軸</p></li>
+                <li><p class="text">陶磁器</p></li>
+                <li><p class="text">中国美術</p></li>
+                <li><p class="text">古美術</p></li>
+                <li><p class="text">西洋アンティーク</p></li>
+                <li><p class="text">その他</p></li>
+            </ul>
         </div>
 
         <div class="titlebox flow-title">
@@ -66,7 +103,7 @@ get_template_part('./template/head');
                     申し込み受付
                     </p>
                     <p class="text">
-                    お申し込みに必要な各種書類を提出していただき、弊社で所定の審査を行います。
+                    お電話(03-3528-6363)もしくはお問い合わせの登録フォームからご連絡下さい。
                     </p>
                 </div>
             </div>
@@ -84,10 +121,10 @@ get_template_part('./template/head');
                 </div>
                 <div class="col__text">
                     <p class="title">
-                    審査・お見積もり
+                    概要確認
                     </p>
                     <p class="text">
-                    美術品の評価が出ましたら、所定の範囲内で融資可能金額を算出いたします。
+                    どのような品物なのか、画像となる写真等があればメールなどにてお送りいただきます。
                     </p>
                 </div>
             </div>
@@ -110,7 +147,9 @@ get_template_part('./template/head');
                     契約手続
                     </p>
                     <p class="text">
-                    お客様と弊社の間で金銭消費賃貸借契約及び質権設定契約を締結いたします。保険未加入の場合は、美術品に保険をかけていただきます。
+                    弊社は銀座1丁目の銀座東洋ビルの2階にございます。<br>
+品物を弊社まで直接持参いただくかもしくは弊社からご訪問させていただきます。<br>
+ (訪問の場合、場所によっては実費をご負担いただく場合もございます)
                     </p>
                 </div>
             </div>

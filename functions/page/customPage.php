@@ -30,6 +30,11 @@ function create_custom_pages_with_optional_parents() {
       'slug' => 'appraisal-purchase-service',
       'parent_slug' => '',
     ],
+  [
+    'title' => 'お問い合わせ',
+    'slug' => 'contact',
+    'parent_slug' => '',
+  ],
   ];
 
   // foreach ($pages as $page) {

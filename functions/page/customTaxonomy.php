@@ -4,10 +4,10 @@
  */
 
 register_taxonomy(
-  'interview-category',
-  array('interviewpage'),
+  'news-category',
+  array('news'),
   array(
-    'label' => 'インタビューカテゴリー',
+    'label' => 'お知らせカテゴリー',
     'public' => true,
     'show_ui' => true,
     'hierarchical' => true,

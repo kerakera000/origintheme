@@ -1,6 +1,36 @@
-<?php get_header(); ?>
+<?php
+global $wp_path;
+global $site_url;
 
-<main class="news-single">
+?>
+<?php
+get_template_part('./template/head');
+?>
+
+
+<?php get_template_part('./template/header');?>
+
+<main id="pageTop" class="main-layout">
+    <div class="servicekv">
+        <div class="servicekv__background">
+            <div class="titlebox">
+                <span class="servicekvRB"></span>
+                <div class="title-cont">
+                    <h2 class="title-cont__title">NEWS</h2>
+                    <p class="title-cont__text">
+                    お知らせ
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="servicekv__breadcrumb">
+            <div class="breadcrumb service-breadcrumb">
+                <a href="" class="breadcrumb__link">TOP</a>
+                <img class="breadcrumb__arrow" src="<?php echo get_template_directory_uri(); ?>/assets/img/service/breadcamb.svg" alt="arrow">
+                <a href="<?php echo esc_url(get_post_type_archive_link('news')); ?>" class="breadcrumb__link">NEWS</a>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             
@@ -114,4 +144,4 @@
     </div>
 </main>
 
-<?php get_footer(); ?> 
+<?php get_template_part('./template/footer'); ?> 

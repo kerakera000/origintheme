@@ -17,7 +17,7 @@ global $site_url;
         <a class="link" href="/service">
             <span class="text">SERVICE</span>
         </a>
-        <a class="link" href="/news">
+        <a class="link" href="<?php echo esc_url(get_post_type_archive_link('news')); ?>">
             <span class="text">NEWS</span>
         </a>
         <a class="link" href="/access">
