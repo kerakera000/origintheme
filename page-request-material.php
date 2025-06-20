@@ -230,7 +230,7 @@ get_template_part('./template/head');
                             <div class="title">出展予定地（都道府県）</div>
                         </div>
                         <div class="common-search-accordion-content request-form__accordion">
-                            <button class="button ac-button">
+                            <button class="button">
                             <span class="text"></span>
                                 <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/acordion-under-pink.svg" alt="">
                             </button>
@@ -252,7 +252,7 @@ get_template_part('./template/head');
                             <div class="title">物件</div>
                         </div>
                         <div class="common-search-accordion-content request-form__accordion">
-                            <button class="button ac-button">
+                            <button class="button">
                             <span class="text"></span>
                                 <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/acordion-under-pink.svg" alt="">
                             </button>
@@ -274,7 +274,7 @@ get_template_part('./template/head');
                             <div class="title">店舗責任者</div>
                         </div>
                         <div class="common-search-accordion-content request-form__accordion">
-                            <button class="button ac-button">
+                            <button class="button">
                             <span class="text"></span>
                                 <img class="icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/common-icon/acordion-under-pink.svg" alt="">
                             </button>

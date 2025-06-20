@@ -121,11 +121,13 @@ $color-accordion-button-background: #FFFAFB;
 
 // アコーディオンボタン
 .accordion-button-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 100%;
-    .common-accordion-button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.common-accordion-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,14 +138,13 @@ $color-accordion-button-background: #FFFAFB;
     font-size: 16px;
     font-weight: 500;
     color: $color-common-pink;
-    width: calc((100% - 42px) / 3); // ← 統合
+    width: calc((100% - 42px) / 3);
     transition: all 0.3s ease;
-
     @include gaps(20px, 3);
 
     @media screen and (max-width: 768px) {
         @include gaps(20px, 1);
-        width: 100%; // SP時に1列表示
+        width: 100%;
     }
 
     &:hover {
@@ -152,8 +153,8 @@ $color-accordion-button-background: #FFFAFB;
         color: $color-common-white;
         transition: all 0.3s ease;
     }
-    }
 }
+
 
 
 // サブタイトル
@@ -284,7 +285,7 @@ $color-accordion-button-background: #FFFAFB;
     @media screen and (max-width: 768px) {
         @include gaps(20px, 1);
     }
-    .ac-button {
+    .button {
         width: 100%;
         display: flex;
         align-items: center;
@@ -312,7 +313,7 @@ $color-accordion-button-background: #FFFAFB;
     }
 
     .content {
-        display: none; // 初期状態は非表示
+        display: none;
         padding: 12px 16px;
         background: #fafafa;
         border: 1px solid #e0e0e0;
@@ -572,6 +573,7 @@ $color-accordion-button-background: #FFFAFB;
                 color: $color-common-black;
             }
             &.step1{
+                border-left: 2px solid #E21C43;
                 .border-box{
                     position: absolute;
                     top: 0;
@@ -735,7 +737,6 @@ $color-accordion-button-background: #FFFAFB;
         position: relative;
         display: block;
         margin: 10px 0;
-        padding-right: 15px 0;
         padding-left: 28px;
         font-size: 15px;
         user-select: none;
